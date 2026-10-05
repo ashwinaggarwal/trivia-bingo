@@ -1,0 +1,415 @@
+{
+  "gameType": "diwali",
+  "name": "Diwali Bingo",
+  "description": "A trivia game about the festival of Diwali, its legends, and rituals. Players answer questions to fill their bingo cards and win prizes.",
+  "questions": [
+    {
+      "id": "q01",
+      "category": "Sages & Wise Ones",
+      "question": "Which sage is credited with writing the original Sanskrit epic of the Ramayana?",
+      "hint": "He is also believed to have given shelter to Sita during her exile and raised Luv and Kush.",
+      "answer": "Valmiki",
+      "image": "valmiki.jpeg"
+    },
+    {
+      "id": "q02",
+      "category": "Sages & Wise Ones",
+      "question": "Which saint-poet wrote the Awadhi version of the Ramayana called \"Ramcharitmanas\"?",
+      "hint": "His work is widely recited during Ramlila performances before Dussehra.",
+      "answer": "Tulsidas",
+      "image": "tulsidas.jpeg"
+    },
+    {
+      "id": "q03",
+      "category": "Sages & Wise Ones",
+      "question": "Which sage trained young Rama and Lakshmana and later took them to protect his yagna from demons?",
+      "hint": "He also gave Rama a set of celestial weapons known as \"Devastras.\"",
+      "answer": "Vishwamitra",
+      "image": "vishwamitra.jpeg"
+    },
+    {
+      "id": "q04",
+      "category": "Sages & Wise Ones",
+      "question": "Who was the royal guru (kulguru) of the Ikshvaku dynasty and King Dasharatha's chief advisor?",
+      "hint": "This sage owned the divine wish-fulfilling cow Nandini and had a famous rivalry with Vishwamitra.",
+      "answer": "Vashistha",
+      "image": "vashistha.jpeg"
+    },
+    {
+      "id": "q05",
+      "category": "Sages & Wise Ones",
+      "question": "Which sage, residing near Dandakaranya, gifted Rama a divine bow and quiver before his final battle?",
+      "hint": "He is also credited with confining two troublesome asuras, Vatapi and Ilvala, in the south.",
+      "answer": "Agastya",
+      "image": "agastya.jpeg"
+    },
+    {
+      "id": "q06",
+      "category": "Sages & Wise Ones",
+      "question": "Which celestial sage first narrated the story of Rama to Valmiki, inspiring him to compose the epic?",
+      "hint": "This wandering sage carries a veena and often appears as a divine messenger in Hindu mythology.",
+      "answer": "Narada",
+      "image": "narada.jpeg"
+    },
+    {
+      "id": "q07",
+      "category": "People & Kin",
+      "question": "Who is the seventh avatar of Vishnu and the prince of Ayodhya at the center of the epic?",
+      "hint": "His triumphant return from exile is the reason Diwali is celebrated with rows of lamps.",
+      "answer": "Rama",
+      "image": "rama.jpeg"
+    },
+    {
+      "id": "q08",
+      "category": "People & Kin",
+      "question": "Which princess was discovered in a furrow of a ploughed field and later became Rama's wife?",
+      "hint": "She proved her purity by walking through fire — the Agni Pariksha — in Lanka.",
+      "answer": "Sita",
+      "image": "sita.jpeg"
+    },
+    {
+      "id": "q09",
+      "category": "People & Kin",
+      "question": "Which brother chose to accompany Rama into 14 years of exile instead of staying in the palace?",
+      "hint": "He is often shown standing guard beside Rama and Sita in temple idols.",
+      "answer": "Lakshmana",
+      "image": "lakshmana.jpeg"
+    },
+    {
+      "id": "q10",
+      "category": "People & Kin",
+      "question": "Which queen demanded two boons that led to Rama's banishment and her own son's coronation?",
+      "hint": "Her maid convinced her to make this fateful request.",
+      "answer": "Kaikeyi",
+      "image": "kaikeyi.jpeg"
+    },
+    {
+      "id": "q11",
+      "category": "People & Kin",
+      "question": "Which goddess of wealth and prosperity is worshipped in homes on the main night of Diwali?",
+      "hint": "She is said to visit only clean, well-lit homes on the darkest night of the month.",
+      "answer": "Lakshmi",
+      "image": "lakshmi.jpeg"
+    },
+    {
+      "id": "q12",
+      "category": "People & Kin",
+      "question": "Which king of Mithila found baby Sita in a field and later hosted her wedding to Rama?",
+      "hint": "He was ploughing a field when he discovered the infant girl.",
+      "answer": "King Janaka",
+      "image": "king-janaka.jpeg"
+    },
+    {
+      "id": "q13",
+      "category": "People & Kin",
+      "question": "Which brother refused the throne and ruled Ayodhya by placing Rama's sandals on it instead?",
+      "hint": "He lived austerely in the village of Nandigram during Rama's exile.",
+      "answer": "Bharata",
+      "image": "bharata.jpeg"
+    },
+    {
+      "id": "q14",
+      "category": "People & Kin",
+      "question": "Which vanara king was killed by Rama with a single arrow from behind a tree, to help his rival reclaim a kingdom?",
+      "hint": "His death came during a duel with his own brother over a throne and a wife.",
+      "answer": "Bali",
+      "image": "bali.jpeg"
+    },
+    {
+      "id": "q15",
+      "category": "People & Kin",
+      "question": "Which of Lakshmana's wife is said, in folklore, to have slept for 14 years so he wouldn't have to?",
+      "hint": "This let him stay awake guarding Rama and Sita throughout their exile.",
+      "answer": "Urmila",
+      "image": "urmila.jpeg"
+    },
+    {
+      "id": "q16",
+      "category": "People & Kin",
+      "question": "Which of Rama and Sita's twin sons was raised by Valmiki and later reunited his parents at a horse sacrifice?",
+      "hint": "He shares his name with a fragrant grass used in a well-known Ayurvedic remedy.",
+      "answer": "Luv",
+      "image": "luv.jpeg"
+    },
+    {
+      "id": "q17",
+      "category": "People & Kin",
+      "question": "Which twin son of Rama, alongside his brother, challenged Rama's own army during the Ashwamedha Yagna?",
+      "hint": "A South Indian city and a valley in Kashmir are named after him.",
+      "answer": "Kush",
+      "image": "kush.jpeg"
+    },
+    {
+      "id": "q18",
+      "category": "People & Kin",
+      "question": "Which king of Ayodhya died of a broken heart after banishing his beloved son to the forest?",
+      "hint": "He once accidentally killed a boy while hunting by sound alone, a curse that foretold his sorrow.",
+      "answer": "Dasharatha",
+      "image": "dasharatha.jpeg"
+    },
+    {
+      "id": "q19",
+      "category": "Daemons",
+      "question": "Which ten-headed king of Lanka abducted Sita, leading to a great war?",
+      "hint": "Effigies of him are burned across India on Dussehra.",
+      "answer": "Ravana",
+      "image": "ravana.jpeg"
+    },
+    {
+      "id": "q20",
+      "category": "Daemons",
+      "question": "Which giant brother of Ravana slept for six months at a stretch and was famous for his enormous appetite?",
+      "hint": "He was woken up and killed by Rama during the war, despite being a devoted brother.",
+      "answer": "Kumbhakarna",
+      "image": "kumbhakarna.jpeg"
+    },
+    {
+      "id": "q21",
+      "category": "Daemons",
+      "question": "Which of Ravana's brothers defected to Rama's side, revealing Lanka's secrets, and was later crowned king there?",
+      "hint": "He is remembered as a symbol of righteousness triumphing over blood loyalty.",
+      "answer": "Vibhishana",
+      "image": "vibhishana.jpeg"
+    },
+    {
+      "id": "q22",
+      "category": "Daemons",
+      "question": "Which demoness's mocking of Sita and infatuation with Rama set the abduction plot in motion?",
+      "hint": "Her nose and ears were cut off by Lakshmana after she attacked Sita.",
+      "answer": "Surpanakha",
+      "image": "surpanakha.jpeg"
+    },
+    {
+      "id": "q23",
+      "category": "Daemons",
+      "question": "Which son of Ravana used illusion in battle and was finally slain by Lakshmana?",
+      "hint": "His name means \"one who cries like thunder,\" a cry he let out at birth.",
+      "answer": "Meghnada",
+      "image": "meghnada.jpeg"
+    },
+    {
+      "id": "q24",
+      "category": "Daemons",
+      "question": "Which hunchbacked palace maid convinced Queen Kaikeyi to ask for Rama's exile?",
+      "hint": "She feared losing her influence in the palace if Rama became king.",
+      "answer": "Manthara",
+      "image": "manthara.jpeg"
+    },
+    {
+      "id": "q25",
+      "category": "Daemons",
+      "question": "Which fearsome demoness of Dandakaranya forest was killed by Rama at his guru's request, despite being female?",
+      "hint": "A village near modern-day Delhi is believed to take its name from her domain.",
+      "answer": "Tataka",
+      "image": "tataka.jpeg"
+    },
+    {
+      "id": "q26",
+      "category": "Daemons",
+      "question": "Which of Ravana's generals led the demon army and was killed by Lakshmana during the war for Lanka?",
+      "hint": "He was sent as an emissary to the monkey army's camp before the war began.",
+      "answer": "Prahasta",
+      "image": "prahasta.jpeg"
+    },
+    {
+      "id": "q27",
+      "category": "Animals & Divine Beings",
+      "question": "Which vanara deity flew across the ocean to find Sita and later burned Lanka with his tail?",
+      "hint": "He is worshipped as the embodiment of devotion and strength, son of the wind god.",
+      "answer": "Hanuman",
+      "image": "hanuman.jpeg"
+    },
+    {
+      "id": "q28",
+      "category": "Animals & Divine Beings",
+      "question": "Which elephant-headed deity is worshipped alongside Lakshmi on Diwali night for wisdom and new beginnings?",
+      "hint": "He is invoked at the start of most Hindu rituals as the remover of obstacles.",
+      "answer": "Ganesha",
+      "image": "ganesha.jpeg"
+    },
+    {
+      "id": "q29",
+      "category": "Animals & Divine Beings",
+      "question": "Which demon disguised himself as a golden deer to lure Rama away so Sita could be abducted?",
+      "hint": "He had earlier tried to disrupt Vishwamitra's yagna alongside another demon, Subahu.",
+      "answer": "Maricha",
+      "image": "maricha.jpeg"
+    },
+    {
+      "id": "q30",
+      "category": "Animals & Divine Beings",
+      "question": "Which vulture king sacrificed his life fighting Ravana to try to save Sita?",
+      "hint": "He was an old friend of King Dasharatha and lived long enough to tell Rama what happened.",
+      "answer": "Jatayu",
+      "image": "jatayu.jpeg"
+    },
+    {
+      "id": "q31",
+      "category": "Animals & Divine Beings",
+      "question": "Which vanara, one of two architect brothers, helped design the floating bridge to Lanka, blessed so that stones wouldn't sink for him?",
+      "hint": "He and his brother were sons of the celestial architect Vishwakarma.",
+      "answer": "Nala",
+      "image": "nala.jpeg"
+    },
+    {
+      "id": "q32",
+      "category": "Animals & Divine Beings",
+      "question": "Which vanara, brother to the builder of Ram Setu, also worked alongside him to construct the bridge to Lanka?",
+      "hint": "Together with his brother, every stone he touched floated instead of sinking.",
+      "answer": "Nila",
+      "image": "nila.jpeg"
+    },
+    {
+      "id": "q33",
+      "category": "Animals & Divine Beings",
+      "question": "Which vanara king, restored to his throne by Rama, commanded the monkey army in the search for Sita?",
+      "hint": "He had been hiding in fear of his own brother before Rama helped him reclaim his kingdom.",
+      "answer": "Sugriva",
+      "image": "sugriva.jpeg"
+    },
+    {
+      "id": "q34",
+      "category": "Animals & Divine Beings",
+      "question": "Which ancient bear king joined Rama's army as the oldest and wisest of the animal chiefs?",
+      "hint": "He claimed to have witnessed the churning of the ocean, the Samudra Manthan, in his youth.",
+      "answer": "Jambavan",
+      "image": "jambavan.jpeg"
+    },
+    {
+      "id": "q35",
+      "category": "Places",
+      "question": "In which capital city did Rama rule, and to which he returned in triumph, prompting the first Diwali celebrations?",
+      "hint": "This city on the banks of the Sarayu is considered one of Hinduism's seven holiest cities.",
+      "answer": "Ayodhya",
+      "image": "ayodhya.jpeg"
+    },
+    {
+      "id": "q36",
+      "category": "Places",
+      "question": "Which island kingdom, ruled by Ravana, was said to be built entirely of gold?",
+      "hint": "Rama's army built a bridge across the sea to reach this kingdom.",
+      "answer": "Lanka",
+      "image": "lanka.jpeg"
+    },
+    {
+      "id": "q37",
+      "category": "Places",
+      "question": "What is the name of the bridge believed to have been built across the sea to Lanka, still visible in satellite images today?",
+      "hint": "It's also known as Adam's Bridge, stretching between India and Sri Lanka.",
+      "answer": "Ram Setu",
+      "image": "ram-setu.jpeg"
+    },
+    {
+      "id": "q38",
+      "category": "Places",
+      "question": "In which garden was Sita held captive in Lanka, guarded by demonesses, while awaiting rescue?",
+      "hint": "Hanuman first met Sita here after leaping across the ocean.",
+      "answer": "Ashok Vatika",
+      "image": "ashok-vatika.jpeg"
+    },
+    {
+      "id": "q39",
+      "category": "Places",
+      "question": "In which vast forest did Rama, Sita, and Lakshmana spend most of their 14-year exile?",
+      "hint": "This forest spanned the region south of the Vindhya mountains.",
+      "answer": "Dandakaranya",
+      "image": "dandakaranya.jpeg"
+    },
+    {
+      "id": "q40",
+      "category": "Places",
+      "question": "On the banks of which river does Ayodhya sit, the same river Rama is believed to have entered when he finally left the mortal world?",
+      "hint": "This river is a tributary of the Ganga in present-day Uttar Pradesh.",
+      "answer": "Sarayu River",
+      "image": "sarayu-river.jpeg"
+    },
+    {
+      "id": "q41",
+      "category": "Objects & Symbols",
+      "question": "What are the small oil lamps lit in rows outside homes to welcome Lakshmi on Diwali night?",
+      "hint": "The festival's name, \"Deepavali,\" literally means \"a row of these.\"",
+      "answer": "Diyas",
+      "image": "diyas.jpeg"
+    },
+    {
+      "id": "q42",
+      "category": "Objects & Symbols",
+      "question": "What colorful floor art, made from powders, flowers, or rice, is drawn at doorways during Diwali to welcome guests and deities?",
+      "hint": "Its intricate patterns are often geometric or floral and symmetrical.",
+      "answer": "Rangoli",
+      "image": "rangoli.jpeg"
+    },
+    {
+      "id": "q43",
+      "category": "Objects & Symbols",
+      "question": "What is the name of the magical herb Hanuman fetched from a Himalayan mountain to revive Lakshmana?",
+      "hint": "Unable to identify it, Hanuman carried the entire mountain it grew on instead.",
+      "answer": "Sanjeevani Booti",
+      "image": "sanjeevani-booti.jpeg"
+    },
+    {
+      "id": "q44",
+      "category": "Objects & Symbols",
+      "question": "What is the name of Lord Shiva's divine bow that Rama broke to win Sita's hand in marriage?",
+      "hint": "Breaking this bow at Sita's swayamvar was the test set by King Janaka.",
+      "answer": "Pinaka",
+      "image": "pinaka.jpeg"
+    },
+    {
+      "id": "q45",
+      "category": "Objects & Symbols",
+      "question": "What is the name of the flying chariot, once belonging to Kubera before Ravana seized it, which Rama used to fly home to Ayodhya?",
+      "hint": "This aerial vehicle could expand or shrink to fit any number of passengers.",
+      "answer": "Pushpaka Vimana",
+      "image": "pushpaka-vimana.jpeg"
+    },
+    {
+      "id": "q46",
+      "category": "Objects & Symbols",
+      "question": "What is the name of the supremely destructive celestial weapon Rama used to finally kill Ravana?",
+      "hint": "Associated with Brahma, this weapon was also infamously used at the end of the Mahabharata war.",
+      "answer": "Brahmastra",
+      "image": "brahmastra.jpeg"
+    },
+    {
+      "id": "q47",
+      "category": "Festival Timeline & Rituals",
+      "question": "What is the name of the festival marking Rama's victory over Ravana, celebrated with the burning of effigies?",
+      "hint": "It falls on the tenth day of Navratri, marking the \"victory of good over evil.\"",
+      "answer": "Dussehra",
+      "image": "dussehra.jpeg"
+    },
+    {
+      "id": "q48",
+      "category": "Festival Timeline & Rituals",
+      "question": "In which Hindu lunar month, roughly falling in October–November, is Diwali celebrated?",
+      "hint": "This month also hosts the holy river-dip festival of Purnima at its end.",
+      "answer": "Kartik",
+      "image": "kartik.jpeg"
+    },
+    {
+      "id": "q49",
+      "category": "Festival Timeline & Rituals",
+      "question": "On which type of moon night — with no moon visible at all — is the main Diwali Lakshmi Puja celebrated?",
+      "hint": "Its total darkness is exactly why rows of lamps are needed to light up the night.",
+      "answer": "Amavasya",
+      "image": "amavasya.jpeg"
+    },
+    {
+      "id": "q50",
+      "category": "Festival Timeline & Rituals",
+      "question": "What is the festival celebrating the bond between brothers and sisters, observed two days after the main Diwali night?",
+      "hint": "Legend ties it to Yama visiting his sister, after whom a river is also named.",
+      "answer": "Bhai Dooj",
+      "image": "bhai-dooj.jpeg"
+    },
+    {
+      "id": "q51",
+      "category": "Festival Timeline & Rituals",
+      "question": "What celebration, observed the day after Diwali, honors a mountain associated with Krishna lifting it to shelter villagers from Indra's storm?",
+      "hint": "Devotees build small replicas of this hill using cow dung or food offerings called \"Annakut.\"",
+      "answer": "Govardhan Puja",
+      "image": "govardhan-puja.jpeg"
+    }
+  ]
+}

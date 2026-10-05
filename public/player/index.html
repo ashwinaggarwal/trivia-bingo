@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Bingo — Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameover-overlay" class="hidden">
+      <div id="gameover-title" class="gameover-text">🪔 GAME OVER 🪔</div>
+      <div id="gameover-winner"></div>
+    </div>
+
+    <main id="app">
+      <header>
+        <h1 id="header-title">🎲 Trivia Bingo</h1>
+      </header>
+
+      <section id="register-screen">
+        <div id="game-id-banner"></div>
+        <p>Enter your name to get your bingo grid:</p>
+        <form id="register-form">
+          <input id="name-input" type="text" placeholder="Your name" maxlength="40" required />
+          <button type="submit">Join Game</button>
+        </form>
+        <p id="register-error" class="error"></p>
+      </section>
+
+      <section id="game-screen" class="hidden">
+        <div id="player-name-banner"></div>
+
+        <div id="question-banner" class="hidden">
+          <div id="question-status"></div>
+          <div id="question-text"></div>
+          <img id="hint-image" class="hidden" alt="" />
+          <div id="hint-text" class="hidden"></div>
+          <div id="answer-text" class="hidden"></div>
+          <div id="countdown-text" class="hidden"></div>
+        </div>
+
+        <div id="status-banner" class="hidden"></div>
+
+        <div id="grid"></div>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

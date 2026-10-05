@@ -1,0 +1,10 @@
+services:
+  bingo:
+    build: .
+    ports:
+      - '${PORT:-3000}:3000'
+    environment:
+      - PORT=3000
+    volumes:
+      - ./data/games:/app/data/games
+    restart: unless-stopped

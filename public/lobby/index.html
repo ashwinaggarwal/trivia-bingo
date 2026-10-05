@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Bingo — Games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>🎲 Trivia Bingo</h1>
+        <p class="subtitle">Create a game, then open its admin console to run it.</p>
+      </header>
+
+      <section id="create-panel">
+        <form id="create-form">
+          <input id="name-input" type="text" placeholder="Game name (optional)" maxlength="60" />
+          <select id="game-type-select"></select>
+          <button type="submit">Create Game</button>
+        </form>
+      </section>
+
+      <section id="games-panel">
+        <h2>Games</h2>
+        <ul id="games-list"></ul>
+        <p id="empty-note" class="hidden">No games yet — create one above.</p>
+      </section>
+    </div>
+
+    <script src="/shared/theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

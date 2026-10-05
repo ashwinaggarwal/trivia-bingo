@@ -1,0 +1,5 @@
+node_modules/
+data/games/
+.DS_Store
+npm-debug.log*
+.env

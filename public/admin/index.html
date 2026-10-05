@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Bingo — Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 id="header-title" data-suffix="— Admin">🎲 Trivia Bingo — Admin</h1>
+        <div id="game-title"></div>
+      </header>
+
+      <section id="join-panel">
+        <h2>Players join this game</h2>
+        <div id="join-body">
+          <img id="join-qr" alt="Join QR code" />
+          <div id="join-url"></div>
+        </div>
+        <div id="game-view-link">
+          Game view (put this on the TV):
+          <a id="game-view-url" href="#" target="_blank" rel="noopener"></a>
+        </div>
+      </section>
+
+      <section id="status-panel">
+        <div id="status-line">Loading…</div>
+        <div id="winner-banner" class="hidden"></div>
+      </section>
+
+      <section id="controls">
+        <button id="btn-start">Start Game</button>
+        <button id="btn-next">Next Question</button>
+        <button id="btn-reveal-hint">Show Hint</button>
+        <button id="btn-reveal">Reveal Answer</button>
+        <button id="btn-gameover" class="danger">Flash Game Over</button>
+        <button id="btn-reset" class="secondary">Reset Game</button>
+      </section>
+
+      <section id="players-panel">
+        <h2>Players (<span id="player-count">0</span>)</h2>
+        <ul id="players-list"></ul>
+      </section>
+
+      <section id="questions-panel">
+        <h2>Questions (<span id="question-count">0</span>)</h2>
+        <p class="hint">Need at least 25 to start. Edit, add, or remove below, then Save.</p>
+        <table id="questions-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Question</th>
+              <th>Hint</th>
+              <th>Answer</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="questions-body"></tbody>
+        </table>
+        <button id="btn-add-question" class="secondary">+ Add Question</button>
+        <button id="btn-save-questions">Save Questions</button>
+        <p id="questions-error" class="error"></p>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

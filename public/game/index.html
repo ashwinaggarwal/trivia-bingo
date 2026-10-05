@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Bingo — Game Screen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameover-overlay" class="hidden">
+      <div id="gameover-title" class="gameover-text">🪔 GAME OVER 🪔</div>
+      <div id="gameover-winner"></div>
+    </div>
+
+    <div id="app">
+      <header>
+        <h1 id="header-title" data-wrap="true">🎲 Trivia Bingo 🎲</h1>
+        <div id="join-hint"></div>
+        <button id="btn-enable-sound">🔊 Enable Tick Sound</button>
+      </header>
+
+      <section id="join-panel">
+        <h2>Scan to join</h2>
+        <img id="join-qr" alt="Join QR code" />
+        <div id="join-url"></div>
+      </section>
+
+      <section id="roster-panel">
+        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+        <ul id="roster-list"></ul>
+      </section>
+
+      <section id="question-panel">
+        <div id="question-status">Waiting to start…</div>
+        <div id="digital-clock" class="hidden"></div>
+        <div id="question-text"></div>
+        <img id="hint-image" class="hidden" alt="" />
+        <div id="hint-text" class="hidden"></div>
+        <div id="answer-text" class="hidden"></div>
+        <div id="countdown-text" class="hidden"></div>
+      </section>
+
+      <section id="revealed-panel">
+        <h2>📜 Answers So Far</h2>
+        <div id="revealed-grid"></div>
+      </section>
+
+      <section id="leaderboards">
+        <div class="board">
+          <h2>🏆 Most Correct</h2>
+          <ol id="most-correct"></ol>
+        </div>
+        <div class="board">
+          <h2>⚡ Fastest Correct</h2>
+          <ol id="fastest"></ol>
+        </div>
+        <div class="board">
+          <h2>❌ Most Incorrect (First Try)</h2>
+          <ol id="most-incorrect"></ol>
+        </div>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
