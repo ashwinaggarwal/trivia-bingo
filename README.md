@@ -1,7 +1,8 @@
 # Trivia Bingo
 
-Local-network trivia bingo game server — admin console, shared game screen, and
-per-player join view with QR codes.
+Local-network party game server — a shelf of games (Trivia Bingo, Think
+Alike), each with its own admin console, shared game screen, and per-player
+join view with QR codes.
 
 ## Running locally
 
@@ -12,9 +13,9 @@ npm install
 npm start
 ```
 
-Open the lobby at `http://localhost:3000/admin` (or whatever LAN IP your
-terminal prints on startup) to create a game and get its player join link/QR
-code.
+Open the shelf at `http://localhost:3000/` (or whatever LAN IP your terminal
+prints on startup), pick a game, and create an instance of it to get its
+player join link/QR code.
 
 ### Option B: Docker
 
