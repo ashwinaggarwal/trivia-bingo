@@ -12,12 +12,12 @@ header {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 0.85rem;
-  color: var(--dim);
+  color: var(--muted);
   text-decoration: none;
 }
 
 .subtitle {
-  color: var(--dim);
+  color: var(--muted);
   margin-top: 6px;
 }
 
@@ -65,12 +65,12 @@ section h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--paper);
-  border: 1px solid var(--line);
+  background: var(--glass);
+  border: 1px solid var(--hairline);
   border-radius: var(--r-sm);
   padding: 10px 14px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .game-name {

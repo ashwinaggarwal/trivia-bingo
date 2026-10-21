@@ -1,21 +1,17 @@
+/* Trivia Bingo — shared game screen (the big display everyone watches).
+   Built on the shared design system (/shared/base.css): these are the
+   original local aliases, now pointing at the shared dark/glass tokens
+   instead of hardcoded hex, so the rest of this file didn't need a full
+   rewrite. --maroon stays its own dark literal (not derived) since it's a
+   large panel fill, not a button or flash — those use var(--danger)
+   directly. --chip (a fixed light QR/badge backdrop) comes straight from
+   base.css. */
 :root {
-  --bg: #1a0b2e;
-  --bg-light: #2d1654;
-  --gold: #f3b94c;
-  --maroon: #7a1f3d;
-  --cream: #fdf3e3;
-  --green: #3a9d5d;
-}
-
-/* Geography theme: navy/teal/sand travel-poster palette, swapped in at
-   runtime via public/shared/theme.js setting document.documentElement's
-   data-theme attribute. */
-:root[data-theme='geography'] {
-  --bg: #0a2238;
-  --bg-light: #123a5c;
-  --gold: #e0a458;
-  --maroon: #2a7f72;
-  --cream: #f4ead5;
+  --bg-light: var(--glass-strong);
+  --gold: var(--accent);
+  --maroon: #2a0b10;
+  --cream: var(--text);
+  --green: var(--success);
 }
 
 * {
@@ -24,7 +20,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--body);
   background: radial-gradient(circle at top, var(--bg-light), var(--bg));
   color: var(--cream);
   min-height: 100vh;
@@ -41,6 +37,7 @@ header {
 }
 
 header h1 {
+  font-family: var(--display);
   color: var(--gold);
   font-size: 2.4rem;
   margin: 0 0 4px;
@@ -68,7 +65,7 @@ header h1 {
 #join-qr {
   width: 260px;
   height: 260px;
-  background: var(--cream);
+  background: var(--chip);
   border-radius: 12px;
 }
 
@@ -227,7 +224,7 @@ header h1 {
   height: 34px;
   border-radius: 50%;
   background: var(--gold);
-  color: var(--bg);
+  color: var(--accent-ink);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,11 +233,11 @@ header h1 {
 
 .ff-option.correct {
   background: var(--green);
-  border-color: var(--cream);
+  border-color: var(--chip);
 }
 
 .ff-option.correct .option-letter {
-  background: var(--cream);
+  background: var(--chip);
   color: var(--green);
 }
 
@@ -360,12 +357,12 @@ header h1 {
   letter-spacing: 0.05em;
 }
 
-/* #1 gets the arcade "high score" treatment: bigger row, gold glow ring. */
+/* #1 gets the arcade "high score" treatment: bigger row, accent glow ring. */
 .arcade-row.rank-1 {
   border-color: var(--gold);
-  background: linear-gradient(90deg, rgba(243, 185, 76, 0.18), transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 18%, transparent), transparent);
   padding: 16px 20px;
-  box-shadow: 0 0 18px rgba(243, 185, 76, 0.45);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--gold) 45%, transparent);
   animation: arcadeGlow 1.8s ease-in-out infinite;
 }
 
@@ -392,10 +389,10 @@ header h1 {
 @keyframes arcadeGlow {
   0%,
   100% {
-    box-shadow: 0 0 10px rgba(243, 185, 76, 0.35);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--gold) 35%, transparent);
   }
   50% {
-    box-shadow: 0 0 24px rgba(243, 185, 76, 0.65);
+    box-shadow: 0 0 24px color-mix(in srgb, var(--gold) 65%, transparent);
   }
 }
 
@@ -403,7 +400,7 @@ header h1 {
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: var(--maroon);
+  background: var(--danger);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,6 +409,7 @@ header h1 {
 }
 
 .gameover-text {
+  font-family: var(--display);
   font-size: 5rem;
   font-weight: 800;
   color: var(--gold);
@@ -426,7 +424,7 @@ header h1 {
 @keyframes flash {
   0%,
   100% {
-    background: var(--maroon);
+    background: var(--danger);
   }
   50% {
     background: #4a0f22;

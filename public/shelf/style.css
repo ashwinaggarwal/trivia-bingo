@@ -18,12 +18,12 @@
 .sub {
   margin-top: 16px;
   max-width: 52ch;
-  color: var(--dim);
+  color: var(--muted);
   line-height: 1.6;
 }
 
 .shelf-head {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
   padding-bottom: 12px;
   margin-bottom: 22px;
 }
@@ -43,21 +43,25 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--r);
-  box-shadow: var(--sh-card);
+  background:
+    linear-gradient(var(--glass), #ffffff05) padding-box,
+    linear-gradient(135deg, #ffffff29, #ffffff08 40%, #ffffff1a) border-box;
+  border: 1px solid transparent;
+  border-radius: var(--r-lg);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: 0 8px 32px #00000073;
   padding: 22px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--text);
   transition:
-    transform 0.15s ease,
-    box-shadow 0.2s ease;
+    transform 0.2s var(--spring),
+    box-shadow 0.2s var(--ease);
 }
 
 .shelf-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--sh-lift);
+  box-shadow: 0 14px 40px #000000a3;
 }
 
 .shelf-card-emoji {
@@ -69,7 +73,7 @@
 }
 
 .shelf-card-tagline {
-  color: var(--dim);
+  color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.4;
 }

@@ -1,22 +1,14 @@
+/* Trivia Bingo — admin console. Built on the shared design system
+   (/shared/base.css): these are the original local aliases, now pointing
+   at the shared dark/glass tokens instead of hardcoded hex, so the rest of
+   this file didn't need a full rewrite. --maroon stays its own dark literal
+   (not derived) since it's a large panel fill, not a button or flash. */
 :root {
-  --bg: #1a0b2e;
-  --bg-light: #2d1654;
-  --gold: #f3b94c;
-  --maroon: #7a1f3d;
-  --cream: #fdf3e3;
-  --green: #3a9d5d;
-  --red: #c0392b;
-}
-
-/* Geography theme: navy/teal/sand travel-poster palette, swapped in at
-   runtime via public/shared/theme.js setting document.documentElement's
-   data-theme attribute. --green/--red stay shared across themes. */
-:root[data-theme='geography'] {
-  --bg: #0a2238;
-  --bg-light: #123a5c;
-  --gold: #e0a458;
-  --maroon: #2a7f72;
-  --cream: #f4ead5;
+  --bg-light: var(--glass-strong);
+  --gold: var(--accent);
+  --maroon: #2a0b10;
+  --cream: var(--text);
+  --green: var(--success);
 }
 
 * {
@@ -25,7 +17,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--body);
   background: var(--bg);
   color: var(--cream);
 }
@@ -37,6 +29,7 @@ body {
 }
 
 header h1 {
+  font-family: var(--display);
   color: var(--gold);
   font-size: 1.6rem;
 }
@@ -63,7 +56,7 @@ header h1 {
 #join-qr {
   width: 110px;
   height: 110px;
-  background: var(--cream);
+  background: var(--chip);
   border-radius: 8px;
 }
 
@@ -86,7 +79,9 @@ header h1 {
 
 section {
   background: var(--bg-light);
-  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  box-shadow: 0 8px 32px #00000073;
+  border-radius: var(--r);
   padding: 16px 20px;
   margin-bottom: 20px;
 }
@@ -98,6 +93,7 @@ section {
 #winner-banner {
   margin-top: 8px;
   background: var(--green);
+  color: #fff;
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 600;
@@ -111,10 +107,10 @@ section {
 
 button {
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: var(--r-sm);
   border: none;
   background: var(--gold);
-  color: var(--bg);
+  color: var(--accent-ink);
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
@@ -127,8 +123,8 @@ button.secondary {
 }
 
 button.danger {
-  background: var(--red);
-  color: var(--cream);
+  background: var(--danger);
+  color: var(--danger-ink);
 }
 
 button:disabled {
@@ -146,6 +142,7 @@ button:disabled {
 
 #players-list li {
   background: var(--bg);
+  border: 1px solid var(--hairline);
   border-radius: 10px;
   padding: 6px 12px;
   font-size: 0.9rem;
@@ -159,7 +156,7 @@ button:disabled {
   height: 9px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: #666;
+  background: #999;
 }
 
 .player-status.online {
@@ -168,14 +165,14 @@ button:disabled {
 }
 
 .player-status.offline {
-  background: #666;
+  background: #999;
 }
 
 .btn-kick {
   padding: 4px 10px;
   font-size: 0.75rem;
-  background: var(--red);
-  color: var(--cream);
+  background: var(--danger);
+  color: var(--danger-ink);
 }
 
 .player-name {
@@ -198,7 +195,7 @@ th,
 td {
   text-align: left;
   padding: 6px 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--hairline);
   font-size: 0.85rem;
 }
 
@@ -206,7 +203,7 @@ td input {
   width: 100%;
   background: var(--bg);
   color: var(--cream);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--hairline);
   border-radius: 4px;
   padding: 4px 6px;
   font-size: 0.85rem;
@@ -218,7 +215,7 @@ td input {
 }
 
 .error {
-  color: #ff8080;
+  color: var(--danger);
 }
 
 .hidden {
