@@ -121,7 +121,7 @@ function catchUp(gameId) {
     return null;
 
   const game = gamesModule.getGame(gameId);
-  const mode = (game && game.mode) || 'bingo';
+  const mode = (game && game.config && game.config.mode) || 'bingo';
   const elapsed = Date.now() - new Date(state.questionShownAt).getTime();
   let changed = false;
 
