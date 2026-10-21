@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think Alike — Admin</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🧠 Think Alike — Admin</h1>
+        <div id="game-title"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Players join this game</h2>
+        <div id="join-body">
+          <img id="join-qr" alt="Join QR code" />
+          <div id="join-url"></div>
+        </div>
+        <div id="game-view-link">
+          Game view (put this on the TV):
+          <a id="game-view-url" href="#" target="_blank" rel="noopener"></a>
+        </div>
+      </section>
+
+      <section id="status-panel" class="card">
+        <div id="status-line">Loading…</div>
+        <div id="current-prompt"></div>
+      </section>
+
+      <section id="controls" class="card">
+        <button id="btn-start" class="btn-primary">Start Game</button>
+        <button id="btn-next">Next Prompt</button>
+        <button id="btn-reveal">Reveal</button>
+        <button id="btn-reset" class="btn-secondary">Reset Game</button>
+      </section>
+
+      <section id="players-panel" class="card">
+        <h2>Players (<span id="player-count">0</span>)</h2>
+        <ul id="players-list"></ul>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

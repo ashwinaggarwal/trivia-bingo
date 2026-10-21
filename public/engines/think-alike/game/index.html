@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think Alike — Game Screen</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🧠 Think Alike</h1>
+        <div id="join-hint"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Scan to join</h2>
+        <img id="join-qr" alt="Join QR code" />
+        <div id="join-url"></div>
+      </section>
+
+      <section id="roster-panel" class="card">
+        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+        <ul id="roster-list"></ul>
+      </section>
+
+      <section id="prompt-panel" class="card">
+        <div id="prompt-status">Waiting to start…</div>
+        <div id="prompt-text"></div>
+        <div id="reveal-groups"></div>
+      </section>
+
+      <section id="leaderboard-panel" class="card">
+        <h2>🏆 Leaderboard</h2>
+        <ol id="leaderboard-rows"></ol>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
