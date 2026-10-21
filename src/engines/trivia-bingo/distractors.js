@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const GAME_TYPES_DIR = path.join(__dirname, '..', 'data', 'game-type');
+const GAME_TYPES_DIR = path.join(__dirname, '..', '..', '..', 'data', 'game-type');
 
 // Bank-static files (distractor-pool.json / answer-types.json) never change
 // while the server is running, so they're read once per gameType and cached.

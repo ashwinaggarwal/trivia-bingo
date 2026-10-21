@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const gamesModule = require('./games');
+const gamesModule = require('../../games');
 const { gameDir } = gamesModule;
 
 // Per-question auto-reveal timers, both measured from the moment the

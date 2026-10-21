@@ -2,9 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const { customAlphabet } = require('nanoid');
 
-const gameTypesModule = require('./gameTypes');
-const modesModule = require('./modes');
-
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const GAMES_DIR = path.join(DATA_DIR, 'games');
 
@@ -24,42 +21,52 @@ function gameExists(gameId) {
   return fs.existsSync(metaFile(gameId));
 }
 
+// Games created before the engine registry existed have a flat
+// `gameType`/`mode` instead of `engine`/`config` — they were all trivia-bingo
+// instances (the only engine that existed at the time), so a meta file with
+// no `engine` is treated as that, with its old fields folded into `config`.
+function withEngineShim(meta) {
+  if (meta.engine) return meta;
+  return {
+    ...meta,
+    engine: 'trivia-bingo',
+    config: { gameType: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
+  };
+}
+
 function getGame(gameId) {
   if (!gameExists(gameId)) return null;
   const meta = JSON.parse(fs.readFileSync(metaFile(gameId), 'utf8'));
-  // Games created before `mode` existed have no such field in their meta —
-  // treat those as bingo, the only mode that existed at the time.
-  return { mode: modesModule.DEFAULT_MODE, ...meta };
+  return withEngineShim(meta);
 }
 
-function createGame(name, gameType, mode) {
+// `engine` and `config` are opaque to this module — each engine validates
+// and shapes its own `config` before calling this (see each engine's
+// `createConfig`).
+function createGame(name, engine, config) {
   let id = generateId();
   while (gameExists(id)) id = generateId(); // astronomically unlikely, cheap to guard anyway
-
-  const resolvedGameType = gameTypesModule.gameTypeExists(gameType)
-    ? gameType
-    : gameTypesModule.DEFAULT_GAME_TYPE;
-  const resolvedMode = modesModule.modeExists(mode) ? mode : modesModule.DEFAULT_MODE;
 
   fs.mkdirSync(gameDir(id), { recursive: true });
   const meta = {
     id,
     name: (name || '').trim() || `Game ${id}`,
-    gameType: resolvedGameType,
-    mode: resolvedMode,
+    engine,
+    config: config || {},
     createdAt: new Date().toISOString(),
   };
   fs.writeFileSync(metaFile(id), JSON.stringify(meta, null, 2), 'utf8');
   return meta;
 }
 
-function listGames() {
+function listGames(engine) {
   if (!fs.existsSync(GAMES_DIR)) return [];
-  return fs
+  const all = fs
     .readdirSync(GAMES_DIR)
     .filter((id) => gameExists(id))
     .map((id) => getGame(id))
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  return engine ? all.filter((g) => g.engine === engine) : all;
 }
 
 function deleteGame(gameId) {

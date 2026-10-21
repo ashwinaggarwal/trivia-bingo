@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { nanoid } = require('nanoid');
 
-const { gameDir } = require('./games');
+const { gameDir } = require('../../games');
 const assetsModule = require('./assets');
 
 const GRID_SIZE = 25; // 5x5

@@ -1,0 +1,21 @@
+const triviaBingo = require('./trivia-bingo');
+
+// Add a new engine here once it has an index.js exporting the shape below —
+// nothing else in src/ or server.js needs to change to pick it up.
+const ENGINES = [triviaBingo];
+
+const BY_SLUG = new Map(ENGINES.map((e) => [e.slug, e]));
+
+function list() {
+  return ENGINES;
+}
+
+function get(slug) {
+  return BY_SLUG.get(slug) || null;
+}
+
+function exists(slug) {
+  return BY_SLUG.has(slug);
+}
+
+module.exports = { list, get, exists };

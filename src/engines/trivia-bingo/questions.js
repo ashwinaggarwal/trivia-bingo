@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const gamesModule = require('./games');
+const gamesModule = require('../../games');
 const gameTypesModule = require('./gameTypes');
 
 function questionsFile(gameId) {

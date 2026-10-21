@@ -7,6 +7,7 @@ const { Server } = require('socket.io');
 const { createRouter, startClock, playerSummaries } = require('./src/routes');
 const { publicOrigin } = require('./src/network');
 const presence = require('./src/presence');
+const engines = require('./src/engines');
 
 const PORT = process.env.PORT || 3000;
 
@@ -27,36 +28,49 @@ app.use(express.json());
 app.use('/api', createRouter(io));
 startClock(io);
 
-// Character portraits, shown alongside hints and in player grids once an
-// answer is revealed. Optional — not every answer has a matching image.
+// Character portraits, flags, etc. shown by any engine. Optional — not every
+// answer has a matching image.
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
-// JS shared across the lobby/admin/game/player views (currently: per-game-type theming).
+// JS shared across every engine's views (currently: per-game-type theming).
 app.use('/shared', express.static(path.join(__dirname, 'public', 'shared')));
 
-// Lobby: list/create games.
-app.use('/admin', express.static(path.join(__dirname, 'public', 'lobby')));
+// The shelf: pick a game, create or join an instance of it. Every engine's
+// own admin/game/player views are mounted below, generically, from the
+// engine registry — adding a new engine needs no changes here.
+app.use('/', express.static(path.join(__dirname, 'public', 'shelf')));
+app.get('/admin', (req, res) => res.redirect('/')); // old lobby URL
 
-// Per-game admin console. Mounted before the :gameId route below so static
-// assets (app.js, style.css) resolve first; a request for the bare gameId
-// path falls through to the explicit route, which always serves the same
-// index.html regardless of which game is being administered.
-app.use('/admin/game', express.static(path.join(__dirname, 'public', 'admin')));
-app.get('/admin/game/:gameId', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'admin', 'index.html'));
+// One generic per-engine lobby page (create an instance, list/delete
+// existing ones) shared by every engine — see public/shared/engine-lobby.js,
+// which renders its create-form from GET /api/engines/:slug's `createOptions`.
+app.get('/play/:slug', (req, res) => {
+  if (!engines.exists(req.params.slug)) return res.status(404).send('Unknown game');
+  res.sendFile(path.join(__dirname, 'public', 'shared', 'engine-lobby.html'));
 });
 
-app.use('/player', express.static(path.join(__dirname, 'public', 'player')));
-app.get('/player/:gameId', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'player', 'index.html'));
-});
+for (const engine of engines.list()) {
+  const base = `/play/${engine.slug}`;
 
-app.use('/game', express.static(path.join(__dirname, 'public', 'game')));
-app.get('/game/:gameId', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'game', 'index.html'));
-});
+  // Mounted before the :gameId route below so static assets (app.js,
+  // style.css) resolve first; a request for the bare gameId path falls
+  // through to the explicit route, which always serves the same index.html
+  // regardless of which game instance is being administered/played/watched.
+  app.use(`${base}/admin`, express.static(path.join(engine.staticDir, 'admin')));
+  app.get(`${base}/admin/:gameId`, (req, res) =>
+    res.sendFile(path.join(engine.staticDir, 'admin', 'index.html'))
+  );
 
-app.get('/', (req, res) => res.redirect('/admin'));
+  app.use(`${base}/player`, express.static(path.join(engine.staticDir, 'player')));
+  app.get(`${base}/player/:gameId`, (req, res) =>
+    res.sendFile(path.join(engine.staticDir, 'player', 'index.html'))
+  );
+
+  app.use(`${base}/game`, express.static(path.join(engine.staticDir, 'game')));
+  app.get(`${base}/game/:gameId`, (req, res) =>
+    res.sendFile(path.join(engine.staticDir, 'game', 'index.html'))
+  );
+}
 
 io.on('connection', (socket) => {
   // socket.identity, once set, is { gameId, playerId } — tracked per-socket so
@@ -82,10 +96,9 @@ io.on('connection', (socket) => {
 
 server.listen(PORT, '0.0.0.0', () => {
   console.log('');
-  console.log('Trivia Bingo is running:');
-  console.log(`  Lobby (create/manage games): ${publicOrigin(PORT)}/admin`);
+  console.log('Game Shelf is running:');
+  console.log(`  ${publicOrigin(PORT)}/`);
   console.log('');
-  console.log('Each game has its own admin console, shared game screen, and player join QR code.');
-  console.log('Create a game from the lobby to get its links and QR code.');
+  console.log('Pick a game from the shelf to create or manage an instance of it.');
   console.log('');
 });

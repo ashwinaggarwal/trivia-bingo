@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Shelf — Lobby</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/engine-lobby.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <a class="back-link" href="/">← Game Shelf</a>
+        <h1 id="engine-title" class="h-display">Loading…</h1>
+        <p id="engine-tagline" class="subtitle"></p>
+      </header>
+
+      <section id="create-panel" class="card">
+        <h2 class="h-display">Start a game</h2>
+        <form id="create-form">
+          <input id="name-input" type="text" placeholder="Game name (optional)" maxlength="60" />
+          <div id="dynamic-fields"></div>
+          <button type="submit" class="btn-primary">Create Game</button>
+        </form>
+      </section>
+
+      <section id="games-panel" class="card">
+        <h2 class="h-display">Existing games</h2>
+        <ul id="games-list"></ul>
+        <p id="empty-note" class="hidden">No games yet — create one above.</p>
+      </section>
+    </div>
+
+    <script src="/shared/engine-lobby.js"></script>
+  </body>
+</html>

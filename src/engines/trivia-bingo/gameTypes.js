@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const GAME_TYPES_DIR = path.join(__dirname, '..', 'data', 'game-type');
+const GAME_TYPES_DIR = path.join(__dirname, '..', '..', '..', 'data', 'game-type');
 const DEFAULT_GAME_TYPE = 'diwali';
 
 function bankFile(gameType) {

@@ -1,0 +1,75 @@
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+.hero {
+  padding: 56px 0 24px;
+}
+
+.hero h1 {
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.15;
+  max-width: 16ch;
+  margin-top: 14px;
+}
+
+.sub {
+  margin-top: 16px;
+  max-width: 52ch;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+.shelf-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+  margin-bottom: 22px;
+}
+
+.shelf-head h2 {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.shelf-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r);
+  box-shadow: var(--sh-card);
+  padding: 22px;
+  text-decoration: none;
+  color: var(--ink);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.shelf-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sh-lift);
+}
+
+.shelf-card-emoji {
+  font-size: 2rem;
+}
+
+.shelf-card-title {
+  font-size: 1.05rem;
+}
+
+.shelf-card-tagline {
+  color: var(--dim);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
