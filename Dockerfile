@@ -14,6 +14,6 @@ EXPOSE 3000
 USER node
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-  CMD node -e "require('http').get('http://127.0.0.1:' + (process.env.PORT || 3000) + '/api/game-types', res => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
+  CMD node -e "require('http').get('http://127.0.0.1:' + (process.env.PORT || 3000) + '/api/engines', res => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
 
 CMD ["node", "server.js"]

@@ -24,13 +24,15 @@ function gameExists(gameId) {
 // Games created before the engine registry existed have a flat
 // `gameType`/`mode` instead of `engine`/`config` — they were all trivia-bingo
 // instances (the only engine that existed at the time), so a meta file with
-// no `engine` is treated as that, with its old fields folded into `config`.
+// no `engine` is treated as that, with its old fields folded into `config`
+// (its legacy `gameType` becomes `config.pack`, trivia-bingo's current name
+// for the same concept — see src/engines/trivia-bingo/packs.js).
 function withEngineShim(meta) {
   if (meta.engine) return meta;
   return {
     ...meta,
     engine: 'trivia-bingo',
-    config: { gameType: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
+    config: { pack: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
   };
 }
 

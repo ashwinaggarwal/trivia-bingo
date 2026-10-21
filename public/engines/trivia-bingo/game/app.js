@@ -39,11 +39,11 @@ async function loadGameInfo() {
     return;
   }
   const game = await res.json();
-  gameMode = game.mode || 'bingo';
+  gameMode = game.config.mode || 'bingo';
   leaderboardsEl.classList.toggle('hidden', gameMode === 'fastest-finger');
   arcadeLeaderboardEl.classList.toggle('hidden', gameMode !== 'fastest-finger');
-  flagCredit.classList.toggle('hidden', game.gameType !== 'flags');
-  applyTheme(game.gameType);
+  flagCredit.classList.toggle('hidden', game.config.pack !== 'flags');
+  applyTheme(game.config.pack);
   joinHint.textContent = game.name;
   joinQr.src = `/api/games/${gameId}/qr.png`;
   joinUrl.textContent = `Join at ${game.joinUrl}`;

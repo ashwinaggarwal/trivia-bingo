@@ -2,32 +2,32 @@ const fs = require('fs');
 const path = require('path');
 
 const gamesModule = require('../../games');
-const gameTypesModule = require('./gameTypes');
+const packsModule = require('./packs');
 
 function questionsFile(gameId) {
   return path.join(gamesModule.gameDir(gameId), 'questions.json');
 }
 
-// A game's question bank is a snapshot copied from its game type at creation
-// time (see data/game-type/<slug>/questions.json), so admins can freely edit
-// a single game's questions without touching the shared template. Games
-// created before game types existed have no `gameType` in their meta — treat
-// those as the original Diwali bank.
-function seedFromGameTypeIfMissing(gameId) {
+// A game's question bank is a snapshot copied from its pack at creation
+// time (see data/trivia-bingo/<slug>/questions.json), so admins can freely
+// edit a single game's questions without touching the shared template.
+// Games created before packs existed have no `pack` in their config — see
+// src/games.js's withEngineShim, which folds their legacy `gameType` field
+// into `config.pack`.
+function seedFromPackIfMissing(gameId) {
   const file = questionsFile(gameId);
   if (fs.existsSync(file)) return;
   fs.mkdirSync(gamesModule.gameDir(gameId), { recursive: true });
 
   const game = gamesModule.getGame(gameId);
-  const gameType = (game && game.gameType) || gameTypesModule.DEFAULT_GAME_TYPE;
-  const bank =
-    gameTypesModule.getBank(gameType) || gameTypesModule.getBank(gameTypesModule.DEFAULT_GAME_TYPE);
+  const pack = (game && game.config && game.config.pack) || packsModule.DEFAULT_PACK;
+  const bank = packsModule.getBank(pack) || packsModule.getBank(packsModule.DEFAULT_PACK);
   const questions = bank ? bank.questions : [];
   fs.writeFileSync(file, JSON.stringify(questions, null, 2), 'utf8');
 }
 
 function getQuestions(gameId) {
-  seedFromGameTypeIfMissing(gameId);
+  seedFromPackIfMissing(gameId);
   return JSON.parse(fs.readFileSync(questionsFile(gameId), 'utf8'));
 }
 

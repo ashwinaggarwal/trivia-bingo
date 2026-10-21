@@ -1,4 +1,4 @@
-// Per-game-type theming shared by the admin, game, and player views. Each
+// Per-pack theming shared by the admin, game, and player views. Each
 // view's own style.css defines the actual color overrides, keyed off the
 // `data-theme` attribute this sets on <html> — see the `:root[data-theme="..."]`
 // blocks there. applyTheme() also swaps the hardcoded header/gameover text on
@@ -12,13 +12,13 @@ const THEMES = {
 };
 const DEFAULT_THEME = 'diwali';
 
-function themeFor(gameType) {
-  return THEMES[gameType] || THEMES[DEFAULT_THEME];
+function themeFor(pack) {
+  return THEMES[pack] || THEMES[DEFAULT_THEME];
 }
 
-function applyTheme(gameType) {
-  const theme = themeFor(gameType);
-  document.documentElement.dataset.theme = THEMES[gameType] ? gameType : DEFAULT_THEME;
+function applyTheme(pack) {
+  const theme = themeFor(pack);
+  document.documentElement.dataset.theme = THEMES[pack] ? pack : DEFAULT_THEME;
 
   const headerTitle = document.getElementById('header-title');
   if (headerTitle) {

@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const GAME_TYPES_DIR = path.join(__dirname, '..', '..', '..', 'data', 'game-type');
+const PACKS_DIR = path.join(__dirname, '..', '..', '..', 'data', 'trivia-bingo');
 
 // Bank-static files (distractor-pool.json / answer-types.json) never change
-// while the server is running, so they're read once per gameType and cached.
+// while the server is running, so they're read once per pack and cached.
 const poolCache = new Map();
 const answerTypesCache = new Map();
 
@@ -13,24 +13,21 @@ function readJsonIfExists(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-function loadPool(gameType) {
-  if (!poolCache.has(gameType)) {
-    poolCache.set(
-      gameType,
-      readJsonIfExists(path.join(GAME_TYPES_DIR, gameType, 'distractor-pool.json')) || {}
-    );
+function loadPool(pack) {
+  if (!poolCache.has(pack)) {
+    poolCache.set(pack, readJsonIfExists(path.join(PACKS_DIR, pack, 'distractor-pool.json')) || {});
   }
-  return poolCache.get(gameType);
+  return poolCache.get(pack);
 }
 
-function loadAnswerTypes(gameType) {
-  if (!answerTypesCache.has(gameType)) {
+function loadAnswerTypes(pack) {
+  if (!answerTypesCache.has(pack)) {
     answerTypesCache.set(
-      gameType,
-      readJsonIfExists(path.join(GAME_TYPES_DIR, gameType, 'answer-types.json')) || {}
+      pack,
+      readJsonIfExists(path.join(PACKS_DIR, pack, 'answer-types.json')) || {}
     );
   }
-  return answerTypesCache.get(gameType);
+  return answerTypesCache.get(pack);
 }
 
 function normalize(str) {
@@ -69,31 +66,31 @@ function shuffle(array) {
 // category mixes movie titles, person names, and full phrases.
 // Returns null for a question that can't support multiple choice (no bucket,
 // or explicitly classified as a free-form "phrase" answer).
-function bucketFor(gameType, question, answerTypes) {
-  if (gameType === 'diwali' || gameType === 'flags') return question.category || null;
+function bucketFor(pack, question, answerTypes) {
+  if (pack === 'diwali' || pack === 'flags') return question.category || null;
   const type = answerTypes[question.id];
   if (!type || type === 'phrase') return null;
   return type;
 }
 
-function isEligibleForFastestFinger(gameType, question) {
-  return bucketFor(gameType, question, loadAnswerTypes(gameType)) !== null;
+function isEligibleForFastestFinger(pack, question) {
+  return bucketFor(pack, question, loadAnswerTypes(pack)) !== null;
 }
 
 // Builds 4 shuffled options (the correct answer + 3 distractors) for one
 // question. Distractors come from a theme-specific, web-researched pool
-// (data/game-type/<type>/distractor-pool.json) rather than other questions'
-// answers in this bank — a pool sourced only from the bank thins out fast and
-// becomes guessable by elimination after a few questions. Every candidate is
-// still filtered against every answer actually in play in this game, so a
-// "wrong" option can never turn out to be a different question's real
-// answer.
-function buildOptionsForQuestion(gameType, question, allQuestionsInGame) {
-  const answerTypes = loadAnswerTypes(gameType);
-  const bucket = bucketFor(gameType, question, answerTypes);
+// (data/trivia-bingo/<pack>/distractor-pool.json) rather than other
+// questions' answers in this bank — a pool sourced only from the bank thins
+// out fast and becomes guessable by elimination after a few questions.
+// Every candidate is still filtered against every answer actually in play
+// in this game, so a "wrong" option can never turn out to be a different
+// question's real answer.
+function buildOptionsForQuestion(pack, question, allQuestionsInGame) {
+  const answerTypes = loadAnswerTypes(pack);
+  const bucket = bucketFor(pack, question, answerTypes);
   if (!bucket) throw new Error(`question ${question.id} has no distractor bucket`);
 
-  const pool = loadPool(gameType);
+  const pool = loadPool(pack);
   const bankAnswers = new Set(allQuestionsInGame.map((q) => normalize(q.answer)));
   const correctNormalized = normalize(question.answer);
 
@@ -115,7 +112,7 @@ function buildOptionsForQuestion(gameType, question, allQuestionsInGame) {
   if (candidates.length < 3) {
     // Last-resort fallback: other in-bank answers of the same bucket.
     const sameBucketBankAnswers = allQuestionsInGame
-      .filter((q) => q.id !== question.id && bucketFor(gameType, q, answerTypes) === bucket)
+      .filter((q) => q.id !== question.id && bucketFor(pack, q, answerTypes) === bucket)
       .map((q) => q.answer);
     candidates = dedupe([...candidates, ...filterCandidates(sameBucketBankAnswers)]);
   }

@@ -1,37 +1,37 @@
 const fs = require('fs');
 const path = require('path');
 
-const GAME_TYPES_DIR = path.join(__dirname, '..', '..', '..', 'data', 'game-type');
-const DEFAULT_GAME_TYPE = 'diwali';
+const PACKS_DIR = path.join(__dirname, '..', '..', '..', 'data', 'trivia-bingo');
+const DEFAULT_PACK = 'diwali';
 
-function bankFile(gameType) {
-  return path.join(GAME_TYPES_DIR, gameType, 'questions.json');
+function bankFile(pack) {
+  return path.join(PACKS_DIR, pack, 'questions.json');
 }
 
-function gameTypeExists(gameType) {
-  return typeof gameType === 'string' && gameType && fs.existsSync(bankFile(gameType));
+function packExists(pack) {
+  return typeof pack === 'string' && pack && fs.existsSync(bankFile(pack));
 }
 
-// Full bank for a game type: { gameType, name, description, questions }.
-function getBank(gameType) {
-  if (!gameTypeExists(gameType)) return null;
-  return JSON.parse(fs.readFileSync(bankFile(gameType), 'utf8'));
+// Full bank for a pack: { pack, name, description, questions }.
+function getBank(pack) {
+  if (!packExists(pack)) return null;
+  return JSON.parse(fs.readFileSync(bankFile(pack), 'utf8'));
 }
 
-// All available game types, for presenting a choice when creating a game.
-function listGameTypes() {
-  if (!fs.existsSync(GAME_TYPES_DIR)) return [];
+// All available packs, for presenting a choice when creating a game.
+function listPacks() {
+  if (!fs.existsSync(PACKS_DIR)) return [];
   return fs
-    .readdirSync(GAME_TYPES_DIR)
-    .filter((slug) => gameTypeExists(slug))
+    .readdirSync(PACKS_DIR)
+    .filter((slug) => packExists(slug))
     .map((slug) => {
       const bank = getBank(slug);
       return {
-        gameType: bank.gameType || slug,
+        pack: bank.pack || slug,
         name: bank.name || slug,
         description: bank.description || '',
       };
     });
 }
 
-module.exports = { listGameTypes, getBank, gameTypeExists, DEFAULT_GAME_TYPE };
+module.exports = { listPacks, getBank, packExists, DEFAULT_PACK };

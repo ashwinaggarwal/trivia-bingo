@@ -1,12 +1,12 @@
 const path = require('path');
 
-const gameTypesModule = require('./gameTypes');
+const packsModule = require('./packs');
 const modesModule = require('./modes');
 const engineRoutes = require('./routes');
 
 // Keep in sync with public/shared/theme.js's THEMES — this is just for the
 // create-game form's dropdown labels, the actual in-game theming lives there.
-const GAME_TYPE_EMOJI = { diwali: '🪔', bollywood: '🎬', geography: '🌍', flags: '🎌' };
+const PACK_EMOJI = { diwali: '🪔', bollywood: '🎬', geography: '🌍', flags: '🎌' };
 
 // Generic shape the shared lobby renderer (public/shared/engine-lobby.js)
 // turns into a dropdown per field.
@@ -14,11 +14,11 @@ function listCreateOptions() {
   return {
     fields: [
       {
-        key: 'gameType',
-        label: 'Game type',
-        options: gameTypesModule.listGameTypes().map((gt) => ({
-          value: gt.gameType,
-          label: `${GAME_TYPE_EMOJI[gt.gameType] || '🎯'} ${gt.name}`,
+        key: 'pack',
+        label: 'Pack',
+        options: packsModule.listPacks().map((p) => ({
+          value: p.pack,
+          label: `${PACK_EMOJI[p.pack] || '🎯'} ${p.name}`,
         })),
       },
       {
@@ -37,12 +37,10 @@ function listCreateOptions() {
 // falling back to defaults for anything missing or invalid rather than
 // rejecting the request outright.
 function createConfig(body) {
-  const gameType = (body.gameType || '').trim();
+  const pack = (body.pack || '').trim();
   const mode = (body.mode || '').trim();
   return {
-    gameType: gameTypesModule.gameTypeExists(gameType)
-      ? gameType
-      : gameTypesModule.DEFAULT_GAME_TYPE,
+    pack: packsModule.packExists(pack) ? pack : packsModule.DEFAULT_PACK,
     mode: modesModule.modeExists(mode) ? mode : modesModule.DEFAULT_MODE,
   };
 }

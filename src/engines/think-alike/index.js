@@ -7,7 +7,7 @@ module.exports = {
   title: 'Think Alike',
   emoji: '🧠',
   tagline: 'Name something for each prompt — match the group to score.',
-  // Nothing to configure before creating a game (no gameType/mode choice),
+  // Nothing to configure before creating a game (no pack/mode choice),
   // so the shared lobby renders no dropdowns for this engine.
   listCreateOptions: () => ({ fields: [] }),
   createConfig: () => ({}),

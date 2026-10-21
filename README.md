@@ -28,9 +28,10 @@ This builds the image from the `Dockerfile` and starts the container with:
 - Port `3000` published to the host (override with `PORT=3100 docker compose up` if `3000` is taken)
 - `./data/games` bind-mounted into the container, so game state created at
   runtime survives container restarts/rebuilds
-- `data/game-type` (the static question banks) baked into the image at build
-  time — only `data/games` (per-game runtime state) is excluded from the
-  image via `.dockerignore` and persisted through the volume instead
+- `data/trivia-bingo`, `data/emoji-quiz`, etc. (each engine's static content
+  packs) baked into the image at build time — only `data/games` (per-game
+  runtime state) is excluded from the image via `.dockerignore` and
+  persisted through the volume instead
 
 To run without compose:
 

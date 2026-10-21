@@ -32,7 +32,7 @@ startClock(io);
 // answer has a matching image.
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
-// JS shared across every engine's views (currently: per-game-type theming).
+// JS shared across every engine's views (currently: per-pack theming).
 app.use('/shared', express.static(path.join(__dirname, 'public', 'shared')));
 
 // The shelf: pick a game, create or join an instance of it. Every engine's

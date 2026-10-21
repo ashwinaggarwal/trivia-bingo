@@ -57,9 +57,9 @@ async function loadGameInfo() {
     return;
   }
   const game = await res.json();
-  gameMode = game.mode || 'bingo';
-  flagCredit.classList.toggle('hidden', game.gameType !== 'flags');
-  applyTheme(game.gameType);
+  gameMode = game.config.mode || 'bingo';
+  flagCredit.classList.toggle('hidden', game.config.pack !== 'flags');
+  applyTheme(game.config.pack);
   gameIdBanner.textContent = `Joining: ${game.name} (Game ID: ${game.id})`;
 }
 

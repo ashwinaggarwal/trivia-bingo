@@ -33,8 +33,8 @@ async function loadGameInfo() {
     return;
   }
   const game = await res.json();
-  gameMode = game.mode || 'bingo';
-  applyTheme(game.gameType);
+  gameMode = game.config.mode || 'bingo';
+  applyTheme(game.config.pack);
   const modeLabel = gameMode === 'fastest-finger' ? '⚡ Fastest Finger' : '🎯 Bingo';
   gameTitle.textContent = `${game.name} (${game.id}) · ${modeLabel}`;
   joinQr.src = `/api/games/${gameId}/qr.png`;

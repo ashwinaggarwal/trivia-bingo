@@ -42,7 +42,7 @@
   --r-lg: 24px;
 }
 
-/* ---------- per-game-type accents ----------
+/* ---------- per-pack accents ----------
    Set via the `data-theme` attribute theme.js puts on <html>; layers on top
    of everything above by overriding just the accent trio. */
 

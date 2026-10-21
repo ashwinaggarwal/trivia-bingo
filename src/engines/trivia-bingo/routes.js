@@ -69,7 +69,7 @@ function publicState(gameId) {
       // until the hint stage. Flags invert that — the flag image IS the
       // question, not an aid to it — so it has to be visible from the moment
       // the question appears.
-      const showImageImmediately = game && game.config && game.config.gameType === 'flags';
+      const showImageImmediately = game && game.config && game.config.pack === 'flags';
       currentQuestion = {
         id: current.id,
         question: current.question,
@@ -411,7 +411,7 @@ function gameRouter(io) {
 
     if (mode === 'fastest-finger') {
       const eligible = questions.filter((q) =>
-        distractorsModule.isEligibleForFastestFinger(gameMeta.config.gameType, q)
+        distractorsModule.isEligibleForFastestFinger(gameMeta.config.pack, q)
       );
       if (eligible.length < 4) {
         return res.status(400).json({
@@ -438,7 +438,7 @@ function gameRouter(io) {
         optionsByQuestionId = Object.fromEntries(
           roundQuestions.map((q) => [
             q.id,
-            distractorsModule.buildOptionsForQuestion(gameMeta.config.gameType, q, roundQuestions),
+            distractorsModule.buildOptionsForQuestion(gameMeta.config.pack, q, roundQuestions),
           ])
         );
       } catch (err) {
