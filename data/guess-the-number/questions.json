@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "category": "Bollywood Movies",
+    "question": "In which year was the Bollywood movie 'Dilwale Dulhania Le Jayenge' (DDLJ) released?",
+    "answer": 1995,
+    "isYear": true
+  },
+  {
+    "id": 2,
+    "category": "Hollywood Movies",
+    "question": "In which year was the sci-fi epic movie 'Interstellar' released?",
+    "answer": 2014,
+    "isYear": true
+  },
+  {
+    "id": 3,
+    "category": "Oscars",
+    "question": "How many Academy Awards (Oscars) did the movie 'Titanic' (1997) win?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 4,
+    "category": "Cricket",
+    "question": "How many international centuries has Sachin Tendulkar scored across all formats?",
+    "answer": 100,
+    "isYear": false
+  },
+  {
+    "id": 5,
+    "category": "Formula 1",
+    "question": "How many podium finishes did Max Verstappen achieve in the 2023 F1 season?",
+    "answer": 21,
+    "isYear": false
+  },
+  {
+    "id": 6,
+    "category": "FIFA World Cup",
+    "question": "How many total FIFA World Cup goals did Miroslav Klose score in his career?",
+    "answer": 16,
+    "isYear": false
+  },
+  {
+    "id": 7,
+    "category": "Tennis Grand Slams",
+    "question": "How many Men's Singles Grand Slam titles has Novak Djokovic won in his career?",
+    "answer": 24,
+    "isYear": false
+  },
+  {
+    "id": 8,
+    "category": "IPL Cricket",
+    "question": "How many IPL titles have the Mumbai Indians won as of 2024?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 9,
+    "category": "Pop Culture & Music",
+    "question": "How many career Grammy Awards has Beyoncé won?",
+    "answer": 32,
+    "isYear": false
+  },
+  {
+    "id": 10,
+    "category": "Olympic Games",
+    "question": "How many total career Olympic Gold medals has swimmer Michael Phelps won?",
+    "answer": 23,
+    "isYear": false
+  },
+  {
+    "id": 11,
+    "category": "Bollywood Movies",
+    "question": "In which year was the iconic Bollywood film 'Sholay' released?",
+    "answer": 1975,
+    "isYear": true
+  },
+  {
+    "id": 12,
+    "category": "Hollywood Movies",
+    "question": "In which year was the classic movie 'The Godfather' released?",
+    "answer": 1972,
+    "isYear": true
+  },
+  {
+    "id": 13,
+    "category": "Oscars",
+    "question": "How many Academy Awards (Oscars) were won by 'The Lord of the Rings: The Return of the King'?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 14,
+    "category": "Cricket",
+    "question": "How many runs did Rohit Sharma score in his record-breaking ODI innings against Sri Lanka in 2014?",
+    "answer": 264,
+    "isYear": false
+  },
+  {
+    "id": 15,
+    "category": "Formula 1",
+    "question": "How many Grand Prix victories did Lewis Hamilton achieve during the 2020 F1 season?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 16,
+    "category": "FIFA World Cup",
+    "question": "How many goals did Kylian Mbappé score in the 2022 FIFA World Cup in Qatar?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 17,
+    "category": "Tennis Grand Slams",
+    "question": "How many French Open (Roland Garros) Singles titles has Rafael Nadal won?",
+    "answer": 14,
+    "isYear": false
+  },
+  {
+    "id": 18,
+    "category": "IPL Cricket",
+    "question": "How many IPL titles have the Chennai Super Kings won as of 2024?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 19,
+    "category": "Pop Culture & Music",
+    "question": "How many Grammy Awards did Michael Jackson win in a single night at the 1984 ceremony?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 20,
+    "category": "Olympic Games",
+    "question": "How many total Olympic Gold medals did sprinter Usain Bolt win in his career?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 21,
+    "category": "Bollywood Movies",
+    "question": "In which year was the sports drama 'Lagaan' released?",
+    "answer": 2001,
+    "isYear": true
+  },
+  {
+    "id": 22,
+    "category": "Hollywood Movies",
+    "question": "In which year was Christopher Nolan's 'Inception' released?",
+    "answer": 2010,
+    "isYear": true
+  },
+  {
+    "id": 23,
+    "category": "Oscars",
+    "question": "How many Oscars did the movie 'La La Land' win at the 89th Academy Awards?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 24,
+    "category": "Cricket",
+    "question": "How many wickets did Anil Kumble take in a single Test innings against Pakistan in 1999?",
+    "answer": 10,
+    "isYear": false
+  },
+  {
+    "id": 25,
+    "category": "Formula 1",
+    "question": "How many podium finishes did Sergio Pérez record during his 2022 F1 season with Red Bull?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 26,
+    "category": "FIFA World Cup",
+    "question": "How many total FIFA World Cup goals did Brazilian legend Pelé score across his career?",
+    "answer": 12,
+    "isYear": false
+  },
+  {
+    "id": 27,
+    "category": "Tennis Grand Slams",
+    "question": "How many Women's Singles Grand Slam titles did Serena Williams win in the Open Era?",
+    "answer": 23,
+    "isYear": false
+  },
+  {
+    "id": 28,
+    "category": "IPL Cricket",
+    "question": "How many total runs did Virat Kohli score to win the Orange Cap in the 2016 IPL season?",
+    "answer": 973,
+    "isYear": false
+  },
+  {
+    "id": 29,
+    "category": "Pop Culture & Music",
+    "question": "How many tracks are on Michael Jackson's iconic album 'Thriller' (original release)?",
+    "answer": 9,
+    "isYear": false
+  },
+  {
+    "id": 30,
+    "category": "Olympic Games",
+    "question": "How many Gold medals did swimmer Michael Phelps win in a single Olympic Games (Beijing 2008)?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 31,
+    "category": "Bollywood Movies",
+    "question": "In which year was the blockbuster film '3 Idiots' released?",
+    "answer": 2009,
+    "isYear": true
+  },
+  {
+    "id": 32,
+    "category": "Hollywood Movies",
+    "question": "In which year was Steven Spielberg's original 'Jurassic Park' released?",
+    "answer": 1993,
+    "isYear": true
+  },
+  {
+    "id": 33,
+    "category": "Oscars",
+    "question": "How many Academy Awards did 'Oppenheimer' win at the 96th Academy Awards?",
+    "answer": 7,
+    "isYear": false
+  },
+  {
+    "id": 34,
+    "category": "Cricket",
+    "question": "How many total runs did India score in the famous 2011 ODI World Cup Final against Sri Lanka?",
+    "answer": 277,
+    "isYear": false
+  },
+  {
+    "id": 35,
+    "category": "Formula 1",
+    "question": "How many total Sprint Races did Max Verstappen win during the 2023 F1 season?",
+    "answer": 4,
+    "isYear": false
+  },
+  {
+    "id": 36,
+    "category": "FIFA World Cup",
+    "question": "How many goals did Ronaldo Nazário score in the 2002 FIFA World Cup tournament?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 37,
+    "category": "Tennis Grand Slams",
+    "question": "How many Men's Singles Wimbledon titles did Roger Federer win during his career?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 38,
+    "category": "IPL Cricket",
+    "question": "How many IPL titles have the Kolkata Knight Riders won as of 2024?",
+    "answer": 3,
+    "isYear": false
+  },
+  {
+    "id": 39,
+    "category": "Pop Culture & Music",
+    "question": "How many career Grammy Awards has Taylor Swift won as of early 2024?",
+    "answer": 14,
+    "isYear": false
+  },
+  {
+    "id": 40,
+    "category": "Olympic Games",
+    "question": "How many career Olympic medals (Gold, Silver, Bronze combined) did gymnast Larisa Latynina win?",
+    "answer": 18,
+    "isYear": false
+  },
+  {
+    "id": 41,
+    "category": "Bollywood Movies",
+    "question": "In which year was the movie 'Dil Chahta Hai' released?",
+    "answer": 2001,
+    "isYear": true
+  },
+  {
+    "id": 42,
+    "category": "Hollywood Movies",
+    "question": "In which year was the original 'The Matrix' movie released in theaters?",
+    "answer": 1999,
+    "isYear": true
+  },
+  {
+    "id": 43,
+    "category": "Oscars",
+    "question": "How many Academy Awards were won by 'Slumdog Millionaire' in 2009?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 44,
+    "category": "Cricket",
+    "question": "How many ODI World Cup titles has Australia won in men's cricket history?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 45,
+    "category": "Formula 1",
+    "question": "How many Grand Prix wins did Charles Leclerc achieve in the 2022 F1 season?",
+    "answer": 3,
+    "isYear": false
+  },
+  {
+    "id": 46,
+    "category": "FIFA World Cup",
+    "question": "How many total goals did James Rodríguez score to win the Golden Boot in the 2014 World Cup?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 47,
+    "category": "Tennis Grand Slams",
+    "question": "How many Grand Slam Singles titles did Steffi Graf win during her career?",
+    "answer": 22,
+    "isYear": false
+  },
+  {
+    "id": 48,
+    "category": "IPL Cricket",
+    "question": "How many teams participated in the IPL season in 2022 following the expansion?",
+    "answer": 10,
+    "isYear": false
+  },
+  {
+    "id": 49,
+    "category": "Pop Culture & Music",
+    "question": "How many Album of the Year Grammys has Taylor Swift won as of 2024?",
+    "answer": 4,
+    "isYear": false
+  },
+  {
+    "id": 50,
+    "category": "Olympic Games",
+    "question": "How many Gold medals did American sprinter Carl Lewis win across his Olympic career?",
+    "answer": 9,
+    "isYear": false
+  },
+  {
+    "id": 51,
+    "category": "Bollywood Movies",
+    "question": "In which year was Shah Rukh Khan's 'Devdas' (directed by Sanjay Leela Bhansali) released?",
+    "answer": 2002,
+    "isYear": true
+  },
+  {
+    "id": 52,
+    "category": "Hollywood Movies",
+    "question": "In which year was Quentin Tarantino's 'Pulp Fiction' released?",
+    "answer": 1994,
+    "isYear": true
+  },
+  {
+    "id": 53,
+    "category": "Oscars",
+    "question": "How many Academy Awards were won by the 1959 epic film 'Ben-Hur'?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 54,
+    "category": "Cricket",
+    "question": "How many sixes did Yuvraj Singh hit in an over against Stuart Broad in the 2007 T20 World Cup?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 55,
+    "category": "Formula 1",
+    "question": "How many total podium finishes did Carlos Sainz Jr. record during the 2021 F1 season?",
+    "answer": 4,
+    "isYear": false
+  },
+  {
+    "id": 56,
+    "category": "FIFA World Cup",
+    "question": "How many total FIFA World Cup goals did Thomas Müller score for Germany across all tournaments?",
+    "answer": 10,
+    "isYear": false
+  },
+  {
+    "id": 57,
+    "category": "Tennis Grand Slams",
+    "question": "How many Men's Singles Grand Slam titles did Pete Sampras win in his career?",
+    "answer": 14,
+    "isYear": false
+  },
+  {
+    "id": 58,
+    "category": "IPL Cricket",
+    "question": "How many total runs did Jos Buttler score to claim the Orange Cap in the 2022 IPL season?",
+    "answer": 863,
+    "isYear": false
+  },
+  {
+    "id": 59,
+    "category": "Pop Culture & Music",
+    "question": "How many studio albums were released by The Beatles during their active group career in the UK?",
+    "answer": 13,
+    "isYear": false
+  },
+  {
+    "id": 60,
+    "category": "Olympic Games",
+    "question": "How many total Gold medals did swimmer Mark Spitz win at the 1972 Munich Olympics?",
+    "answer": 7,
+    "isYear": false
+  },
+  {
+    "id": 61,
+    "category": "Bollywood Movies",
+    "question": "In which year was the blockbuster period drama 'Gaddar: Ek Prem Katha' released?",
+    "answer": 2001,
+    "isYear": true
+  },
+  {
+    "id": 62,
+    "category": "Hollywood Movies",
+    "question": "In which year was James Cameron's original 'Avatar' movie released in theaters?",
+    "answer": 2009,
+    "isYear": true
+  },
+  {
+    "id": 63,
+    "category": "Oscars",
+    "question": "How many Academy Awards were won by the 2000 film 'Gladiator'?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 64,
+    "category": "Cricket",
+    "question": "How many runs did Brian Lara score in his record-breaking unbeaten Test match innings in 2004?",
+    "answer": 400,
+    "isYear": false
+  },
+  {
+    "id": 65,
+    "category": "Formula 1",
+    "question": "How many pole positions did Lewis Hamilton secure in the 2020 F1 season?",
+    "answer": 10,
+    "isYear": false
+  },
+  {
+    "id": 66,
+    "category": "FIFA World Cup",
+    "question": "How many goals did Just Fontaine score in the 1958 World Cup, setting the record for a single tournament?",
+    "answer": 13,
+    "isYear": false
+  },
+  {
+    "id": 67,
+    "category": "Tennis Grand Slams",
+    "question": "How many Grand Slam Singles titles did Björn Borg win in his career?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 68,
+    "category": "IPL Cricket",
+    "question": "In which year was the inaugural season of the Indian Premier League (IPL) held?",
+    "answer": 2008,
+    "isYear": true
+  },
+  {
+    "id": 69,
+    "category": "Pop Culture & Music",
+    "question": "How many Grammy Awards has rapper Jay-Z won in his career?",
+    "answer": 24,
+    "isYear": false
+  },
+  {
+    "id": 70,
+    "category": "Olympic Games",
+    "question": "How many total Olympic medals did US gymnast Simone Biles have following the 2024 Paris Games?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 71,
+    "category": "Bollywood Movies",
+    "question": "In which year was the hit film 'Jab We Met' released?",
+    "answer": 2007,
+    "isYear": true
+  },
+  {
+    "id": 72,
+    "category": "Hollywood Movies",
+    "question": "In which year was the superhero movie 'The Dark Knight' released?",
+    "answer": 2008,
+    "isYear": true
+  },
+  {
+    "id": 73,
+    "category": "Oscars",
+    "question": "How many Academy Awards did 'Mad Max: Fury Road' win at the 88th Academy Awards?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 74,
+    "category": "Cricket",
+    "question": "How many wickets did Muttiah Muralitharan take in his Test career?",
+    "answer": 800,
+    "isYear": false
+  },
+  {
+    "id": 75,
+    "category": "Formula 1",
+    "question": "How many podium finishes did George Russell achieve during his first season with Mercedes in 2022?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 76,
+    "category": "FIFA World Cup",
+    "question": "How many total goals did Cristiano Ronaldo score across five FIFA World Cup tournaments?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 77,
+    "category": "Tennis Grand Slams",
+    "question": "How many Women's Singles Grand Slam titles did Martina Navratilova win?",
+    "answer": 18,
+    "isYear": false
+  },
+  {
+    "id": 78,
+    "category": "IPL Cricket",
+    "question": "How many total runs did Shubman Gill score to win the Orange Cap in the 2023 IPL season?",
+    "answer": 890,
+    "isYear": false
+  },
+  {
+    "id": 79,
+    "category": "Pop Culture & Music",
+    "question": "How many tracks are included on Adele's hit album '21' (standard edition)?",
+    "answer": 11,
+    "isYear": false
+  },
+  {
+    "id": 80,
+    "category": "Olympic Games",
+    "question": "How many Gold medals did swimmer Caeleb Dressel win at the 2020 Tokyo Olympics?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 81,
+    "category": "Bollywood Movies",
+    "question": "In which year was the sports biopic 'Dangal' released?",
+    "answer": 2016,
+    "isYear": true
+  },
+  {
+    "id": 82,
+    "category": "Hollywood Movies",
+    "question": "In which year was 'Fight Club' released in theaters?",
+    "answer": 1999,
+    "isYear": true
+  },
+  {
+    "id": 83,
+    "category": "Oscars",
+    "question": "How many Academy Awards was 'Everything Everywhere All at Once' awarded in 2023?",
+    "answer": 7,
+    "isYear": false
+  },
+  {
+    "id": 84,
+    "category": "Cricket",
+    "question": "How many runs did MS Dhoni score in the 2011 World Cup Final against Sri Lanka?",
+    "answer": 91,
+    "isYear": false
+  },
+  {
+    "id": 85,
+    "category": "Formula 1",
+    "question": "How many Grand Prix victories did Max Verstappen score in his dominant 2023 F1 season?",
+    "answer": 19,
+    "isYear": false
+  },
+  {
+    "id": 86,
+    "category": "FIFA World Cup",
+    "question": "How many total World Cup goals were scored by Harry Kane in the 2018 tournament to win the Golden Boot?",
+    "answer": 6,
+    "isYear": false
+  },
+  {
+    "id": 87,
+    "category": "Tennis Grand Slams",
+    "question": "How many Women's Singles Grand Slam titles did Chris Evert win in her career?",
+    "answer": 18,
+    "isYear": false
+  },
+  {
+    "id": 88,
+    "category": "IPL Cricket",
+    "question": "How many IPL titles did Gujarat Titans win in their debut season in 2022?",
+    "answer": 1,
+    "isYear": false
+  },
+  {
+    "id": 89,
+    "category": "Pop Culture & Music",
+    "question": "How many Grammy Awards did Billie Eilish win at the 62nd Annual Grammy Awards in 2020?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 90,
+    "category": "Olympic Games",
+    "question": "How many career Olympic Gold medals did distance runner Mo Farah win for Great Britain?",
+    "answer": 4,
+    "isYear": false
+  },
+  {
+    "id": 91,
+    "category": "Bollywood Movies",
+    "question": "In which year was the hit film 'Zindagi Na Milegi Dobara' released?",
+    "answer": 2011,
+    "isYear": true
+  },
+  {
+    "id": 92,
+    "category": "Hollywood Movies",
+    "question": "In which year was 'Forrest Gump' released in theaters?",
+    "answer": 1994,
+    "isYear": true
+  },
+  {
+    "id": 93,
+    "category": "Oscars",
+    "question": "How many Academy Awards were won by 'The Silence of the Lambs' in 1992?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 94,
+    "category": "Cricket",
+    "question": "How many total wickets did Shane Warne take in his Test cricket career?",
+    "answer": 708,
+    "isYear": false
+  },
+  {
+    "id": 95,
+    "category": "Formula 1",
+    "question": "How many race wins did Lando Norris achieve during the 2024 F1 season?",
+    "answer": 3,
+    "isYear": false
+  },
+  {
+    "id": 96,
+    "category": "FIFA World Cup",
+    "question": "How many goals did Diego Maradona score in the 1986 FIFA World Cup in Mexico?",
+    "answer": 5,
+    "isYear": false
+  },
+  {
+    "id": 97,
+    "category": "Tennis Grand Slams",
+    "question": "How many Grand Slam Singles titles did Andre Agassi win during his career?",
+    "answer": 8,
+    "isYear": false
+  },
+  {
+    "id": 98,
+    "category": "IPL Cricket",
+    "question": "How many overall IPL titles have the Rajasthan Royals won as of 2024?",
+    "answer": 1,
+    "isYear": false
+  },
+  {
+    "id": 99,
+    "category": "Pop Culture & Music",
+    "question": "How many career Grammy Awards has Stevie Wonder won?",
+    "answer": 25,
+    "isYear": false
+  },
+  {
+    "id": 100,
+    "category": "Olympic Games",
+    "question": "How many Gold medals did speed skater Eric Heiden win at a single Winter Olympics (1980)?",
+    "answer": 5,
+    "isYear": false
+  }
+]

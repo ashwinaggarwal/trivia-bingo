@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number — Game Screen</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🔢 Guess the Number</h1>
+        <div id="join-hint"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Scan to join</h2>
+        <img id="join-qr" alt="Join QR code" />
+        <div id="join-url"></div>
+      </section>
+
+      <section id="roster-panel" class="card">
+        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+        <ul id="roster-list"></ul>
+      </section>
+
+      <section id="question-panel" class="card">
+        <div id="question-status">Waiting to start…</div>
+        <div id="question-text"></div>
+        <div id="answered-progress" class="hidden"></div>
+
+        <div id="guesses-panel" class="hidden">
+          <h3>Guesses</h3>
+          <ul id="guesses-list"></ul>
+        </div>
+        <div id="answer-reveal" class="hidden">Real answer: <span id="answer-value"></span></div>
+        <div id="round-winner" class="hidden"></div>
+      </section>
+
+      <section id="game-winner-panel" class="card hidden">
+        <h2>🏆 Game Winner</h2>
+        <div id="game-winner-text"></div>
+      </section>
+
+      <section id="leaderboard-panel" class="card">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard-rows"></ol>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
