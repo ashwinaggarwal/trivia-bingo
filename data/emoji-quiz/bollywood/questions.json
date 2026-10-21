@@ -1,0 +1,752 @@
+[
+  {
+    "id": "bollywood-0",
+    "emojis": "👗 👠 👰‍♀️",
+    "answer": "Dilwale Dulhania Le Jayenge",
+    "wrongOptions": [
+      "Kabhi Khushi Kabhie Gham",
+      "Kuch Kuch Hota Hai",
+      "Rab Ne Bana Di Jodi"
+    ]
+  },
+  {
+    "id": "bollywood-1",
+    "emojis": "3️⃣ 🆔 🎓",
+    "answer": "3 Idiots",
+    "wrongOptions": [
+      "Chhichhore",
+      "Taare Zameen Par",
+      "Munna Bhai M.B.B.S."
+    ]
+  },
+  {
+    "id": "bollywood-2",
+    "emojis": "🤼‍♂️ 👧 🥇",
+    "answer": "Dangal",
+    "wrongOptions": [
+      "Sultan",
+      "Mary Kom",
+      "Bhaag Milkha Bhaag"
+    ]
+  },
+  {
+    "id": "bollywood-3",
+    "emojis": "🚂 🍎 💃",
+    "answer": "Chennai Express",
+    "wrongOptions": [
+      "Dil Se",
+      "Swades",
+      "Ra.One"
+    ]
+  },
+  {
+    "id": "bollywood-4",
+    "emojis": "🏏 💰 🌧️",
+    "answer": "Lagaan",
+    "wrongOptions": [
+      "MS Dhoni: The Untold Story",
+      "83",
+      "Iqbal"
+    ]
+  },
+  {
+    "id": "bollywood-5",
+    "emojis": "👽 📻 🛵",
+    "answer": "PK",
+    "wrongOptions": [
+      "Koi... Mil Gaya",
+      "Krrish",
+      "Om Shanti Om"
+    ]
+  },
+  {
+    "id": "bollywood-6",
+    "emojis": "🦁 🐅 🏹",
+    "answer": "RRR",
+    "wrongOptions": [
+      "Baahubali",
+      "Pushpa",
+      "KGF"
+    ]
+  },
+  {
+    "id": "bollywood-7",
+    "emojis": "👑 ⚔️ 🏰",
+    "answer": "Baahubali: The Beginning",
+    "wrongOptions": [
+      "Padmaavat",
+      "Bajirao Mastani",
+      "Jodhaa Akbar"
+    ]
+  },
+  {
+    "id": "bollywood-8",
+    "emojis": "🕶️ 🎹 🔪",
+    "answer": "Andhadhun",
+    "wrongOptions": [
+      "Drishyam",
+      "Badla",
+      "Talaash"
+    ]
+  },
+  {
+    "id": "bollywood-9",
+    "emojis": "🪓 🩸 👨‍👦",
+    "answer": "Animal",
+    "wrongOptions": [
+      "Kabir Singh",
+      "Gangs of Wasseypur",
+      "Agneepath"
+    ]
+  },
+  {
+    "id": "bollywood-10",
+    "emojis": "🧹 🧼 👨‍⚕️",
+    "answer": "Munna Bhai M.B.B.S.",
+    "wrongOptions": [
+      "Lage Raho Munna Bhai",
+      "PK",
+      "Sanju"
+    ]
+  },
+  {
+    "id": "bollywood-11",
+    "emojis": "🧳 ✈️ 🏔️",
+    "answer": "Yeh Jawaani Hai Deewani",
+    "wrongOptions": [
+      "Zindagi Na Milegi Dobara",
+      "Dil Chahta Hai",
+      "Tamasha"
+    ]
+  },
+  {
+    "id": "bollywood-12",
+    "emojis": "🚗 🇪🇸 🪂",
+    "answer": "Zindagi Na Milegi Dobara",
+    "wrongOptions": [
+      "Dil Chahta Hai",
+      "Queen",
+      "Highway"
+    ]
+  },
+  {
+    "id": "bollywood-13",
+    "emojis": "👰🏻‍♀️ 🧳 🗼",
+    "answer": "Queen",
+    "wrongOptions": [
+      "English Vinglish",
+      "Tanu Weds Manu",
+      "Jab We Met"
+    ]
+  },
+  {
+    "id": "bollywood-14",
+    "emojis": "🚂 🗣️ 🎒",
+    "answer": "Jab We Met",
+    "wrongOptions": [
+      "Love Aaj Kal",
+      "Rockstar",
+      "Highway"
+    ]
+  },
+  {
+    "id": "bollywood-15",
+    "emojis": "👨‍👨‍👦 💔 🏢",
+    "answer": "Dil Chahta Hai",
+    "wrongOptions": [
+      "Rock On!!",
+      "Kai Po Che!",
+      "Dostana"
+    ]
+  },
+  {
+    "id": "bollywood-16",
+    "emojis": "⛏️ 🪙 🧔",
+    "answer": "KGF: Chapter 1",
+    "wrongOptions": [
+      "Pushpa: The Rise",
+      "Salaar",
+      "Kantara"
+    ]
+  },
+  {
+    "id": "bollywood-17",
+    "emojis": "🪵 🪓 🦹‍♂️",
+    "answer": "Pushpa: The Rise",
+    "wrongOptions": [
+      "KGF",
+      "Vikram",
+      "Leo"
+    ]
+  },
+  {
+    "id": "bollywood-18",
+    "emojis": "👁️ 👨‍👩‍👧‍👦 🗓️",
+    "answer": "Drishyam",
+    "wrongOptions": [
+      "Special 26",
+      "Kahaani",
+      "Talaash"
+    ]
+  },
+  {
+    "id": "bollywood-19",
+    "emojis": "🤰 🔍 🏙️",
+    "answer": "Kahaani",
+    "wrongOptions": [
+      "Mom",
+      "Jazbaa",
+      "Neerja"
+    ]
+  },
+  {
+    "id": "bollywood-20",
+    "emojis": "👨‍✈️ ✈️ 🔫",
+    "answer": "Neerja",
+    "wrongOptions": [
+      "Runway 34",
+      "Gunjan Saxena",
+      "Bell Bottom"
+    ]
+  },
+  {
+    "id": "bollywood-21",
+    "emojis": "🚀 👩‍🔬 🛰️",
+    "answer": "Mission Mangal",
+    "wrongOptions": [
+      "Rocketry",
+      "Swades",
+      "Parmanu"
+    ]
+  },
+  {
+    "id": "bollywood-22",
+    "emojis": "🕺 🎤 🪩",
+    "answer": "Disco Dancer",
+    "wrongOptions": [
+      "Rock On!!",
+      "Gully Boy",
+      "Street Dancer"
+    ]
+  },
+  {
+    "id": "bollywood-23",
+    "emojis": "🎤 🧢 🏙️",
+    "answer": "Gully Boy",
+    "wrongOptions": [
+      "Rockstar",
+      "ABCD",
+      "Secret Superstar"
+    ]
+  },
+  {
+    "id": "bollywood-24",
+    "emojis": "🦸‍♂️ 👓 🌧️",
+    "answer": "Krrish",
+    "wrongOptions": [
+      "Ra.One",
+      "A Flying Jatt",
+      "Minnal Murali"
+    ]
+  },
+  {
+    "id": "bollywood-25",
+    "emojis": "🪖 🇮🇳 🪖",
+    "answer": "Border",
+    "wrongOptions": [
+      "LOC Kargil",
+      "Uri: The Surgical Strike",
+      "Lakshya"
+    ]
+  },
+  {
+    "id": "bollywood-26",
+    "emojis": "🪖 🌃 ⚡",
+    "answer": "Uri: The Surgical Strike",
+    "wrongOptions": [
+      "Shershaah",
+      "Fighter",
+      "Sam Bahadur"
+    ]
+  },
+  {
+    "id": "bollywood-27",
+    "emojis": "🪖 🏔️ 💔",
+    "answer": "Shershaah",
+    "wrongOptions": [
+      "Uri: The Surgical Strike",
+      "Border",
+      "Lakshya"
+    ]
+  },
+  {
+    "id": "bollywood-28",
+    "emojis": "✈️ 🪖 💥",
+    "answer": "Fighter",
+    "wrongOptions": [
+      "Tejas",
+      "Runway 34",
+      "Bhuj"
+    ]
+  },
+  {
+    "id": "bollywood-29",
+    "emojis": "👨‍👩‍👧‍👦 ✈️ 🇬🇧",
+    "answer": "Kabhi Khushi Kabhie Gham",
+    "wrongOptions": [
+      "Dilwale Dulhania Le Jayenge",
+      "Baghban",
+      "Hum Saath Saath Hain"
+    ]
+  },
+  {
+    "id": "bollywood-30",
+    "emojis": "🏀 🌧️ 🎸",
+    "answer": "Kuch Kuch Hota Hai",
+    "wrongOptions": [
+      "Mohabbatein",
+      "Dil To Pagal Hai",
+      "Pardes"
+    ]
+  },
+  {
+    "id": "bollywood-31",
+    "emojis": "🎻 🏫 🍁",
+    "answer": "Mohabbatein",
+    "wrongOptions": [
+      "Dil To Pagal Hai",
+      "Veer-Zaara",
+      "Pardes"
+    ]
+  },
+  {
+    "id": "bollywood-32",
+    "emojis": "🇮🇳 🇵🇰 🌾",
+    "answer": "Veer-Zaara",
+    "wrongOptions": [
+      "Gadar: Ek Prem Katha",
+      "Main Hoon Na",
+      "Bajrangi Bhaijaan"
+    ]
+  },
+  {
+    "id": "bollywood-33",
+    "emojis": "🚰 🇵🇰 🛺",
+    "answer": "Gadar: Ek Prem Katha",
+    "wrongOptions": [
+      "Veer-Zaara",
+      "Border",
+      "Bajrangi Bhaijaan"
+    ]
+  },
+  {
+    "id": "bollywood-34",
+    "emojis": "👧 🇵🇰 🐒",
+    "answer": "Bajrangi Bhaijaan",
+    "wrongOptions": [
+      "Tubelight",
+      "PK",
+      "Sultan"
+    ]
+  },
+  {
+    "id": "bollywood-35",
+    "emojis": "🏫 🪖 💃",
+    "answer": "Main Hoon Na",
+    "wrongOptions": [
+      "Om Shanti Om",
+      "Student of the Year",
+      "Dulhe Raja"
+    ]
+  },
+  {
+    "id": "bollywood-36",
+    "emojis": "🎥 🕺 🕯️",
+    "answer": "Om Shanti Om",
+    "wrongOptions": [
+      "Happy New Year",
+      "Chandni Chowk to China",
+      "Rab Ne Bana Di Jodi"
+    ]
+  },
+  {
+    "id": "bollywood-37",
+    "emojis": "🕶️ 🏍️ 👮‍♂️",
+    "answer": "Dhoom 2",
+    "wrongOptions": [
+      "Don",
+      "Race",
+      "War"
+    ]
+  },
+  {
+    "id": "bollywood-38",
+    "emojis": "🕶️ 🔫 🛩️",
+    "answer": "War",
+    "wrongOptions": [
+      "Pathaan",
+      "Tiger Zinda Hai",
+      "Bang Bang!"
+    ]
+  },
+  {
+    "id": "bollywood-39",
+    "emojis": "💣 🦹‍♂️ 🦅",
+    "answer": "Pathaan",
+    "wrongOptions": [
+      "Jawan",
+      "War",
+      "Ek Tha Tiger"
+    ]
+  },
+  {
+    "id": "bollywood-40",
+    "emojis": "🚂 👨‍👩‍👧‍👦 🎭",
+    "answer": "Jawan",
+    "wrongOptions": [
+      "Pathaan",
+      "Fan",
+      "Raees"
+    ]
+  },
+  {
+    "id": "bollywood-41",
+    "emojis": "🐅 🇵🇰 🕵️‍♂️",
+    "answer": "Ek Tha Tiger",
+    "wrongOptions": [
+      "Tiger Zinda Hai",
+      "Agent Vinod",
+      "Phantom"
+    ]
+  },
+  {
+    "id": "bollywood-42",
+    "emojis": "👨‍🏫 ✏️ 🎨",
+    "answer": "Taare Zameen Par",
+    "wrongOptions": [
+      "Stanley Ka Dabba",
+      "Hichki",
+      "Super 30"
+    ]
+  },
+  {
+    "id": "bollywood-43",
+    "emojis": "👨‍🏫 ➕ 📐",
+    "answer": "Super 30",
+    "wrongOptions": [
+      "Taare Zameen Par",
+      "Chhichhore",
+      "Nil Battey Sannata"
+    ]
+  },
+  {
+    "id": "bollywood-44",
+    "emojis": "🎓 🏊‍♂️ 🏆",
+    "answer": "Chhichhore",
+    "wrongOptions": [
+      "3 Idiots",
+      "Student of the Year",
+      "Jo Jeeta Wohi Sikandar"
+    ]
+  },
+  {
+    "id": "bollywood-45",
+    "emojis": "🚲 🏆 🥇",
+    "answer": "Jo Jeeta Wohi Sikandar",
+    "wrongOptions": [
+      "Student of the Year",
+      "Dangal",
+      "Bhaag Milkha Bhaag"
+    ]
+  },
+  {
+    "id": "bollywood-46",
+    "emojis": "🏃‍♂️ 🎽 🇮🇳",
+    "answer": "Bhaag Milkha Bhaag",
+    "wrongOptions": [
+      "Paan Singh Tomar",
+      "Gold",
+      "Maidaan"
+    ]
+  },
+  {
+    "id": "bollywood-47",
+    "emojis": "🏒 🇮🇳 🏆",
+    "answer": "Chak De! India",
+    "wrongOptions": [
+      "Gold",
+      "Soorma",
+      "83"
+    ]
+  },
+  {
+    "id": "bollywood-48",
+    "emojis": "🏏 1️⃣ 9️⃣ 8️⃣ 3️⃣",
+    "answer": "83",
+    "wrongOptions": [
+      "Lagaan",
+      "MS Dhoni: The Untold Story",
+      "Kaun Pravin Tambe?"
+    ]
+  },
+  {
+    "id": "bollywood-49",
+    "emojis": "🏏 🎟️ 🧢",
+    "answer": "MS Dhoni: The Untold Story",
+    "wrongOptions": [
+      "Azhar",
+      "83",
+      "Sachin: A Billion Dreams"
+    ]
+  },
+  {
+    "id": "bollywood-50",
+    "emojis": "🥊 🥊 👧",
+    "answer": "Mary Kom",
+    "wrongOptions": [
+      "Saala Khadoos",
+      "Dangal",
+      "Sultan"
+    ]
+  },
+  {
+    "id": "bollywood-51",
+    "emojis": "🇬🇧 🗣️ ☕",
+    "answer": "English Vinglish",
+    "wrongOptions": [
+      "Queen",
+      "Mom",
+      "Dear Zindagi"
+    ]
+  },
+  {
+    "id": "bollywood-52",
+    "emojis": "💡 🇺🇸 🌾",
+    "answer": "Swades",
+    "wrongOptions": [
+      "Lagaan",
+      "Pardes",
+      "Chak De! India"
+    ]
+  },
+  {
+    "id": "bollywood-53",
+    "emojis": "👨‍💼 🕶️ 🔫",
+    "answer": "Don",
+    "wrongOptions": [
+      "Raees",
+      "Agneepath",
+      "Vikram Vedha"
+    ]
+  },
+  {
+    "id": "bollywood-54",
+    "emojis": "👨‍⚕️ 🩺 💖",
+    "answer": "Munna Bhai M.B.B.S.",
+    "wrongOptions": [
+      "Lage Raho Munna Bhai",
+      "Anand",
+      "Doctor G"
+    ]
+  },
+  {
+    "id": "bollywood-55",
+    "emojis": "📻 ✌️ 🌸",
+    "answer": "Lage Raho Munna Bhai",
+    "wrongOptions": [
+      "Munna Bhai M.B.B.S.",
+      "Sanju",
+      "PK"
+    ]
+  },
+  {
+    "id": "bollywood-56",
+    "emojis": "👮‍♂️ 🕶️ 💥",
+    "answer": "Singham",
+    "wrongOptions": [
+      "Simmba",
+      "Sooryavanshi",
+      "Dabangg"
+    ]
+  },
+  {
+    "id": "bollywood-57",
+    "emojis": "👮‍♂️ 🕶️ 🥸",
+    "answer": "Dabangg",
+    "wrongOptions": [
+      "Singham",
+      "Rowdy Rathore",
+      "Wanted"
+    ]
+  },
+  {
+    "id": "bollywood-58",
+    "emojis": "👑 🏰 🏹",
+    "answer": "Padmaavat",
+    "wrongOptions": [
+      "Bajirao Mastani",
+      "Jodhaa Akbar",
+      "Panipat"
+    ]
+  },
+  {
+    "id": "bollywood-59",
+    "emojis": "⚔️ 🏰 💃",
+    "answer": "Bajirao Mastani",
+    "wrongOptions": [
+      "Padmaavat",
+      "Devdas",
+      "Ram-Leela"
+    ]
+  },
+  {
+    "id": "bollywood-60",
+    "emojis": "🔫 💃 🌹",
+    "answer": "Goliyon Ki Raasleela Ram-Leela",
+    "wrongOptions": [
+      "Ishaqzaade",
+      "Cocktail",
+      "Kedarnath"
+    ]
+  },
+  {
+    "id": "bollywood-61",
+    "emojis": "🥃 🍷 🕯️",
+    "answer": "Devdas",
+    "wrongOptions": [
+      "Rockstar",
+      "Guzaarish",
+      "Ae Dil Hai Mushkil"
+    ]
+  },
+  {
+    "id": "bollywood-62",
+    "emojis": "🎸 💔 🎤",
+    "answer": "Rockstar",
+    "wrongOptions": [
+      "Aashiqui 2",
+      "Ae Dil Hai Mushkil",
+      "Sanam Teri Kasam"
+    ]
+  },
+  {
+    "id": "bollywood-63",
+    "emojis": "🎤 🎻 🌧️",
+    "answer": "Aashiqui 2",
+    "wrongOptions": [
+      "Rockstar",
+      "Ek Villain",
+      "Half Girlfriend"
+    ]
+  },
+  {
+    "id": "bollywood-64",
+    "emojis": "🛋️ 💭 🧠",
+    "answer": "Dear Zindagi",
+    "wrongOptions": [
+      "Tamasha",
+      "Wake Up Sid",
+      "Kapoor & Sons"
+    ]
+  },
+  {
+    "id": "bollywood-65",
+    "emojis": "📸 🏙️ 😴",
+    "answer": "Wake Up Sid",
+    "wrongOptions": [
+      "Yeh Jawaani Hai Deewani",
+      "Tamasha",
+      "Dil Chahta Hai"
+    ]
+  },
+  {
+    "id": "bollywood-66",
+    "emojis": "🎭 🇫🇷 🤖",
+    "answer": "Tamasha",
+    "wrongOptions": [
+      "Rockstar",
+      "Barfi!",
+      "Jagga Jasoos"
+    ]
+  },
+  {
+    "id": "bollywood-67",
+    "emojis": "📻 👟 🌼",
+    "answer": "Barfi!",
+    "wrongOptions": [
+      "Jagga Jasoos",
+      "Ludo",
+      "Life in a... Metro"
+    ]
+  },
+  {
+    "id": "bollywood-68",
+    "emojis": "🔍 🕵️‍♂️ 🎶",
+    "answer": "Jagga Jasoos",
+    "wrongOptions": [
+      "Barfi!",
+      "Detective Byomkesh Bakshy!",
+      "Agent Vinod"
+    ]
+  },
+  {
+    "id": "bollywood-69",
+    "emojis": "🎲 🚗 💰",
+    "answer": "Ludo",
+    "wrongOptions": [
+      "Andhadhun",
+      "Monica, O My Darling",
+      "Badhaai Ho"
+    ]
+  },
+  {
+    "id": "bollywood-70",
+    "emojis": "👶 👵 🤰",
+    "answer": "Badhaai Ho",
+    "wrongOptions": [
+      "Shubh Mangal Saavdhan",
+      "Vicky Donor",
+      "Dream Girl"
+    ]
+  },
+  {
+    "id": "bollywood-71",
+    "emojis": "🍼 🔬 💵",
+    "answer": "Vicky Donor",
+    "wrongOptions": [
+      "Badhaai Ho",
+      "Good Newwz",
+      "Mimi"
+    ]
+  },
+  {
+    "id": "bollywood-72",
+    "emojis": "📞 👧 👨",
+    "answer": "Dream Girl",
+    "wrongOptions": [
+      "Bala",
+      "Stree",
+      "Bareilly Ki Barfi"
+    ]
+  },
+  {
+    "id": "bollywood-73",
+    "emojis": "👨‍🦲 👩 📸",
+    "answer": "Bala",
+    "wrongOptions": [
+      "Ujda Chaman",
+      "Dream Girl",
+      "Article 15"
+    ]
+  },
+  {
+    "id": "bollywood-74",
+    "emojis": "🍬 📬 ✍️",
+    "answer": "Bareilly Ki Barfi",
+    "wrongOptions": [
+      "Shubh Mangal Zyada Saavdhan",
+      "Luka Chuppi",
+      "Tanu Weds Manu"
+    ]
+  }
+]
