@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Movie Quiz — Game Screen</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🍿 Emoji Movie Quiz</h1>
+        <div id="join-hint"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Scan to join</h2>
+        <img id="join-qr" alt="Join QR code" />
+        <div id="join-url"></div>
+      </section>
+
+      <section id="roster-panel" class="card">
+        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+        <ul id="roster-list"></ul>
+      </section>
+
+      <section id="question-panel" class="card">
+        <div id="question-status">Waiting to start…</div>
+        <div id="countdown-text" class="hidden"></div>
+        <div id="emoji-text"></div>
+        <div id="ff-options" class="hidden"></div>
+      </section>
+
+      <section id="arcade-leaderboard" class="card">
+        <h2>🏆 Leaderboard</h2>
+        <ol id="arcade-rows"></ol>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

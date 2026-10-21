@@ -1,0 +1,752 @@
+[
+  {
+    "id": "emoji-0",
+    "emojis": "⚡ 🔨 🌌",
+    "answer": "Thor: Ragnarok",
+    "wrongOptions": [
+      "Guardians of the Galaxy",
+      "Avengers: Endgame",
+      "Captain Marvel"
+    ]
+  },
+  {
+    "id": "emoji-1",
+    "emojis": "🕷️ 🕸️ 🌌",
+    "answer": "Spider-Man: Across the Spider-Verse",
+    "wrongOptions": [
+      "Spider-Man: No Way Home",
+      "Ant-Man",
+      "Venom"
+    ]
+  },
+  {
+    "id": "emoji-2",
+    "emojis": "🧠 🔴 🔵",
+    "answer": "Inside Out 2",
+    "wrongOptions": [
+      "Turning Red",
+      "Soul",
+      "Elemental"
+    ]
+  },
+  {
+    "id": "emoji-3",
+    "emojis": "🩷 👱‍♀️ 🚘",
+    "answer": "Barbie",
+    "wrongOptions": [
+      "Legally Blonde",
+      "Mean Girls",
+      "Clueless"
+    ]
+  },
+  {
+    "id": "emoji-4",
+    "emojis": "🤖 🦊 🦆",
+    "answer": "The Wild Robot",
+    "wrongOptions": [
+      "Wall-E",
+      "Big Hero 6",
+      "Iron Giant"
+    ]
+  },
+  {
+    "id": "emoji-5",
+    "emojis": "🎾 👩 👨‍👨‍👦",
+    "answer": "Challengers",
+    "wrongOptions": [
+      "King Richard",
+      "Match Point",
+      "Borg vs McEnroe"
+    ]
+  },
+  {
+    "id": "emoji-6",
+    "emojis": "🏎️ 🎸 🏜️",
+    "answer": "Furiosa: A Mad Max Saga",
+    "wrongOptions": [
+      "Mad Max: Fury Road",
+      "Death Race",
+      "Borderlands"
+    ]
+  },
+  {
+    "id": "emoji-7",
+    "emojis": "🌪️ 🌪️ 🚙",
+    "answer": "Twisters",
+    "wrongOptions": [
+      "Into the Storm",
+      "San Andreas",
+      "Geostorm"
+    ]
+  },
+  {
+    "id": "emoji-8",
+    "emojis": "🧹 🧙‍♀️ 🟢",
+    "answer": "Wicked",
+    "wrongOptions": [
+      "Oz the Great and Powerful",
+      "Maleficent",
+      "Enchanted"
+    ]
+  },
+  {
+    "id": "emoji-9",
+    "emojis": "🌊 🌀 🐚",
+    "answer": "Moana 2",
+    "wrongOptions": [
+      "Frozen II",
+      "The Little Mermaid",
+      "Raya and the Last Dragon"
+    ]
+  },
+  {
+    "id": "emoji-10",
+    "emojis": "🐶 🦍 💥",
+    "answer": "Godzilla x Kong: The New Empire",
+    "wrongOptions": [
+      "Rampage",
+      "King Kong",
+      "Pacific Rim"
+    ]
+  },
+  {
+    "id": "emoji-11",
+    "emojis": "🏎️ 🎥 🎬",
+    "answer": "The Fall Guy",
+    "wrongOptions": [
+      "Baby Driver",
+      "Drive",
+      "Bullet Train"
+    ]
+  },
+  {
+    "id": "emoji-12",
+    "emojis": "🦍 🏛️ 🏹",
+    "answer": "Kingdom of the Planet of the Apes",
+    "wrongOptions": [
+      "Dawn of the Planet of the Apes",
+      "Tarzan",
+      "King Kong"
+    ]
+  },
+  {
+    "id": "emoji-13",
+    "emojis": "🐼 🥋 🦊",
+    "answer": "Kung Fu Panda 4",
+    "wrongOptions": [
+      "Zootopia",
+      "Puss in Boots: The Last Wish",
+      "The Bad Guys"
+    ]
+  },
+  {
+    "id": "emoji-14",
+    "emojis": "🍌 💛 🦹‍♂️",
+    "answer": "Despicable Me 4",
+    "wrongOptions": [
+      "Minions: The Rise of Gru",
+      "Megamind",
+      "The Secret Life of Pets"
+    ]
+  },
+  {
+    "id": "emoji-15",
+    "emojis": "🦮 🚶‍♂️ 🛣️",
+    "answer": "Arthur the King",
+    "wrongOptions": [
+      "Dog",
+      "Togo",
+      "Marley & Me"
+    ]
+  },
+  {
+    "id": "emoji-16",
+    "emojis": "🐶 🐱 ✈️",
+    "answer": "The Garfield Movie",
+    "wrongOptions": [
+      "The Secret Life of Pets",
+      "DC League of Super-Pets",
+      "Puss in Boots"
+    ]
+  },
+  {
+    "id": "emoji-17",
+    "emojis": "🐕 🪙 🩸",
+    "answer": "John Wick: Chapter 4",
+    "wrongOptions": [
+      "Nobody",
+      "Atomic Blonde",
+      "The Equalizer 3"
+    ]
+  },
+  {
+    "id": "emoji-18",
+    "emojis": "😺 🗡️ 🌟",
+    "answer": "Puss in Boots: The Last Wish",
+    "wrongOptions": [
+      "Shrek 2",
+      "Wish",
+      "Pinocchio"
+    ]
+  },
+  {
+    "id": "emoji-19",
+    "emojis": "🚅 🗡️ 💼",
+    "answer": "Bullet Train",
+    "wrongOptions": [
+      "Speed",
+      "Source Code",
+      "Non-Stop"
+    ]
+  },
+  {
+    "id": "emoji-20",
+    "emojis": "✈️ 🛩️ 🕶️",
+    "answer": "Top Gun: Maverick",
+    "wrongOptions": [
+      "Stealth",
+      "First Man",
+      "Dunkirk"
+    ]
+  },
+  {
+    "id": "emoji-21",
+    "emojis": "🤖 🚚 🌌",
+    "answer": "Transformers One",
+    "wrongOptions": [
+      "Bumblebee",
+      "Pacific Rim",
+      "Real Steel"
+    ]
+  },
+  {
+    "id": "emoji-22",
+    "emojis": "🧅 🔎 🛥️",
+    "answer": "Glass Onion: A Knives Out Mystery",
+    "wrongOptions": [
+      "Knives Out",
+      "Death on the Nile",
+      "Murder on the Orient Express"
+    ]
+  },
+  {
+    "id": "emoji-23",
+    "emojis": "🔪 🕵️‍♂️ 🏰",
+    "answer": "Knives Out",
+    "wrongOptions": [
+      "Clue",
+      "See How They Run",
+      "Enola Holmes"
+    ]
+  },
+  {
+    "id": "emoji-24",
+    "emojis": "🛌 🌀 ⏳",
+    "answer": "Inception",
+    "wrongOptions": [
+      "Tenet",
+      "Shutter Island",
+      "The Matrix"
+    ]
+  },
+  {
+    "id": "emoji-25",
+    "emojis": "🌌 🚀 🕳️",
+    "answer": "Interstellar",
+    "wrongOptions": [
+      "Gravity",
+      "Ad Astra",
+      "Contact"
+    ]
+  },
+  {
+    "id": "emoji-26",
+    "emojis": "🥁 🎼 🩸",
+    "answer": "Whiplash",
+    "wrongOptions": [
+      "La La Land",
+      "Sound of Metal",
+      "Tick, Tick... Boom!"
+    ]
+  },
+  {
+    "id": "emoji-27",
+    "emojis": "🎹 🌆 💜",
+    "answer": "La La Land",
+    "wrongOptions": [
+      "Babylon",
+      "A Star Is Born",
+      "Chicago"
+    ]
+  },
+  {
+    "id": "emoji-28",
+    "emojis": "🦝 🌳 🎧",
+    "answer": "Guardians of the Galaxy Vol. 3",
+    "wrongOptions": [
+      "Avengers: Endgame",
+      "Thor: Ragnarok",
+      "Captain Marvel"
+    ]
+  },
+  {
+    "id": "emoji-29",
+    "emojis": "🏎️ 🏁 🇮🇹",
+    "answer": "Ford v Ferrari",
+    "wrongOptions": [
+      "Rush",
+      "Ferrari",
+      "Gran Turismo"
+    ]
+  },
+  {
+    "id": "emoji-30",
+    "emojis": "🤟 🎼 🏫",
+    "answer": "CODA",
+    "wrongOptions": [
+      "Sound of Metal",
+      "La La Land",
+      "Sing Street"
+    ]
+  },
+  {
+    "id": "emoji-31",
+    "emojis": "👴 🐱 🏠",
+    "answer": "A Man Called Otto",
+    "wrongOptions": [
+      "The Father",
+      "Gran Torino",
+      "Up"
+    ]
+  },
+  {
+    "id": "emoji-32",
+    "emojis": "🪵 🤥 🧚‍♀️",
+    "answer": "Guillermo del Toro's Pinocchio",
+    "wrongOptions": [
+      "Shrek",
+      "Tangled",
+      "Puss in Boots"
+    ]
+  },
+  {
+    "id": "emoji-33",
+    "emojis": "🚢 ❄️ 💔",
+    "answer": "Titanic",
+    "wrongOptions": [
+      "Poseidon",
+      "The Perfect Storm",
+      "Life of Pi"
+    ]
+  },
+  {
+    "id": "emoji-34",
+    "emojis": "🦁 👑 🌅",
+    "answer": "The Lion King",
+    "wrongOptions": [
+      "Madagascar",
+      "Tarzan",
+      "The Jungle Book"
+    ]
+  },
+  {
+    "id": "emoji-35",
+    "emojis": "🕶️ 💊 💻",
+    "answer": "The Matrix",
+    "wrongOptions": [
+      "Inception",
+      "Minority Report",
+      "Tron"
+    ]
+  },
+  {
+    "id": "emoji-36",
+    "emojis": "🕷️ 🧍 🌆",
+    "answer": "Spider-Man: Homecoming",
+    "wrongOptions": [
+      "Ant-Man",
+      "Venom",
+      "Shazam!"
+    ]
+  },
+  {
+    "id": "emoji-37",
+    "emojis": "🎈 🏠 👴",
+    "answer": "Up",
+    "wrongOptions": [
+      "Toy Story",
+      "Inside Out",
+      "Wall-E"
+    ]
+  },
+  {
+    "id": "emoji-38",
+    "emojis": "🍫 🏭 🎩",
+    "answer": "Charlie and the Chocolate Factory",
+    "wrongOptions": [
+      "Mary Poppins",
+      "Paddington",
+      "Alice in Wonderland"
+    ]
+  },
+  {
+    "id": "emoji-39",
+    "emojis": "🦖 🏝️ 🚙",
+    "answer": "Jurassic Park",
+    "wrongOptions": [
+      "King Kong",
+      "Godzilla",
+      "Jumanji"
+    ]
+  },
+  {
+    "id": "emoji-40",
+    "emojis": "🧙‍♂️ ⚡ 🧹",
+    "answer": "Harry Potter and the Sorcerer's Stone",
+    "wrongOptions": [
+      "The Lord of the Rings",
+      "Percy Jackson",
+      "Fantastic Beasts"
+    ]
+  },
+  {
+    "id": "emoji-41",
+    "emojis": "💍 🌋 🧝‍♂️",
+    "answer": "The Lord of the Rings: The Fellowship of the Ring",
+    "wrongOptions": [
+      "The Hobbit",
+      "Chronicles of Narnia",
+      "Eragon"
+    ]
+  },
+  {
+    "id": "emoji-42",
+    "emojis": "👽 🚲 🌕",
+    "answer": "E.T. the Extra-Terrestrial",
+    "wrongOptions": [
+      "Close Encounters of the Third Kind",
+      "Signs",
+      "Super 8"
+    ]
+  },
+  {
+    "id": "emoji-43",
+    "emojis": "👨‍👩‍👧‍👦 🦸‍♂️ 🦸‍♀️",
+    "answer": "The Incredibles",
+    "wrongOptions": [
+      "Sky High",
+      "Megamind",
+      "Despicable Me"
+    ]
+  },
+  {
+    "id": "emoji-44",
+    "emojis": "🏎️ 🏁 ⚡",
+    "answer": "Cars",
+    "wrongOptions": [
+      "Fast & Furious",
+      "Speed Racer",
+      "Turbo"
+    ]
+  },
+  {
+    "id": "emoji-45",
+    "emojis": "🐼 🥋 🥟",
+    "answer": "Kung Fu Panda",
+    "wrongOptions": [
+      "Mulan",
+      "Karate Kid",
+      "Raya and the Last Dragon"
+    ]
+  },
+  {
+    "id": "emoji-46",
+    "emojis": "🧊 🚢 🧊",
+    "answer": "Ice Age",
+    "wrongOptions": [
+      "Happy Feet",
+      "Frozen",
+      "Smallfoot"
+    ]
+  },
+  {
+    "id": "emoji-47",
+    "emojis": "🌌 ⚔️ 🛡️",
+    "answer": "Star Wars: A New Hope",
+    "wrongOptions": [
+      "Star Trek",
+      "Guardians of the Galaxy",
+      "Dune"
+    ]
+  },
+  {
+    "id": "emoji-48",
+    "emojis": "🐀 👨‍🍳 🍲",
+    "answer": "Ratatouille",
+    "wrongOptions": [
+      "Chef",
+      "Burnt",
+      "Cloudy with a Chance of Meatballs"
+    ]
+  },
+  {
+    "id": "emoji-49",
+    "emojis": "🤖 🧹 🌱",
+    "answer": "Wall-E",
+    "wrongOptions": [
+      "Big Hero 6",
+      "The Iron Giant",
+      "Robots"
+    ]
+  },
+  {
+    "id": "emoji-50",
+    "emojis": "🦍 🏙️ ✈️",
+    "answer": "King Kong",
+    "wrongOptions": [
+      "Godzilla",
+      "Planet of the Apes",
+      "Rampage"
+    ]
+  },
+  {
+    "id": "emoji-51",
+    "emojis": "🧜‍♀️ 🐚 🌊",
+    "answer": "The Little Mermaid",
+    "wrongOptions": [
+      "Aquaman",
+      "Moana",
+      "Luca"
+    ]
+  },
+  {
+    "id": "emoji-52",
+    "emojis": "❄️ 👩‍🦰 ☃️",
+    "answer": "Frozen",
+    "wrongOptions": [
+      "Brave",
+      "Tangled",
+      "Moana"
+    ]
+  },
+  {
+    "id": "emoji-53",
+    "emojis": "👧 💇‍♀️ 🦎",
+    "answer": "Tangled",
+    "wrongOptions": [
+      "Frozen",
+      "Enchanted",
+      "Cinderella"
+    ]
+  },
+  {
+    "id": "emoji-54",
+    "emojis": "🕌 🧞‍♂️ 🧹",
+    "answer": "Aladdin",
+    "wrongOptions": [
+      "Sinbad",
+      "Prince of Persia",
+      "Hercules"
+    ]
+  },
+  {
+    "id": "emoji-55",
+    "emojis": "👧 🐰 🎩",
+    "answer": "Alice in Wonderland",
+    "wrongOptions": [
+      "Peter Pan",
+      "Wizard of Oz",
+      "Maleficent"
+    ]
+  },
+  {
+    "id": "emoji-56",
+    "emojis": "🦁 🦛 🦓",
+    "answer": "Madagascar",
+    "wrongOptions": [
+      "Zootopia",
+      "The Jungle Book",
+      "Sing"
+    ]
+  },
+  {
+    "id": "emoji-57",
+    "emojis": "🦊 🐰 🚔",
+    "answer": "Zootopia",
+    "wrongOptions": [
+      "Sing",
+      "The Bad Guys",
+      "Robin Hood"
+    ]
+  },
+  {
+    "id": "emoji-58",
+    "emojis": "🏎️ 💨 😡",
+    "answer": "Fast & Furious",
+    "wrongOptions": [
+      "Need for Speed",
+      "Baby Driver",
+      "Speed"
+    ]
+  },
+  {
+    "id": "emoji-59",
+    "emojis": "🏜️ 🎸 🚙",
+    "answer": "Mad Max: Fury Road",
+    "wrongOptions": [
+      "Dune",
+      "Waterworld",
+      "Maze Runner"
+    ]
+  },
+  {
+    "id": "emoji-60",
+    "emojis": "⏳ 🔄 🪖",
+    "answer": "Edge of Tomorrow",
+    "wrongOptions": [
+      "Source Code",
+      "Tenet",
+      "Looper"
+    ]
+  },
+  {
+    "id": "emoji-61",
+    "emojis": "🎒 🧗‍♂️ 🪨",
+    "answer": "127 Hours",
+    "wrongOptions": [
+      "Into the Wild",
+      "Everest",
+      "Wild"
+    ]
+  },
+  {
+    "id": "emoji-62",
+    "emojis": "🚢 🐯 🚣‍♂️",
+    "answer": "Life of Pi",
+    "wrongOptions": [
+      "Cast Away",
+      "The Jungle Book",
+      "Slumdog Millionaire"
+    ]
+  },
+  {
+    "id": "emoji-63",
+    "emojis": "👨 🏐 🏝️",
+    "answer": "Cast Away",
+    "wrongOptions": [
+      "Robinson Crusoe",
+      "Life of Pi",
+      "The Martian"
+    ]
+  },
+  {
+    "id": "emoji-64",
+    "emojis": "👨‍🚀 🥔 🔴",
+    "answer": "The Martian",
+    "wrongOptions": [
+      "Interstellar",
+      "Gravity",
+      "Apollo 13"
+    ]
+  },
+  {
+    "id": "emoji-65",
+    "emojis": "👩‍🚀 🛰️ 💥",
+    "answer": "Gravity",
+    "wrongOptions": [
+      "Interstellar",
+      "Arrival",
+      "First Man"
+    ]
+  },
+  {
+    "id": "emoji-66",
+    "emojis": "🛸 ⏳ 🦑",
+    "answer": "Arrival",
+    "wrongOptions": [
+      "Contact",
+      "Annihilation",
+      "District 9"
+    ]
+  },
+  {
+    "id": "emoji-67",
+    "emojis": "🕶️ 🕴️ 👽",
+    "answer": "Men in Black",
+    "wrongOptions": [
+      "Independence Day",
+      "Guardians of the Galaxy",
+      "The Avengers"
+    ]
+  },
+  {
+    "id": "emoji-68",
+    "emojis": "🐜 👨 👨‍👧",
+    "answer": "Ant-Man",
+    "wrongOptions": [
+      "Spider-Man",
+      "Iron Man",
+      "Shazam!"
+    ]
+  },
+  {
+    "id": "emoji-69",
+    "emojis": "🛡️ 🇺🇸 ❄️",
+    "answer": "Captain America: The First Avenger",
+    "wrongOptions": [
+      "Avengers: Endgame",
+      "Falcon and the Winter Soldier",
+      "Iron Man"
+    ]
+  },
+  {
+    "id": "emoji-70",
+    "emojis": "🐱 🙅‍♂️ 💎",
+    "answer": "Black Panther",
+    "wrongOptions": [
+      "The Batman",
+      "Catwoman",
+      "Aquaman"
+    ]
+  },
+  {
+    "id": "emoji-71",
+    "emojis": "🏹 🎯 🎯",
+    "answer": "The Hunger Games",
+    "wrongOptions": [
+      "Brave",
+      "Hawkeye",
+      "Robin Hood"
+    ]
+  },
+  {
+    "id": "emoji-72",
+    "emojis": "👠 📜 🤴",
+    "answer": "Cinderella",
+    "wrongOptions": [
+      "Enchanted",
+      "Beauty and the Beast",
+      "Tangled"
+    ]
+  },
+  {
+    "id": "emoji-73",
+    "emojis": "🌹 👹 🏰",
+    "answer": "Beauty and the Beast",
+    "wrongOptions": [
+      "Cinderella",
+      "Frozen",
+      "Maleficent"
+    ]
+  },
+  {
+    "id": "emoji-74",
+    "emojis": "👧 👞 🌈",
+    "answer": "The Wizard of Oz",
+    "wrongOptions": [
+      "Wicked",
+      "Alice in Wonderland",
+      "Peter Pan"
+    ]
+  }
+]
