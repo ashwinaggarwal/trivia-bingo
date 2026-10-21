@@ -3,6 +3,7 @@ const path = require('path');
 const { customAlphabet } = require('nanoid');
 
 const gameTypesModule = require('./gameTypes');
+const modesModule = require('./modes');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const GAMES_DIR = path.join(DATA_DIR, 'games');
@@ -25,22 +26,27 @@ function gameExists(gameId) {
 
 function getGame(gameId) {
   if (!gameExists(gameId)) return null;
-  return JSON.parse(fs.readFileSync(metaFile(gameId), 'utf8'));
+  const meta = JSON.parse(fs.readFileSync(metaFile(gameId), 'utf8'));
+  // Games created before `mode` existed have no such field in their meta —
+  // treat those as bingo, the only mode that existed at the time.
+  return { mode: modesModule.DEFAULT_MODE, ...meta };
 }
 
-function createGame(name, gameType) {
+function createGame(name, gameType, mode) {
   let id = generateId();
   while (gameExists(id)) id = generateId(); // astronomically unlikely, cheap to guard anyway
 
   const resolvedGameType = gameTypesModule.gameTypeExists(gameType)
     ? gameType
     : gameTypesModule.DEFAULT_GAME_TYPE;
+  const resolvedMode = modesModule.modeExists(mode) ? mode : modesModule.DEFAULT_MODE;
 
   fs.mkdirSync(gameDir(id), { recursive: true });
   const meta = {
     id,
     name: (name || '').trim() || `Game ${id}`,
     gameType: resolvedGameType,
+    mode: resolvedMode,
     createdAt: new Date().toISOString(),
   };
   fs.writeFileSync(metaFile(id), JSON.stringify(meta, null, 2), 'utf8');

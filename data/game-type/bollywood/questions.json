@@ -1,907 +1,907 @@
 {
-    "gameType": "bollywood",
-    "name": "Bollywood Bingo",
-    "description": "A trivia game about Bollywood, including movies, actors, songs, and famous dialogues. Players answer questions to fill their bingo cards and win prizes.",
-    "questions": [
-        {
-            "id": "q001",
-            "category": "Relationships & Breakups",
-            "question": "In 'Jab We Met' (2007), which ex-boyfriend breaks Geet's heart in Shimla, causing her to run away to Manali?",
-            "hint": "Aditya and Geet later travel together to confront him, leading to one of the most famous phone rant scenes in Hindi cinema.",
-            "answer": "Anshuman",
-            "image": "jab_we_met_shimla.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep Himalayan pine green, snow white, and mountain dusk purple palette, no text, no watermark: vintage steam train chugging past a snowy mountain station platform, with a solitary suitcase left behind on the platform bench."
-        },
-        {
-            "id": "q002",
-            "category": "Songs & Musicals",
-            "question": "Which iconic 2011 Imtiaz Ali film features Janardhan's transformation into a heartbroken rockstar named Jordan?",
-            "hint": "The soundtrack was composed by A.R. Rahman and includes hits like 'Sadda Haq' and 'Kun Faya Kun'.",
-            "answer": "Rockstar",
-            "image": "rockstar_prague.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep indigo night sky, gothic stone grey, and fiery orange palette, no text, no watermark: gothic Charles Bridge towers in Prague under moonlight, with an acoustic guitar leaning against the stone bridge wall."
-        },
-        {
-            "id": "q003",
-            "category": "Messy Romances",
-            "question": "In 'Yeh Jawaani Hai Deewani' (2013), where do Bunny, Naina, Aditi, and Avi go on their memorable college trekking trip?",
-            "hint": "The destination in Himachal Pradesh is known for its snow-covered slopes and adventurous hiking trails.",
-            "answer": "Manali",
-            "image": "yjhd_manali_snow.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crisp glacier blue, pine green, and bright sunlight yellow palette, no text, no watermark: snow-covered mountain peak with a winding hiking trail and four trekking backpacks resting near a pine tree."
-        },
-        {
-            "id": "q004",
-            "category": "Friendship & Travel",
-            "question": "In 'Zindagi Na Milegi Dobara' (2011), which Spanish festival do Kabir, Imran, and Arjun participate in during their road trip?",
-            "hint": "Tons of tomatoes were flown in from Portugal for this messy, vibrant festival featured in the song 'Ik Junoon'.",
-            "answer": "La Tomatina",
-            "image": "znmd_spain_bunol.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant tomato red, sunny yellow, and terracotta palette, no text, no watermark: rustic Spanish village street splashed with bright red tomato pulp framing historic stone balconies."
-        },
-        {
-            "id": "q005",
-            "category": "Love Triangles",
-            "question": "In the 2012 movie 'Cocktail', which two female leads share an apartment in London before Gautam enters their lives?",
-            "hint": "One is a wild party enthusiast and the other is a shy, traditional girl abandoned by her husband at the airport.",
-            "answer": "Veronica and Meera",
-            "image": "cocktail_london.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal crimson red, foggy Thames blue, and brass gold palette, no text, no watermark: classic red double-decker bus crossing Westminster Bridge with two stylish travel bags resting by the bus stop."
-        },
-        {
-            "id": "q006",
-            "category": "Chartbuster Tracks",
-            "question": "Which 2010 heist comedy featured the hugely popular dance number 'Sheila Ki Jawani' starring Katrina Kaif?",
-            "hint": "Directed by Farah Khan, the film stars Akshay Kumar as a con artist named Tabrez Mirza Khan.",
-            "answer": "Tees Maar Khan",
-            "image": "tees_maar_khan_train.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, locomotive steel grey, and deep sky blue palette, no text, no watermark: steam engine train crossing desert tracks with movie clapperboards and film canisters resting on the sand."
-        },
-        {
-            "id": "q007",
-            "category": "2000s Nostalgia",
-            "question": "In 'Dil Chahta Hai' (2001), where do Akash, Sameer, and Sid take their famous road trip that set the standard for modern buddy films?",
-            "hint": "The trip features an iconic scene at Chapora Fort overlooking the ocean.",
-            "answer": "Goa",
-            "image": "dil_chahta_hai_fort.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, coastal turquoise, palm tree green, and sunset orange palette, no text, no watermark: Chapora Fort stone wall overlooking the ocean with three distinct silhouettes sitting on the fortress wall watching the sunset."
-        },
-        {
-            "id": "q008",
-            "category": "Modern Classic Rom-Coms",
-            "question": "In 'Jaane Tu... Ya Jaane Na' (2008), what three tasks must Jai complete to fulfill his mother's traditional warrior test?",
-            "hint": "He had to ride a horse, get arrested by the police, and punch someone in a fight.",
-            "answer": "Ride a horse, get arrested, and beat someone up",
-            "image": "jaane_tu_mumbai.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sea blue, Victorian stone beige, and lamp yellow palette, no text, no watermark: Gateway of India in Mumbai harbor at dusk, with a galloping horse shadow casting over a police station barrier."
-        },
-        {
-            "id": "q009",
-            "category": "Breakup Anthems",
-            "question": "Which 2016 Karan Johar film featured 'The Breakup Song', starring Ranbir Kapoor and Anushka Sharma in a silent disco?",
-            "hint": "The story centers on unrequited love and friendship between Ayan and Alizeh.",
-            "answer": "Ae Dil Hai Mushkil",
-            "image": "adhm_vienna.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, imperial gold, autumn red, and evening violet palette, no text, no watermark: grand Schönbrunn Palace in Vienna with neon-glowing silent disco headphones placed on a stone ledge in the foreground."
-        },
-        {
-            "id": "q010",
-            "category": "Relationships & Cultures",
-            "question": "In '2 States' (2014), Krish and Ananya try to convince their families to accept their marriage. Which two cultures collide?",
-            "hint": "One family belongs to a Punjabi background in Delhi and the other is a Tamil Brahmin family from Chennai.",
-            "answer": "Punjabi and Tamil Brahmin",
-            "image": "2_states_chennai_temple.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, temple gold, ocean blue, and mustard field yellow palette, no text, no watermark: South Indian coastal temple entrance gateway subtly merging with golden mustard fields."
-        },
-        {
-            "id": "q011",
-            "category": "Collage & Campus Life",
-            "question": "In '3 Idiots' (2009), what was the true full name of the genius student known as Rancho?",
-            "hint": "At the end of the movie, Farhan and Raju discover his real identity as a scientist holding 400 patents in Ladakh.",
-            "answer": "Phunsukh Wangdu",
-            "image": "3_idiots_ladakh.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep turquoise, snow white, and terracotta yellow palette, no text, no watermark: Pangong Lake in Ladakh surrounded by mountains, with three yellow plastic chairs sitting on the shore."
-        },
-        {
-            "id": "q012",
-            "category": "Relationship Drama",
-            "question": "In 'Kabir Singh' (2019), what is the name of the medical student Kabir falls obsessively in love with?",
-            "hint": "She is his junior at the Delhi medical college, played by Kiara Advani.",
-            "answer": "Preeti Sikka",
-            "image": "kabir_singh_college.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crimson red, slate grey, and warm ivory palette, no text, no watermark: medical college corridor with a stethoscope resting on a wooden desk beside a red motorbike helmet."
-        },
-        {
-            "id": "q013",
-            "category": "Songs & Musicals",
-            "question": "In 'Om Shanti Om' (2007), which song features 31 major Bollywood stars appearing in a special guest sequence?",
-            "hint": "The track takes place during an award party hosted by superstar Om Kapoor.",
-            "answer": "Deewangi Deewangi",
-            "image": "om_shanti_om_set.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, retro magenta, gold shimmer, and velvet blue palette, no text, no watermark: 1970s film studio film camera on a tripod overlooking a glittering red-carpet stage setup."
-        },
-        {
-            "id": "q014",
-            "category": "Friends to Lovers",
-            "question": "In 'Main Hoon Na' (2004), who plays Sanjana, the tomboy college student who gets a makeover before falling for Lucky?",
-            "hint": "She is the daughter of General Amarjeet Bakshi in the movie.",
-            "answer": "Amrita Rao",
-            "image": "main_hoon_na_darjeeling.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tea garden green, mist white, and brick red palette, no text, no watermark: majestic colonial clock tower in Darjeeling surrounded by lush green tea hills."
-        },
-        {
-            "id": "q015",
-            "category": "Famous Lines",
-            "question": "Which 2008 sports drama gave us the iconic line 'Sattar Minute' (70 Minutes) spoken during a locker-room speech?",
-            "hint": "Shah Rukh Khan plays Kabir Khan, coaching the Indian women's national field hockey team.",
-            "answer": "Chak De! India",
-            "image": "chak_de_hockey.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tricolor saffron, emerald green, and stadium spotlight white palette, no text, no watermark: dramatic field hockey stick and ball resting on a bright green turf stadium under night lights."
-        },
-        {
-            "id": "q016",
-            "category": "Revenge & Romance",
-            "question": "In 'Ghajini' (2008), what is the name of the bubbly girl Sanjay Singhania falls in love with before losing his memory?",
-            "hint": "She runs a small modeling agency and mistakenly tells everyone Sanjay Singhania is her boyfriend.",
-            "answer": "Kalpana Shetty",
-            "image": "ghajini_mumbai_bus.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm amber, graphite grey, and polaroid yellow palette, no text, no watermark: vintage red Mumbai city bus passing near a wall decorated with polaroid photographs and handwritten notes."
-        },
-        {
-            "id": "q017",
-            "category": "Musical Romances",
-            "question": "In 'Aashiqui 2' (2013), what item does Rahul Jaykar use to shelter Arohi from the rain under a jacket during the poster shot?",
-            "hint": "This scene accompanies the iconic romantic hit song 'Tum Hi Ho'.",
-            "answer": "A leather jacket",
-            "image": "aashiqui2_rain.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rain-slicked street blue, warm streetlamp yellow, and shadow black palette, no text, no watermark: dark rain-soaked street illuminated by a warm lamp, with a jacket silhouetted shielding two people."
-        },
-        {
-            "id": "q018",
-            "category": "Secret Identities",
-            "question": "In 'Rab Ne Bana Di Jodi' (2008), what alter-ego name does Surinder Sahni adopt to impress his wife Taani during dance classes?",
-            "hint": "He wears spiked hair, bright t-shirts, and tight jeans to portray a loud, stylish personality.",
-            "answer": "Raj Kapoor",
-            "image": "rnbdj_amritsar.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, golden temple yellow, sky blue, and bright red palette, no text, no watermark: Golden Temple reflection on quiet water in Amritsar with yellow dance shoes placed on a bench."
-        },
-        {
-            "id": "q019",
-            "category": "Messy Relationships",
-            "question": "In 'Pyaar Ka Punchnama' (2011), which actor delivered the legendary 7-minute monologue about the frustration of dating?",
-            "hint": "He played the character Liquid/Rajat and went on to star in 'Sonu Ke Titu Ki Sweety'.",
-            "answer": "Kartik Aaryan",
-            "image": "pkp_apartment.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bachelor pad grey, neon green, and couch red palette, no text, no watermark: cozy apartment balcony overlooking urban city night lights with three coffee mugs on a table."
-        },
-        {
-            "id": "q020",
-            "category": "Historical Romance",
-            "question": "In 'Bajirao Mastani' (2015), which actress played Kashibai, the dignified first wife of Maratha Peshwa Bajirao?",
-            "hint": "She starred alongside Ranveer Singh and Deepika Padukone, performing the duet song 'Pinga'.",
-            "answer": "Priyanka Chopra",
-            "image": "bajirao_shaniwar_wada.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal Maratha gold, marigold orange, and stone brown palette, no text, no watermark: grand stone gates of Shaniwar Wada fort in Pune framed by festive marigold garlands."
-        },
-        {
-            "id": "q021",
-            "category": "Destination Weddings",
-            "question": "In 'Destination Romance' tradition, where is Aditi's grand destination wedding held in 'Yeh Jawaani Hai Deewani'?",
-            "hint": "The royal palace scenes were filmed at the Oberoi Udaivilas in this famous Rajasthani city of lakes.",
-            "answer": "Udaipur",
-            "image": "yjhd_udaipur_palace.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, palace gold, lake turquoise, and festive fuchsia palette, no text, no watermark: majestic Udaipur palace arches overlooking Lake Pichola illuminated with wedding fairy lights."
-        },
-        {
-            "id": "q022",
-            "category": "Chartbuster Anthems",
-            "question": "Which 2012 film features the hit song 'Radha', starring debutants Alia Bhatt, Varun Dhawan, and Sidharth Malhotra?",
-            "hint": "Directed by Karan Johar, it follows high-school students competing for a prestigious trophy at St. Teresa's.",
-            "answer": "Student of the Year",
-            "image": "soty_dehradun_campus.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, varsity red, ivy green, and sandstone cream palette, no text, no watermark: grand clocktower campus building with sports track hurdles in the foreground."
-        },
-        {
-            "id": "q023",
-            "category": "Heartbreak & Memory",
-            "question": "In 'Kal Ho Naa Ho' (2003), what fake secret diary does Aman read from to help Rohit express his feelings to Naina?",
-            "hint": "Aman pretends he is reading Rohit's diary, but he is actually speaking his own deep feelings for Naina.",
-            "answer": "Rohit's black diary (Rohit ki diary)",
-            "image": "khnh_new_york.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Brooklyn bridge rust, autumn park orange, and river blue palette, no text, no watermark: Brooklyn Bridge skyline in New York with a black diary resting on a park bench."
-        },
-        {
-            "id": "q024",
-            "category": "Rebellious Love",
-            "question": "In 'Gully Boy' (2019), what is the name of Murad's fiercely possessive medical-student girlfriend played by Alia Bhatt?",
-            "hint": "She is famous for her sassy line 'Mere boyfriend se gulu gulu karegi toh dhoptunge na tereko!'.",
-            "answer": "Safeena Firdausi",
-            "image": "gully_boy_dharavi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, urban graffiti yellow, neon blue, and alleyway shadow palette, no text, no watermark: narrow Mumbai alleyway decorated with vibrant street graffiti and a retro microphone."
-        },
-        {
-            "id": "q025",
-            "category": "Unusual Plot Twists",
-            "question": "In 'Queen' (2014), why does Rani go on her honeymoon to Paris and Amsterdam all by herself?",
-            "hint": "Her fiancé Vijay dumps her right before the wedding day because he feels she doesn't fit his modern lifestyle.",
-            "answer": "Her fiancé Vijay called off the wedding",
-            "image": "queen_paris_eiffel.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, French lavender, Eiffel iron grey, and sunset rose palette, no text, no watermark: Eiffel Tower standing beyond Champ de Mars, with a single yellow travel suitcase sitting on the grass."
-        },
-        {
-            "id": "q026",
-            "category": "Action Romances",
-            "question": "Which 2006 action thriller features Hrithik Roshan as Aryan (Mr. A) performing high-stakes museum robberies in Rio de Janeiro?",
-            "hint": "He teams up with Sunehri (Aishwarya Rai) in this high-octane YRF sequel.",
-            "answer": "Dhoom 2",
-            "image": "dhoom2_rio.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Rio ocean blue, sunset magenta, and beach gold palette, no text, no watermark: Christ the Redeemer statue on Corcovado mountain overlooking Guanabara Bay with a sports bike silhouette."
-        },
-        {
-            "id": "q027",
-            "category": "Relationships & In-Laws",
-            "question": "In 'Vicky Donor' (2012), what profession does Vicky Arora take up that causes awkwardness when meeting Ashima's family?",
-            "hint": "He is recruited by Dr. Chaddha at a fertility clinic in Delhi.",
-            "answer": "Sperm Donor",
-            "image": "vicky_donor_delhi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Connaught Place white, terracotta red, and spring green palette, no text, no watermark: colonnaded white arches of Connaught Place in Delhi with a microscope icon resting on a park table."
-        },
-        {
-            "id": "q028",
-            "category": "Cult Comedy",
-            "question": "In 'Hera Pheri' (2000), what wrong phone number leads to Raju, Shyam, and Baburao receiving Kabira's ransom call?",
-            "hint": "Calls intended for Star Fisheries keep reaching Baburao Ganpatrao Apte's garage.",
-            "answer": "Star Fisheries",
-            "image": "hera_pheri_garage.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, retro garage yellow, rusty brown, and teal palette, no text, no watermark: vintage black rotary telephone sitting on a cluttered garage workbench beside round eyeglasses."
-        },
-        {
-            "id": "q029",
-            "category": "Chartbusters",
-            "question": "Which 2013 Sanjay Leela Bhansali movie features Deepika Padukone dancing to the energetic festive track 'Nagada Sang Dhol'?",
-            "hint": "It is a modern adaptation of Shakespeare's Romeo and Juliet set in Gujarat.",
-            "answer": "Goliyon Ki Raasleela Ram-Leela",
-            "image": "ramleela_gujarat_fort.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive vermillion red, marigold orange, and night sky indigo palette, no text, no watermark: traditional courtyard lit with torches and large decorative garba dhol drums."
-        },
-        {
-            "id": "q030",
-            "category": "Family & Relationships",
-            "question": "In 'Kabhi Khushi Kabhie Gham' (2001), in which UK city does Rahul settle down with Anjali after leaving India?",
-            "hint": "It features scenes where Poo studies at King's College.",
-            "answer": "London",
-            "image": "k3g_london_mansion.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British navy, mansion cream, and autumn amber palette, no text, no watermark: grand English country manor house surrounded by autumn trees and a classic yellow taxi."
-        },
-        {
-            "id": "q031",
-            "category": "Office Romance",
-            "question": "In 'Band Baaja Baaraat' (2010), what is the name of the wedding planning company started by Bittoo and Shruti?",
-            "hint": "Their golden rule was never to let love get in the way of business.",
-            "answer": "Shaadi Mubarak",
-            "image": "bbb_delhi_wedding.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive pink, marigold yellow, and wedding tent teal palette, no text, no watermark: vibrant Delhi wedding canopy with fairy lights and clipboards resting on a desk."
-        },
-        {
-            "id": "q032",
-            "category": "Second Chances",
-            "question": "In 'Dear Zindagi' (2016), who plays Dr. Jehangir 'Jug' Khan, the unconventional therapist who helps Kaira navigate her relationships?",
-            "hint": "He uses ocean waves and cycling sessions in Goa to explain life lessons.",
-            "answer": "Shah Rukh Khan",
-            "image": "dear_zindagi_goa.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, coastal palm green, sunset gold, and sea blue palette, no text, no watermark: quiet Goa beach lined with coconut palms and two bicycles leaning against a wooden fence."
-        },
-        {
-            "id": "q033",
-            "category": "Historical Hits",
-            "question": "Which 2001 movie nominated for an Academy Award centers on a cricket match played between Indian villagers and British officers?",
-            "hint": "Aamir Khan plays Bhuvan, who leads the village team to waive off unfair taxes.",
-            "answer": "Lagaan",
-            "image": "lagaan_cricket.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, drought earth orange, sky blue, and village clay palette, no text, no watermark: dry village soil ground with wooden cricket stumps and a leather ball under scorching sun."
-        },
-        {
-            "id": "q034",
-            "category": "College & Friends",
-            "question": "In 'Main Prem Ki Diwani Hoon' (2003) or 'Jaane Tu...', college groups are iconic. In 'Rang De Basanti' (2006), where do DJ, Sukhi, Karan, and Aslam hang out near Delhi?",
-            "hint": "They spend evening hours at the historic India Gate and old stepwells.",
-            "answer": "India Gate / Nahargarh Fort",
-            "image": "rdb_india_gate.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, evening saffron, shadow navy, and sandstone gold palette, no text, no watermark: illuminated stone arch of India Gate under dusk sky with an open yellow jeep parked nearby."
-        },
-        {
-            "id": "q035",
-            "category": "Songs & Dance",
-            "question": "Which hit song from 'Bareilly Ki Barfi' (2017) features Kriti Sanon, Ayushmann Khurrana, and Rajkummar Rao dancing at a wedding?",
-            "hint": "It was composed by Tanishk Bagchi and became a massive wedding dance track.",
-            "answer": "Sweety Tera Drama",
-            "image": "bareilly_market.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive fuchsia, marigold yellow, and small-town teal palette, no text, no watermark: vibrant North Indian town market street decorated with hanging bulb lights."
-        },
-        {
-            "id": "q036",
-            "category": "Friendship & Betrayal",
-            "question": "In 'Sonu Ke Titu Ki Sweety' (2018), what is the name of Titu's suspicious fiancée who battles Sonu for control?",
-            "hint": "She is played by Nushrratt Bharuccha, leading to the song 'Dil Chori'.",
-            "answer": "Sweety Sharma",
-            "image": "sktks_delhi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich maroon, wedding gold, and mint green palette, no text, no watermark: opulent wedding hall entrance in Delhi with brass wedding trumpets displayed in front."
-        },
-        {
-            "id": "q037",
-            "category": "Travel & Self-Discovery",
-            "question": "In 'Tamasha' (2015), under what fake names do Ved and Tara interact while exploring Corsica to avoid real-world identities?",
-            "hint": "He poses as Don and she poses as Mona Darling.",
-            "answer": "Don and Mona Darling",
-            "image": "tamasha_corsica.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mediterranean cliff teal, terracotta, and sunlight yellow palette, no text, no watermark: coastal cliffs of Corsica overlooking deep blue waters with a vintage fedora hat sitting on a rock."
-        },
-        {
-            "id": "q038",
-            "category": "Love & Memory Loss",
-            "question": "In 'Teri Baaton Mein Aisa Ujha Jiya' (2024), what unusual secret does Sifra hide from Aryan?",
-            "hint": "She is actually an advanced humanoid AI robot developed by his aunt's company.",
-            "answer": "She is a robot (AI)",
-            "image": "tbmauj_lab.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon cyan, metallic silver, and warm sunset red palette, no text, no watermark: futuristic glass laboratory window overlooking a sunset skyline with circuit board patterns subtly framing the view."
-        },
-        {
-            "id": "q039",
-            "category": "Breakup Stories",
-            "question": "In 'Pyaar Ke Side Effects' (2006), who played Sid, the DJ who develops extreme cold feet regarding marriage with Trisha?",
-            "hint": "He starred alongside Mallika Sherawat in this hit rom-com.",
-            "answer": "Rahul Bose",
-            "image": "pkse_mumbai.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Marine Drive blue, streetlamp yellow, and cassette tape black palette, no text, no watermark: curved Marine Drive coastline in Mumbai at night with DJ headphones placed on the ledge."
-        },
-        {
-            "id": "q040",
-            "category": "Classic Comedies",
-            "question": "In 'Welcome' (2007), what unique artistic hobby does gangster Majnu Bhai (Anil Kapoor) passionately pursue?",
-            "hint": "His famous painting features a donkey standing on top of a horse.",
-            "answer": "Painting",
-            "image": "welcome_easel.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, artist palette red, canvas white, and mansion gold palette, no text, no watermark: wooden art easel holding a blank canvas inside an opulent villa, with paintbrushes sitting in a jar."
-        },
-        {
-            "id": "q041",
-            "category": "Songs & Rhythms",
-            "question": "Which 2005 Yash Raj film featured the iconic item track 'Kajra Re' starring Aishwarya Rai alongside Amitabh and Abhishek Bachchan?",
-            "hint": "The film follows two small-town con artists who scam wealthy targets under fake aliases.",
-            "answer": "Bunty Aur Babli",
-            "image": "bunty_babli_station.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, railway yellow, night blue, and ticket orange palette, no text, no watermark: historic clock tower at a crowded North Indian railway junction with a pair of retro aviator sunglasses resting on a trunk."
-        },
-        {
-            "id": "q042",
-            "category": "College Love",
-            "question": "In 'Ishq Vishk' (2003), which actor made his Bollywood debut as Rajiv, playing a college student navigating young love?",
-            "hint": "He went on to star in hits like 'Jab We Met' and 'Kabir Singh'.",
-            "answer": "Shahid Kapoor",
-            "image": "ishq_vishk_canteen.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, canteen red, denim blue, and sunny yellow palette, no text, no watermark: college campus canteen wooden table with two soda bottles and a heart carved into the wood."
-        },
-        {
-            "id": "q043",
-            "category": "Love Triangles",
-            "question": "In 'Mujhse Dosti Karoge!' (2002), who secretly writes emails to Raj under Tina's name for years?",
-            "hint": "She is played by Rani Mukerji, who silently loves Raj while he thinks Tina wrote them.",
-            "answer": "Pooja",
-            "image": "mdk_church.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Shimla mist grey, pine green, and postal yellow palette, no text, no watermark: wooden church overlooking mist-covered hill station valleys with a stack of handwritten letters on a ledge."
-        },
-        {
-            "id": "q044",
-            "category": "Chartbusters",
-            "question": "Which 2018 horror-comedy film featured Rajkummar Rao and Shraddha Kapoor alongside the hit song 'Milegi Milegi'?",
-            "hint": "It takes place in the town of Chanderi, where a mysterious spirit snatches men at night during festival season.",
-            "answer": "Stree",
-            "image": "stree_chanderi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, moonlight purple, eerie red, and stone grey palette, no text, no watermark: ancient fort stone wall in Chanderi under moonlight with red cloth draped over a doorway."
-        },
-        {
-            "id": "q045",
-            "category": "Relationships & Secrets",
-            "question": "In 'Haseen Dillruba' (2021), what is the title of the fictional crime author whose gruesome books Rani and Rishu read?",
-            "hint": "His pulp fiction books guide the characters' dramatic moves in the story.",
-            "answer": "Dinesh Pandit",
-            "image": "haseen_dillruba_river.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, river emerald, crimson red, and book paperback yellow palette, no text, no watermark: quiet riverbank in Haridwar with a paperback crime novel resting on stone steps."
-        },
-        {
-            "id": "q046",
-            "category": "Destination Romance",
-            "question": "In 'Dil Dhadakne Do' (2015), on what type of trip does the Mehra family celebrate their 30th wedding anniversary?",
-            "hint": "The family drama unfolds across Mediterranean stops in Turkey and Greece.",
-            "answer": "A Mediterranean Cruise",
-            "image": "ddd_cruise_ship.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean navy, deck white, and sunset coral palette, no text, no watermark: luxury cruise ship deck overlooking Aegean sea waters with deck chairs facing the sunset."
-        },
-        {
-            "id": "q047",
-            "category": "Rebellious Love",
-            "question": "In 'Kedarnath' (2018), what work does Mansoor (Sushant Singh Rajput) perform carrying pilgrims up the mountain path?",
-            "hint": "He works as a local 'Pithoo' (porter) along the pilgrimage trek.",
-            "answer": "Pithoo (Porter)",
-            "image": "kedarnath_valley.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Himalayan slate, temple gold, and river turquoise palette, no text, no watermark: stone path leading up to the Kedarnath temple amidst dramatic mountain clouds."
-        },
-        {
-            "id": "q048",
-            "category": "Modern Marriages",
-            "question": "In 'Shubh Mangal Saavdhan' (2017), what medical issue affects Mudit right before his wedding with Sugandha?",
-            "hint": "The film humorously addresses erectile dysfunction in a middle-class family setup.",
-            "answer": "Erectile Dysfunction",
-            "image": "shubh_mangal_delhi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive orange, courtyard green, and brick red palette, no text, no watermark: traditional Delhi rooftop decorated with wedding marquee tenting and marigolds."
-        },
-        {
-            "id": "q049",
-            "category": "Sports & Passion",
-            "question": "In 'Dangal' (2016), who played the adult Geeta Phogat, India's first female wrestler to win gold at the Commonwealth Games?",
-            "hint": "Fatima Sana Shaikh played this lead role trained by Mahavir Singh Phogat (Aamir Khan).",
-            "answer": "Fatima Sana Shaikh",
-            "image": "dangal_akhada.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mud clay brown, arena red, and gold medal yellow palette, no text, no watermark: traditional wrestling akhada clay pit with gold sports medals hanging from a wooden post."
-        },
-        {
-            "id": "q050",
-            "category": "Unusual Romances",
-            "question": "In 'Luka Chuppi' (2019), what arrangement do Guddu and Rashmi try before marriage that leads to family chaos?",
-            "hint": "They decide to try a live-in relationship while pretending to be married to their traditional family.",
-            "answer": "Live-in relationship",
-            "image": "luka_chuppi_mathura.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mathura ghat orange, temple teal, and festive pink palette, no text, no watermark: river ghat steps in Mathura with two floral wedding garlands draped over a railing."
-        },
-        {
-            "id": "q051",
-            "category": "Songs & Memory",
-            "question": "Which 2004 Yash Chopra epic romance centers on an Indian Air Force pilot imprisoned in Pakistan for 22 years?",
-            "hint": "Shah Rukh Khan and Preity Zinta play Veer and Zaara.",
-            "answer": "Veer-Zaara",
-            "image": "veer_zaara_punjab.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mustard field gold, sky blue, and traditional red palette, no text, no watermark: endless golden mustard fields of Punjab with a tractor silhouette and boundary pillar in the foreground."
-        },
-        {
-            "id": "q052",
-            "category": "Campus Drama",
-            "question": "In 'Jaane Tu... Ya Jaane Na', what nickname do friends give to Jai because of his calm, non-violent nature?",
-            "hint": "His nickname is 'Rats' for Aditi, but his formal name in college is Jai Singh Rathore.",
-            "answer": "Rats (or Jai)",
-            "image": "jaane_tu_college.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, college lawn green, bright blue, and sun yellow palette, no text, no watermark: college amphitheater stone steps with an acoustic guitar and notepad resting on a step."
-        },
-        {
-            "id": "q053",
-            "category": "Cult Thrillers",
-            "question": "In 'Andhadhun' (2018), what instrument does Akash play while pretending to be visually impaired?",
-            "hint": "He gets caught in a murder cover-up while playing music at Pramod Sinha's apartment.",
-            "answer": "Piano",
-            "image": "andhadhun_piano.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, monochrome piano black, ivory white, and blood red palette, no text, no watermark: grand piano keys indoors with dark sunglasses resting on the keybed."
-        },
-        {
-            "id": "q054",
-            "category": "Modern Friendships",
-            "question": "In 'Veere Di Wedding' (2018), which four actresses star as childhood friends attending Kalindi's grand wedding?",
-            "hint": "The cast features Kareena Kapoor, Sonam Kapoor, Swara Bhasker, and Shikha Talsania.",
-            "answer": "Kareena Kapoor, Sonam Kapoor, Swara Bhasker, Shikha Talsania",
-            "image": "vdw_phuket.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical resort turquoise, sunset pink, and gold palette, no text, no watermark: beachside resort pool in Phuket lined with four lounge chairs looking toward the sea."
-        },
-        {
-            "id": "q055",
-            "category": "Action Romances",
-            "question": "In 'Main Hoon Na', what cover mission takes Major Ram Prasad Sharma back to high school/college?",
-            "hint": "He must protect Sanjana while helping execute 'Project Milaap'.",
-            "answer": "Project Milaap (protecting Sanjana Bakshi)",
-            "image": "main_hoon_na_school.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, colonial brick red, mountain mist white, and khaki green palette, no text, no watermark: grand red-brick boarding school courtyard with mountain peaks in the background."
-        },
-        {
-            "id": "q056",
-            "category": "Songs & Dance",
-            "question": "Which 2007 film directed by Farah Khan gave us the disco hit 'Dard-e-Disco' featuring Shah Rukh Khan?",
-            "hint": "The story revolves around reincarnation and 1970s Bollywood cinema.",
-            "answer": "Om Shanti Om",
-            "image": "oso_retro_set.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon disco purple, flame orange, and gold shimmer palette, no text, no watermark: retro 1970s disco ball hanging above a film studio floor with stage spotlights."
-        },
-        {
-            "id": "q057",
-            "category": "Breakup Recovery",
-            "question": "In 'Luv Ka The End' (2011), what does Rhea do after discovering her boyfriend Luv is secretly cheating on her for a bet?",
-            "hint": "She teams up with her best friends to plot revenge and humiliate him at a college festival.",
-            "answer": "Plots revenge with her friends",
-            "image": "luv_ka_the_end_school.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bubblegum pink, chalkboard black, and yellow palette, no text, no watermark: high school hallway lockers with a lipstick heart drawn on a locker door."
-        },
-        {
-            "id": "q058",
-            "category": "Love & Career",
-            "question": "In 'Ki & Ka' (2016), how do Kabir and Kia challenge traditional gender roles in their marriage?",
-            "hint": "Kabir chooses to be a stay-at-home husband while Kia pursues her corporate career.",
-            "answer": "Kabir stays home while Kia works",
-            "image": "ki_and_ka_train.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, modern apartment teal, warm wood brown, and yellow palette, no text, no watermark: stylish apartment interior featuring a toy train track setup around a dining table."
-        },
-        {
-            "id": "q059",
-            "category": "Cult Classic Musicals",
-            "question": "Which 2008 musical drama starred Farhan Akhtar as Aditya Shroff, lead singer of the rock band 'Magik'?",
-            "hint": "The film features chartbuster songs like 'Sinbad The Sailor' and 'Socha Hai'.",
-            "answer": "Rock On!!",
-            "image": "rock_on_stage.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, concert blue, spotlight yellow, and amplifier black palette, no text, no watermark: live concert stage illuminated by overhead spotlights with drum kits and electric guitars set up."
-        },
-        {
-            "id": "q060",
-            "category": "Relationships & In-Laws",
-            "question": "In 'Humpty Sharma Ki Dulhania' (2014), what iconic designer item does Kavya insist on buying for her wedding?",
-            "hint": "She travels to Delhi specifically to buy a designer Manish Malhotra lehenga.",
-            "answer": "Manish Malhotra Lehenga",
-            "image": "humpty_sharma_delhi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bridal red, gold embroidery, and Chandni Chowk teal palette, no text, no watermark: bustling Chandni Chowk market lane in Delhi with bridal red silk fabrics displayed in store windows."
-        },
-        {
-            "id": "q061",
-            "category": "Epic Period Romances",
-            "question": "Which 2018 period drama stars Deepika Padukone and Ranveer Singh as Queen Padmavati and Sultan Alauddin Khalji?",
-            "hint": "Directed by Sanjay Leela Bhansali, it features the grand song 'Ghoomar'.",
-            "answer": "Padmaavat",
-            "image": "padmaavat_chittorgarh.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal fortress gold, torch flame orange, and deep red palette, no text, no watermark: soaring stone towers of Chittorgarh Fort standing strong against a fiery sunset sky."
-        },
-        {
-            "id": "q062",
-            "category": "Songs & Nostalgia",
-            "question": "Which 2003 Sci-Fi hit film introduced the lovable alien character 'Jadoo' summoned by a musical synthesizer?",
-            "hint": "Hrithik Roshan plays Rohit Mehra in this film directed by Rakesh Roshan.",
-            "answer": "Koi... Mil Gaya",
-            "image": "koi_mil_gaya_kasauli.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alien green, pine forest dark, and starry sky blue palette, no text, no watermark: mist-covered Kasauli pine forest with a retro electronic keyboard synth sitting on a tree stump under starry skies."
-        },
-        {
-            "id": "q063",
-            "category": "Heartbreak & Healing",
-            "question": "In 'Barfi!' (2012), who plays Jhilmil Chatterjee, the autistic heiress who forms a deep bond with Murphy (Barfi)?",
-            "hint": "Priyanka Chopra earned wide acclaim for this lead performance alongside Ranbir Kapoor.",
-            "answer": "Priyanka Chopra",
-            "image": "barfi_darjeeling_clock.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Darjeeling mist white, toy train yellow, and pine green palette, no text, no watermark: iconic clock tower in Darjeeling with a red toy train winding along tracks in the foreground."
-        },
-        {
-            "id": "q064",
-            "category": "College & Rom-Coms",
-            "question": "In 'Badrinath Ki Dulhania' (2017), to which foreign city does Vaidehi fly to pursue her flight attendant training career?",
-            "hint": "Badri follows her all the way to this South Asian metropolis.",
-            "answer": "Singapore",
-            "image": "bkd_singapore_skyline.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Marina Bay turquoise, neon magenta, and night blue palette, no text, no watermark: Marina Bay Sands skyline in Singapore reflected on calm bay waters at night."
-        },
-        {
-            "id": "q065",
-            "category": "Love Triangles",
-            "question": "In 'Dhadkan' (2000), which actor plays Dev, who returns wealthy after being rejected by Anjali's family for being poor?",
-            "hint": "Suniel Shetty plays Dev opposite Shilpa Shetty's Anjali and Akshay Kumar's Ram.",
-            "answer": "Suniel Shetty",
-            "image": "dhadkan_mansion.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stormy grey, mansion gold, and dark blue palette, no text, no watermark: grand mansion iron gates under rain clouds with red roses scattered near the gate entrance."
-        },
-        {
-            "id": "q066",
-            "category": "Secret Affairs",
-            "question": "In 'Kabhi Alvida Naa Kehna' (2006), Dev and Maya start an extramarital affair in which major international city?",
-            "hint": "Directed by Karan Johar, set amidst Central Park autumn foliage.",
-            "answer": "New York City",
-            "image": "kank_central_park.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Central Park autumn orange, maple red, and foggy grey palette, no text, no watermark: Central Park stone bridge in New York framed by bright orange autumn maple trees."
-        },
-        {
-            "id": "q067",
-            "category": "Songs & Dance",
-            "question": "Which 2013 action comedy gave us the hit dance track 'Lungi Dance', paying tribute to Rajinikanth?",
-            "hint": "The film stars Shah Rukh Khan and Deepika Padukone riding the Express train to Rameswaram.",
-            "answer": "Chennai Express",
-            "image": "chennai_express_dudhsagar.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, waterfall white, jungle green, and yellow train palette, no text, no watermark: majestic Dudhsagar Waterfalls with a yellow passenger train crossing the bridge over misty sprays."
-        },
-        {
-            "id": "q068",
-            "category": "Comedy of Errors",
-            "question": "In 'Bhool Bhulaiyaa' (2007), what name does Avni's split personality take when possessed by the ancient dancer's spirit?",
-            "hint": "She performs the legendary classical dance 'Aami Je Tomar' in the courtyard.",
-            "answer": "Manjulika",
-            "image": "bhool_bhulaiyaa_palace.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal palace gold, eerie shadow blue, and dancer red palette, no text, no watermark: ancient Rajasthani palace hallway lit by oil lamps, with ghungroo anklet bells resting on marble steps."
-        },
-        {
-            "id": "q069",
-            "category": "Action Romances",
-            "question": "In 'Ek Tha Tiger' (2012), what is the real country of origin for Zoya (Katrina Kaif), the secret agent Tiger falls in love with?",
-            "hint": "Tiger works for India's RAW while Zoya works for Pakistan's ISI.",
-            "answer": "Pakistan (ISI)",
-            "image": "ek_tha_tiger_istanbul.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Bosphorus blue, sunset orange, and dome gold palette, no text, no watermark: Galata Tower standing over Istanbul rooftops near the Bosphorus waterway."
-        },
-        {
-            "id": "q070",
-            "category": "Relationships & Secrets",
-            "question": "In 'Gehraiyaan' (2022), Alisha enters a secret affair with Zain, who is engaged to which family member?",
-            "hint": "Zain is engaged to Alisha's cousin Tia (played by Ananya Panday).",
-            "answer": "Her cousin Tia",
-            "image": "gehraiyaan_yacht.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep ocean navy, storm grey, and yacht white palette, no text, no watermark: sleek modern yacht floating on stormy deep blue ocean waters."
-        },
-        {
-            "id": "q071",
-            "category": "Classic Rom-Coms",
-            "question": "In 'Partner' (2007), what is Prem's (Salman Khan) unusual profession in Mumbai?",
-            "hint": "He acts as a 'Love Guru' helping shy men win over the women of their dreams.",
-            "answer": "Love Guru (Relationship Advisor)",
-            "image": "partner_mumbai.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sunset pink, coastal blue, and neon yellow palette, no text, no watermark: Marine Drive promenade at sunset with a red sports convertible car parked on the roadside."
-        },
-        {
-            "id": "q072",
-            "category": "Rebellious Youth",
-            "question": "In 'Udaan' (2010), what sport or passion does Rohan secretly pursue despite his abusive father's resistance?",
-            "hint": "He writes poetry and aspires to become a writer/poet.",
-            "answer": "Poetry / Writing",
-            "image": "udaan_jamshedpur.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, industrial factory grey, dawn orange, and steel blue palette, no text, no watermark: industrial city chimney silhouettes at dawn with an open notebook and pen sitting on a ledge."
-        },
-        {
-            "id": "q073",
-            "category": "Chartbusters",
-            "question": "Which 2012 film features the viral track 'Chinta Ta Ta Chita Chita' starring Akshay Kumar and Sonakshi Sinha?",
-            "hint": "Akshay Kumar plays Vikram Rathore and the lovable thief Shiva.",
-            "answer": "Rowdy Rathore",
-            "image": "rowdy_rathore_fort.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rustic fort orange, khaki green, and bright yellow palette, no text, no watermark: courtyard of a Rajasthani fort with a red police mustache icon painted on a stone pillar."
-        },
-        {
-            "id": "q074",
-            "category": "Sports & Drama",
-            "question": "In 'Sultan' (2016), which actress played Aarfa Hussain, a state-level wrestler who inspires Sultan Ali Khan?",
-            "hint": "Anushka Sharma played this lead role opposite Salman Khan.",
-            "answer": "Anushka Sharma",
-            "image": "sultan_haryana_akhada.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Haryana wheat yellow, earth brown, and sky blue palette, no text, no watermark: rural wrestling pit in a village field with heavy tractor tires resting nearby."
-        },
-        {
-            "id": "q075",
-            "category": "Relationships & Small Towns",
-            "question": "In 'Tanu Weds Manu' (2011), in which North Indian city do Manu and Tanu first meet for their arranged marriage proposal?",
-            "hint": "Tanu's rebellious personality in Kanpur contrasts with Manu's quiet NRI background.",
-            "answer": "Kanpur",
-            "image": "tanu_weds_manu_kanpur.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, brick red, festive marigold, and alleyway blue palette, no text, no watermark: narrow North Indian street lined with colorful market stalls and decorative wedding lights."
-        },
-        {
-            "id": "q076",
-            "category": "Courtroom Drama",
-            "question": "In 'Jolly LLB 2' (2017), who plays Jagdishwar Mishra (Jolly), the struggling lawyer fighting for justice in Lucknow?",
-            "hint": "Akshay Kumar plays this lead role following Arshad Warsi in the original installment.",
-            "answer": "Akshay Kumar",
-            "image": "jolly_llb2_lucknow.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, court black, sandstone yellow, and sky blue palette, no text, no watermark: historic Rumi Darwaza gateway in Lucknow with a black lawyer coat hanging on a chair nearby."
-        },
-        {
-            "id": "q077",
-            "category": "Cult Comedies",
-            "question": "In 'Dhamaal' (2007), under what letter-shaped tree does Bose reveal 10 crore rupees are buried at St. Sebastian's garden?",
-            "hint": "The four friends search for a huge 'W' made of palm trees in Goa.",
-            "answer": "A big 'W' (W tree)",
-            "image": "dhamaal_goa_w.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical palm green, dirt brown, and sunny sky yellow palette, no text, no watermark: four palm trees leaning together in a garden forming a distinct letter 'W' shape."
-        },
-        {
-            "id": "q078",
-            "category": "Unrequited Love",
-            "question": "In 'Raanjhanaa' (2013), Kundan (Dhanush) holds lifelong unrequited love for which childhood friend in Varanasi?",
-            "hint": "Sonam Kapoor plays Zoya, who attends Jawaharlal Nehru University (JNU).",
-            "answer": "Zoya Haider",
-            "image": "raanjhanaa_varanasi_ghat.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, holy river orange, temple red, and evening blue palette, no text, no watermark: Varanasi river ghat steps with floating diyas on the water and small bowls of red gulal powder on stone steps."
-        },
-        {
-            "id": "q079",
-            "category": "High School Romance",
-            "question": "In 'Mohabbatein' (2000), what is the strict name of the prestigious gurukul college headed by Narayan Shankar?",
-            "hint": "Amitabh Bachchan enforces strict rules of discipline, honor, and tradition here.",
-            "answer": "Gurukul",
-            "image": "mohabbatein_gurukul.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British stone grey, autumn maple orange, and royal blue palette, no text, no watermark: grand stone archway of a castle-like college campus surrounded by falling red autumn leaves."
-        },
-        {
-            "id": "q080",
-            "category": "Modern Relationships",
-            "question": "In 'Manmarziyaan' (2018), who plays the wild, free-spirited DJ Vicky who struggles with commitment to Rumi?",
-            "hint": "Vicky Kaushal played this eccentric character alongside Taapsee Pannu.",
-            "answer": "Vicky Kaushal",
-            "image": "manmarziyaan_amritsar.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon hair pink, rooftop yellow, and sky blue palette, no text, no watermark: Amritsar city rooftop with DJ turntables set up against a sunset sky."
-        },
-        {
-            "id": "q081",
-            "category": "Songs & Dance",
-            "question": "Which 2019 dance movie featured Varun Dhawan and Shraddha Kapoor competing in London street dance battles?",
-            "hint": "Directed by Remo D'Souza, featuring the track 'Garmi'.",
-            "answer": "Street Dancer 3D",
-            "image": "street_dancer_london.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, urban neon cyan, magenta, and street night black palette, no text, no watermark: brick London alleyway illuminated by neon street sign logos with boombox speakers on the ground."
-        },
-        {
-            "id": "q082",
-            "category": "Action Romances",
-            "question": "In 'War' (2019), who plays the young RAW agent Khalid Rahmani tasked with hunting down his former mentor Kabir?",
-            "hint": "Tiger Shroff starred alongside Hrithik Roshan in this blockbuster action movie.",
-            "answer": "Tiger Shroff",
-            "image": "war_arctic_ice.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, icy arctic blue, snow white, and charcoal steel palette, no text, no watermark: frozen arctic ice field with tire tracks from sports cars leading into the horizon."
-        },
-        {
-            "id": "q083",
-            "category": "Comedy & Confusion",
-            "question": "In 'Good Newwz' (2019), what major IVF hospital mix-up connects two couples with the surname Batra?",
-            "hint": "The hospital accidentally swaps the sperm samples of Varun/Deepti and Moni/Honey due to identical last names.",
-            "answer": "Sperm sample swap due to identical last names",
-            "image": "good_newwz_mumbai.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, maternity mint green, warm yellow, and coral pink palette, no text, no watermark: modern clinic reception desk with two baby rattle toys placed on the counter."
-        },
-        {
-            "id": "q084",
-            "category": "Sci-Fi & Mythology",
-            "question": "In 'Brahmāstra: Part One – Shiva' (2022), what natural element is Shiva (Ranbir Kapoor) immune to?",
-            "hint": "He discovers his deep magical connection to Agnyastra.",
-            "answer": "Fire",
-            "image": "brahmastra_varanasi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cosmic flame orange, night sky indigo, and gold shimmer palette, no text, no watermark: night view of Varanasi ghats with mystic glowing fire sparks rising near temple steps."
-        },
-        {
-            "id": "q085",
-            "category": "Revenge Thrillers",
-            "question": "In 'Badla' (2019), who plays the veteran lawyer Badal Gupta interviewing Naina Sethi about a murder mystery?",
-            "hint": "Amitabh Bachchan played this role opposite Taapsee Pannu in Sujoy Ghosh's mystery film.",
-            "answer": "Amitabh Bachchan",
-            "image": "badla_glasgow.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Scottish highland mist, hotel mahogany, and icy grey palette, no text, no watermark: foggy Glasgow street lined with stone buildings and a vintage pocket watch on a window ledge."
-        },
-        {
-            "id": "q086",
-            "category": "Chartbuster Anthems",
-            "question": "Which 2023 blockbuster featured the global hit song 'Jumeme Jo Pathaan' starring Shah Rukh Khan and Deepika Padukone?",
-            "hint": "The film marked SRK's return to the big screen as a RAW field agent.",
-            "answer": "Pathaan",
-            "image": "pathaan_spain.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mediterranean turquoise, sunlit gold, and slate grey palette, no text, no watermark: coastal Spanish plaza with sea views and a sleek black sports car parked by stone arches."
-        },
-        {
-            "id": "q087",
-            "category": "Family & Relationships",
-            "question": "In 'Rocky Aur Rani Kii Prem Kahaani' (2023), what family business does Rocky Randhawa's family run in Delhi?",
-            "hint": "They run the famous 'Dhanlakshmi Sweets' empire.",
-            "answer": "Dhanlakshmi Sweets (Sweets Business)",
-            "image": "rarpk_delhi_mansion.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, opulent marigold gold, royal magenta, and marble white palette, no text, no watermark: grand Delhi Punjabi mansion courtyard decorated with festive sweet boxes and floral garlands."
-        },
-        {
-            "id": "q088",
-            "category": "Inspiring Dramas",
-            "question": "In '12th Fail' (2023), which real-life IPS officer's incredible journey from Chambal to clearing the UPSC exam is depicted?",
-            "hint": "Vikrant Massey played Manoj Kumar Sharma in Vidhu Vinod Chopra's hit film.",
-            "answer": "Manoj Kumar Sharma",
-            "image": "12th_fail_delhi_library.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mukherjee Nagar study brown, lamp light yellow, and desk teal palette, no text, no watermark: crowded study room desk in Delhi filled with open UPSC textbooks and a desk lamp."
-        },
-        {
-            "id": "q089",
-            "category": "Small-Town Romances",
-            "question": "In 'Satyaprem Ki Katha' (2023), who plays Sattu, the gentle husband supporting Katha through her past trauma?",
-            "hint": "Kartik Aaryan plays Sattu alongside Kiara Advani's Katha.",
-            "answer": "Kartik Aaryan",
-            "image": "spkk_ahmedabad.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Sabarmati river blue, pol heritage yellow, and terracotta red palette, no text, no watermark: historic wooden pol house balcony in Ahmedabad decorated with colorful festive kites."
-        },
-        {
-            "id": "q090",
-            "category": "Songs & Musicals",
-            "question": "Which 2012 sports biopic featured the hit song 'Zinda' composed by Shankar-Ehsaan-Loy?",
-            "hint": "Farhan Akhtar portrayed legendary Indian sprinter Milkha Singh.",
-            "answer": "Bhaag Milkha Bhaag",
-            "image": "bmb_stadium_track.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stadium track red, sunlight gold, and sky blue palette, no text, no watermark: classic running track lanes stretching into sunset with leather running shoes resting on the track line."
-        },
-        {
-            "id": "q091",
-            "category": "Unusual Plotlines",
-            "question": "In 'Dream Girl' (2019), what female radio chat voice alias does Karam (Ayushmann Khurrana) adopt to win over callers?",
-            "hint": "He speaks as 'Pooja' at a call center, making everyone fall in love with his voice.",
-            "answer": "Pooja",
-            "image": "dream_girl_call_center.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, call center yellow, phone wire black, and neon pink palette, no text, no watermark: vintage call center desk with a retro telephone headset and a sign reading 'Pooja'."
-        },
-        {
-            "id": "q092",
-            "category": "Relationship Drama",
-            "question": "In 'Animal' (2023), who plays Ranvijay's devoted but neglected wife Geetanjali?",
-            "hint": "Rashmika Mandanna played this lead role opposite Ranbir Kapoor.",
-            "answer": "Rashmika Mandanna",
-            "image": "animal_delhi_mansion.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steel grey, deep blood red, and mansion cream palette, no text, no watermark: grand estate entrance gate surrounded by autumn trees with a vintage luxury limousine parked out front."
-        },
-        {
-            "id": "q093",
-            "category": "Comedy of Errors",
-            "question": "In 'Chup Chup Ke' (2006), why does Jeetu (Shahid Kapoor) pretend to be deaf and mute when saved by fishermen?",
-            "hint": "He wants to escape massive debts owed to moneylenders in his village.",
-            "answer": "To escape heavy financial debts",
-            "image": "chup_chup_ke_house.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gujarati courtyard yellow, white laundry, and sky blue palette, no text, no watermark: traditional Gujarati villa courtyard with long white bedsheets drying on clotheslines."
-        },
-        {
-            "id": "q094",
-            "category": "Chartbusters",
-            "question": "Which 2014 action comedy gave us the hit party anthem 'Jumme Ki Raat' starring Salman Khan and Jacqueline Fernandez?",
-            "hint": "Salman Khan plays Devi Lal Singh (Devil) in this film.",
-            "answer": "Kick",
-            "image": "kick_warsaw.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Warsaw cobblestone grey, neon red, and night blue palette, no text, no watermark: historic European city square at night with a red sports bicycle parked by a lamppost."
-        },
-        {
-            "id": "q095",
-            "category": "Historical Dramas",
-            "question": "In 'Gadar 2' (2023), where does Tara Singh travel in 1971 to rescue his captured son Jeete?",
-            "hint": "He crosses the border into Lahore, Pakistan.",
-            "answer": "Pakistan (Lahore)",
-            "image": "gadar2_border.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, border fence grey, sunset orange, and dust brown palette, no text, no watermark: heavy iron border gate surrounded by dry landscape with a handpump standing nearby."
-        },
-        {
-            "id": "q096",
-            "category": "High School Dreams",
-            "question": "In 'Chhichhore' (2019), what derogatory label do the Hostel 4 students fight to wipe off during the GC sports tournament?",
-            "hint": "They were notorious across campus for being called 'Losers'.",
-            "answer": "Losers",
-            "image": "chhichhore_hostel.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, campus brick red, sports turf green, and trophy gold palette, no text, no watermark: college hostel quadrangle balcony with a sports carrom board resting against a pillar."
-        },
-        {
-            "id": "q097",
-            "category": "Love & Sacrifice",
-            "question": "In 'Siddharth & Kiara's hit real-life reel film 'Shershaah' (2021), which Param Vir Chakra awardee's heroic story is told?",
-            "hint": "Captain Vikram Batra's famous military code was 'Yeh Dil Maange More!'.",
-            "answer": "Captain Vikram Batra",
-            "image": "shershaah_kargil.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Kargil mountain slate, snow white, and tricolor saffron palette, no text, no watermark: high altitude snow peak in Kargil with an Indian tricolor flag waving proudly on a rock."
-        },
-        {
-            "id": "q098",
-            "category": "Songs & Romance",
-            "question": "Which 2008 rom-com features the popular song 'Khabar Nahi' and stars Abhishek Bachchan, John Abraham, and Priyanka Chopra in Miami?",
-            "hint": "Sam and Kunal pretend to be a gay couple to rent a luxury apartment.",
-            "answer": "Dostana",
-            "image": "dostana_miami.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Miami ocean turquoise, palm green, and bright yellow palette, no text, no watermark: South Beach Miami palm trees framing a sunny coastal boulevard with a yellow sports car."
-        },
-        {
-            "id": "q099",
-            "category": "Small-Town Dramas",
-            "question": "In 'Laapataa Ladies' (2024), what causes the two brides Phool and Jaya to get accidentally swapped?",
-            "hint": "Their identical long red bridal veils (ghoonghat) on a crowded overnight train.",
-            "answer": "Identical long bridal veils (ghoonghat) on a crowded train",
-            "image": "laapataa_ladies_station.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rural railway yellow, bridal red, and dusk blue palette, no text, no watermark: small-town Indian railway platform at night with a bright red silk veil draped over a bench."
-        },
-        {
-            "id": "q0100",
-            "category": "Rebellious Romances",
-            "question": "In 'I Hate Luv Storys' (2010), Jay works as an assistant director for which romantic film director before falling for Simran?",
-            "hint": "Imran Khan plays Jay and Sonam Kapoor plays art director Simran.",
-            "answer": "Veer Kapoor",
-            "image": "ihls_film_set.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cinema red, camera black, and star yellow palette, no text, no watermark: film set camera director chair facing a backdrop of scenic red rose decorations."
-        }
-    ]
+  "gameType": "bollywood",
+  "name": "Bollywood Bingo",
+  "description": "A trivia game about Bollywood, including movies, actors, songs, and famous dialogues. Players answer questions to fill their bingo cards and win prizes.",
+  "questions": [
+    {
+      "id": "q001",
+      "category": "Relationships & Breakups",
+      "question": "In 'Jab We Met' (2007), which ex-boyfriend breaks Geet's heart in Shimla, causing her to run away to Manali?",
+      "hint": "Aditya and Geet later travel together to confront him, leading to one of the most famous phone rant scenes in Hindi cinema.",
+      "answer": "Anshuman",
+      "image": "images/jab_we_met_shimla.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep Himalayan pine green, snow white, and mountain dusk purple palette, no text, no watermark: vintage steam train chugging past a snowy mountain station platform, with a solitary suitcase left behind on the platform bench."
+    },
+    {
+      "id": "q002",
+      "category": "Songs & Musicals",
+      "question": "Which iconic 2011 Imtiaz Ali film features Janardhan's transformation into a heartbroken rockstar named Jordan?",
+      "hint": "The soundtrack was composed by A.R. Rahman and includes hits like 'Sadda Haq' and 'Kun Faya Kun'.",
+      "answer": "Rockstar",
+      "image": "images/rockstar_prague.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep indigo night sky, gothic stone grey, and fiery orange palette, no text, no watermark: gothic Charles Bridge towers in Prague under moonlight, with an acoustic guitar leaning against the stone bridge wall."
+    },
+    {
+      "id": "q003",
+      "category": "Messy Romances",
+      "question": "In 'Yeh Jawaani Hai Deewani' (2013), where do Bunny, Naina, Aditi, and Avi go on their memorable college trekking trip?",
+      "hint": "The destination in Himachal Pradesh is known for its snow-covered slopes and adventurous hiking trails.",
+      "answer": "Manali",
+      "image": "images/yjhd_manali_snow.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crisp glacier blue, pine green, and bright sunlight yellow palette, no text, no watermark: snow-covered mountain peak with a winding hiking trail and four trekking backpacks resting near a pine tree."
+    },
+    {
+      "id": "q004",
+      "category": "Friendship & Travel",
+      "question": "In 'Zindagi Na Milegi Dobara' (2011), which Spanish festival do Kabir, Imran, and Arjun participate in during their road trip?",
+      "hint": "Tons of tomatoes were flown in from Portugal for this messy, vibrant festival featured in the song 'Ik Junoon'.",
+      "answer": "La Tomatina",
+      "image": "images/znmd_spain_bunol.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant tomato red, sunny yellow, and terracotta palette, no text, no watermark: rustic Spanish village street splashed with bright red tomato pulp framing historic stone balconies."
+    },
+    {
+      "id": "q005",
+      "category": "Love Triangles",
+      "question": "In the 2012 movie 'Cocktail', which two female leads share an apartment in London before Gautam enters their lives?",
+      "hint": "One is a wild party enthusiast and the other is a shy, traditional girl abandoned by her husband at the airport.",
+      "answer": "Veronica and Meera",
+      "image": "images/cocktail_london.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal crimson red, foggy Thames blue, and brass gold palette, no text, no watermark: classic red double-decker bus crossing Westminster Bridge with two stylish travel bags resting by the bus stop."
+    },
+    {
+      "id": "q006",
+      "category": "Chartbuster Tracks",
+      "question": "Which 2010 heist comedy featured the hugely popular dance number 'Sheila Ki Jawani' starring Katrina Kaif?",
+      "hint": "Directed by Farah Khan, the film stars Akshay Kumar as a con artist named Tabrez Mirza Khan.",
+      "answer": "Tees Maar Khan",
+      "image": "images/tees_maar_khan_train.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, locomotive steel grey, and deep sky blue palette, no text, no watermark: steam engine train crossing desert tracks with movie clapperboards and film canisters resting on the sand."
+    },
+    {
+      "id": "q007",
+      "category": "2000s Nostalgia",
+      "question": "In 'Dil Chahta Hai' (2001), where do Akash, Sameer, and Sid take their famous road trip that set the standard for modern buddy films?",
+      "hint": "The trip features an iconic scene at Chapora Fort overlooking the ocean.",
+      "answer": "Goa",
+      "image": "images/dil_chahta_hai_fort.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, coastal turquoise, palm tree green, and sunset orange palette, no text, no watermark: Chapora Fort stone wall overlooking the ocean with three distinct silhouettes sitting on the fortress wall watching the sunset."
+    },
+    {
+      "id": "q008",
+      "category": "Modern Classic Rom-Coms",
+      "question": "In 'Jaane Tu... Ya Jaane Na' (2008), what three tasks must Jai complete to fulfill his mother's traditional warrior test?",
+      "hint": "He had to ride a horse, get arrested by the police, and punch someone in a fight.",
+      "answer": "Ride a horse, get arrested, and beat someone up",
+      "image": "images/jaane_tu_mumbai.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sea blue, Victorian stone beige, and lamp yellow palette, no text, no watermark: Gateway of India in Mumbai harbor at dusk, with a galloping horse shadow casting over a police station barrier."
+    },
+    {
+      "id": "q009",
+      "category": "Breakup Anthems",
+      "question": "Which 2016 Karan Johar film featured 'The Breakup Song', starring Ranbir Kapoor and Anushka Sharma in a silent disco?",
+      "hint": "The story centers on unrequited love and friendship between Ayan and Alizeh.",
+      "answer": "Ae Dil Hai Mushkil",
+      "image": "images/adhm_vienna.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, imperial gold, autumn red, and evening violet palette, no text, no watermark: grand Schönbrunn Palace in Vienna with neon-glowing silent disco headphones placed on a stone ledge in the foreground."
+    },
+    {
+      "id": "q010",
+      "category": "Relationships & Cultures",
+      "question": "In '2 States' (2014), Krish and Ananya try to convince their families to accept their marriage. Which two cultures collide?",
+      "hint": "One family belongs to a Punjabi background in Delhi and the other is a Tamil Brahmin family from Chennai.",
+      "answer": "Punjabi and Tamil Brahmin",
+      "image": "images/2_states_chennai_temple.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, temple gold, ocean blue, and mustard field yellow palette, no text, no watermark: South Indian coastal temple entrance gateway subtly merging with golden mustard fields."
+    },
+    {
+      "id": "q011",
+      "category": "Collage & Campus Life",
+      "question": "In '3 Idiots' (2009), what was the true full name of the genius student known as Rancho?",
+      "hint": "At the end of the movie, Farhan and Raju discover his real identity as a scientist holding 400 patents in Ladakh.",
+      "answer": "Phunsukh Wangdu",
+      "image": "images/3_idiots_ladakh.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep turquoise, snow white, and terracotta yellow palette, no text, no watermark: Pangong Lake in Ladakh surrounded by mountains, with three yellow plastic chairs sitting on the shore."
+    },
+    {
+      "id": "q012",
+      "category": "Relationship Drama",
+      "question": "In 'Kabir Singh' (2019), what is the name of the medical student Kabir falls obsessively in love with?",
+      "hint": "She is his junior at the Delhi medical college, played by Kiara Advani.",
+      "answer": "Preeti Sikka",
+      "image": "images/kabir_singh_college.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crimson red, slate grey, and warm ivory palette, no text, no watermark: medical college corridor with a stethoscope resting on a wooden desk beside a red motorbike helmet."
+    },
+    {
+      "id": "q013",
+      "category": "Songs & Musicals",
+      "question": "In 'Om Shanti Om' (2007), which song features 31 major Bollywood stars appearing in a special guest sequence?",
+      "hint": "The track takes place during an award party hosted by superstar Om Kapoor.",
+      "answer": "Deewangi Deewangi",
+      "image": "images/om_shanti_om_set.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, retro magenta, gold shimmer, and velvet blue palette, no text, no watermark: 1970s film studio film camera on a tripod overlooking a glittering red-carpet stage setup."
+    },
+    {
+      "id": "q014",
+      "category": "Friends to Lovers",
+      "question": "In 'Main Hoon Na' (2004), who plays Sanjana, the tomboy college student who gets a makeover before falling for Lucky?",
+      "hint": "She is the daughter of General Amarjeet Bakshi in the movie.",
+      "answer": "Amrita Rao",
+      "image": "images/main_hoon_na_darjeeling.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tea garden green, mist white, and brick red palette, no text, no watermark: majestic colonial clock tower in Darjeeling surrounded by lush green tea hills."
+    },
+    {
+      "id": "q015",
+      "category": "Famous Lines",
+      "question": "Which 2008 sports drama gave us the iconic line 'Sattar Minute' (70 Minutes) spoken during a locker-room speech?",
+      "hint": "Shah Rukh Khan plays Kabir Khan, coaching the Indian women's national field hockey team.",
+      "answer": "Chak De! India",
+      "image": "images/chak_de_hockey.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tricolor saffron, emerald green, and stadium spotlight white palette, no text, no watermark: dramatic field hockey stick and ball resting on a bright green turf stadium under night lights."
+    },
+    {
+      "id": "q016",
+      "category": "Revenge & Romance",
+      "question": "In 'Ghajini' (2008), what is the name of the bubbly girl Sanjay Singhania falls in love with before losing his memory?",
+      "hint": "She runs a small modeling agency and mistakenly tells everyone Sanjay Singhania is her boyfriend.",
+      "answer": "Kalpana Shetty",
+      "image": "images/ghajini_mumbai_bus.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm amber, graphite grey, and polaroid yellow palette, no text, no watermark: vintage red Mumbai city bus passing near a wall decorated with polaroid photographs and handwritten notes."
+    },
+    {
+      "id": "q017",
+      "category": "Musical Romances",
+      "question": "In 'Aashiqui 2' (2013), what item does Rahul Jaykar use to shelter Arohi from the rain under a jacket during the poster shot?",
+      "hint": "This scene accompanies the iconic romantic hit song 'Tum Hi Ho'.",
+      "answer": "A leather jacket",
+      "image": "images/aashiqui2_rain.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rain-slicked street blue, warm streetlamp yellow, and shadow black palette, no text, no watermark: dark rain-soaked street illuminated by a warm lamp, with a jacket silhouetted shielding two people."
+    },
+    {
+      "id": "q018",
+      "category": "Secret Identities",
+      "question": "In 'Rab Ne Bana Di Jodi' (2008), what alter-ego name does Surinder Sahni adopt to impress his wife Taani during dance classes?",
+      "hint": "He wears spiked hair, bright t-shirts, and tight jeans to portray a loud, stylish personality.",
+      "answer": "Raj Kapoor",
+      "image": "images/rnbdj_amritsar.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, golden temple yellow, sky blue, and bright red palette, no text, no watermark: Golden Temple reflection on quiet water in Amritsar with yellow dance shoes placed on a bench."
+    },
+    {
+      "id": "q019",
+      "category": "Messy Relationships",
+      "question": "In 'Pyaar Ka Punchnama' (2011), which actor delivered the legendary 7-minute monologue about the frustration of dating?",
+      "hint": "He played the character Liquid/Rajat and went on to star in 'Sonu Ke Titu Ki Sweety'.",
+      "answer": "Kartik Aaryan",
+      "image": "images/pkp_apartment.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bachelor pad grey, neon green, and couch red palette, no text, no watermark: cozy apartment balcony overlooking urban city night lights with three coffee mugs on a table."
+    },
+    {
+      "id": "q020",
+      "category": "Historical Romance",
+      "question": "In 'Bajirao Mastani' (2015), which actress played Kashibai, the dignified first wife of Maratha Peshwa Bajirao?",
+      "hint": "She starred alongside Ranveer Singh and Deepika Padukone, performing the duet song 'Pinga'.",
+      "answer": "Priyanka Chopra",
+      "image": "images/bajirao_shaniwar_wada.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal Maratha gold, marigold orange, and stone brown palette, no text, no watermark: grand stone gates of Shaniwar Wada fort in Pune framed by festive marigold garlands."
+    },
+    {
+      "id": "q021",
+      "category": "Destination Weddings",
+      "question": "In 'Destination Romance' tradition, where is Aditi's grand destination wedding held in 'Yeh Jawaani Hai Deewani'?",
+      "hint": "The royal palace scenes were filmed at the Oberoi Udaivilas in this famous Rajasthani city of lakes.",
+      "answer": "Udaipur",
+      "image": "images/yjhd_udaipur_palace.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, palace gold, lake turquoise, and festive fuchsia palette, no text, no watermark: majestic Udaipur palace arches overlooking Lake Pichola illuminated with wedding fairy lights."
+    },
+    {
+      "id": "q022",
+      "category": "Chartbuster Anthems",
+      "question": "Which 2012 film features the hit song 'Radha', starring debutants Alia Bhatt, Varun Dhawan, and Sidharth Malhotra?",
+      "hint": "Directed by Karan Johar, it follows high-school students competing for a prestigious trophy at St. Teresa's.",
+      "answer": "Student of the Year",
+      "image": "images/soty_dehradun_campus.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, varsity red, ivy green, and sandstone cream palette, no text, no watermark: grand clocktower campus building with sports track hurdles in the foreground."
+    },
+    {
+      "id": "q023",
+      "category": "Heartbreak & Memory",
+      "question": "In 'Kal Ho Naa Ho' (2003), what fake secret diary does Aman read from to help Rohit express his feelings to Naina?",
+      "hint": "Aman pretends he is reading Rohit's diary, but he is actually speaking his own deep feelings for Naina.",
+      "answer": "Rohit's black diary (Rohit ki diary)",
+      "image": "images/khnh_new_york.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Brooklyn bridge rust, autumn park orange, and river blue palette, no text, no watermark: Brooklyn Bridge skyline in New York with a black diary resting on a park bench."
+    },
+    {
+      "id": "q024",
+      "category": "Rebellious Love",
+      "question": "In 'Gully Boy' (2019), what is the name of Murad's fiercely possessive medical-student girlfriend played by Alia Bhatt?",
+      "hint": "She is famous for her sassy line 'Mere boyfriend se gulu gulu karegi toh dhoptunge na tereko!'.",
+      "answer": "Safeena Firdausi",
+      "image": "images/gully_boy_dharavi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, urban graffiti yellow, neon blue, and alleyway shadow palette, no text, no watermark: narrow Mumbai alleyway decorated with vibrant street graffiti and a retro microphone."
+    },
+    {
+      "id": "q025",
+      "category": "Unusual Plot Twists",
+      "question": "In 'Queen' (2014), why does Rani go on her honeymoon to Paris and Amsterdam all by herself?",
+      "hint": "Her fiancé Vijay dumps her right before the wedding day because he feels she doesn't fit his modern lifestyle.",
+      "answer": "Her fiancé Vijay called off the wedding",
+      "image": "images/queen_paris_eiffel.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, French lavender, Eiffel iron grey, and sunset rose palette, no text, no watermark: Eiffel Tower standing beyond Champ de Mars, with a single yellow travel suitcase sitting on the grass."
+    },
+    {
+      "id": "q026",
+      "category": "Action Romances",
+      "question": "Which 2006 action thriller features Hrithik Roshan as Aryan (Mr. A) performing high-stakes museum robberies in Rio de Janeiro?",
+      "hint": "He teams up with Sunehri (Aishwarya Rai) in this high-octane YRF sequel.",
+      "answer": "Dhoom 2",
+      "image": "images/dhoom2_rio.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Rio ocean blue, sunset magenta, and beach gold palette, no text, no watermark: Christ the Redeemer statue on Corcovado mountain overlooking Guanabara Bay with a sports bike silhouette."
+    },
+    {
+      "id": "q027",
+      "category": "Relationships & In-Laws",
+      "question": "In 'Vicky Donor' (2012), what profession does Vicky Arora take up that causes awkwardness when meeting Ashima's family?",
+      "hint": "He is recruited by Dr. Chaddha at a fertility clinic in Delhi.",
+      "answer": "Sperm Donor",
+      "image": "images/vicky_donor_delhi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Connaught Place white, terracotta red, and spring green palette, no text, no watermark: colonnaded white arches of Connaught Place in Delhi with a microscope icon resting on a park table."
+    },
+    {
+      "id": "q028",
+      "category": "Cult Comedy",
+      "question": "In 'Hera Pheri' (2000), what wrong phone number leads to Raju, Shyam, and Baburao receiving Kabira's ransom call?",
+      "hint": "Calls intended for Star Fisheries keep reaching Baburao Ganpatrao Apte's garage.",
+      "answer": "Star Fisheries",
+      "image": "images/hera_pheri_garage.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, retro garage yellow, rusty brown, and teal palette, no text, no watermark: vintage black rotary telephone sitting on a cluttered garage workbench beside round eyeglasses."
+    },
+    {
+      "id": "q029",
+      "category": "Chartbusters",
+      "question": "Which 2013 Sanjay Leela Bhansali movie features Deepika Padukone dancing to the energetic festive track 'Nagada Sang Dhol'?",
+      "hint": "It is a modern adaptation of Shakespeare's Romeo and Juliet set in Gujarat.",
+      "answer": "Goliyon Ki Raasleela Ram-Leela",
+      "image": "images/ramleela_gujarat_fort.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive vermillion red, marigold orange, and night sky indigo palette, no text, no watermark: traditional courtyard lit with torches and large decorative garba dhol drums."
+    },
+    {
+      "id": "q030",
+      "category": "Family & Relationships",
+      "question": "In 'Kabhi Khushi Kabhie Gham' (2001), in which UK city does Rahul settle down with Anjali after leaving India?",
+      "hint": "It features scenes where Poo studies at King's College.",
+      "answer": "London",
+      "image": "images/k3g_london_mansion.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British navy, mansion cream, and autumn amber palette, no text, no watermark: grand English country manor house surrounded by autumn trees and a classic yellow taxi."
+    },
+    {
+      "id": "q031",
+      "category": "Office Romance",
+      "question": "In 'Band Baaja Baaraat' (2010), what is the name of the wedding planning company started by Bittoo and Shruti?",
+      "hint": "Their golden rule was never to let love get in the way of business.",
+      "answer": "Shaadi Mubarak",
+      "image": "images/bbb_delhi_wedding.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive pink, marigold yellow, and wedding tent teal palette, no text, no watermark: vibrant Delhi wedding canopy with fairy lights and clipboards resting on a desk."
+    },
+    {
+      "id": "q032",
+      "category": "Second Chances",
+      "question": "In 'Dear Zindagi' (2016), who plays Dr. Jehangir 'Jug' Khan, the unconventional therapist who helps Kaira navigate her relationships?",
+      "hint": "He uses ocean waves and cycling sessions in Goa to explain life lessons.",
+      "answer": "Shah Rukh Khan",
+      "image": "images/dear_zindagi_goa.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, coastal palm green, sunset gold, and sea blue palette, no text, no watermark: quiet Goa beach lined with coconut palms and two bicycles leaning against a wooden fence."
+    },
+    {
+      "id": "q033",
+      "category": "Historical Hits",
+      "question": "Which 2001 movie nominated for an Academy Award centers on a cricket match played between Indian villagers and British officers?",
+      "hint": "Aamir Khan plays Bhuvan, who leads the village team to waive off unfair taxes.",
+      "answer": "Lagaan",
+      "image": "images/lagaan_cricket.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, drought earth orange, sky blue, and village clay palette, no text, no watermark: dry village soil ground with wooden cricket stumps and a leather ball under scorching sun."
+    },
+    {
+      "id": "q034",
+      "category": "College & Friends",
+      "question": "In 'Main Prem Ki Diwani Hoon' (2003) or 'Jaane Tu...', college groups are iconic. In 'Rang De Basanti' (2006), where do DJ, Sukhi, Karan, and Aslam hang out near Delhi?",
+      "hint": "They spend evening hours at the historic India Gate and old stepwells.",
+      "answer": "India Gate / Nahargarh Fort",
+      "image": "images/rdb_india_gate.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, evening saffron, shadow navy, and sandstone gold palette, no text, no watermark: illuminated stone arch of India Gate under dusk sky with an open yellow jeep parked nearby."
+    },
+    {
+      "id": "q035",
+      "category": "Songs & Dance",
+      "question": "Which hit song from 'Bareilly Ki Barfi' (2017) features Kriti Sanon, Ayushmann Khurrana, and Rajkummar Rao dancing at a wedding?",
+      "hint": "It was composed by Tanishk Bagchi and became a massive wedding dance track.",
+      "answer": "Sweety Tera Drama",
+      "image": "images/bareilly_market.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive fuchsia, marigold yellow, and small-town teal palette, no text, no watermark: vibrant North Indian town market street decorated with hanging bulb lights."
+    },
+    {
+      "id": "q036",
+      "category": "Friendship & Betrayal",
+      "question": "In 'Sonu Ke Titu Ki Sweety' (2018), what is the name of Titu's suspicious fiancée who battles Sonu for control?",
+      "hint": "She is played by Nushrratt Bharuccha, leading to the song 'Dil Chori'.",
+      "answer": "Sweety Sharma",
+      "image": "images/sktks_delhi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich maroon, wedding gold, and mint green palette, no text, no watermark: opulent wedding hall entrance in Delhi with brass wedding trumpets displayed in front."
+    },
+    {
+      "id": "q037",
+      "category": "Travel & Self-Discovery",
+      "question": "In 'Tamasha' (2015), under what fake names do Ved and Tara interact while exploring Corsica to avoid real-world identities?",
+      "hint": "He poses as Don and she poses as Mona Darling.",
+      "answer": "Don and Mona Darling",
+      "image": "images/tamasha_corsica.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mediterranean cliff teal, terracotta, and sunlight yellow palette, no text, no watermark: coastal cliffs of Corsica overlooking deep blue waters with a vintage fedora hat sitting on a rock."
+    },
+    {
+      "id": "q038",
+      "category": "Love & Memory Loss",
+      "question": "In 'Teri Baaton Mein Aisa Ujha Jiya' (2024), what unusual secret does Sifra hide from Aryan?",
+      "hint": "She is actually an advanced humanoid AI robot developed by his aunt's company.",
+      "answer": "She is a robot (AI)",
+      "image": "images/tbmauj_lab.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon cyan, metallic silver, and warm sunset red palette, no text, no watermark: futuristic glass laboratory window overlooking a sunset skyline with circuit board patterns subtly framing the view."
+    },
+    {
+      "id": "q039",
+      "category": "Breakup Stories",
+      "question": "In 'Pyaar Ke Side Effects' (2006), who played Sid, the DJ who develops extreme cold feet regarding marriage with Trisha?",
+      "hint": "He starred alongside Mallika Sherawat in this hit rom-com.",
+      "answer": "Rahul Bose",
+      "image": "images/pkse_mumbai.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Marine Drive blue, streetlamp yellow, and cassette tape black palette, no text, no watermark: curved Marine Drive coastline in Mumbai at night with DJ headphones placed on the ledge."
+    },
+    {
+      "id": "q040",
+      "category": "Classic Comedies",
+      "question": "In 'Welcome' (2007), what unique artistic hobby does gangster Majnu Bhai (Anil Kapoor) passionately pursue?",
+      "hint": "His famous painting features a donkey standing on top of a horse.",
+      "answer": "Painting",
+      "image": "images/welcome_easel.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, artist palette red, canvas white, and mansion gold palette, no text, no watermark: wooden art easel holding a blank canvas inside an opulent villa, with paintbrushes sitting in a jar."
+    },
+    {
+      "id": "q041",
+      "category": "Songs & Rhythms",
+      "question": "Which 2005 Yash Raj film featured the iconic item track 'Kajra Re' starring Aishwarya Rai alongside Amitabh and Abhishek Bachchan?",
+      "hint": "The film follows two small-town con artists who scam wealthy targets under fake aliases.",
+      "answer": "Bunty Aur Babli",
+      "image": "images/bunty_babli_station.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, railway yellow, night blue, and ticket orange palette, no text, no watermark: historic clock tower at a crowded North Indian railway junction with a pair of retro aviator sunglasses resting on a trunk."
+    },
+    {
+      "id": "q042",
+      "category": "College Love",
+      "question": "In 'Ishq Vishk' (2003), which actor made his Bollywood debut as Rajiv, playing a college student navigating young love?",
+      "hint": "He went on to star in hits like 'Jab We Met' and 'Kabir Singh'.",
+      "answer": "Shahid Kapoor",
+      "image": "images/ishq_vishk_canteen.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, canteen red, denim blue, and sunny yellow palette, no text, no watermark: college campus canteen wooden table with two soda bottles and a heart carved into the wood."
+    },
+    {
+      "id": "q043",
+      "category": "Love Triangles",
+      "question": "In 'Mujhse Dosti Karoge!' (2002), who secretly writes emails to Raj under Tina's name for years?",
+      "hint": "She is played by Rani Mukerji, who silently loves Raj while he thinks Tina wrote them.",
+      "answer": "Pooja",
+      "image": "images/mdk_church.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Shimla mist grey, pine green, and postal yellow palette, no text, no watermark: wooden church overlooking mist-covered hill station valleys with a stack of handwritten letters on a ledge."
+    },
+    {
+      "id": "q044",
+      "category": "Chartbusters",
+      "question": "Which 2018 horror-comedy film featured Rajkummar Rao and Shraddha Kapoor alongside the hit song 'Milegi Milegi'?",
+      "hint": "It takes place in the town of Chanderi, where a mysterious spirit snatches men at night during festival season.",
+      "answer": "Stree",
+      "image": "images/stree_chanderi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, moonlight purple, eerie red, and stone grey palette, no text, no watermark: ancient fort stone wall in Chanderi under moonlight with red cloth draped over a doorway."
+    },
+    {
+      "id": "q045",
+      "category": "Relationships & Secrets",
+      "question": "In 'Haseen Dillruba' (2021), what is the title of the fictional crime author whose gruesome books Rani and Rishu read?",
+      "hint": "His pulp fiction books guide the characters' dramatic moves in the story.",
+      "answer": "Dinesh Pandit",
+      "image": "images/haseen_dillruba_river.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, river emerald, crimson red, and book paperback yellow palette, no text, no watermark: quiet riverbank in Haridwar with a paperback crime novel resting on stone steps."
+    },
+    {
+      "id": "q046",
+      "category": "Destination Romance",
+      "question": "In 'Dil Dhadakne Do' (2015), on what type of trip does the Mehra family celebrate their 30th wedding anniversary?",
+      "hint": "The family drama unfolds across Mediterranean stops in Turkey and Greece.",
+      "answer": "A Mediterranean Cruise",
+      "image": "images/ddd_cruise_ship.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean navy, deck white, and sunset coral palette, no text, no watermark: luxury cruise ship deck overlooking Aegean sea waters with deck chairs facing the sunset."
+    },
+    {
+      "id": "q047",
+      "category": "Rebellious Love",
+      "question": "In 'Kedarnath' (2018), what work does Mansoor (Sushant Singh Rajput) perform carrying pilgrims up the mountain path?",
+      "hint": "He works as a local 'Pithoo' (porter) along the pilgrimage trek.",
+      "answer": "Pithoo (Porter)",
+      "image": "images/kedarnath_valley.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Himalayan slate, temple gold, and river turquoise palette, no text, no watermark: stone path leading up to the Kedarnath temple amidst dramatic mountain clouds."
+    },
+    {
+      "id": "q048",
+      "category": "Modern Marriages",
+      "question": "In 'Shubh Mangal Saavdhan' (2017), what medical issue affects Mudit right before his wedding with Sugandha?",
+      "hint": "The film humorously addresses erectile dysfunction in a middle-class family setup.",
+      "answer": "Erectile Dysfunction",
+      "image": "images/shubh_mangal_delhi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, festive orange, courtyard green, and brick red palette, no text, no watermark: traditional Delhi rooftop decorated with wedding marquee tenting and marigolds."
+    },
+    {
+      "id": "q049",
+      "category": "Sports & Passion",
+      "question": "In 'Dangal' (2016), who played the adult Geeta Phogat, India's first female wrestler to win gold at the Commonwealth Games?",
+      "hint": "Fatima Sana Shaikh played this lead role trained by Mahavir Singh Phogat (Aamir Khan).",
+      "answer": "Fatima Sana Shaikh",
+      "image": "images/dangal_akhada.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mud clay brown, arena red, and gold medal yellow palette, no text, no watermark: traditional wrestling akhada clay pit with gold sports medals hanging from a wooden post."
+    },
+    {
+      "id": "q050",
+      "category": "Unusual Romances",
+      "question": "In 'Luka Chuppi' (2019), what arrangement do Guddu and Rashmi try before marriage that leads to family chaos?",
+      "hint": "They decide to try a live-in relationship while pretending to be married to their traditional family.",
+      "answer": "Live-in relationship",
+      "image": "images/luka_chuppi_mathura.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mathura ghat orange, temple teal, and festive pink palette, no text, no watermark: river ghat steps in Mathura with two floral wedding garlands draped over a railing."
+    },
+    {
+      "id": "q051",
+      "category": "Songs & Memory",
+      "question": "Which 2004 Yash Chopra epic romance centers on an Indian Air Force pilot imprisoned in Pakistan for 22 years?",
+      "hint": "Shah Rukh Khan and Preity Zinta play Veer and Zaara.",
+      "answer": "Veer-Zaara",
+      "image": "images/veer_zaara_punjab.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mustard field gold, sky blue, and traditional red palette, no text, no watermark: endless golden mustard fields of Punjab with a tractor silhouette and boundary pillar in the foreground."
+    },
+    {
+      "id": "q052",
+      "category": "Campus Drama",
+      "question": "In 'Jaane Tu... Ya Jaane Na', what nickname do friends give to Jai because of his calm, non-violent nature?",
+      "hint": "His nickname is 'Rats' for Aditi, but his formal name in college is Jai Singh Rathore.",
+      "answer": "Rats (or Jai)",
+      "image": "images/jaane_tu_college.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, college lawn green, bright blue, and sun yellow palette, no text, no watermark: college amphitheater stone steps with an acoustic guitar and notepad resting on a step."
+    },
+    {
+      "id": "q053",
+      "category": "Cult Thrillers",
+      "question": "In 'Andhadhun' (2018), what instrument does Akash play while pretending to be visually impaired?",
+      "hint": "He gets caught in a murder cover-up while playing music at Pramod Sinha's apartment.",
+      "answer": "Piano",
+      "image": "images/andhadhun_piano.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, monochrome piano black, ivory white, and blood red palette, no text, no watermark: grand piano keys indoors with dark sunglasses resting on the keybed."
+    },
+    {
+      "id": "q054",
+      "category": "Modern Friendships",
+      "question": "In 'Veere Di Wedding' (2018), which four actresses star as childhood friends attending Kalindi's grand wedding?",
+      "hint": "The cast features Kareena Kapoor, Sonam Kapoor, Swara Bhasker, and Shikha Talsania.",
+      "answer": "Kareena Kapoor, Sonam Kapoor, Swara Bhasker, Shikha Talsania",
+      "image": "images/vdw_phuket.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical resort turquoise, sunset pink, and gold palette, no text, no watermark: beachside resort pool in Phuket lined with four lounge chairs looking toward the sea."
+    },
+    {
+      "id": "q055",
+      "category": "Action Romances",
+      "question": "In 'Main Hoon Na', what cover mission takes Major Ram Prasad Sharma back to high school/college?",
+      "hint": "He must protect Sanjana while helping execute 'Project Milaap'.",
+      "answer": "Project Milaap (protecting Sanjana Bakshi)",
+      "image": "images/main_hoon_na_school.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, colonial brick red, mountain mist white, and khaki green palette, no text, no watermark: grand red-brick boarding school courtyard with mountain peaks in the background."
+    },
+    {
+      "id": "q056",
+      "category": "Songs & Dance",
+      "question": "Which 2007 film directed by Farah Khan gave us the disco hit 'Dard-e-Disco' featuring Shah Rukh Khan?",
+      "hint": "The story revolves around reincarnation and 1970s Bollywood cinema.",
+      "answer": "Om Shanti Om",
+      "image": "images/oso_retro_set.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon disco purple, flame orange, and gold shimmer palette, no text, no watermark: retro 1970s disco ball hanging above a film studio floor with stage spotlights."
+    },
+    {
+      "id": "q057",
+      "category": "Breakup Recovery",
+      "question": "In 'Luv Ka The End' (2011), what does Rhea do after discovering her boyfriend Luv is secretly cheating on her for a bet?",
+      "hint": "She teams up with her best friends to plot revenge and humiliate him at a college festival.",
+      "answer": "Plots revenge with her friends",
+      "image": "images/luv_ka_the_end_school.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bubblegum pink, chalkboard black, and yellow palette, no text, no watermark: high school hallway lockers with a lipstick heart drawn on a locker door."
+    },
+    {
+      "id": "q058",
+      "category": "Love & Career",
+      "question": "In 'Ki & Ka' (2016), how do Kabir and Kia challenge traditional gender roles in their marriage?",
+      "hint": "Kabir chooses to be a stay-at-home husband while Kia pursues her corporate career.",
+      "answer": "Kabir stays home while Kia works",
+      "image": "images/ki_and_ka_train.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, modern apartment teal, warm wood brown, and yellow palette, no text, no watermark: stylish apartment interior featuring a toy train track setup around a dining table."
+    },
+    {
+      "id": "q059",
+      "category": "Cult Classic Musicals",
+      "question": "Which 2008 musical drama starred Farhan Akhtar as Aditya Shroff, lead singer of the rock band 'Magik'?",
+      "hint": "The film features chartbuster songs like 'Sinbad The Sailor' and 'Socha Hai'.",
+      "answer": "Rock On!!",
+      "image": "images/rock_on_stage.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, concert blue, spotlight yellow, and amplifier black palette, no text, no watermark: live concert stage illuminated by overhead spotlights with drum kits and electric guitars set up."
+    },
+    {
+      "id": "q060",
+      "category": "Relationships & In-Laws",
+      "question": "In 'Humpty Sharma Ki Dulhania' (2014), what iconic designer item does Kavya insist on buying for her wedding?",
+      "hint": "She travels to Delhi specifically to buy a designer Manish Malhotra lehenga.",
+      "answer": "Manish Malhotra Lehenga",
+      "image": "images/humpty_sharma_delhi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bridal red, gold embroidery, and Chandni Chowk teal palette, no text, no watermark: bustling Chandni Chowk market lane in Delhi with bridal red silk fabrics displayed in store windows."
+    },
+    {
+      "id": "q061",
+      "category": "Epic Period Romances",
+      "question": "Which 2018 period drama stars Deepika Padukone and Ranveer Singh as Queen Padmavati and Sultan Alauddin Khalji?",
+      "hint": "Directed by Sanjay Leela Bhansali, it features the grand song 'Ghoomar'.",
+      "answer": "Padmaavat",
+      "image": "images/padmaavat_chittorgarh.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal fortress gold, torch flame orange, and deep red palette, no text, no watermark: soaring stone towers of Chittorgarh Fort standing strong against a fiery sunset sky."
+    },
+    {
+      "id": "q062",
+      "category": "Songs & Nostalgia",
+      "question": "Which 2003 Sci-Fi hit film introduced the lovable alien character 'Jadoo' summoned by a musical synthesizer?",
+      "hint": "Hrithik Roshan plays Rohit Mehra in this film directed by Rakesh Roshan.",
+      "answer": "Koi... Mil Gaya",
+      "image": "images/koi_mil_gaya_kasauli.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alien green, pine forest dark, and starry sky blue palette, no text, no watermark: mist-covered Kasauli pine forest with a retro electronic keyboard synth sitting on a tree stump under starry skies."
+    },
+    {
+      "id": "q063",
+      "category": "Heartbreak & Healing",
+      "question": "In 'Barfi!' (2012), who plays Jhilmil Chatterjee, the autistic heiress who forms a deep bond with Murphy (Barfi)?",
+      "hint": "Priyanka Chopra earned wide acclaim for this lead performance alongside Ranbir Kapoor.",
+      "answer": "Priyanka Chopra",
+      "image": "images/barfi_darjeeling_clock.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Darjeeling mist white, toy train yellow, and pine green palette, no text, no watermark: iconic clock tower in Darjeeling with a red toy train winding along tracks in the foreground."
+    },
+    {
+      "id": "q064",
+      "category": "College & Rom-Coms",
+      "question": "In 'Badrinath Ki Dulhania' (2017), to which foreign city does Vaidehi fly to pursue her flight attendant training career?",
+      "hint": "Badri follows her all the way to this South Asian metropolis.",
+      "answer": "Singapore",
+      "image": "images/bkd_singapore_skyline.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Marina Bay turquoise, neon magenta, and night blue palette, no text, no watermark: Marina Bay Sands skyline in Singapore reflected on calm bay waters at night."
+    },
+    {
+      "id": "q065",
+      "category": "Love Triangles",
+      "question": "In 'Dhadkan' (2000), which actor plays Dev, who returns wealthy after being rejected by Anjali's family for being poor?",
+      "hint": "Suniel Shetty plays Dev opposite Shilpa Shetty's Anjali and Akshay Kumar's Ram.",
+      "answer": "Suniel Shetty",
+      "image": "images/dhadkan_mansion.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stormy grey, mansion gold, and dark blue palette, no text, no watermark: grand mansion iron gates under rain clouds with red roses scattered near the gate entrance."
+    },
+    {
+      "id": "q066",
+      "category": "Secret Affairs",
+      "question": "In 'Kabhi Alvida Naa Kehna' (2006), Dev and Maya start an extramarital affair in which major international city?",
+      "hint": "Directed by Karan Johar, set amidst Central Park autumn foliage.",
+      "answer": "New York City",
+      "image": "images/kank_central_park.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Central Park autumn orange, maple red, and foggy grey palette, no text, no watermark: Central Park stone bridge in New York framed by bright orange autumn maple trees."
+    },
+    {
+      "id": "q067",
+      "category": "Songs & Dance",
+      "question": "Which 2013 action comedy gave us the hit dance track 'Lungi Dance', paying tribute to Rajinikanth?",
+      "hint": "The film stars Shah Rukh Khan and Deepika Padukone riding the Express train to Rameswaram.",
+      "answer": "Chennai Express",
+      "image": "images/chennai_express_dudhsagar.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, waterfall white, jungle green, and yellow train palette, no text, no watermark: majestic Dudhsagar Waterfalls with a yellow passenger train crossing the bridge over misty sprays."
+    },
+    {
+      "id": "q068",
+      "category": "Comedy of Errors",
+      "question": "In 'Bhool Bhulaiyaa' (2007), what name does Avni's split personality take when possessed by the ancient dancer's spirit?",
+      "hint": "She performs the legendary classical dance 'Aami Je Tomar' in the courtyard.",
+      "answer": "Manjulika",
+      "image": "images/bhool_bhulaiyaa_palace.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal palace gold, eerie shadow blue, and dancer red palette, no text, no watermark: ancient Rajasthani palace hallway lit by oil lamps, with ghungroo anklet bells resting on marble steps."
+    },
+    {
+      "id": "q069",
+      "category": "Action Romances",
+      "question": "In 'Ek Tha Tiger' (2012), what is the real country of origin for Zoya (Katrina Kaif), the secret agent Tiger falls in love with?",
+      "hint": "Tiger works for India's RAW while Zoya works for Pakistan's ISI.",
+      "answer": "Pakistan (ISI)",
+      "image": "images/ek_tha_tiger_istanbul.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Bosphorus blue, sunset orange, and dome gold palette, no text, no watermark: Galata Tower standing over Istanbul rooftops near the Bosphorus waterway."
+    },
+    {
+      "id": "q070",
+      "category": "Relationships & Secrets",
+      "question": "In 'Gehraiyaan' (2022), Alisha enters a secret affair with Zain, who is engaged to which family member?",
+      "hint": "Zain is engaged to Alisha's cousin Tia (played by Ananya Panday).",
+      "answer": "Her cousin Tia",
+      "image": "images/gehraiyaan_yacht.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep ocean navy, storm grey, and yacht white palette, no text, no watermark: sleek modern yacht floating on stormy deep blue ocean waters."
+    },
+    {
+      "id": "q071",
+      "category": "Classic Rom-Coms",
+      "question": "In 'Partner' (2007), what is Prem's (Salman Khan) unusual profession in Mumbai?",
+      "hint": "He acts as a 'Love Guru' helping shy men win over the women of their dreams.",
+      "answer": "Love Guru (Relationship Advisor)",
+      "image": "images/partner_mumbai.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sunset pink, coastal blue, and neon yellow palette, no text, no watermark: Marine Drive promenade at sunset with a red sports convertible car parked on the roadside."
+    },
+    {
+      "id": "q072",
+      "category": "Rebellious Youth",
+      "question": "In 'Udaan' (2010), what sport or passion does Rohan secretly pursue despite his abusive father's resistance?",
+      "hint": "He writes poetry and aspires to become a writer/poet.",
+      "answer": "Poetry / Writing",
+      "image": "images/udaan_jamshedpur.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, industrial factory grey, dawn orange, and steel blue palette, no text, no watermark: industrial city chimney silhouettes at dawn with an open notebook and pen sitting on a ledge."
+    },
+    {
+      "id": "q073",
+      "category": "Chartbusters",
+      "question": "Which 2012 film features the viral track 'Chinta Ta Ta Chita Chita' starring Akshay Kumar and Sonakshi Sinha?",
+      "hint": "Akshay Kumar plays Vikram Rathore and the lovable thief Shiva.",
+      "answer": "Rowdy Rathore",
+      "image": "images/rowdy_rathore_fort.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rustic fort orange, khaki green, and bright yellow palette, no text, no watermark: courtyard of a Rajasthani fort with a red police mustache icon painted on a stone pillar."
+    },
+    {
+      "id": "q074",
+      "category": "Sports & Drama",
+      "question": "In 'Sultan' (2016), which actress played Aarfa Hussain, a state-level wrestler who inspires Sultan Ali Khan?",
+      "hint": "Anushka Sharma played this lead role opposite Salman Khan.",
+      "answer": "Anushka Sharma",
+      "image": "images/sultan_haryana_akhada.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Haryana wheat yellow, earth brown, and sky blue palette, no text, no watermark: rural wrestling pit in a village field with heavy tractor tires resting nearby."
+    },
+    {
+      "id": "q075",
+      "category": "Relationships & Small Towns",
+      "question": "In 'Tanu Weds Manu' (2011), in which North Indian city do Manu and Tanu first meet for their arranged marriage proposal?",
+      "hint": "Tanu's rebellious personality in Kanpur contrasts with Manu's quiet NRI background.",
+      "answer": "Kanpur",
+      "image": "images/tanu_weds_manu_kanpur.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, brick red, festive marigold, and alleyway blue palette, no text, no watermark: narrow North Indian street lined with colorful market stalls and decorative wedding lights."
+    },
+    {
+      "id": "q076",
+      "category": "Courtroom Drama",
+      "question": "In 'Jolly LLB 2' (2017), who plays Jagdishwar Mishra (Jolly), the struggling lawyer fighting for justice in Lucknow?",
+      "hint": "Akshay Kumar plays this lead role following Arshad Warsi in the original installment.",
+      "answer": "Akshay Kumar",
+      "image": "images/jolly_llb2_lucknow.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, court black, sandstone yellow, and sky blue palette, no text, no watermark: historic Rumi Darwaza gateway in Lucknow with a black lawyer coat hanging on a chair nearby."
+    },
+    {
+      "id": "q077",
+      "category": "Cult Comedies",
+      "question": "In 'Dhamaal' (2007), under what letter-shaped tree does Bose reveal 10 crore rupees are buried at St. Sebastian's garden?",
+      "hint": "The four friends search for a huge 'W' made of palm trees in Goa.",
+      "answer": "A big 'W' (W tree)",
+      "image": "images/dhamaal_goa_w.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical palm green, dirt brown, and sunny sky yellow palette, no text, no watermark: four palm trees leaning together in a garden forming a distinct letter 'W' shape."
+    },
+    {
+      "id": "q078",
+      "category": "Unrequited Love",
+      "question": "In 'Raanjhanaa' (2013), Kundan (Dhanush) holds lifelong unrequited love for which childhood friend in Varanasi?",
+      "hint": "Sonam Kapoor plays Zoya, who attends Jawaharlal Nehru University (JNU).",
+      "answer": "Zoya Haider",
+      "image": "images/raanjhanaa_varanasi_ghat.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, holy river orange, temple red, and evening blue palette, no text, no watermark: Varanasi river ghat steps with floating diyas on the water and small bowls of red gulal powder on stone steps."
+    },
+    {
+      "id": "q079",
+      "category": "High School Romance",
+      "question": "In 'Mohabbatein' (2000), what is the strict name of the prestigious gurukul college headed by Narayan Shankar?",
+      "hint": "Amitabh Bachchan enforces strict rules of discipline, honor, and tradition here.",
+      "answer": "Gurukul",
+      "image": "images/mohabbatein_gurukul.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British stone grey, autumn maple orange, and royal blue palette, no text, no watermark: grand stone archway of a castle-like college campus surrounded by falling red autumn leaves."
+    },
+    {
+      "id": "q080",
+      "category": "Modern Relationships",
+      "question": "In 'Manmarziyaan' (2018), who plays the wild, free-spirited DJ Vicky who struggles with commitment to Rumi?",
+      "hint": "Vicky Kaushal played this eccentric character alongside Taapsee Pannu.",
+      "answer": "Vicky Kaushal",
+      "image": "images/manmarziyaan_amritsar.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, neon hair pink, rooftop yellow, and sky blue palette, no text, no watermark: Amritsar city rooftop with DJ turntables set up against a sunset sky."
+    },
+    {
+      "id": "q081",
+      "category": "Songs & Dance",
+      "question": "Which 2019 dance movie featured Varun Dhawan and Shraddha Kapoor competing in London street dance battles?",
+      "hint": "Directed by Remo D'Souza, featuring the track 'Garmi'.",
+      "answer": "Street Dancer 3D",
+      "image": "images/street_dancer_london.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, urban neon cyan, magenta, and street night black palette, no text, no watermark: brick London alleyway illuminated by neon street sign logos with boombox speakers on the ground."
+    },
+    {
+      "id": "q082",
+      "category": "Action Romances",
+      "question": "In 'War' (2019), who plays the young RAW agent Khalid Rahmani tasked with hunting down his former mentor Kabir?",
+      "hint": "Tiger Shroff starred alongside Hrithik Roshan in this blockbuster action movie.",
+      "answer": "Tiger Shroff",
+      "image": "images/war_arctic_ice.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, icy arctic blue, snow white, and charcoal steel palette, no text, no watermark: frozen arctic ice field with tire tracks from sports cars leading into the horizon."
+    },
+    {
+      "id": "q083",
+      "category": "Comedy & Confusion",
+      "question": "In 'Good Newwz' (2019), what major IVF hospital mix-up connects two couples with the surname Batra?",
+      "hint": "The hospital accidentally swaps the sperm samples of Varun/Deepti and Moni/Honey due to identical last names.",
+      "answer": "Sperm sample swap due to identical last names",
+      "image": "images/good_newwz_mumbai.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, maternity mint green, warm yellow, and coral pink palette, no text, no watermark: modern clinic reception desk with two baby rattle toys placed on the counter."
+    },
+    {
+      "id": "q084",
+      "category": "Sci-Fi & Mythology",
+      "question": "In 'Brahmāstra: Part One – Shiva' (2022), what natural element is Shiva (Ranbir Kapoor) immune to?",
+      "hint": "He discovers his deep magical connection to Agnyastra.",
+      "answer": "Fire",
+      "image": "images/brahmastra_varanasi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cosmic flame orange, night sky indigo, and gold shimmer palette, no text, no watermark: night view of Varanasi ghats with mystic glowing fire sparks rising near temple steps."
+    },
+    {
+      "id": "q085",
+      "category": "Revenge Thrillers",
+      "question": "In 'Badla' (2019), who plays the veteran lawyer Badal Gupta interviewing Naina Sethi about a murder mystery?",
+      "hint": "Amitabh Bachchan played this role opposite Taapsee Pannu in Sujoy Ghosh's mystery film.",
+      "answer": "Amitabh Bachchan",
+      "image": "images/badla_glasgow.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Scottish highland mist, hotel mahogany, and icy grey palette, no text, no watermark: foggy Glasgow street lined with stone buildings and a vintage pocket watch on a window ledge."
+    },
+    {
+      "id": "q086",
+      "category": "Chartbuster Anthems",
+      "question": "Which 2023 blockbuster featured the global hit song 'Jumeme Jo Pathaan' starring Shah Rukh Khan and Deepika Padukone?",
+      "hint": "The film marked SRK's return to the big screen as a RAW field agent.",
+      "answer": "Pathaan",
+      "image": "images/pathaan_spain.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mediterranean turquoise, sunlit gold, and slate grey palette, no text, no watermark: coastal Spanish plaza with sea views and a sleek black sports car parked by stone arches."
+    },
+    {
+      "id": "q087",
+      "category": "Family & Relationships",
+      "question": "In 'Rocky Aur Rani Kii Prem Kahaani' (2023), what family business does Rocky Randhawa's family run in Delhi?",
+      "hint": "They run the famous 'Dhanlakshmi Sweets' empire.",
+      "answer": "Dhanlakshmi Sweets (Sweets Business)",
+      "image": "images/rarpk_delhi_mansion.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, opulent marigold gold, royal magenta, and marble white palette, no text, no watermark: grand Delhi Punjabi mansion courtyard decorated with festive sweet boxes and floral garlands."
+    },
+    {
+      "id": "q088",
+      "category": "Inspiring Dramas",
+      "question": "In '12th Fail' (2023), which real-life IPS officer's incredible journey from Chambal to clearing the UPSC exam is depicted?",
+      "hint": "Vikrant Massey played Manoj Kumar Sharma in Vidhu Vinod Chopra's hit film.",
+      "answer": "Manoj Kumar Sharma",
+      "image": "images/12th_fail_delhi_library.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mukherjee Nagar study brown, lamp light yellow, and desk teal palette, no text, no watermark: crowded study room desk in Delhi filled with open UPSC textbooks and a desk lamp."
+    },
+    {
+      "id": "q089",
+      "category": "Small-Town Romances",
+      "question": "In 'Satyaprem Ki Katha' (2023), who plays Sattu, the gentle husband supporting Katha through her past trauma?",
+      "hint": "Kartik Aaryan plays Sattu alongside Kiara Advani's Katha.",
+      "answer": "Kartik Aaryan",
+      "image": "images/spkk_ahmedabad.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Sabarmati river blue, pol heritage yellow, and terracotta red palette, no text, no watermark: historic wooden pol house balcony in Ahmedabad decorated with colorful festive kites."
+    },
+    {
+      "id": "q090",
+      "category": "Songs & Musicals",
+      "question": "Which 2012 sports biopic featured the hit song 'Zinda' composed by Shankar-Ehsaan-Loy?",
+      "hint": "Farhan Akhtar portrayed legendary Indian sprinter Milkha Singh.",
+      "answer": "Bhaag Milkha Bhaag",
+      "image": "images/bmb_stadium_track.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stadium track red, sunlight gold, and sky blue palette, no text, no watermark: classic running track lanes stretching into sunset with leather running shoes resting on the track line."
+    },
+    {
+      "id": "q091",
+      "category": "Unusual Plotlines",
+      "question": "In 'Dream Girl' (2019), what female radio chat voice alias does Karam (Ayushmann Khurrana) adopt to win over callers?",
+      "hint": "He speaks as 'Pooja' at a call center, making everyone fall in love with his voice.",
+      "answer": "Pooja",
+      "image": "images/dream_girl_call_center.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, call center yellow, phone wire black, and neon pink palette, no text, no watermark: vintage call center desk with a retro telephone headset and a sign reading 'Pooja'."
+    },
+    {
+      "id": "q092",
+      "category": "Relationship Drama",
+      "question": "In 'Animal' (2023), who plays Ranvijay's devoted but neglected wife Geetanjali?",
+      "hint": "Rashmika Mandanna played this lead role opposite Ranbir Kapoor.",
+      "answer": "Rashmika Mandanna",
+      "image": "images/animal_delhi_mansion.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steel grey, deep blood red, and mansion cream palette, no text, no watermark: grand estate entrance gate surrounded by autumn trees with a vintage luxury limousine parked out front."
+    },
+    {
+      "id": "q093",
+      "category": "Comedy of Errors",
+      "question": "In 'Chup Chup Ke' (2006), why does Jeetu (Shahid Kapoor) pretend to be deaf and mute when saved by fishermen?",
+      "hint": "He wants to escape massive debts owed to moneylenders in his village.",
+      "answer": "To escape heavy financial debts",
+      "image": "images/chup_chup_ke_house.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gujarati courtyard yellow, white laundry, and sky blue palette, no text, no watermark: traditional Gujarati villa courtyard with long white bedsheets drying on clotheslines."
+    },
+    {
+      "id": "q094",
+      "category": "Chartbusters",
+      "question": "Which 2014 action comedy gave us the hit party anthem 'Jumme Ki Raat' starring Salman Khan and Jacqueline Fernandez?",
+      "hint": "Salman Khan plays Devi Lal Singh (Devil) in this film.",
+      "answer": "Kick",
+      "image": "images/kick_warsaw.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Warsaw cobblestone grey, neon red, and night blue palette, no text, no watermark: historic European city square at night with a red sports bicycle parked by a lamppost."
+    },
+    {
+      "id": "q095",
+      "category": "Historical Dramas",
+      "question": "In 'Gadar 2' (2023), where does Tara Singh travel in 1971 to rescue his captured son Jeete?",
+      "hint": "He crosses the border into Lahore, Pakistan.",
+      "answer": "Pakistan (Lahore)",
+      "image": "images/gadar2_border.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, border fence grey, sunset orange, and dust brown palette, no text, no watermark: heavy iron border gate surrounded by dry landscape with a handpump standing nearby."
+    },
+    {
+      "id": "q096",
+      "category": "High School Dreams",
+      "question": "In 'Chhichhore' (2019), what derogatory label do the Hostel 4 students fight to wipe off during the GC sports tournament?",
+      "hint": "They were notorious across campus for being called 'Losers'.",
+      "answer": "Losers",
+      "image": "images/chhichhore_hostel.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, campus brick red, sports turf green, and trophy gold palette, no text, no watermark: college hostel quadrangle balcony with a sports carrom board resting against a pillar."
+    },
+    {
+      "id": "q097",
+      "category": "Love & Sacrifice",
+      "question": "In 'Siddharth & Kiara's hit real-life reel film 'Shershaah' (2021), which Param Vir Chakra awardee's heroic story is told?",
+      "hint": "Captain Vikram Batra's famous military code was 'Yeh Dil Maange More!'.",
+      "answer": "Captain Vikram Batra",
+      "image": "images/shershaah_kargil.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Kargil mountain slate, snow white, and tricolor saffron palette, no text, no watermark: high altitude snow peak in Kargil with an Indian tricolor flag waving proudly on a rock."
+    },
+    {
+      "id": "q098",
+      "category": "Songs & Romance",
+      "question": "Which 2008 rom-com features the popular song 'Khabar Nahi' and stars Abhishek Bachchan, John Abraham, and Priyanka Chopra in Miami?",
+      "hint": "Sam and Kunal pretend to be a gay couple to rent a luxury apartment.",
+      "answer": "Dostana",
+      "image": "images/dostana_miami.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Miami ocean turquoise, palm green, and bright yellow palette, no text, no watermark: South Beach Miami palm trees framing a sunny coastal boulevard with a yellow sports car."
+    },
+    {
+      "id": "q099",
+      "category": "Small-Town Dramas",
+      "question": "In 'Laapataa Ladies' (2024), what causes the two brides Phool and Jaya to get accidentally swapped?",
+      "hint": "Their identical long red bridal veils (ghoonghat) on a crowded overnight train.",
+      "answer": "Identical long bridal veils (ghoonghat) on a crowded train",
+      "image": "images/laapataa_ladies_station.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rural railway yellow, bridal red, and dusk blue palette, no text, no watermark: small-town Indian railway platform at night with a bright red silk veil draped over a bench."
+    },
+    {
+      "id": "q0100",
+      "category": "Rebellious Romances",
+      "question": "In 'I Hate Luv Storys' (2010), Jay works as an assistant director for which romantic film director before falling for Simran?",
+      "hint": "Imran Khan plays Jay and Sonam Kapoor plays art director Simran.",
+      "answer": "Veer Kapoor",
+      "image": "images/ihls_film_set.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cinema red, camera black, and star yellow palette, no text, no watermark: film set camera director chair facing a backdrop of scenic red rose decorations."
+    }
+  ]
 }

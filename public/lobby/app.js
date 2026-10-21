@@ -1,15 +1,20 @@
 const createForm = document.getElementById('create-form');
 const nameInput = document.getElementById('name-input');
 const gameTypeSelect = document.getElementById('game-type-select');
+const modeSelect = document.getElementById('mode-select');
 const gamesList = document.getElementById('games-list');
 const emptyNote = document.getElementById('empty-note');
+
+const MODE_LABELS = { bingo: '🎯 Bingo', 'fastest-finger': '⚡ Fastest Finger' };
 
 function gameRow(game) {
   const li = document.createElement('li');
   const emoji = themeFor(game.gameType).emoji;
+  const modeLabel = MODE_LABELS[game.mode] || MODE_LABELS.bingo;
   li.innerHTML = `
     <a class="game-link" href="/admin/game/${game.id}">
       <span class="game-name">${emoji} ${escapeHtml(game.name)}</span>
+      <span class="game-mode">${modeLabel}</span>
       <span class="game-id">${game.id}</span>
     </a>
     <button class="btn-delete danger" type="button" data-game-id="${game.id}" title="Delete game">Delete</button>
@@ -52,10 +57,11 @@ createForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = nameInput.value.trim();
   const gameType = gameTypeSelect.value;
+  const mode = modeSelect.value;
   const res = await fetch('/api/games', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, gameType }),
+    body: JSON.stringify({ name, gameType, mode }),
   });
   const game = await res.json();
   if (res.ok) {

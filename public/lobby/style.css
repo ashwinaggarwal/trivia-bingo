@@ -119,6 +119,11 @@ button {
   font-weight: 600;
 }
 
+.game-mode {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
 .game-id {
   color: var(--gold);
   letter-spacing: 0.08em;

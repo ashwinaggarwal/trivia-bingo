@@ -1,907 +1,907 @@
 {
-    "gameType": "geography",
-    "name": "Geography Bingo",
-    "description": "A trivia game about geography, including countries, capitals, landmarks, and natural features. Players answer questions to fill their bingo cards and win prizes.",
-    "questions": [
-        {
-            "id": "q001",
-            "category": "Coastlines & Borders",
-            "question": "Which nation possesses the longest total coastline in the world, stretching over 202,000 kilometers?",
-            "hint": "This country spans six time zones and touches three oceans: the Atlantic, Pacific, and Arctic.",
-            "answer": "Canada",
-            "image": "canada_parliament.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich emerald green, navy blue, and warm maple amber palette, no text, no watermark: majestic Gothic Revival Centre Block and Peace Tower of the Canadian Parliament in Ottawa, framed by autumn trees under a clear stylized sky."
-        },
-        {
-            "id": "q002",
-            "category": "Flags & Symbols",
-            "question": "Which country is the only sovereign state in the world with a non-quadrilateral national flag?",
-            "hint": "Its unique flag consists of two stacked triangular pennants featuring symbols of the sun and crescent moon.",
-            "answer": "Nepal",
-            "image": "nepal_boudhanath.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich crimson red, turquoise, and saffron yellow palette, no text, no watermark: massive white dome and golden spire of the Boudhanath Stupa with Buddha eyes, with colorful prayer flags fluttering against Himalayan peaks."
-        },
-        {
-            "id": "q003",
-            "category": "Population & Demographics",
-            "question": "Which South American nation is the most densely populated country on the mainland of the continent?",
-            "hint": "This Andean nation lies directly on the Equator and includes a famous volcanic archipelago home to unique species.",
-            "answer": "Ecuador",
-            "image": "ecuador_basilica.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm terracotta, cobalt blue, and golden hour palette, no text, no watermark: dramatic neo-Gothic towers of the Basilica del Voto Nacional standing tall over historic colonial roofs of Quito, Ecuador."
-        },
-        {
-            "id": "q004",
-            "category": "Inventions & Tech",
-            "question": "Which European nation is credited with inventing Bluetooth technology, named after a 10th-century Scandinavian king?",
-            "hint": "This lowland country is famous for its extensive canal networks, millions of bicycles, and historic wooden windmills.",
-            "answer": "The Netherlands",
-            "image": "netherlands_windmills.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant tulip orange, sky blue, and sage green palette, no text, no watermark: a scenic row of historic wooden windmills lining a calm reflection canal in Kinderdijk during sunset."
-        },
-        {
-            "id": "q005",
-            "category": "Continental Extremes",
-            "question": "By land area, what is the smallest landlocked country in Africa?",
-            "hint": "This landlocked kingdom in Southern Africa is famous for its high mountain plateaus and rich cultural traditional dances.",
-            "answer": "Eswatini",
-            "image": "eswatini_peak.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, earthy ochre, burnt sienna, and dusk purple palette, no text, no watermark: the iconic granite rock dome of Execution Rock rising above lush African savanna mountain valleys."
-        },
-        {
-            "id": "q006",
-            "category": "Colonial History",
-            "question": "Which Southeast Asian nation is the only country in its region that was never colonized by a European power?",
-            "hint": "Historically known as Siam, it served as a buffer state between British and French colonial territories.",
-            "answer": "Thailand",
-            "image": "thailand_wat_arun.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant teal, magenta, and shimmering gold palette, no text, no watermark: towering central prang of Wat Arun (Temple of Dawn) along the Chao Phraya River at twilight."
-        },
-        {
-            "id": "q007",
-            "category": "Famous Figures",
-            "question": "Nikola Tesla, the pioneering inventor and electrical engineer, was born in a village located in which present-day country?",
-            "hint": "This Adriatic nation is famous for its thousand-plus islands, walled medieval coastal cities, and red-tiled roofs.",
-            "answer": "Croatia",
-            "image": "croatia_dubrovnik.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep Adriatic turquoise, terracotta red, and limestone white palette, no text, no watermark: elevated panoramic view of Dubrovnik's medieval stone city walls and red-tiled roofs against the sea."
-        },
-        {
-            "id": "q008",
-            "category": "Historical Geography",
-            "question": "Which modern-day nation contains the central ruins of ancient Mesopotamia, between the Tigris and Euphrates rivers?",
-            "hint": "This nation was home to ancient Babylon, Ur, and the historic center of the Abbasid Caliphate.",
-            "answer": "Iraq",
-            "image": "iraq_ziggurat.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert amber, clay terracotta, and cobalt night sky palette, no text, no watermark: majestic ancient mud-brick Great Ziggurat of Ur rising dramatically above desert plains under a starry sky."
-        },
-        {
-            "id": "q009",
-            "category": "Islands & Oceans",
-            "question": "Which island nation in the North Atlantic is home to the world's oldest active parliament, founded in 930 AD?",
-            "hint": "This island is renowned for its active volcanoes, black sand beaches, vast glaciers, and geothermal springs.",
-            "answer": "Iceland",
-            "image": "iceland_church.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, icy teal, volcanic slate grey, and glowing aurora green palette, no text, no watermark: striking concrete Hallgrímskirkja church standing atop Reykjavik under dancing northern lights."
-        },
-        {
-            "id": "q010",
-            "category": "Microstates",
-            "question": "Which Mediterranean coastal city-state is the second-smallest sovereign country in the world by area?",
-            "hint": "Known for immense wealth per capita, it hosts a world-famous annual Formula 1 street circuit race.",
-            "answer": "Monaco",
-            "image": "monaco_casino.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal navy blue, golden yellow, and cream palette, no text, no watermark: grand Belle Époque façade of the Monte Carlo Casino with vintage sports cars parked along the harbor palm trees."
-        },
-        {
-            "id": "q011",
-            "category": "Mountains & Peaks",
-            "question": "Mount Chimborazo's peak is the furthest point on Earth's surface from the planet's center. In which country is it located?",
-            "hint": "Because of Earth's equatorial bulge, this country's high Andean summit beats Mount Everest in distance from Earth's core.",
-            "answer": "Ecuador",
-            "image": "ecuador_cotopaxi.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, snow white, sky blue, and Andean rust orange palette, no text, no watermark: symmetrical snow-capped volcanic cone of Cotopaxi towering high over green highland plains."
-        },
-        {
-            "id": "q012",
-            "category": "Rivers & Lakes",
-            "question": "Which river flows through more sovereign countries than any other river in the world, passing through 10 nations?",
-            "hint": "Originating in Germany's Black Forest, it drains into the Black Sea and inspired a famous classical waltz.",
-            "answer": "Danube",
-            "image": "hungary_parliament.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep indigo, golden amber illumination, and river blue palette, no text, no watermark: illuminated Gothic Revival Hungarian Parliament Building standing along the Danube River at dusk."
-        },
-        {
-            "id": "q013",
-            "category": "Flags & Symbols",
-            "question": "Which African nation features an AK-47 assault rifle on its official national flag?",
-            "hint": "Located on the southeastern coast of Africa, this former Portuguese colony gained independence in 1975.",
-            "answer": "Mozambique",
-            "image": "mozambique_fort.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm coastal teal, coral pink, and sandstone beige palette, no text, no watermark: historic stone battlements and cannons of the Fort of São Sebastião overlooking the tropical ocean."
-        },
-        {
-            "id": "q014",
-            "category": "Independence & History",
-            "question": "Which Caribbean nation became the first black-led republic in the world after winning independence in 1804?",
-            "hint": "It shares the island of Hispaniola and gained independence following a massive successful slave rebellion.",
-            "answer": "Haiti",
-            "image": "haiti_citadelle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, lush tropical green, dark stone grey, and sunset orange palette, no text, no watermark: massive mountaintop stone walls of Citadelle Laferrière standing dramatically against Caribbean cloud formations."
-        },
-        {
-            "id": "q015",
-            "category": "Inventions & Tech",
-            "question": "Which country is the birthplace of the modern battery, created by Alessandro Volta in 1800?",
-            "hint": "This boot-shaped Mediterranean peninsula was the heart of the Roman Empire and Renaissance art.",
-            "answer": "Italy",
-            "image": "italy_colosseum.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm sienna, olive green, and Mediterranean azure palette, no text, no watermark: iconic archways of the ancient stone Colosseum in Rome under bright sunny skies."
-        },
-        {
-            "id": "q016",
-            "category": "Population & Demographics",
-            "question": "Which European nation has the oldest median population age in the European Union?",
-            "hint": "Famous for its classical ruins, Renaissance architecture, and historic olive groves along the Mediterranean.",
-            "answer": "Italy",
-            "image": "italy_leaning_tower.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta, olive oil yellow, and sky blue palette, no text, no watermark: iconic white marble Leaning Tower of Pisa beside the cathedral in Pisa, Italy."
-        },
-        {
-            "id": "q017",
-            "category": "Islands & Oceans",
-            "question": "Which Asian island nation is made up of over 17,000 islands, making it the largest archipelagic state in the world?",
-            "hint": "Spanning both sides of the Equator, it is home to Komodo dragons and dense tropical rainforests.",
-            "answer": "Indonesia",
-            "image": "indonesia_prambanan.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, emerald green, volcanic stone black, and sunset red palette, no text, no watermark: tall pointed stone spires of the Hindu Prambanan temple surrounded by tropical foliage."
-        },
-        {
-            "id": "q018",
-            "category": "Landlocked Countries",
-            "question": "Which country is one of only two 'doubly landlocked' countries in the world, completely surrounded by other landlocked states?",
-            "hint": "Located in Central Asia, this former Soviet republic is famous for the silk road cities of Samarkand and Bukhara.",
-            "answer": "Uzbekistan",
-            "image": "uzbekistan_registan.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, turquoise blue tiles, desert gold, and deep blue palette, no text, no watermark: grand mosaic-tiled arches and minarets of the Registan Square in Samarkand."
-        },
-        {
-            "id": "q019",
-            "category": "Borders & Landforms",
-            "question": "Which two countries share the longest international land border between two nations in the world?",
-            "hint": "This boundary stretches over 8,800 kilometers across North America without military fortification.",
-            "answer": "Canada and USA",
-            "image": "usa_statue_liberty.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, patina green, navy harbor blue, and crimson red palette, no text, no watermark: copper Statue of Liberty standing proudly in New York Harbor against the city skyline."
-        },
-        {
-            "id": "q020",
-            "category": "Famous Figures",
-            "question": "Marie Curie, the first person to win two Nobel Prizes in different scientific fields, was born in which country?",
-            "hint": "Situated in Central Europe, this country's historic towns feature grand Rynek squares and medieval brick gothic castles.",
-            "answer": "Poland",
-            "image": "poland_krakow_cloth_hall.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, brick red, cobblestone grey, and dusk violet palette, no text, no watermark: Renaissance Cloth Hall (Sukiennice) in Krakow's historic main square lit by gas lamps."
-        },
-        {
-            "id": "q021",
-            "category": "Deserts & Extremes",
-            "question": "The Atacama Desert, widely considered the driest non-polar desert on Earth, is primarily located in which country?",
-            "hint": "This long, narrow nation stretches over 4,300 kilometers along South America's Pacific coast.",
-            "answer": "Chile",
-            "image": "chile_easter_island.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean blue, volcanic basalt, and grassy green palette, no text, no watermark: monolithic stone Moai statues standing silently on coastal hills under dramatic skies on Easter Island."
-        },
-        {
-            "id": "q022",
-            "category": "Flags & Symbols",
-            "question": "Which nation's flag is the only national flag in the world that features a picture of a human building or temple?",
-            "hint": "This Southeast Asian nation is famous for a vast 12th-century stone temple complex built by the Khmer Empire.",
-            "answer": "Cambodia",
-            "image": "cambodia_angkor_wat.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, jungle green, lotus pink, and ancient stone grey palette, no text, no watermark: iconic towers of Angkor Wat reflected in a serene water lily lotus pond."
-        },
-        {
-            "id": "q023",
-            "category": "Inventions & Tech",
-            "question": "The invention of printing with movable metal type was independently developed in Europe in which modern country?",
-            "hint": "This Central European nation is famous for autobahns, fairytale castles, and historic alpine regions.",
-            "answer": "Germany",
-            "image": "germany_neuschwanstein.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine forest green, mist white, and royal blue palette, no text, no watermark: fairytale turreted Neuschwanstein Castle perched on dramatic forested mountain cliffs."
-        },
-        {
-            "id": "q024",
-            "category": "Colonial History",
-            "question": "Which African nation was founded in the 19th century as a settlement for free African Americans?",
-            "hint": "Its official language is English, and its capital city was named after the 5th US President.",
-            "answer": "Liberia",
-            "image": "liberia_providence.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical palm green, sandy gold, and deep Atlantic blue palette, no text, no watermark: historic stone landing monument on Providence Island surrounded by palm trees."
-        },
-        {
-            "id": "q025",
-            "category": "Landlocked Countries",
-            "question": "What is the largest landlocked country in the world by total land area?",
-            "hint": "Spanning Central Asia and Eastern Europe, it is famous for space launch facilities and vast flat steppe lands.",
-            "answer": "Kazakhstan",
-            "image": "kazakhstan_khan_shatyr.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steppe gold, sky blue, and futuristic chrome palette, no text, no watermark: giant futuristic transparent Khan Shatyr tent structure rising above modern Astana."
-        },
-        {
-            "id": "q026",
-            "category": "Peninsulas & Seas",
-            "question": "Jutland is the name of the peninsula that forms the mainland portion of which European country?",
-            "hint": "This Nordic nation is linked to neighboring Sweden via the massive Öresund bridge.",
-            "answer": "Denmark",
-            "image": "denmark_nyhavn.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, pastel yellow, brick red, and canal blue palette, no text, no watermark: colorful 17th-century townhouses and wooden masted ships along Nyhavn canal."
-        },
-        {
-            "id": "q027",
-            "category": "Territorial Enclaves",
-            "question": "Which sovereign nation is an enclave entirely surrounded by the city territory of Rome, Italy?",
-            "hint": "It is the smallest independent state in the world by both area and population, ruled by the Pope.",
-            "answer": "Vatican City",
-            "image": "vatican_st_peters.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, papal yellow, marble white, and deep sky blue palette, no text, no watermark: towering dome of St. Peter's Basilica overlooking the vast stone colonnades of the square."
-        },
-        {
-            "id": "q028",
-            "category": "Famous Figures",
-            "question": "Philosopher and statesman Confucius was born in the state of Lu, located in which modern-day nation?",
-            "hint": "Home to the Great Wall, terracotta warriors, and ancient imperial dynasties.",
-            "answer": "China",
-            "image": "china_forbidden_city.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, imperial red, jade green, and golden roof tile palette, no text, no watermark: sweeping red roofs and courtyard gates of the ancient Forbidden City."
-        },
-        {
-            "id": "q029",
-            "category": "Volcanoes & Islands",
-            "question": "Which country contains the highest density of active volcanoes in North America, including Popocatépetl?",
-            "hint": "Known for ancient Mayan and Aztec pyramids, vibrant culinary traditions, and Pacific resorts.",
-            "answer": "Mexico",
-            "image": "mexico_chichen_itza.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta orange, agave blue, and desert yellow palette, no text, no watermark: step-pyramid El Castillo at Chichen Itza standing tall under clear skies."
-        },
-        {
-            "id": "q030",
-            "category": "Inventions & Origins",
-            "question": "The game of chess is believed to have originated during the Gupta Empire in which modern country?",
-            "hint": "This South Asian nation is home to the iconic white marble Taj Mahal monument.",
-            "answer": "India",
-            "image": "india_taj_mahal.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, pure marble white, royal magenta, and dusk orange palette, no text, no watermark: iconic dome and minarets of the Taj Mahal perfectly reflected in garden waters."
-        },
-        {
-            "id": "q031",
-            "category": "Microstates",
-            "question": "Which tiny landlocked European nation, nestled between Switzerland and Austria, has no airport or railway station?",
-            "hint": "It is an alpine microstate ruled by a prince, with an economy heavily focused on financial services.",
-            "answer": "Liechtenstein",
-            "image": "liechtenstein_vaduz_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine pine green, cliff grey, and autumn gold palette, no text, no watermark: Vaduz Castle perched dramatically on a high rocky cliff above Rhine valley villages."
-        },
-        {
-            "id": "q032",
-            "category": "Colonial History",
-            "question": "Which country was known as 'German South West Africa' prior to being mandated to South Africa after WWI?",
-            "hint": "Located along the Atlantic coast, it is home to the world's highest sand dunes in the Namib Desert.",
-            "answer": "Namibia",
-            "image": "namibia_sossusvlei.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep sand red, stark white clay, and intense sky blue palette, no text, no watermark: towering red sand dunes surrounding dead camel thorn trees at Deadvlei."
-        },
-        {
-            "id": "q033",
-            "category": "Continental Extremes",
-            "question": "What is the largest country by land area located entirely within Europe?",
-            "hint": "This Eastern European nation features vast fertile plains and historic golden-domed Orthodox cathedrals.",
-            "answer": "Ukraine",
-            "image": "ukraine_st_sophia.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sunflower yellow, sky blue, and shimmering gold dome palette, no text, no watermark: green and golden domes of St. Sophia's Cathedral rising above historic Kyiv."
-        },
-        {
-            "id": "q034",
-            "category": "Flags & Symbols",
-            "question": "Which country's flag features a cedar tree as its central national symbol?",
-            "hint": "This Middle Eastern nation on the Mediterranean is renowned for its ancient coastal ports like Byblos.",
-            "answer": "Lebanon",
-            "image": "lebanon_baalbek.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cedar green, limestone beige, and Mediterranean blue palette, no text, no watermark: giant ancient Roman stone columns of the Temple of Bacchus at Baalbek."
-        },
-        {
-            "id": "q035",
-            "category": "Rivers & Waterfalls",
-            "question": "Angel Falls, the world's highest uninterrupted waterfall dropping nearly 979 meters, is in which country?",
-            "hint": "This northern South American country features vast tropical savannas, Caribbean beaches, and flat-top tepui mountains.",
-            "answer": "Venezuela",
-            "image": "venezuela_angel_falls.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical emerald, mist white, and sandstone red palette, no text, no watermark: colossal Angel Falls plunging down a sheer cliff face into rainforest canopy."
-        },
-        {
-            "id": "q036",
-            "category": "Inventions & Tech",
-            "question": "Which country is credited with introducing the modern metric system during its revolution in the late 18th century?",
-            "hint": "Home to gothic cathedrals, fine wines, and the towering iron landmark built for the 1889 World's Fair.",
-            "answer": "France",
-            "image": "france_eiffel_tower.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, French tricolor blue, rose blush, and charcoal steel palette, no text, no watermark: soaring iron structure of the Eiffel Tower framed by manicured gardens."
-        },
-        {
-            "id": "q037",
-            "category": "Islands & Archipelagos",
-            "question": "Which island group in the Atlantic Ocean is the only overseas territory of Portugal that is an archipelago of nine volcanic islands?",
-            "hint": "Located roughly midway between Europe and North America, famous for crater lakes and green hills.",
-            "answer": "Azores",
-            "image": "portugal_belem_tower.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean teal, Lisbon yellow, and stone grey palette, no text, no watermark: ornate stone Belém Tower standing guard along the Tagus River coast."
-        },
-        {
-            "id": "q038",
-            "category": "Famous Figures",
-            "question": "Explorer Christopher Columbus was born in the maritime republic of Genoa, located in which modern-day nation?",
-            "hint": "Known for its historical canals, ancient ruins, and Mediterranean coastlines.",
-            "answer": "Italy",
-            "image": "italy_venice_canal.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Venetian red, canal turquoise, and ochre palette, no text, no watermark: wooden gondola gliding down the Grand Canal under the stone arched Rialto Bridge."
-        },
-        {
-            "id": "q039",
-            "category": "Independence & History",
-            "question": "Which South American nation gained independence from Portugal in 1822, unlike almost all its Spanish-speaking neighbors?",
-            "hint": "The largest country in South America, famous for the Amazon rainforest and giant Christ statue.",
-            "answer": "Brazil",
-            "image": "brazil_christ_redeemer.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical yellow, forest green, and ocean blue palette, no text, no watermark: giant Christ the Redeemer statue atop Corcovado mountain overlooking Guanabara Bay."
-        },
-        {
-            "id": "q040",
-            "category": "Peninsulas & Seas",
-            "question": "The Kamchatka Peninsula, known for its active volcanoes and brown bears, is part of which country?",
-            "hint": "The largest nation in the world by land area, spanning across northern Eurasia.",
-            "answer": "Russia",
-            "image": "russia_st_basils.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vivid festive crimson, gold, and turquoise palette, no text, no watermark: colorful onion domes of St. Basil's Cathedral standing proudly on Red Square."
-        },
-        {
-            "id": "q041",
-            "category": "Microstates",
-            "question": "Which European microstate is considered the world's oldest surviving republic, founded in 301 AD?",
-            "hint": "Completely landlocked by Italy, it sits atop Mount Titano with three historic stone towers on its ridge.",
-            "answer": "San Marino",
-            "image": "san_marino_towers.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mountain grey, forest green, and sky blue palette, no text, no watermark: stone Guaita fortress tower sitting on the cliff peak of Mount Titano."
-        },
-        {
-            "id": "q042",
-            "category": "Mountains & Passes",
-            "question": "Which landlocked South American country contains the highest capital administrative seat in the world by altitude?",
-            "hint": "Home to the famous Salar de Uyuni, the world's largest salt flat.",
-            "answer": "Bolivia",
-            "image": "bolivia_uyuni.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stark salt white, cobalt blue, and flamingo pink palette, no text, no watermark: endless mirror-like expanse of Salar de Uyuni salt flats reflecting cloud formations."
-        },
-        {
-            "id": "q043",
-            "category": "Flags & Symbols",
-            "question": "Which nation's flag features a red maple leaf prominently in its center?",
-            "hint": "The second-largest country in the world by total land area, famous for ice hockey and maple syrup.",
-            "answer": "Canada",
-            "image": "canada_cn_tower.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, maple red, crisp snow white, and lake blue palette, no text, no watermark: soaring CN Tower defining the urban Toronto waterfront skyline."
-        },
-        {
-            "id": "q044",
-            "category": "Inventions & Tech",
-            "question": "Which Asian island nation is the home country of the world's first high-speed commercial bullet train (Shinkansen)?",
-            "hint": "An East Asian archipelago nation famous for traditional shrines, technology, and Mount Fuji.",
-            "answer": "Japan",
-            "image": "japan_mt_fuji.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cherry blossom pink, indigo blue, and snow white palette, no text, no watermark: snow-capped Mount Fuji framed by a red wooden Torii gate."
-        },
-        {
-            "id": "q045",
-            "category": "Colonial History",
-            "question": "Which country was formerly known as 'Dahomey' before changing its name in 1975?",
-            "hint": "This West African coastal nation was the birthplace of the Vodou religion and the Dahomey Amazons.",
-            "answer": "Benin",
-            "image": "benin_door_no_return.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean turquoise, terracotta, and bronze palette, no text, no watermark: monumental concrete arch Door of No Return standing on the Ouidah sandy coast."
-        },
-        {
-            "id": "q046",
-            "category": "Islands & Oceans",
-            "question": "Which sovereign nation consists of over 1,190 coral islands grouped into 26 atolls in the Indian Ocean?",
-            "hint": "The lowest-lying country in the world, renowned for luxury overwater bungalows and turquoise lagoons.",
-            "answer": "Maldives",
-            "image": "maldives_overwater_villas.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bright aqua blue, white coral sand, and thatch brown palette, no text, no watermark: overwater thatched bungalows extending along a calm turquoise coral lagoon."
-        },
-        {
-            "id": "q047",
-            "category": "Famous Figures",
-            "question": "The famous painter Pablo Picasso was born in Malaga, in which country?",
-            "hint": "Located on the Iberian Peninsula, famous for flamenco, bullfighting, and Moorish palaces.",
-            "answer": "Spain",
-            "image": "spain_sagrada_familia.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, saffron yellow, terracotta red, and azure blue palette, no text, no watermark: soaring intricate spires of Antoni Gaudí's Sagrada Família basilica."
-        },
-        {
-            "id": "q048",
-            "category": "Rivers & Lakes",
-            "question": "Lake Baikal, the world's deepest and largest freshwater lake by volume, is situated in which country?",
-            "hint": "This vast nation stretches across eleven time zones from Eastern Europe to the Pacific Ocean.",
-            "answer": "Russia",
-            "image": "russia_hermitage.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mint teal, gold leaf, and winter white palette, no text, no watermark: opulent teal facade of the Winter Palace (Hermitage Museum) along Palace Square."
-        },
-        {
-            "id": "q049",
-            "category": "Landlocked Countries",
-            "question": "Which landlocked country in Central Europe is divided into 26 sovereign cantons?",
-            "hint": "Famous for the Matterhorn peak, chocolate, precision watches, and strict political neutrality.",
-            "answer": "Switzerland",
-            "image": "switzerland_matterhorn.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine white, pine green, and swiss red palette, no text, no watermark: majestic pyramid peak of the Matterhorn rising above green valley meadows."
-        },
-        {
-            "id": "q050",
-            "category": "Continental Extremes",
-            "question": "Which country is the smallest independent nation in the Americas by both land area and population?",
-            "hint": "This Caribbean dual-island country features iconic twin volcanic mountain peaks called the Pitons.",
-            "answer": "Saint Kitts and Nevis",
-            "image": "st_kitts_brimstone_hill.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Caribbean blue, lush greenery, and fort stone grey palette, no text, no watermark: massive stone bastions of Brimstone Hill Fortress overlooking coastal waters."
-        },
-        {
-            "id": "q051",
-            "category": "Flags & Symbols",
-            "question": "Which European nation features a yellow sun with 8 rays on a red field on its national flag?",
-            "hint": "This landlocked Balkan nation was formerly part of Yugoslavia and home to ancient Macedonian history.",
-            "answer": "North Macedonia",
-            "image": "north_macedonia_kaneo.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm red, golden yellow, and lake blue palette, no text, no watermark: stone Church of St. John at Kaneo perched high on a cliff over Lake Ohrid."
-        },
-        {
-            "id": "q052",
-            "category": "Independence & History",
-            "question": "Which African nation retained its independence by famously defeating an invading Italian army at the Battle of Adwa in 1896?",
-            "hint": "Located in the Horn of Africa, this ancient empire was home to rock-hewn churches and unique ancient scripts.",
-            "answer": "Ethiopia",
-            "image": "ethiopia_lalibela.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta red, warm yellow, and forest green palette, no text, no watermark: rock-hewn cross-shaped Church of Saint George carved down into Lalibela ground."
-        },
-        {
-            "id": "q053",
-            "category": "Inventions & Tech",
-            "question": "The first practical steam locomotive and the modern passenger railway network were developed in which nation?",
-            "hint": "An island nation home to Big Ben, historic monarchies, and the Industrial Revolution.",
-            "answer": "United Kingdom",
-            "image": "uk_big_ben.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British union red, foggy slate blue, and brass gold palette, no text, no watermark: Elizabeth Tower housing Big Ben standing alongside the River Thames."
-        },
-        {
-            "id": "q054",
-            "category": "Volcanoes & Islands",
-            "question": "Krakatoa, whose catastrophic 1883 eruption was heard thousands of miles away, is a volcanic island in which country?",
-            "hint": "Located along the Pacific Ring of Fire between Sumatra and Java.",
-            "answer": "Indonesia",
-            "image": "indonesia_borobudur.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mist green, basalt grey, and golden sunrise palette, no text, no watermark: ancient stone bell stupas of Borobudur temple against distant misty volcanoes."
-        },
-        {
-            "id": "q055",
-            "category": "Famous Figures",
-            "question": "Mozart and Ludwig Boltzmann were born in cities located in which present-day European country?",
-            "hint": "This central European alpine republic is famous for Viennese classical music and imperial palaces.",
-            "answer": "Austria",
-            "image": "austria_schonbrunn.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Habsburg yellow, garden green, and imperial red palette, no text, no watermark: grand symmetrical Schönbrunn Palace with manicured palace gardens."
-        },
-        {
-            "id": "q056",
-            "category": "Borders & Landforms",
-            "question": "The Victoria Falls, one of the world's largest waterfalls, forms the natural border between Zambia and which other nation?",
-            "hint": "This landlocked Southern African nation was formerly known as Southern Rhodesia.",
-            "answer": "Zimbabwe",
-            "image": "zimbabwe_great_ruins.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, acacia yellow, earth brown, and sky blue palette, no text, no watermark: dry-stone wall towers and curved ancient enclosures of Great Zimbabwe."
-        },
-        {
-            "id": "q057",
-            "category": "Colonial History",
-            "question": "Suriname, located on the northern coast of South America, gained independence in 1975 from which European colonizer?",
-            "hint": "A European nation whose capital is famous for historic canals, tulip fields, and bicycles.",
-            "answer": "The Netherlands",
-            "image": "suriname_wooden_cathedral.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Dutch orange, timber brown, and sky blue palette, no text, no watermark: magnificent towering wooden facade of St. Peter and Paul Cathedral in Paramaribo."
-        },
-        {
-            "id": "q058",
-            "category": "Population & Demographics",
-            "question": "Which European nation has the lowest population density in the entire European Union?",
-            "hint": "Located in Northern Europe, famous for vast pine forests, thousands of lakes, and saunas.",
-            "answer": "Finland",
-            "image": "finland_helsinki_cathedral.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, arctic blue, birch white, and green dome palette, no text, no watermark: neoclassical Helsinki Cathedral standing atop Senate Square steps."
-        },
-        {
-            "id": "q059",
-            "category": "Deserts & Extremes",
-            "question": "The Rub' al Khali (Empty Quarter), the world's largest continuous sand desert, covers vast regions of which country?",
-            "hint": "An Arabian Peninsula kingdom famous for oil reserves, modern megaprojects, and desert dunes.",
-            "answer": "Saudi Arabia",
-            "image": "saudi_hegra.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, terracotta, and deep violet sky palette, no text, no watermark: ancient rock-carved tomb facades of Hegra rising out of desert sand dunes."
-        },
-        {
-            "id": "q060",
-            "category": "Islands & Oceans",
-            "question": "Which island nation in the Pacific Ocean is the first sovereign country to see the sunrise each new calendar day?",
-            "hint": "Its easternmost Line Islands sit in the earliest time zone on Earth (UTC+14).",
-            "answer": "Kiribati",
-            "image": "kiribati_atoll.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant coral pink, sunrise orange, and ocean turquoise palette, no text, no watermark: aerial view of a narrow green palm atoll surrounding a crystal clear lagoon at dawn."
-        },
-        {
-            "id": "q061",
-            "category": "Flags & Symbols",
-            "question": "Which nation's flag features a yellow 5-pointed star over a solid red background?",
-            "hint": "A Southeast Asian country known for Ha Long Bay's limestone pillars and rich culinary heritage.",
-            "answer": "Vietnam",
-            "image": "vietnam_ha_long.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, jade green, deep red, and bamboo yellow palette, no text, no watermark: iconic limestone karst pillars jutting out of emerald water in Ha Long Bay."
-        },
-        {
-            "id": "q062",
-            "category": "Inventions & Tech",
-            "question": "The mathematical concept of zero as a number and decimal place value system originated in which ancient civilization?",
-            "hint": "This South Asian nation is famous for its diverse heritage, ancient temples, and vibrant festivals.",
-            "answer": "India",
-            "image": "india_gateway.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, basalt grey, saffron orange, and ocean blue palette, no text, no watermark: basalt arch monument of the Gateway of India on the waterfront."
-        },
-        {
-            "id": "q063",
-            "category": "Historical Geography",
-            "question": "The ancient city-state of Carthage, main rival of the Roman Republic, was located in which modern North African nation?",
-            "hint": "A Mediterranean coast country featuring whitewashed seaside villages with vibrant blue doors.",
-            "answer": "Tunisia",
-            "image": "tunisia_carthage_baths.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, whitewash blue, sandstone gold, and Mediterranean teal palette, no text, no watermark: stone ruins of the Roman Baths of Antoninus at ancient Carthage along the sea."
-        },
-        {
-            "id": "q064",
-            "category": "Mountains & Peaks",
-            "question": "Which country encompasses the mountain range containing K2, the second-highest peak on Earth?",
-            "hint": "A South Asian country with dramatic Karakoram mountains, ancient silk road valleys, and Mughal architecture.",
-            "answer": "Pakistan",
-            "image": "pakistan_badshahi_mosque.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mughal red sandstone, marble white, and evening sky blue palette, no text, no watermark: grand arches and minarets of the Badshahi Mosque in Lahore."
-        },
-        {
-            "id": "q065",
-            "category": "Famous Figures",
-            "question": "Che Guevara was born in Rosario, located in which South American nation?",
-            "hint": "This vast nation is famous for the Pampas plains, tango music, high Andean peaks, and passion for football.",
-            "answer": "Argentina",
-            "image": "argentina_obelisco.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sky blue, white, and golden sun yellow palette, no text, no watermark: towering white Obelisco monument standing in the center of Avenida 9 de Julio."
-        },
-        {
-            "id": "q066",
-            "category": "Microstates",
-            "question": "Which tiny island nation in the Pacific Ocean is the smallest independent republic in the world by land area (21 km²)?",
-            "hint": "An isolated coral atoll island that was once heavily mined for phosphate deposits.",
-            "answer": "Nauru",
-            "image": "nauru_pinnacles.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical green, coral grey, and Pacific blue palette, no text, no watermark: weathered jagged limestone pinnacles standing across a central island landscape."
-        },
-        {
-            "id": "q067",
-            "category": "Continental Extremes",
-            "question": "What is the most populous landlocked country in the world?",
-            "hint": "Located in East Africa, this nation lost its direct red sea coastline when Eritrea separated in 1993.",
-            "answer": "Ethiopia",
-            "image": "ethiopia_gondar_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Ethiopian green, yellow, and castle stone brown palette, no text, no watermark: stone battlements and royal towers of the Fasil Ghebbi castle compound in Gondar."
-        },
-        {
-            "id": "q068",
-            "category": "Colonial History",
-            "question": "Which nation was known as Upper Volta before changing its name in 1984 under Thomas Sankara?",
-            "hint": "A landlocked West African nation whose name translates to 'Land of Incorruptible People'.",
-            "answer": "Burkina Faso",
-            "image": "burkina_faso_mosque.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, clay red, ochre yellow, and sky blue palette, no text, no watermark: distinctive mud-brick timber spires of the Sudano-Sahelian Grand Mosque of Bobo-Dioulasso."
-        },
-        {
-            "id": "q069",
-            "category": "Islands & Archipelagos",
-            "question": "Which country controls the Galapagos Islands, located roughly 1,000 km off its mainland coast?",
-            "hint": "Named after the line of latitude that passes directly through it in South America.",
-            "answer": "Ecuador",
-            "image": "ecuador_galapagos_tortoise.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, volcanic dark grey, grass green, and ocean blue palette, no text, no watermark: giant Galapagos tortoise amidst coastal volcanic hills."
-        },
-        {
-            "id": "q070",
-            "category": "Inventions & Origins",
-            "question": "The game of golf was created and standardized during the 15th century in which country?",
-            "hint": "A region in northern Great Britain known for lochs, highlands, kilts, and medieval stone castles.",
-            "answer": "Scotland",
-            "image": "scotland_edinburgh_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, highland green, granite grey, and tartan red palette, no text, no watermark: historic Edinburgh Castle perched high atop Castle Rock."
-        },
-        {
-            "id": "q071",
-            "category": "Flags & Symbols",
-            "question": "Which country features a blue wheel with 24 spokes (the Ashoka Chakra) on its horizontal tricolor flag?",
-            "hint": "The world's most populous nation, situated in South Asia.",
-            "answer": "India",
-            "image": "india_hawa_mahal.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta pink, gold, and royal blue palette, no text, no watermark: intricate honeycomb sandstone windows of the Hawa Mahal (Palace of Winds) in Jaipur."
-        },
-        {
-            "id": "q072",
-            "category": "Peninsulas & Seas",
-            "question": "The Sinai Peninsula, linking Asia and Africa, belongs exclusively to which nation?",
-            "hint": "Famous for the ancient Pharaohs, Great Pyramids, and the Nile River.",
-            "answer": "Egypt",
-            "image": "egypt_pyramids_giza.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, sandstone orange, and deep turquoise palette, no text, no watermark: Great Pyramids of Giza and the Sphinx carved against a desert sunset."
-        },
-        {
-            "id": "q073",
-            "category": "Independence & History",
-            "question": "Which country gained independence in 2011, making it the newest universally recognized sovereign state in the world?",
-            "hint": "Located in East-Central Africa, it broke away from its northern neighbor after decades of civil conflict.",
-            "answer": "South Sudan",
-            "image": "south_sudan_sudd.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, wetland green, river blue, and sunset orange palette, no text, no watermark: winding river channels and lush papyrus wetlands of the vast Sudd marshland."
-        },
-        {
-            "id": "q074",
-            "category": "Rivers & Lakes",
-            "question": "Which is the longest river in South America and the largest river in the world by water discharge?",
-            "hint": "Flowing through vast tropical rainforests into the Atlantic Ocean.",
-            "answer": "Amazon River",
-            "image": "brazil_amazon_river.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep jungle green, river turquoise, and golden sunlight palette, no text, no watermark: wide Amazon river curving through dense unbroken rainforest canopy."
-        },
-        {
-            "id": "q075",
-            "category": "Famous Figures",
-            "question": "Theoretical physicist Albert Einstein was born in the city of Ulm, in which modern country?",
-            "hint": "Located in Central Europe, famous for historic cathedrals, engineering, and castle ruins.",
-            "answer": "Germany",
-            "image": "germany_brandenburg_gate.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stone beige, prussian blue, and gold palette, no text, no watermark: majestic columns and Quadriga chariot statue of Berlin's Brandenburg Gate."
-        },
-        {
-            "id": "q076",
-            "category": "Colonial History",
-            "question": "Which South American nation was known as 'British Guiana' prior to gaining independence in 1966?",
-            "hint": "The only official English-speaking country in South America, famous for Kaieteur Falls.",
-            "answer": "Guyana",
-            "image": "guyana_kaieteur_falls.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, misty waterfall white, rainforest green, and rock red palette, no text, no watermark: massive Kaieteur Falls plunging over a sheer cliff into jungle gorges."
-        },
-        {
-            "id": "q077",
-            "category": "Deserts & Extremes",
-            "question": "The Gobi Desert covers vast regions of northern China and which landlocked Asian country?",
-            "hint": "A country famous for nomadic culture, endless steppes, and horse breeding.",
-            "answer": "Mongolia",
-            "image": "mongolia_statue_genghis.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steppe green, silver chrome, and sky blue palette, no text, no watermark: colossal steel equestrian statue of Genghis Khan on open grassland."
-        },
-        {
-            "id": "q078",
-            "category": "Flags & Symbols",
-            "question": "Which nation's flag consists of a simple red square with a white cross in the center?",
-            "hint": "An alpine nation famous for banking security, mountains, and humanitarian neutrality.",
-            "answer": "Switzerland",
-            "image": "switzerland_chillon_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, lake blue, stone grey, and swiss red palette, no text, no watermark: historic stone Chillon Castle sitting directly on the shoreline of Lake Geneva."
-        },
-        {
-            "id": "q079",
-            "category": "Inventions & Tech",
-            "question": "Which nation developed the paper-making process during the Han Dynasty around 105 AD?",
-            "hint": "Home to ancient dynasties, imperial palaces, and iconic stone defensive walls.",
-            "answer": "China",
-            "image": "china_great_wall.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, dragon red, mountain green, and stone grey palette, no text, no watermark: Great Wall of China snaking over dramatic mountain ridges."
-        },
-        {
-            "id": "q080",
-            "category": "Islands & Archipelagos",
-            "question": "Which island nation in the Caribbean is divided into two sovereign entities: Sint Maarten and Saint Martin?",
-            "hint": "Divided between the Kingdom of the Netherlands and France.",
-            "answer": "Saint Martin / Sint Maarten",
-            "image": "st_martin_mahobeach.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, turquoise water, yellow sand, and airliner blue palette, no text, no watermark: commercial airplane flying low over tropical Maho Beach."
-        },
-        {
-            "id": "q081",
-            "category": "Mountains & Peaks",
-            "question": "The Drakensberg mountain range forms the main plateau border of which landlocked enclave country?",
-            "hint": "Entirely surrounded by South Africa, known as the 'Kingdom in the Sky' due to its elevation.",
-            "answer": "Lesotho",
-            "image": "lesotho_maletsunyane_falls.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, basalt grey, valley green, and rainbow spray palette, no text, no watermark: single Maletsunyane waterfall cascading into a deep green canyon."
-        },
-        {
-            "id": "q082",
-            "category": "Famous Figures",
-            "question": "Philosopher Immanuel Kant lived his entire life in Königsberg, which is today Kaliningrad, an exclave of which nation?",
-            "hint": "An exclave situated between Poland and Lithuania on the Baltic Sea coast.",
-            "answer": "Russia",
-            "image": "russia_kaliningrad_cathedral.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gothic brick red, Baltic blue, and autumn amber palette, no text, no watermark: red-brick Gothic Kaliningrad Cathedral on Kant Island."
-        },
-        {
-            "id": "q083",
-            "category": "Historical Geography",
-            "question": "The ancient city of Troy, made famous in Homer's Iliad, was located in the northwest of which modern nation?",
-            "hint": "Transcontinental nation bridging Southeastern Europe and the Anatolian peninsula.",
-            "answer": "Turkey",
-            "image": "turkey_hagia_sophia.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta pink, minaret gold, and dusk blue palette, no text, no watermark: grand dome and minarets of Hagia Sophia at sunset in Istanbul."
-        },
-        {
-            "id": "q084",
-            "category": "Microstates",
-            "question": "Which Mediterranean island nation consists of three inhabited islands: Malta, Gozo, and Comino?",
-            "hint": "Located south of Sicily, famous for megalithic temples and historic Knights Hospitaller fortifications.",
-            "answer": "Malta",
-            "image": "malta_valletta_harbor.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, honey limestone yellow, Mediterranean blue, and fort stone palette, no text, no watermark: Grand Harbour bastions of Valletta."
-        },
-        {
-            "id": "q085",
-            "category": "Colonial History",
-            "question": "Which nation was known as the 'Gold Coast' under British colonial rule prior to achieving independence in 1957?",
-            "hint": "The first sub-Saharan African country to gain independence from European colonial rule.",
-            "answer": "Ghana",
-            "image": "ghana_cape_coast_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, white stone, Atlantic blue, and palm green palette, no text, no watermark: historic whitewashed stone Cape Coast Castle overlooking the ocean."
-        },
-        {
-            "id": "q086",
-            "category": "Independence & History",
-            "question": "Which nation was ruled by the Romanov Dynasty for over three centuries until the 1917 revolutions?",
-            "hint": "A vast Eurasian empire that spanned from the Baltic Sea to the Pacific Ocean.",
-            "answer": "Russia",
-            "image": "russia_kremlin.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Kremlin red, golden spire, and river blue palette, no text, no watermark: iconic red stone walls and spired towers of the Moscow Kremlin."
-        },
-        {
-            "id": "q087",
-            "category": "Population & Demographics",
-            "question": "Which country is the most populous nation in Africa, with over 220 million residents?",
-            "hint": "Located in West Africa, known as an economic powerhouse and cultural hub for music and film.",
-            "answer": "Nigeria",
-            "image": "nigeria_zuma_rock.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, savanna orange, granite grey, and palm green palette, no text, no watermark: giant monolithic Zuma Rock rising near the countryside road."
-        },
-        {
-            "id": "q088",
-            "category": "Inventions & Tech",
-            "question": "The invention of gunpowder is attributed to alchemists in which country during the 9th century?",
-            "hint": "An East Asian nation with thousands of years of recorded dynastic history.",
-            "answer": "China",
-            "image": "china_terracotta_army.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta earth, ancient bronze, and imperial yellow palette, no text, no watermark: life-sized terracotta warrior statues standing in excavation rows."
-        },
-        {
-            "id": "q089",
-            "category": "Rivers & Lakes",
-            "question": "Lake Victoria, the largest tropical lake in the world, is shared by Uganda, Kenya, and which other country?",
-            "hint": "Home to Mount Kilimanjaro and the vast wildlife plains of the Serengeti.",
-            "answer": "Tanzania",
-            "image": "tanzania_kilimanjaro.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, savanna gold, snow white, and acacia green palette, no text, no watermark: flat snow peak of Mount Kilimanjaro rising above plains."
-        },
-        {
-            "id": "q090",
-            "category": "Flags & Symbols",
-            "question": "Which country's flag features a red dragon (Y Ddraig Goch) on a horizontal green and white field?",
-            "hint": "A nation on the island of Great Britain known for rugged coastlines and Celtic heritage.",
-            "answer": "Wales",
-            "image": "wales_conwy_castle.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Welsh red, field green, and stone grey palette, no text, no watermark: imposing medieval towers of Conwy Castle by the water."
-        },
-        {
-            "id": "q091",
-            "category": "Continental Extremes",
-            "question": "What is the smallest sovereign nation on the mainland continent of Africa by total area?",
-            "hint": "An enclave nation almost completely surrounded by Senegal, stretching along a river.",
-            "answer": "The Gambia",
-            "image": "gambia_arch_22.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical orange, river teal, and white monument palette, no text, no watermark: white Arch 22 triumphal monument standing over the entrance to Banjul."
-        },
-        {
-            "id": "q092",
-            "category": "Islands & Oceans",
-            "question": "Which large island nation in the Indian Ocean isolated itself evolutionarily, leading to 90% unique wildlife like lemurs?",
-            "hint": "The fourth-largest island in the world, located off the southeastern coast of mainland Africa.",
-            "answer": "Madagascar",
-            "image": "madagascar_baobabs.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, dirt red, baobab brown, and sunset orange palette, no text, no watermark: famous dirt Avenue of the Baobabs lined with ancient giant trees."
-        },
-        {
-            "id": "q093",
-            "category": "Famous Figures",
-            "question": "Philosopher Socrates lived, taught, and was executed in which ancient city-state modern country?",
-            "hint": "The cradle of Western democracy, famous for white marble temples on high hilltops.",
-            "answer": "Greece",
-            "image": "greece_parthenon.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Aegean blue, marble white, and olive green palette, no text, no watermark: ancient Parthenon temple standing on the Acropolis rock."
-        },
-        {
-            "id": "q094",
-            "category": "Deserts & Extremes",
-            "question": "Death Valley, containing North America's lowest elevation point at Badwater Basin, is located in which country?",
-            "hint": "A vast North American republic stretching from the Atlantic to the Pacific ocean.",
-            "answer": "United States",
-            "image": "usa_grand_canyon.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, canyon rust red, desert yellow, and deep river blue palette, no text, no watermark: layered sandstone cliffs of the Grand Canyon."
-        },
-        {
-            "id": "q095",
-            "category": "Historical Geography",
-            "question": "The ancient ruins of Petra, carved directly into vibrant rose-red sandstone cliffs, are located in which country?",
-            "hint": "A Middle Eastern kingdom located on the East Bank of the Jordan River.",
-            "answer": "Jordan",
-            "image": "jordan_petra_treasury.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rose pink sandstone, desert gold, and deep shadow palette, no text, no watermark: rock-cut Al-Khazneh (Treasury) façade seen through the Siq canyon."
-        },
-        {
-            "id": "q096",
-            "category": "Colonial History",
-            "question": "Which Asian country was ruled as a Spanish colony for over 300 years before being ceded to the United States in 1898?",
-            "hint": "An archipelago of over 7,000 islands in the western Pacific Ocean named after King Philip II of Spain.",
-            "answer": "Philippines",
-            "image": "philippines_chocolate_hills.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, chocolate brown, grassy green, and sky blue palette, no text, no watermark: rolling conical Chocolate Hills scattered across Bohol."
-        },
-        {
-            "id": "q097",
-            "category": "Peninsulas & Seas",
-            "question": "The Iberian Peninsula is shared almost entirely by Spain and which other country?",
-            "hint": "Westernmost European nation on the mainland, famous for port wine, coastal cliffs, and explorers.",
-            "answer": "Portugal",
-            "image": "portugal_pena_palace.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mustard yellow, coral red, and Sintra green palette, no text, no watermark: colorful Pena National Palace sitting high on green forested peaks."
-        },
-        {
-            "id": "q098",
-            "category": "Volcanoes & Islands",
-            "question": "Which country's North Island features active volcanic zones including Lake Taupo and Mount Ruapehu?",
-            "hint": "An island nation in the southwestern Pacific famous for Maori culture, kiwi birds, and dramatic landscapes.",
-            "answer": "New Zealand",
-            "image": "new_zealand_milford.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, fjord teal, fern green, and mountain snow white palette, no text, no watermark: Mitre Peak rising dramatically out of Milford Sound."
-        },
-        {
-            "id": "q099",
-            "category": "Inventions & Tech",
-            "question": "Which nation developed the world's first modern jet engine powered aircraft, the Heinkel He 178, in 1939?",
-            "hint": "A European nation renowned for industrial innovation, automotive engineering, and historic castles.",
-            "answer": "Germany",
-            "image": "germany_cologne_cathedral.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gothic charcoal stone, river blue, and sunset red palette, no text, no watermark: twin spires of Cologne Cathedral along the Rhine."
-        },
-        {
-            "id": "q100",
-            "category": "Flags & Symbols",
-            "question": "Which nation's flag is completely red with five yellow stars arranged in an arc in the top left canton?",
-            "hint": "The world's second-largest economy, located in East Asia.",
-            "answer": "China",
-            "image": "china_potala_palace.jpeg",
-            "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crimson red, snow white, and mountain blue palette, no text, no watermark: monumental Potala Palace fortress standing against Himalayan mountain backdrops."
-        }
-    ]
+  "gameType": "geography",
+  "name": "Geography Bingo",
+  "description": "A trivia game about geography, including countries, capitals, landmarks, and natural features. Players answer questions to fill their bingo cards and win prizes.",
+  "questions": [
+    {
+      "id": "q001",
+      "category": "Coastlines & Borders",
+      "question": "Which nation possesses the longest total coastline in the world, stretching over 202,000 kilometers?",
+      "hint": "This country spans six time zones and touches three oceans: the Atlantic, Pacific, and Arctic.",
+      "answer": "Canada",
+      "image": "images/canada_parliament.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich emerald green, navy blue, and warm maple amber palette, no text, no watermark: majestic Gothic Revival Centre Block and Peace Tower of the Canadian Parliament in Ottawa, framed by autumn trees under a clear stylized sky."
+    },
+    {
+      "id": "q002",
+      "category": "Flags & Symbols",
+      "question": "Which country is the only sovereign state in the world with a non-quadrilateral national flag?",
+      "hint": "Its unique flag consists of two stacked triangular pennants featuring symbols of the sun and crescent moon.",
+      "answer": "Nepal",
+      "image": "images/nepal_boudhanath.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rich crimson red, turquoise, and saffron yellow palette, no text, no watermark: massive white dome and golden spire of the Boudhanath Stupa with Buddha eyes, with colorful prayer flags fluttering against Himalayan peaks."
+    },
+    {
+      "id": "q003",
+      "category": "Population & Demographics",
+      "question": "Which South American nation is the most densely populated country on the mainland of the continent?",
+      "hint": "This Andean nation lies directly on the Equator and includes a famous volcanic archipelago home to unique species.",
+      "answer": "Ecuador",
+      "image": "images/ecuador_basilica.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm terracotta, cobalt blue, and golden hour palette, no text, no watermark: dramatic neo-Gothic towers of the Basilica del Voto Nacional standing tall over historic colonial roofs of Quito, Ecuador."
+    },
+    {
+      "id": "q004",
+      "category": "Inventions & Tech",
+      "question": "Which European nation is credited with inventing Bluetooth technology, named after a 10th-century Scandinavian king?",
+      "hint": "This lowland country is famous for its extensive canal networks, millions of bicycles, and historic wooden windmills.",
+      "answer": "The Netherlands",
+      "image": "images/netherlands_windmills.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant tulip orange, sky blue, and sage green palette, no text, no watermark: a scenic row of historic wooden windmills lining a calm reflection canal in Kinderdijk during sunset."
+    },
+    {
+      "id": "q005",
+      "category": "Continental Extremes",
+      "question": "By land area, what is the smallest landlocked country in Africa?",
+      "hint": "This landlocked kingdom in Southern Africa is famous for its high mountain plateaus and rich cultural traditional dances.",
+      "answer": "Eswatini",
+      "image": "images/eswatini_peak.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, earthy ochre, burnt sienna, and dusk purple palette, no text, no watermark: the iconic granite rock dome of Execution Rock rising above lush African savanna mountain valleys."
+    },
+    {
+      "id": "q006",
+      "category": "Colonial History",
+      "question": "Which Southeast Asian nation is the only country in its region that was never colonized by a European power?",
+      "hint": "Historically known as Siam, it served as a buffer state between British and French colonial territories.",
+      "answer": "Thailand",
+      "image": "images/thailand_wat_arun.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant teal, magenta, and shimmering gold palette, no text, no watermark: towering central prang of Wat Arun (Temple of Dawn) along the Chao Phraya River at twilight."
+    },
+    {
+      "id": "q007",
+      "category": "Famous Figures",
+      "question": "Nikola Tesla, the pioneering inventor and electrical engineer, was born in a village located in which present-day country?",
+      "hint": "This Adriatic nation is famous for its thousand-plus islands, walled medieval coastal cities, and red-tiled roofs.",
+      "answer": "Croatia",
+      "image": "images/croatia_dubrovnik.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep Adriatic turquoise, terracotta red, and limestone white palette, no text, no watermark: elevated panoramic view of Dubrovnik's medieval stone city walls and red-tiled roofs against the sea."
+    },
+    {
+      "id": "q008",
+      "category": "Historical Geography",
+      "question": "Which modern-day nation contains the central ruins of ancient Mesopotamia, between the Tigris and Euphrates rivers?",
+      "hint": "This nation was home to ancient Babylon, Ur, and the historic center of the Abbasid Caliphate.",
+      "answer": "Iraq",
+      "image": "images/iraq_ziggurat.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert amber, clay terracotta, and cobalt night sky palette, no text, no watermark: majestic ancient mud-brick Great Ziggurat of Ur rising dramatically above desert plains under a starry sky."
+    },
+    {
+      "id": "q009",
+      "category": "Islands & Oceans",
+      "question": "Which island nation in the North Atlantic is home to the world's oldest active parliament, founded in 930 AD?",
+      "hint": "This island is renowned for its active volcanoes, black sand beaches, vast glaciers, and geothermal springs.",
+      "answer": "Iceland",
+      "image": "images/iceland_church.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, icy teal, volcanic slate grey, and glowing aurora green palette, no text, no watermark: striking concrete Hallgrímskirkja church standing atop Reykjavik under dancing northern lights."
+    },
+    {
+      "id": "q010",
+      "category": "Microstates",
+      "question": "Which Mediterranean coastal city-state is the second-smallest sovereign country in the world by area?",
+      "hint": "Known for immense wealth per capita, it hosts a world-famous annual Formula 1 street circuit race.",
+      "answer": "Monaco",
+      "image": "images/monaco_casino.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, royal navy blue, golden yellow, and cream palette, no text, no watermark: grand Belle Époque façade of the Monte Carlo Casino with vintage sports cars parked along the harbor palm trees."
+    },
+    {
+      "id": "q011",
+      "category": "Mountains & Peaks",
+      "question": "Mount Chimborazo's peak is the furthest point on Earth's surface from the planet's center. In which country is it located?",
+      "hint": "Because of Earth's equatorial bulge, this country's high Andean summit beats Mount Everest in distance from Earth's core.",
+      "answer": "Ecuador",
+      "image": "images/ecuador_cotopaxi.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, snow white, sky blue, and Andean rust orange palette, no text, no watermark: symmetrical snow-capped volcanic cone of Cotopaxi towering high over green highland plains."
+    },
+    {
+      "id": "q012",
+      "category": "Rivers & Lakes",
+      "question": "Which river flows through more sovereign countries than any other river in the world, passing through 10 nations?",
+      "hint": "Originating in Germany's Black Forest, it drains into the Black Sea and inspired a famous classical waltz.",
+      "answer": "Danube",
+      "image": "images/hungary_parliament.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep indigo, golden amber illumination, and river blue palette, no text, no watermark: illuminated Gothic Revival Hungarian Parliament Building standing along the Danube River at dusk."
+    },
+    {
+      "id": "q013",
+      "category": "Flags & Symbols",
+      "question": "Which African nation features an AK-47 assault rifle on its official national flag?",
+      "hint": "Located on the southeastern coast of Africa, this former Portuguese colony gained independence in 1975.",
+      "answer": "Mozambique",
+      "image": "images/mozambique_fort.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm coastal teal, coral pink, and sandstone beige palette, no text, no watermark: historic stone battlements and cannons of the Fort of São Sebastião overlooking the tropical ocean."
+    },
+    {
+      "id": "q014",
+      "category": "Independence & History",
+      "question": "Which Caribbean nation became the first black-led republic in the world after winning independence in 1804?",
+      "hint": "It shares the island of Hispaniola and gained independence following a massive successful slave rebellion.",
+      "answer": "Haiti",
+      "image": "images/haiti_citadelle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, lush tropical green, dark stone grey, and sunset orange palette, no text, no watermark: massive mountaintop stone walls of Citadelle Laferrière standing dramatically against Caribbean cloud formations."
+    },
+    {
+      "id": "q015",
+      "category": "Inventions & Tech",
+      "question": "Which country is the birthplace of the modern battery, created by Alessandro Volta in 1800?",
+      "hint": "This boot-shaped Mediterranean peninsula was the heart of the Roman Empire and Renaissance art.",
+      "answer": "Italy",
+      "image": "images/italy_colosseum.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm sienna, olive green, and Mediterranean azure palette, no text, no watermark: iconic archways of the ancient stone Colosseum in Rome under bright sunny skies."
+    },
+    {
+      "id": "q016",
+      "category": "Population & Demographics",
+      "question": "Which European nation has the oldest median population age in the European Union?",
+      "hint": "Famous for its classical ruins, Renaissance architecture, and historic olive groves along the Mediterranean.",
+      "answer": "Italy",
+      "image": "images/italy_leaning_tower.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta, olive oil yellow, and sky blue palette, no text, no watermark: iconic white marble Leaning Tower of Pisa beside the cathedral in Pisa, Italy."
+    },
+    {
+      "id": "q017",
+      "category": "Islands & Oceans",
+      "question": "Which Asian island nation is made up of over 17,000 islands, making it the largest archipelagic state in the world?",
+      "hint": "Spanning both sides of the Equator, it is home to Komodo dragons and dense tropical rainforests.",
+      "answer": "Indonesia",
+      "image": "images/indonesia_prambanan.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, emerald green, volcanic stone black, and sunset red palette, no text, no watermark: tall pointed stone spires of the Hindu Prambanan temple surrounded by tropical foliage."
+    },
+    {
+      "id": "q018",
+      "category": "Landlocked Countries",
+      "question": "Which country is one of only two 'doubly landlocked' countries in the world, completely surrounded by other landlocked states?",
+      "hint": "Located in Central Asia, this former Soviet republic is famous for the silk road cities of Samarkand and Bukhara.",
+      "answer": "Uzbekistan",
+      "image": "images/uzbekistan_registan.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, turquoise blue tiles, desert gold, and deep blue palette, no text, no watermark: grand mosaic-tiled arches and minarets of the Registan Square in Samarkand."
+    },
+    {
+      "id": "q019",
+      "category": "Borders & Landforms",
+      "question": "Which two countries share the longest international land border between two nations in the world?",
+      "hint": "This boundary stretches over 8,800 kilometers across North America without military fortification.",
+      "answer": "Canada and USA",
+      "image": "images/usa_statue_liberty.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, patina green, navy harbor blue, and crimson red palette, no text, no watermark: copper Statue of Liberty standing proudly in New York Harbor against the city skyline."
+    },
+    {
+      "id": "q020",
+      "category": "Famous Figures",
+      "question": "Marie Curie, the first person to win two Nobel Prizes in different scientific fields, was born in which country?",
+      "hint": "Situated in Central Europe, this country's historic towns feature grand Rynek squares and medieval brick gothic castles.",
+      "answer": "Poland",
+      "image": "images/poland_krakow_cloth_hall.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, brick red, cobblestone grey, and dusk violet palette, no text, no watermark: Renaissance Cloth Hall (Sukiennice) in Krakow's historic main square lit by gas lamps."
+    },
+    {
+      "id": "q021",
+      "category": "Deserts & Extremes",
+      "question": "The Atacama Desert, widely considered the driest non-polar desert on Earth, is primarily located in which country?",
+      "hint": "This long, narrow nation stretches over 4,300 kilometers along South America's Pacific coast.",
+      "answer": "Chile",
+      "image": "images/chile_easter_island.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean blue, volcanic basalt, and grassy green palette, no text, no watermark: monolithic stone Moai statues standing silently on coastal hills under dramatic skies on Easter Island."
+    },
+    {
+      "id": "q022",
+      "category": "Flags & Symbols",
+      "question": "Which nation's flag is the only national flag in the world that features a picture of a human building or temple?",
+      "hint": "This Southeast Asian nation is famous for a vast 12th-century stone temple complex built by the Khmer Empire.",
+      "answer": "Cambodia",
+      "image": "images/cambodia_angkor_wat.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, jungle green, lotus pink, and ancient stone grey palette, no text, no watermark: iconic towers of Angkor Wat reflected in a serene water lily lotus pond."
+    },
+    {
+      "id": "q023",
+      "category": "Inventions & Tech",
+      "question": "The invention of printing with movable metal type was independently developed in Europe in which modern country?",
+      "hint": "This Central European nation is famous for autobahns, fairytale castles, and historic alpine regions.",
+      "answer": "Germany",
+      "image": "images/germany_neuschwanstein.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine forest green, mist white, and royal blue palette, no text, no watermark: fairytale turreted Neuschwanstein Castle perched on dramatic forested mountain cliffs."
+    },
+    {
+      "id": "q024",
+      "category": "Colonial History",
+      "question": "Which African nation was founded in the 19th century as a settlement for free African Americans?",
+      "hint": "Its official language is English, and its capital city was named after the 5th US President.",
+      "answer": "Liberia",
+      "image": "images/liberia_providence.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical palm green, sandy gold, and deep Atlantic blue palette, no text, no watermark: historic stone landing monument on Providence Island surrounded by palm trees."
+    },
+    {
+      "id": "q025",
+      "category": "Landlocked Countries",
+      "question": "What is the largest landlocked country in the world by total land area?",
+      "hint": "Spanning Central Asia and Eastern Europe, it is famous for space launch facilities and vast flat steppe lands.",
+      "answer": "Kazakhstan",
+      "image": "images/kazakhstan_khan_shatyr.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steppe gold, sky blue, and futuristic chrome palette, no text, no watermark: giant futuristic transparent Khan Shatyr tent structure rising above modern Astana."
+    },
+    {
+      "id": "q026",
+      "category": "Peninsulas & Seas",
+      "question": "Jutland is the name of the peninsula that forms the mainland portion of which European country?",
+      "hint": "This Nordic nation is linked to neighboring Sweden via the massive Öresund bridge.",
+      "answer": "Denmark",
+      "image": "images/denmark_nyhavn.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, pastel yellow, brick red, and canal blue palette, no text, no watermark: colorful 17th-century townhouses and wooden masted ships along Nyhavn canal."
+    },
+    {
+      "id": "q027",
+      "category": "Territorial Enclaves",
+      "question": "Which sovereign nation is an enclave entirely surrounded by the city territory of Rome, Italy?",
+      "hint": "It is the smallest independent state in the world by both area and population, ruled by the Pope.",
+      "answer": "Vatican City",
+      "image": "images/vatican_st_peters.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, papal yellow, marble white, and deep sky blue palette, no text, no watermark: towering dome of St. Peter's Basilica overlooking the vast stone colonnades of the square."
+    },
+    {
+      "id": "q028",
+      "category": "Famous Figures",
+      "question": "Philosopher and statesman Confucius was born in the state of Lu, located in which modern-day nation?",
+      "hint": "Home to the Great Wall, terracotta warriors, and ancient imperial dynasties.",
+      "answer": "China",
+      "image": "images/china_forbidden_city.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, imperial red, jade green, and golden roof tile palette, no text, no watermark: sweeping red roofs and courtyard gates of the ancient Forbidden City."
+    },
+    {
+      "id": "q029",
+      "category": "Volcanoes & Islands",
+      "question": "Which country contains the highest density of active volcanoes in North America, including Popocatépetl?",
+      "hint": "Known for ancient Mayan and Aztec pyramids, vibrant culinary traditions, and Pacific resorts.",
+      "answer": "Mexico",
+      "image": "images/mexico_chichen_itza.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta orange, agave blue, and desert yellow palette, no text, no watermark: step-pyramid El Castillo at Chichen Itza standing tall under clear skies."
+    },
+    {
+      "id": "q030",
+      "category": "Inventions & Origins",
+      "question": "The game of chess is believed to have originated during the Gupta Empire in which modern country?",
+      "hint": "This South Asian nation is home to the iconic white marble Taj Mahal monument.",
+      "answer": "India",
+      "image": "images/india_taj_mahal.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, pure marble white, royal magenta, and dusk orange palette, no text, no watermark: iconic dome and minarets of the Taj Mahal perfectly reflected in garden waters."
+    },
+    {
+      "id": "q031",
+      "category": "Microstates",
+      "question": "Which tiny landlocked European nation, nestled between Switzerland and Austria, has no airport or railway station?",
+      "hint": "It is an alpine microstate ruled by a prince, with an economy heavily focused on financial services.",
+      "answer": "Liechtenstein",
+      "image": "images/liechtenstein_vaduz_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine pine green, cliff grey, and autumn gold palette, no text, no watermark: Vaduz Castle perched dramatically on a high rocky cliff above Rhine valley villages."
+    },
+    {
+      "id": "q032",
+      "category": "Colonial History",
+      "question": "Which country was known as 'German South West Africa' prior to being mandated to South Africa after WWI?",
+      "hint": "Located along the Atlantic coast, it is home to the world's highest sand dunes in the Namib Desert.",
+      "answer": "Namibia",
+      "image": "images/namibia_sossusvlei.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep sand red, stark white clay, and intense sky blue palette, no text, no watermark: towering red sand dunes surrounding dead camel thorn trees at Deadvlei."
+    },
+    {
+      "id": "q033",
+      "category": "Continental Extremes",
+      "question": "What is the largest country by land area located entirely within Europe?",
+      "hint": "This Eastern European nation features vast fertile plains and historic golden-domed Orthodox cathedrals.",
+      "answer": "Ukraine",
+      "image": "images/ukraine_st_sophia.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sunflower yellow, sky blue, and shimmering gold dome palette, no text, no watermark: green and golden domes of St. Sophia's Cathedral rising above historic Kyiv."
+    },
+    {
+      "id": "q034",
+      "category": "Flags & Symbols",
+      "question": "Which country's flag features a cedar tree as its central national symbol?",
+      "hint": "This Middle Eastern nation on the Mediterranean is renowned for its ancient coastal ports like Byblos.",
+      "answer": "Lebanon",
+      "image": "images/lebanon_baalbek.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cedar green, limestone beige, and Mediterranean blue palette, no text, no watermark: giant ancient Roman stone columns of the Temple of Bacchus at Baalbek."
+    },
+    {
+      "id": "q035",
+      "category": "Rivers & Waterfalls",
+      "question": "Angel Falls, the world's highest uninterrupted waterfall dropping nearly 979 meters, is in which country?",
+      "hint": "This northern South American country features vast tropical savannas, Caribbean beaches, and flat-top tepui mountains.",
+      "answer": "Venezuela",
+      "image": "images/venezuela_angel_falls.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical emerald, mist white, and sandstone red palette, no text, no watermark: colossal Angel Falls plunging down a sheer cliff face into rainforest canopy."
+    },
+    {
+      "id": "q036",
+      "category": "Inventions & Tech",
+      "question": "Which country is credited with introducing the modern metric system during its revolution in the late 18th century?",
+      "hint": "Home to gothic cathedrals, fine wines, and the towering iron landmark built for the 1889 World's Fair.",
+      "answer": "France",
+      "image": "images/france_eiffel_tower.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, French tricolor blue, rose blush, and charcoal steel palette, no text, no watermark: soaring iron structure of the Eiffel Tower framed by manicured gardens."
+    },
+    {
+      "id": "q037",
+      "category": "Islands & Archipelagos",
+      "question": "Which island group in the Atlantic Ocean is the only overseas territory of Portugal that is an archipelago of nine volcanic islands?",
+      "hint": "Located roughly midway between Europe and North America, famous for crater lakes and green hills.",
+      "answer": "Azores",
+      "image": "images/portugal_belem_tower.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean teal, Lisbon yellow, and stone grey palette, no text, no watermark: ornate stone Belém Tower standing guard along the Tagus River coast."
+    },
+    {
+      "id": "q038",
+      "category": "Famous Figures",
+      "question": "Explorer Christopher Columbus was born in the maritime republic of Genoa, located in which modern-day nation?",
+      "hint": "Known for its historical canals, ancient ruins, and Mediterranean coastlines.",
+      "answer": "Italy",
+      "image": "images/italy_venice_canal.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Venetian red, canal turquoise, and ochre palette, no text, no watermark: wooden gondola gliding down the Grand Canal under the stone arched Rialto Bridge."
+    },
+    {
+      "id": "q039",
+      "category": "Independence & History",
+      "question": "Which South American nation gained independence from Portugal in 1822, unlike almost all its Spanish-speaking neighbors?",
+      "hint": "The largest country in South America, famous for the Amazon rainforest and giant Christ statue.",
+      "answer": "Brazil",
+      "image": "images/brazil_christ_redeemer.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical yellow, forest green, and ocean blue palette, no text, no watermark: giant Christ the Redeemer statue atop Corcovado mountain overlooking Guanabara Bay."
+    },
+    {
+      "id": "q040",
+      "category": "Peninsulas & Seas",
+      "question": "The Kamchatka Peninsula, known for its active volcanoes and brown bears, is part of which country?",
+      "hint": "The largest nation in the world by land area, spanning across northern Eurasia.",
+      "answer": "Russia",
+      "image": "images/russia_st_basils.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vivid festive crimson, gold, and turquoise palette, no text, no watermark: colorful onion domes of St. Basil's Cathedral standing proudly on Red Square."
+    },
+    {
+      "id": "q041",
+      "category": "Microstates",
+      "question": "Which European microstate is considered the world's oldest surviving republic, founded in 301 AD?",
+      "hint": "Completely landlocked by Italy, it sits atop Mount Titano with three historic stone towers on its ridge.",
+      "answer": "San Marino",
+      "image": "images/san_marino_towers.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mountain grey, forest green, and sky blue palette, no text, no watermark: stone Guaita fortress tower sitting on the cliff peak of Mount Titano."
+    },
+    {
+      "id": "q042",
+      "category": "Mountains & Passes",
+      "question": "Which landlocked South American country contains the highest capital administrative seat in the world by altitude?",
+      "hint": "Home to the famous Salar de Uyuni, the world's largest salt flat.",
+      "answer": "Bolivia",
+      "image": "images/bolivia_uyuni.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stark salt white, cobalt blue, and flamingo pink palette, no text, no watermark: endless mirror-like expanse of Salar de Uyuni salt flats reflecting cloud formations."
+    },
+    {
+      "id": "q043",
+      "category": "Flags & Symbols",
+      "question": "Which nation's flag features a red maple leaf prominently in its center?",
+      "hint": "The second-largest country in the world by total land area, famous for ice hockey and maple syrup.",
+      "answer": "Canada",
+      "image": "images/canada_cn_tower.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, maple red, crisp snow white, and lake blue palette, no text, no watermark: soaring CN Tower defining the urban Toronto waterfront skyline."
+    },
+    {
+      "id": "q044",
+      "category": "Inventions & Tech",
+      "question": "Which Asian island nation is the home country of the world's first high-speed commercial bullet train (Shinkansen)?",
+      "hint": "An East Asian archipelago nation famous for traditional shrines, technology, and Mount Fuji.",
+      "answer": "Japan",
+      "image": "images/japan_mt_fuji.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, cherry blossom pink, indigo blue, and snow white palette, no text, no watermark: snow-capped Mount Fuji framed by a red wooden Torii gate."
+    },
+    {
+      "id": "q045",
+      "category": "Colonial History",
+      "question": "Which country was formerly known as 'Dahomey' before changing its name in 1975?",
+      "hint": "This West African coastal nation was the birthplace of the Vodou religion and the Dahomey Amazons.",
+      "answer": "Benin",
+      "image": "images/benin_door_no_return.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, ocean turquoise, terracotta, and bronze palette, no text, no watermark: monumental concrete arch Door of No Return standing on the Ouidah sandy coast."
+    },
+    {
+      "id": "q046",
+      "category": "Islands & Oceans",
+      "question": "Which sovereign nation consists of over 1,190 coral islands grouped into 26 atolls in the Indian Ocean?",
+      "hint": "The lowest-lying country in the world, renowned for luxury overwater bungalows and turquoise lagoons.",
+      "answer": "Maldives",
+      "image": "images/maldives_overwater_villas.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, bright aqua blue, white coral sand, and thatch brown palette, no text, no watermark: overwater thatched bungalows extending along a calm turquoise coral lagoon."
+    },
+    {
+      "id": "q047",
+      "category": "Famous Figures",
+      "question": "The famous painter Pablo Picasso was born in Malaga, in which country?",
+      "hint": "Located on the Iberian Peninsula, famous for flamenco, bullfighting, and Moorish palaces.",
+      "answer": "Spain",
+      "image": "images/spain_sagrada_familia.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, saffron yellow, terracotta red, and azure blue palette, no text, no watermark: soaring intricate spires of Antoni Gaudí's Sagrada Família basilica."
+    },
+    {
+      "id": "q048",
+      "category": "Rivers & Lakes",
+      "question": "Lake Baikal, the world's deepest and largest freshwater lake by volume, is situated in which country?",
+      "hint": "This vast nation stretches across eleven time zones from Eastern Europe to the Pacific Ocean.",
+      "answer": "Russia",
+      "image": "images/russia_hermitage.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mint teal, gold leaf, and winter white palette, no text, no watermark: opulent teal facade of the Winter Palace (Hermitage Museum) along Palace Square."
+    },
+    {
+      "id": "q049",
+      "category": "Landlocked Countries",
+      "question": "Which landlocked country in Central Europe is divided into 26 sovereign cantons?",
+      "hint": "Famous for the Matterhorn peak, chocolate, precision watches, and strict political neutrality.",
+      "answer": "Switzerland",
+      "image": "images/switzerland_matterhorn.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, alpine white, pine green, and swiss red palette, no text, no watermark: majestic pyramid peak of the Matterhorn rising above green valley meadows."
+    },
+    {
+      "id": "q050",
+      "category": "Continental Extremes",
+      "question": "Which country is the smallest independent nation in the Americas by both land area and population?",
+      "hint": "This Caribbean dual-island country features iconic twin volcanic mountain peaks called the Pitons.",
+      "answer": "Saint Kitts and Nevis",
+      "image": "images/st_kitts_brimstone_hill.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Caribbean blue, lush greenery, and fort stone grey palette, no text, no watermark: massive stone bastions of Brimstone Hill Fortress overlooking coastal waters."
+    },
+    {
+      "id": "q051",
+      "category": "Flags & Symbols",
+      "question": "Which European nation features a yellow sun with 8 rays on a red field on its national flag?",
+      "hint": "This landlocked Balkan nation was formerly part of Yugoslavia and home to ancient Macedonian history.",
+      "answer": "North Macedonia",
+      "image": "images/north_macedonia_kaneo.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, warm red, golden yellow, and lake blue palette, no text, no watermark: stone Church of St. John at Kaneo perched high on a cliff over Lake Ohrid."
+    },
+    {
+      "id": "q052",
+      "category": "Independence & History",
+      "question": "Which African nation retained its independence by famously defeating an invading Italian army at the Battle of Adwa in 1896?",
+      "hint": "Located in the Horn of Africa, this ancient empire was home to rock-hewn churches and unique ancient scripts.",
+      "answer": "Ethiopia",
+      "image": "images/ethiopia_lalibela.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta red, warm yellow, and forest green palette, no text, no watermark: rock-hewn cross-shaped Church of Saint George carved down into Lalibela ground."
+    },
+    {
+      "id": "q053",
+      "category": "Inventions & Tech",
+      "question": "The first practical steam locomotive and the modern passenger railway network were developed in which nation?",
+      "hint": "An island nation home to Big Ben, historic monarchies, and the Industrial Revolution.",
+      "answer": "United Kingdom",
+      "image": "images/uk_big_ben.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, British union red, foggy slate blue, and brass gold palette, no text, no watermark: Elizabeth Tower housing Big Ben standing alongside the River Thames."
+    },
+    {
+      "id": "q054",
+      "category": "Volcanoes & Islands",
+      "question": "Krakatoa, whose catastrophic 1883 eruption was heard thousands of miles away, is a volcanic island in which country?",
+      "hint": "Located along the Pacific Ring of Fire between Sumatra and Java.",
+      "answer": "Indonesia",
+      "image": "images/indonesia_borobudur.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mist green, basalt grey, and golden sunrise palette, no text, no watermark: ancient stone bell stupas of Borobudur temple against distant misty volcanoes."
+    },
+    {
+      "id": "q055",
+      "category": "Famous Figures",
+      "question": "Mozart and Ludwig Boltzmann were born in cities located in which present-day European country?",
+      "hint": "This central European alpine republic is famous for Viennese classical music and imperial palaces.",
+      "answer": "Austria",
+      "image": "images/austria_schonbrunn.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Habsburg yellow, garden green, and imperial red palette, no text, no watermark: grand symmetrical Schönbrunn Palace with manicured palace gardens."
+    },
+    {
+      "id": "q056",
+      "category": "Borders & Landforms",
+      "question": "The Victoria Falls, one of the world's largest waterfalls, forms the natural border between Zambia and which other nation?",
+      "hint": "This landlocked Southern African nation was formerly known as Southern Rhodesia.",
+      "answer": "Zimbabwe",
+      "image": "images/zimbabwe_great_ruins.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, acacia yellow, earth brown, and sky blue palette, no text, no watermark: dry-stone wall towers and curved ancient enclosures of Great Zimbabwe."
+    },
+    {
+      "id": "q057",
+      "category": "Colonial History",
+      "question": "Suriname, located on the northern coast of South America, gained independence in 1975 from which European colonizer?",
+      "hint": "A European nation whose capital is famous for historic canals, tulip fields, and bicycles.",
+      "answer": "The Netherlands",
+      "image": "images/suriname_wooden_cathedral.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Dutch orange, timber brown, and sky blue palette, no text, no watermark: magnificent towering wooden facade of St. Peter and Paul Cathedral in Paramaribo."
+    },
+    {
+      "id": "q058",
+      "category": "Population & Demographics",
+      "question": "Which European nation has the lowest population density in the entire European Union?",
+      "hint": "Located in Northern Europe, famous for vast pine forests, thousands of lakes, and saunas.",
+      "answer": "Finland",
+      "image": "images/finland_helsinki_cathedral.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, arctic blue, birch white, and green dome palette, no text, no watermark: neoclassical Helsinki Cathedral standing atop Senate Square steps."
+    },
+    {
+      "id": "q059",
+      "category": "Deserts & Extremes",
+      "question": "The Rub' al Khali (Empty Quarter), the world's largest continuous sand desert, covers vast regions of which country?",
+      "hint": "An Arabian Peninsula kingdom famous for oil reserves, modern megaprojects, and desert dunes.",
+      "answer": "Saudi Arabia",
+      "image": "images/saudi_hegra.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, terracotta, and deep violet sky palette, no text, no watermark: ancient rock-carved tomb facades of Hegra rising out of desert sand dunes."
+    },
+    {
+      "id": "q060",
+      "category": "Islands & Oceans",
+      "question": "Which island nation in the Pacific Ocean is the first sovereign country to see the sunrise each new calendar day?",
+      "hint": "Its easternmost Line Islands sit in the earliest time zone on Earth (UTC+14).",
+      "answer": "Kiribati",
+      "image": "images/kiribati_atoll.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, vibrant coral pink, sunrise orange, and ocean turquoise palette, no text, no watermark: aerial view of a narrow green palm atoll surrounding a crystal clear lagoon at dawn."
+    },
+    {
+      "id": "q061",
+      "category": "Flags & Symbols",
+      "question": "Which nation's flag features a yellow 5-pointed star over a solid red background?",
+      "hint": "A Southeast Asian country known for Ha Long Bay's limestone pillars and rich culinary heritage.",
+      "answer": "Vietnam",
+      "image": "images/vietnam_ha_long.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, jade green, deep red, and bamboo yellow palette, no text, no watermark: iconic limestone karst pillars jutting out of emerald water in Ha Long Bay."
+    },
+    {
+      "id": "q062",
+      "category": "Inventions & Tech",
+      "question": "The mathematical concept of zero as a number and decimal place value system originated in which ancient civilization?",
+      "hint": "This South Asian nation is famous for its diverse heritage, ancient temples, and vibrant festivals.",
+      "answer": "India",
+      "image": "images/india_gateway.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, basalt grey, saffron orange, and ocean blue palette, no text, no watermark: basalt arch monument of the Gateway of India on the waterfront."
+    },
+    {
+      "id": "q063",
+      "category": "Historical Geography",
+      "question": "The ancient city-state of Carthage, main rival of the Roman Republic, was located in which modern North African nation?",
+      "hint": "A Mediterranean coast country featuring whitewashed seaside villages with vibrant blue doors.",
+      "answer": "Tunisia",
+      "image": "images/tunisia_carthage_baths.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, whitewash blue, sandstone gold, and Mediterranean teal palette, no text, no watermark: stone ruins of the Roman Baths of Antoninus at ancient Carthage along the sea."
+    },
+    {
+      "id": "q064",
+      "category": "Mountains & Peaks",
+      "question": "Which country encompasses the mountain range containing K2, the second-highest peak on Earth?",
+      "hint": "A South Asian country with dramatic Karakoram mountains, ancient silk road valleys, and Mughal architecture.",
+      "answer": "Pakistan",
+      "image": "images/pakistan_badshahi_mosque.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Mughal red sandstone, marble white, and evening sky blue palette, no text, no watermark: grand arches and minarets of the Badshahi Mosque in Lahore."
+    },
+    {
+      "id": "q065",
+      "category": "Famous Figures",
+      "question": "Che Guevara was born in Rosario, located in which South American nation?",
+      "hint": "This vast nation is famous for the Pampas plains, tango music, high Andean peaks, and passion for football.",
+      "answer": "Argentina",
+      "image": "images/argentina_obelisco.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, sky blue, white, and golden sun yellow palette, no text, no watermark: towering white Obelisco monument standing in the center of Avenida 9 de Julio."
+    },
+    {
+      "id": "q066",
+      "category": "Microstates",
+      "question": "Which tiny island nation in the Pacific Ocean is the smallest independent republic in the world by land area (21 km²)?",
+      "hint": "An isolated coral atoll island that was once heavily mined for phosphate deposits.",
+      "answer": "Nauru",
+      "image": "images/nauru_pinnacles.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical green, coral grey, and Pacific blue palette, no text, no watermark: weathered jagged limestone pinnacles standing across a central island landscape."
+    },
+    {
+      "id": "q067",
+      "category": "Continental Extremes",
+      "question": "What is the most populous landlocked country in the world?",
+      "hint": "Located in East Africa, this nation lost its direct red sea coastline when Eritrea separated in 1993.",
+      "answer": "Ethiopia",
+      "image": "images/ethiopia_gondar_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Ethiopian green, yellow, and castle stone brown palette, no text, no watermark: stone battlements and royal towers of the Fasil Ghebbi castle compound in Gondar."
+    },
+    {
+      "id": "q068",
+      "category": "Colonial History",
+      "question": "Which nation was known as Upper Volta before changing its name in 1984 under Thomas Sankara?",
+      "hint": "A landlocked West African nation whose name translates to 'Land of Incorruptible People'.",
+      "answer": "Burkina Faso",
+      "image": "images/burkina_faso_mosque.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, clay red, ochre yellow, and sky blue palette, no text, no watermark: distinctive mud-brick timber spires of the Sudano-Sahelian Grand Mosque of Bobo-Dioulasso."
+    },
+    {
+      "id": "q069",
+      "category": "Islands & Archipelagos",
+      "question": "Which country controls the Galapagos Islands, located roughly 1,000 km off its mainland coast?",
+      "hint": "Named after the line of latitude that passes directly through it in South America.",
+      "answer": "Ecuador",
+      "image": "images/ecuador_galapagos_tortoise.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, volcanic dark grey, grass green, and ocean blue palette, no text, no watermark: giant Galapagos tortoise amidst coastal volcanic hills."
+    },
+    {
+      "id": "q070",
+      "category": "Inventions & Origins",
+      "question": "The game of golf was created and standardized during the 15th century in which country?",
+      "hint": "A region in northern Great Britain known for lochs, highlands, kilts, and medieval stone castles.",
+      "answer": "Scotland",
+      "image": "images/scotland_edinburgh_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, highland green, granite grey, and tartan red palette, no text, no watermark: historic Edinburgh Castle perched high atop Castle Rock."
+    },
+    {
+      "id": "q071",
+      "category": "Flags & Symbols",
+      "question": "Which country features a blue wheel with 24 spokes (the Ashoka Chakra) on its horizontal tricolor flag?",
+      "hint": "The world's most populous nation, situated in South Asia.",
+      "answer": "India",
+      "image": "images/india_hawa_mahal.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta pink, gold, and royal blue palette, no text, no watermark: intricate honeycomb sandstone windows of the Hawa Mahal (Palace of Winds) in Jaipur."
+    },
+    {
+      "id": "q072",
+      "category": "Peninsulas & Seas",
+      "question": "The Sinai Peninsula, linking Asia and Africa, belongs exclusively to which nation?",
+      "hint": "Famous for the ancient Pharaohs, Great Pyramids, and the Nile River.",
+      "answer": "Egypt",
+      "image": "images/egypt_pyramids_giza.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, desert gold, sandstone orange, and deep turquoise palette, no text, no watermark: Great Pyramids of Giza and the Sphinx carved against a desert sunset."
+    },
+    {
+      "id": "q073",
+      "category": "Independence & History",
+      "question": "Which country gained independence in 2011, making it the newest universally recognized sovereign state in the world?",
+      "hint": "Located in East-Central Africa, it broke away from its northern neighbor after decades of civil conflict.",
+      "answer": "South Sudan",
+      "image": "images/south_sudan_sudd.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, wetland green, river blue, and sunset orange palette, no text, no watermark: winding river channels and lush papyrus wetlands of the vast Sudd marshland."
+    },
+    {
+      "id": "q074",
+      "category": "Rivers & Lakes",
+      "question": "Which is the longest river in South America and the largest river in the world by water discharge?",
+      "hint": "Flowing through vast tropical rainforests into the Atlantic Ocean.",
+      "answer": "Amazon River",
+      "image": "images/brazil_amazon_river.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, deep jungle green, river turquoise, and golden sunlight palette, no text, no watermark: wide Amazon river curving through dense unbroken rainforest canopy."
+    },
+    {
+      "id": "q075",
+      "category": "Famous Figures",
+      "question": "Theoretical physicist Albert Einstein was born in the city of Ulm, in which modern country?",
+      "hint": "Located in Central Europe, famous for historic cathedrals, engineering, and castle ruins.",
+      "answer": "Germany",
+      "image": "images/germany_brandenburg_gate.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, stone beige, prussian blue, and gold palette, no text, no watermark: majestic columns and Quadriga chariot statue of Berlin's Brandenburg Gate."
+    },
+    {
+      "id": "q076",
+      "category": "Colonial History",
+      "question": "Which South American nation was known as 'British Guiana' prior to gaining independence in 1966?",
+      "hint": "The only official English-speaking country in South America, famous for Kaieteur Falls.",
+      "answer": "Guyana",
+      "image": "images/guyana_kaieteur_falls.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, misty waterfall white, rainforest green, and rock red palette, no text, no watermark: massive Kaieteur Falls plunging over a sheer cliff into jungle gorges."
+    },
+    {
+      "id": "q077",
+      "category": "Deserts & Extremes",
+      "question": "The Gobi Desert covers vast regions of northern China and which landlocked Asian country?",
+      "hint": "A country famous for nomadic culture, endless steppes, and horse breeding.",
+      "answer": "Mongolia",
+      "image": "images/mongolia_statue_genghis.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, steppe green, silver chrome, and sky blue palette, no text, no watermark: colossal steel equestrian statue of Genghis Khan on open grassland."
+    },
+    {
+      "id": "q078",
+      "category": "Flags & Symbols",
+      "question": "Which nation's flag consists of a simple red square with a white cross in the center?",
+      "hint": "An alpine nation famous for banking security, mountains, and humanitarian neutrality.",
+      "answer": "Switzerland",
+      "image": "images/switzerland_chillon_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, lake blue, stone grey, and swiss red palette, no text, no watermark: historic stone Chillon Castle sitting directly on the shoreline of Lake Geneva."
+    },
+    {
+      "id": "q079",
+      "category": "Inventions & Tech",
+      "question": "Which nation developed the paper-making process during the Han Dynasty around 105 AD?",
+      "hint": "Home to ancient dynasties, imperial palaces, and iconic stone defensive walls.",
+      "answer": "China",
+      "image": "images/china_great_wall.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, dragon red, mountain green, and stone grey palette, no text, no watermark: Great Wall of China snaking over dramatic mountain ridges."
+    },
+    {
+      "id": "q080",
+      "category": "Islands & Archipelagos",
+      "question": "Which island nation in the Caribbean is divided into two sovereign entities: Sint Maarten and Saint Martin?",
+      "hint": "Divided between the Kingdom of the Netherlands and France.",
+      "answer": "Saint Martin / Sint Maarten",
+      "image": "images/st_martin_mahobeach.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, turquoise water, yellow sand, and airliner blue palette, no text, no watermark: commercial airplane flying low over tropical Maho Beach."
+    },
+    {
+      "id": "q081",
+      "category": "Mountains & Peaks",
+      "question": "The Drakensberg mountain range forms the main plateau border of which landlocked enclave country?",
+      "hint": "Entirely surrounded by South Africa, known as the 'Kingdom in the Sky' due to its elevation.",
+      "answer": "Lesotho",
+      "image": "images/lesotho_maletsunyane_falls.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, basalt grey, valley green, and rainbow spray palette, no text, no watermark: single Maletsunyane waterfall cascading into a deep green canyon."
+    },
+    {
+      "id": "q082",
+      "category": "Famous Figures",
+      "question": "Philosopher Immanuel Kant lived his entire life in Königsberg, which is today Kaliningrad, an exclave of which nation?",
+      "hint": "An exclave situated between Poland and Lithuania on the Baltic Sea coast.",
+      "answer": "Russia",
+      "image": "images/russia_kaliningrad_cathedral.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gothic brick red, Baltic blue, and autumn amber palette, no text, no watermark: red-brick Gothic Kaliningrad Cathedral on Kant Island."
+    },
+    {
+      "id": "q083",
+      "category": "Historical Geography",
+      "question": "The ancient city of Troy, made famous in Homer's Iliad, was located in the northwest of which modern nation?",
+      "hint": "Transcontinental nation bridging Southeastern Europe and the Anatolian peninsula.",
+      "answer": "Turkey",
+      "image": "images/turkey_hagia_sophia.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta pink, minaret gold, and dusk blue palette, no text, no watermark: grand dome and minarets of Hagia Sophia at sunset in Istanbul."
+    },
+    {
+      "id": "q084",
+      "category": "Microstates",
+      "question": "Which Mediterranean island nation consists of three inhabited islands: Malta, Gozo, and Comino?",
+      "hint": "Located south of Sicily, famous for megalithic temples and historic Knights Hospitaller fortifications.",
+      "answer": "Malta",
+      "image": "images/malta_valletta_harbor.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, honey limestone yellow, Mediterranean blue, and fort stone palette, no text, no watermark: Grand Harbour bastions of Valletta."
+    },
+    {
+      "id": "q085",
+      "category": "Colonial History",
+      "question": "Which nation was known as the 'Gold Coast' under British colonial rule prior to achieving independence in 1957?",
+      "hint": "The first sub-Saharan African country to gain independence from European colonial rule.",
+      "answer": "Ghana",
+      "image": "images/ghana_cape_coast_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, white stone, Atlantic blue, and palm green palette, no text, no watermark: historic whitewashed stone Cape Coast Castle overlooking the ocean."
+    },
+    {
+      "id": "q086",
+      "category": "Independence & History",
+      "question": "Which nation was ruled by the Romanov Dynasty for over three centuries until the 1917 revolutions?",
+      "hint": "A vast Eurasian empire that spanned from the Baltic Sea to the Pacific Ocean.",
+      "answer": "Russia",
+      "image": "images/russia_kremlin.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Kremlin red, golden spire, and river blue palette, no text, no watermark: iconic red stone walls and spired towers of the Moscow Kremlin."
+    },
+    {
+      "id": "q087",
+      "category": "Population & Demographics",
+      "question": "Which country is the most populous nation in Africa, with over 220 million residents?",
+      "hint": "Located in West Africa, known as an economic powerhouse and cultural hub for music and film.",
+      "answer": "Nigeria",
+      "image": "images/nigeria_zuma_rock.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, savanna orange, granite grey, and palm green palette, no text, no watermark: giant monolithic Zuma Rock rising near the countryside road."
+    },
+    {
+      "id": "q088",
+      "category": "Inventions & Tech",
+      "question": "The invention of gunpowder is attributed to alchemists in which country during the 9th century?",
+      "hint": "An East Asian nation with thousands of years of recorded dynastic history.",
+      "answer": "China",
+      "image": "images/china_terracotta_army.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, terracotta earth, ancient bronze, and imperial yellow palette, no text, no watermark: life-sized terracotta warrior statues standing in excavation rows."
+    },
+    {
+      "id": "q089",
+      "category": "Rivers & Lakes",
+      "question": "Lake Victoria, the largest tropical lake in the world, is shared by Uganda, Kenya, and which other country?",
+      "hint": "Home to Mount Kilimanjaro and the vast wildlife plains of the Serengeti.",
+      "answer": "Tanzania",
+      "image": "images/tanzania_kilimanjaro.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, savanna gold, snow white, and acacia green palette, no text, no watermark: flat snow peak of Mount Kilimanjaro rising above plains."
+    },
+    {
+      "id": "q090",
+      "category": "Flags & Symbols",
+      "question": "Which country's flag features a red dragon (Y Ddraig Goch) on a horizontal green and white field?",
+      "hint": "A nation on the island of Great Britain known for rugged coastlines and Celtic heritage.",
+      "answer": "Wales",
+      "image": "images/wales_conwy_castle.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Welsh red, field green, and stone grey palette, no text, no watermark: imposing medieval towers of Conwy Castle by the water."
+    },
+    {
+      "id": "q091",
+      "category": "Continental Extremes",
+      "question": "What is the smallest sovereign nation on the mainland continent of Africa by total area?",
+      "hint": "An enclave nation almost completely surrounded by Senegal, stretching along a river.",
+      "answer": "The Gambia",
+      "image": "images/gambia_arch_22.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, tropical orange, river teal, and white monument palette, no text, no watermark: white Arch 22 triumphal monument standing over the entrance to Banjul."
+    },
+    {
+      "id": "q092",
+      "category": "Islands & Oceans",
+      "question": "Which large island nation in the Indian Ocean isolated itself evolutionarily, leading to 90% unique wildlife like lemurs?",
+      "hint": "The fourth-largest island in the world, located off the southeastern coast of mainland Africa.",
+      "answer": "Madagascar",
+      "image": "images/madagascar_baobabs.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, dirt red, baobab brown, and sunset orange palette, no text, no watermark: famous dirt Avenue of the Baobabs lined with ancient giant trees."
+    },
+    {
+      "id": "q093",
+      "category": "Famous Figures",
+      "question": "Philosopher Socrates lived, taught, and was executed in which ancient city-state modern country?",
+      "hint": "The cradle of Western democracy, famous for white marble temples on high hilltops.",
+      "answer": "Greece",
+      "image": "images/greece_parthenon.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Aegean blue, marble white, and olive green palette, no text, no watermark: ancient Parthenon temple standing on the Acropolis rock."
+    },
+    {
+      "id": "q094",
+      "category": "Deserts & Extremes",
+      "question": "Death Valley, containing North America's lowest elevation point at Badwater Basin, is located in which country?",
+      "hint": "A vast North American republic stretching from the Atlantic to the Pacific ocean.",
+      "answer": "United States",
+      "image": "images/usa_grand_canyon.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, canyon rust red, desert yellow, and deep river blue palette, no text, no watermark: layered sandstone cliffs of the Grand Canyon."
+    },
+    {
+      "id": "q095",
+      "category": "Historical Geography",
+      "question": "The ancient ruins of Petra, carved directly into vibrant rose-red sandstone cliffs, are located in which country?",
+      "hint": "A Middle Eastern kingdom located on the East Bank of the Jordan River.",
+      "answer": "Jordan",
+      "image": "images/jordan_petra_treasury.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, rose pink sandstone, desert gold, and deep shadow palette, no text, no watermark: rock-cut Al-Khazneh (Treasury) façade seen through the Siq canyon."
+    },
+    {
+      "id": "q096",
+      "category": "Colonial History",
+      "question": "Which Asian country was ruled as a Spanish colony for over 300 years before being ceded to the United States in 1898?",
+      "hint": "An archipelago of over 7,000 islands in the western Pacific Ocean named after King Philip II of Spain.",
+      "answer": "Philippines",
+      "image": "images/philippines_chocolate_hills.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, chocolate brown, grassy green, and sky blue palette, no text, no watermark: rolling conical Chocolate Hills scattered across Bohol."
+    },
+    {
+      "id": "q097",
+      "category": "Peninsulas & Seas",
+      "question": "The Iberian Peninsula is shared almost entirely by Spain and which other country?",
+      "hint": "Westernmost European nation on the mainland, famous for port wine, coastal cliffs, and explorers.",
+      "answer": "Portugal",
+      "image": "images/portugal_pena_palace.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, mustard yellow, coral red, and Sintra green palette, no text, no watermark: colorful Pena National Palace sitting high on green forested peaks."
+    },
+    {
+      "id": "q098",
+      "category": "Volcanoes & Islands",
+      "question": "Which country's North Island features active volcanic zones including Lake Taupo and Mount Ruapehu?",
+      "hint": "An island nation in the southwestern Pacific famous for Maori culture, kiwi birds, and dramatic landscapes.",
+      "answer": "New Zealand",
+      "image": "images/new_zealand_milford.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, fjord teal, fern green, and mountain snow white palette, no text, no watermark: Mitre Peak rising dramatically out of Milford Sound."
+    },
+    {
+      "id": "q099",
+      "category": "Inventions & Tech",
+      "question": "Which nation developed the world's first modern jet engine powered aircraft, the Heinkel He 178, in 1939?",
+      "hint": "A European nation renowned for industrial innovation, automotive engineering, and historic castles.",
+      "answer": "Germany",
+      "image": "images/germany_cologne_cathedral.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, Gothic charcoal stone, river blue, and sunset red palette, no text, no watermark: twin spires of Cologne Cathedral along the Rhine."
+    },
+    {
+      "id": "q100",
+      "category": "Flags & Symbols",
+      "question": "Which nation's flag is completely red with five yellow stars arranged in an arc in the top left canton?",
+      "hint": "The world's second-largest economy, located in East Asia.",
+      "answer": "China",
+      "image": "images/china_potala_palace.jpeg",
+      "prompt": "Vintage 1950s travel poster art, 1:1 aspect ratio, bold screen-print aesthetic, crimson red, snow white, and mountain blue palette, no text, no watermark: monumental Potala Palace fortress standing against Himalayan mountain backdrops."
+    }
+  ]
 }

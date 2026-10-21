@@ -7,6 +7,7 @@
 const THEMES = {
   diwali: { emoji: '🪔', label: 'Diwali Trivia Bingo' },
   geography: { emoji: '🌍', label: 'Geography Trivia Bingo' },
+  flags: { emoji: '🎌', label: 'Guess the Flag' },
 };
 const DEFAULT_THEME = 'diwali';
 

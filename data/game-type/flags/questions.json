@@ -1,0 +1,2039 @@
+{
+  "gameType": "flags",
+  "name": "Guess the Flag",
+  "description": "A trivia game where players identify countries (and a few territories) from their flags.",
+  "questions": [
+    {
+      "id": "flag-ad",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Nestled in the Pyrenees mountains, sharing its only two borders with France and Spain.",
+      "answer": "Andorra",
+      "image": "country-flags/ad.png"
+    },
+    {
+      "id": "flag-ae",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the world's tallest building, located in its most populous city.",
+      "answer": "United Arab Emirates",
+      "image": "country-flags/ae.png"
+    },
+    {
+      "id": "flag-af",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous, landlocked nation bordering Pakistan, Iran, and several Central Asian states.",
+      "answer": "Afghanistan",
+      "image": "country-flags/af.png"
+    },
+    {
+      "id": "flag-ag",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A twin-island Caribbean nation where Christopher Columbus named one island after a cathedral in Seville.",
+      "answer": "Antigua & Barbuda",
+      "image": "country-flags/ag.png"
+    },
+    {
+      "id": "flag-ai",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Caribbean island known for its powdery white-sand beaches and British overseas territory status.",
+      "answer": "Anguilla",
+      "image": "country-flags/ai.png"
+    },
+    {
+      "id": "flag-al",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Balkan nation with a rugged coastline on the Adriatic and Ionian Seas, across from Italy.",
+      "answer": "Albania",
+      "image": "country-flags/al.png"
+    },
+    {
+      "id": "flag-am",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous Caucasus nation and the first in the world to adopt Christianity as a state religion.",
+      "answer": "Armenia",
+      "image": "country-flags/am.png"
+    },
+    {
+      "id": "flag-ao",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A southern African nation that was a Portuguese colony for over 400 years before independence in 1975.",
+      "answer": "Angola",
+      "image": "country-flags/ao.png"
+    },
+    {
+      "id": "flag-aq",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An icy continent with no permanent residents, governed by an international treaty signed in 1959.",
+      "answer": "Antarctica",
+      "image": "country-flags/aq.png"
+    },
+    {
+      "id": "flag-ar",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to Patagonia and the towering peak of Aconcagua, the tallest mountain outside Asia.",
+      "answer": "Argentina",
+      "image": "country-flags/ar.png"
+    },
+    {
+      "id": "flag-as",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A group of Pacific islands whose main harbor is one of the deepest natural harbors in the South Pacific.",
+      "answer": "American Samoa",
+      "image": "country-flags/as.png"
+    },
+    {
+      "id": "flag-at",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked Alpine nation that was the birthplace of composer Wolfgang Amadeus Mozart.",
+      "answer": "Austria",
+      "image": "country-flags/at.png"
+    },
+    {
+      "id": "flag-au",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An island continent home to the Great Barrier Reef and the vast Outback desert.",
+      "answer": "Australia",
+      "image": "country-flags/au.png"
+    },
+    {
+      "id": "flag-aw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Caribbean island known for its arid climate and trees permanently bent by constant trade winds.",
+      "answer": "Aruba",
+      "image": "country-flags/aw.png"
+    },
+    {
+      "id": "flag-ax",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An autonomous archipelago in the Baltic Sea, administered by a Nordic neighbor, where Swedish is the sole official language.",
+      "answer": "Åland Islands",
+      "image": "country-flags/ax.png"
+    },
+    {
+      "id": "flag-az",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caucasus nation on the Caspian Sea, nicknamed the 'Land of Fire' for its natural gas vents.",
+      "answer": "Azerbaijan",
+      "image": "country-flags/az.png"
+    },
+    {
+      "id": "flag-ba",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Balkan nation whose capital hosted the 1984 Winter Olympics before later enduring a lengthy siege.",
+      "answer": "Bosnia & Herzegovina",
+      "image": "country-flags/ba.png"
+    },
+    {
+      "id": "flag-bb",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An eastern Caribbean island that became the world's newest republic in 2021 by removing its monarch as head of state.",
+      "answer": "Barbados",
+      "image": "country-flags/bb.png"
+    },
+    {
+      "id": "flag-bd",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A densely populated nation shaped by the vast delta where the Ganges and Brahmaputra rivers meet.",
+      "answer": "Bangladesh",
+      "image": "country-flags/bd.png"
+    },
+    {
+      "id": "flag-be",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Western European nation famous for chocolate, waffles, and hosting the headquarters of NATO.",
+      "answer": "Belgium",
+      "image": "country-flags/be.png"
+    },
+    {
+      "id": "flag-bf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked West African nation that changed its name from Upper Volta in 1984.",
+      "answer": "Burkina Faso",
+      "image": "country-flags/bf.png"
+    },
+    {
+      "id": "flag-bg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Balkan nation on the Black Sea, home to the ancient Thracian Valley of the Kings.",
+      "answer": "Bulgaria",
+      "image": "country-flags/bg.png"
+    },
+    {
+      "id": "flag-bh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small island nation in the Persian Gulf connected to a much larger neighbor by a causeway.",
+      "answer": "Bahrain",
+      "image": "country-flags/bh.png"
+    },
+    {
+      "id": "flag-bi",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small, landlocked East African nation on the shores of Lake Tanganyika.",
+      "answer": "Burundi",
+      "image": "country-flags/bi.png"
+    },
+    {
+      "id": "flag-bj",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A narrow West African nation once known as the Kingdom of Dahomey, famous for its all-female warrior regiments.",
+      "answer": "Benin",
+      "image": "country-flags/bj.png"
+    },
+    {
+      "id": "flag-bl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small, upscale Caribbean island long associated with French Riviera-style luxury tourism.",
+      "answer": "St. Barthélemy",
+      "image": "country-flags/bl.png"
+    },
+    {
+      "id": "flag-bm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A North Atlantic island territory that lent its name to a mysterious triangle of sea.",
+      "answer": "Bermuda",
+      "image": "country-flags/bm.png"
+    },
+    {
+      "id": "flag-bn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small, oil-rich nation on the island of Borneo, ruled by one of the world's wealthiest monarchs.",
+      "answer": "Brunei",
+      "image": "country-flags/bn.png"
+    },
+    {
+      "id": "flag-bo",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked South American nation home to the world's largest salt flat.",
+      "answer": "Bolivia",
+      "image": "country-flags/bo.png"
+    },
+    {
+      "id": "flag-bq",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Three small islands in the West Indies governed as special municipalities of a European kingdom.",
+      "answer": "Caribbean Netherlands",
+      "image": "country-flags/bq.png"
+    },
+    {
+      "id": "flag-br",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "South America's largest nation, home to most of the Amazon rainforest and a famous mountaintop statue overlooking a harbor city.",
+      "answer": "Brazil",
+      "image": "country-flags/br.png"
+    },
+    {
+      "id": "flag-bs",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A chain of over 700 islands in the Atlantic, the first land Christopher Columbus sighted in 1492.",
+      "answer": "Bahamas",
+      "image": "country-flags/bs.png"
+    },
+    {
+      "id": "flag-bt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Himalayan kingdom that measures national progress using 'Gross National Happiness' instead of GDP.",
+      "answer": "Bhutan",
+      "image": "country-flags/bt.png"
+    },
+    {
+      "id": "flag-bv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "One of the most remote, uninhabited islands on Earth, covered almost entirely by glaciers.",
+      "answer": "Bouvet Island",
+      "image": "country-flags/bv.png"
+    },
+    {
+      "id": "flag-bw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked southern African nation covered largely by the Kalahari Desert and the Okavango Delta.",
+      "answer": "Botswana",
+      "image": "country-flags/bw.png"
+    },
+    {
+      "id": "flag-by",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Eastern European nation sharing a vast primeval forest, home to Europe's heaviest land animal, with its western neighbor.",
+      "answer": "Belarus",
+      "image": "country-flags/by.png"
+    },
+    {
+      "id": "flag-bz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation home to a massive underwater sinkhole visible from space.",
+      "answer": "Belize",
+      "image": "country-flags/bz.png"
+    },
+    {
+      "id": "flag-ca",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's second-largest country by area, home to Niagara Falls and the Rocky Mountains.",
+      "answer": "Canada",
+      "image": "country-flags/ca.png"
+    },
+    {
+      "id": "flag-cc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote Indian Ocean atoll territory where a young Charles Darwin studied coral reef formation.",
+      "answer": "Cocos (Keeling) Islands",
+      "image": "country-flags/cc.png"
+    },
+    {
+      "id": "flag-cd",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A vast Central African nation along a river that is the world's deepest, its basin covered by dense rainforest.",
+      "answer": "Congo - Kinshasa",
+      "image": "country-flags/cd.png"
+    },
+    {
+      "id": "flag-cf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked nation whose location is often described as the continent's geographic heart.",
+      "answer": "Central African Republic",
+      "image": "country-flags/cf.png"
+    },
+    {
+      "id": "flag-cg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central African nation whose capital sits directly across a major river from another country's capital — the only such facing pair of capitals in the world.",
+      "answer": "Congo - Brazzaville",
+      "image": "country-flags/cg.png"
+    },
+    {
+      "id": "flag-ch",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous, landlocked nation famous for neutrality, chocolate, and the Matterhorn peak.",
+      "answer": "Switzerland",
+      "image": "country-flags/ch.png"
+    },
+    {
+      "id": "flag-ci",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation once the world's largest producer of cocoa beans.",
+      "answer": "Côte d’Ivoire",
+      "image": "country-flags/ci.png"
+    },
+    {
+      "id": "flag-ck",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A self-governing Pacific nation in free association with New Zealand, named after the explorer who charted them.",
+      "answer": "Cook Islands",
+      "image": "country-flags/ck.png"
+    },
+    {
+      "id": "flag-cl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South American nation stretching over 4,000 km along the Pacific coast, home to the Atacama Desert.",
+      "answer": "Chile",
+      "image": "country-flags/cl.png"
+    },
+    {
+      "id": "flag-cm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central African nation nicknamed 'Africa in miniature' for its varied landscapes, from desert to rainforest.",
+      "answer": "Cameroon",
+      "image": "country-flags/cm.png"
+    },
+    {
+      "id": "flag-cn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's most populous country for decades, home to the Great Wall and the Yangtze River.",
+      "answer": "China",
+      "image": "country-flags/cn.png"
+    },
+    {
+      "id": "flag-co",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South American nation bordering both the Pacific and the Caribbean, home to a large share of the Amazon.",
+      "answer": "Colombia",
+      "image": "country-flags/co.png"
+    },
+    {
+      "id": "flag-cr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation with no standing army since 1949, known for its biodiversity and rainforests.",
+      "answer": "Costa Rica",
+      "image": "country-flags/cr.png"
+    },
+    {
+      "id": "flag-cu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The largest island in the Caribbean, led for decades by Fidel Castro after a 1959 revolution.",
+      "answer": "Cuba",
+      "image": "country-flags/cu.png"
+    },
+    {
+      "id": "flag-cv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A volcanic archipelago off the West African coast, once a key stop in the transatlantic slave trade.",
+      "answer": "Cape Verde",
+      "image": "country-flags/cv.png"
+    },
+    {
+      "id": "flag-cw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean island known for its colorful waterfront and a distinctive blue liqueur named after it.",
+      "answer": "Curaçao",
+      "image": "country-flags/cw.png"
+    },
+    {
+      "id": "flag-cx",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Indian Ocean territory famous for an annual mass migration of millions of red crabs.",
+      "answer": "Christmas Island",
+      "image": "country-flags/cx.png"
+    },
+    {
+      "id": "flag-cy",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Mediterranean island divided since 1974, lying just south of Turkey's coast.",
+      "answer": "Cyprus",
+      "image": "country-flags/cy.png"
+    },
+    {
+      "id": "flag-cz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central European nation whose capital is nicknamed the 'City of a Hundred Spires.'",
+      "answer": "Czechia",
+      "image": "country-flags/cz.png"
+    },
+    {
+      "id": "flag-de",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Western Europe's most populous nation, divided by a wall for decades until 1989.",
+      "answer": "Germany",
+      "image": "country-flags/de.png"
+    },
+    {
+      "id": "flag-dj",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small nation at the mouth of the Red Sea, hosting military bases from multiple world powers due to its strategic location.",
+      "answer": "Djibouti",
+      "image": "country-flags/dj.png"
+    },
+    {
+      "id": "flag-dk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Scandinavian nation and birthplace of the toy brand Lego and author Hans Christian Andersen.",
+      "answer": "Denmark",
+      "image": "country-flags/dk.png"
+    },
+    {
+      "id": "flag-dm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous eastern Caribbean island nicknamed the 'Nature Island' for its rainforests and hot springs.",
+      "answer": "Dominica",
+      "image": "country-flags/dm.png"
+    },
+    {
+      "id": "flag-do",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean nation sharing an island with a French-Creole-speaking neighbor.",
+      "answer": "Dominican Republic",
+      "image": "country-flags/do.png"
+    },
+    {
+      "id": "flag-dz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Africa's largest country by area, most of which lies within the Sahara Desert.",
+      "answer": "Algeria",
+      "image": "country-flags/dz.png"
+    },
+    {
+      "id": "flag-ec",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South American nation straddling the equator, home to the Galápagos Islands.",
+      "answer": "Ecuador",
+      "image": "country-flags/ec.png"
+    },
+    {
+      "id": "flag-ee",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Baltic nation known for being an early adopter of widespread e-government and digital services.",
+      "answer": "Estonia",
+      "image": "country-flags/ee.png"
+    },
+    {
+      "id": "flag-eg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the ancient pyramids of Giza and the longest river in the world.",
+      "answer": "Egypt",
+      "image": "country-flags/eg.png"
+    },
+    {
+      "id": "flag-eh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A disputed territory on Africa's Atlantic coast, mostly administered by its northern neighbor.",
+      "answer": "Western Sahara",
+      "image": "country-flags/eh.png"
+    },
+    {
+      "id": "flag-er",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Horn of Africa nation on the Red Sea that gained independence from a larger neighbor in 1993.",
+      "answer": "Eritrea",
+      "image": "country-flags/er.png"
+    },
+    {
+      "id": "flag-es",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Iberian nation home to the Sagrada Família basilica and the running of the bulls in Pamplona.",
+      "answer": "Spain",
+      "image": "country-flags/es.png"
+    },
+    {
+      "id": "flag-et",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "One of the few African nations never formally colonized, and where many scientists believe coffee originated.",
+      "answer": "Ethiopia",
+      "image": "country-flags/et.png"
+    },
+    {
+      "id": "flag-fi",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Nordic nation with more than 180,000 lakes, nicknamed the 'Land of a Thousand Lakes.'",
+      "answer": "Finland",
+      "image": "country-flags/fi.png"
+    },
+    {
+      "id": "flag-fj",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Pacific archipelago of over 300 islands, famous for its coral reefs and hospitality.",
+      "answer": "Fiji",
+      "image": "country-flags/fj.png"
+    },
+    {
+      "id": "flag-fk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Atlantic archipelago at the center of a brief 1982 war between two larger nations.",
+      "answer": "Falkland Islands",
+      "image": "country-flags/fk.png"
+    },
+    {
+      "id": "flag-fm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific nation made up of over 600 islands across four states.",
+      "answer": "Micronesia",
+      "image": "country-flags/fm.png"
+    },
+    {
+      "id": "flag-fo",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A self-governing North Atlantic archipelago between Iceland and Norway, known for dramatic sea cliffs.",
+      "answer": "Faroe Islands",
+      "image": "country-flags/fo.png"
+    },
+    {
+      "id": "flag-fr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Eiffel Tower and the most-visited museum in the world.",
+      "answer": "France",
+      "image": "country-flags/fr.png"
+    },
+    {
+      "id": "flag-ga",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central African nation along the equator, much of it covered by dense rainforest.",
+      "answer": "Gabon",
+      "image": "country-flags/ga.png"
+    },
+    {
+      "id": "flag-gb",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A union of four home nations off Europe's northwest coast, home to Big Ben and Stonehenge.",
+      "answer": "United Kingdom",
+      "image": "country-flags/gb.png"
+    },
+    {
+      "id": "flag-gb-eng",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Credited with codifying the modern rules of football (soccer) in 1863, and home to Shakespeare's birthplace.",
+      "answer": "England",
+      "image": "country-flags/gb-eng.png"
+    },
+    {
+      "id": "flag-gb-nir",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Giant's Causeway, a coastline of thousands of interlocking hexagonal basalt columns.",
+      "answer": "Northern Ireland",
+      "image": "country-flags/gb-nir.png"
+    },
+    {
+      "id": "flag-gb-sct",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Famous for its highlands, lochs — including one said to hide a mythical monster — and whisky distilling traditions.",
+      "answer": "Scotland",
+      "image": "country-flags/gb-sct.png"
+    },
+    {
+      "id": "flag-gb-wls",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Known for having more castles per square mile than almost anywhere else, and a dragon on its flag.",
+      "answer": "Wales",
+      "image": "country-flags/gb-wls.png"
+    },
+    {
+      "id": "flag-gd",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Caribbean island nation nicknamed the 'Island of Spice' for its nutmeg production.",
+      "answer": "Grenada",
+      "image": "country-flags/gd.png"
+    },
+    {
+      "id": "flag-ge",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caucasus nation where winemaking is believed to have originated roughly 8,000 years ago.",
+      "answer": "Georgia",
+      "image": "country-flags/ge.png"
+    },
+    {
+      "id": "flag-gf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A territory on South America's northeast coast that serves as a major spaceport for satellite launches.",
+      "answer": "French Guiana",
+      "image": "country-flags/gf.png"
+    },
+    {
+      "id": "flag-gg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Channel Island between England and France with its own currency and postage stamps.",
+      "answer": "Guernsey",
+      "image": "country-flags/gg.png"
+    },
+    {
+      "id": "flag-gh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation formerly known as the Gold Coast, the first sub-Saharan nation to gain independence from colonial rule.",
+      "answer": "Ghana",
+      "image": "country-flags/gh.png"
+    },
+    {
+      "id": "flag-gi",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A tiny peninsula at Europe's southern tip, dominated by a limestone rock inhabited by wild monkeys.",
+      "answer": "Gibraltar",
+      "image": "country-flags/gi.png"
+    },
+    {
+      "id": "flag-gl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's largest island, mostly covered by an ice sheet, governed as part of a Scandinavian kingdom.",
+      "answer": "Greenland",
+      "image": "country-flags/gl.png"
+    },
+    {
+      "id": "flag-gm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Africa's smallest mainland nation, almost entirely surrounded by a much larger neighbor except for a short coastline.",
+      "answer": "Gambia",
+      "image": "country-flags/gm.png"
+    },
+    {
+      "id": "flag-gn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation holding some of the world's largest reserves of the ore used to make aluminum.",
+      "answer": "Guinea",
+      "image": "country-flags/gn.png"
+    },
+    {
+      "id": "flag-gp",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A butterfly-shaped group of Caribbean islands that is an overseas region of a European nation.",
+      "answer": "Guadeloupe",
+      "image": "country-flags/gp.png"
+    },
+    {
+      "id": "flag-gq",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Central African nation, the only one on the mainland continent where Spanish is an official language.",
+      "answer": "Equatorial Guinea",
+      "image": "country-flags/gq.png"
+    },
+    {
+      "id": "flag-gr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Birthplace of democracy and the ancient Olympic Games, home to the Acropolis.",
+      "answer": "Greece",
+      "image": "country-flags/gr.png"
+    },
+    {
+      "id": "flag-gs",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote South Atlantic territory where the polar explorer Ernest Shackleton is buried.",
+      "answer": "South Georgia & South Sandwich Islands",
+      "image": "country-flags/gs.png"
+    },
+    {
+      "id": "flag-gt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation home to one of the largest ancient Maya cities, Tikal.",
+      "answer": "Guatemala",
+      "image": "country-flags/gt.png"
+    },
+    {
+      "id": "flag-gu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific island territory whose capital region is the westernmost point of United States territory and among the first to see the new day.",
+      "answer": "Guam",
+      "image": "country-flags/gu.png"
+    },
+    {
+      "id": "flag-gw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small West African nation that was a Portuguese colony until a long war ended in independence in 1974.",
+      "answer": "Guinea-Bissau",
+      "image": "country-flags/gw.png"
+    },
+    {
+      "id": "flag-gy",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South American nation where English is the official language, bordering Venezuela and Brazil.",
+      "answer": "Guyana",
+      "image": "country-flags/gy.png"
+    },
+    {
+      "id": "flag-hk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A former British colony returned to Chinese sovereignty in 1997, known for its dense skyline and harbor.",
+      "answer": "Hong Kong SAR China",
+      "image": "country-flags/hk.png"
+    },
+    {
+      "id": "flag-hm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote, uninhabited Australian territory dominated by an active volcano and glaciers.",
+      "answer": "Heard & McDonald Islands",
+      "image": "country-flags/hm.png"
+    },
+    {
+      "id": "flag-hn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation home to the ancient Maya ruins of Copán.",
+      "answer": "Honduras",
+      "image": "country-flags/hn.png"
+    },
+    {
+      "id": "flag-hr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Balkan nation along the Adriatic Sea whose checkered red-and-white pattern inspired a famous football kit design.",
+      "answer": "Croatia",
+      "image": "country-flags/hr.png"
+    },
+    {
+      "id": "flag-ht",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's first nation founded by a successful slave revolt, in 1804, sharing an island with a Spanish-speaking neighbor.",
+      "answer": "Haiti",
+      "image": "country-flags/ht.png"
+    },
+    {
+      "id": "flag-hu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central European nation whose capital formed from two historic towns merging across the Danube.",
+      "answer": "Hungary",
+      "image": "country-flags/hu.png"
+    },
+    {
+      "id": "flag-id",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's largest archipelago nation, made up of over 17,000 islands.",
+      "answer": "Indonesia",
+      "image": "country-flags/id.png"
+    },
+    {
+      "id": "flag-ie",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An island nation known as the 'Emerald Isle' for its lush green countryside.",
+      "answer": "Ireland",
+      "image": "country-flags/ie.png"
+    },
+    {
+      "id": "flag-il",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation home to Jerusalem, a city sacred to three major world religions.",
+      "answer": "Israel",
+      "image": "country-flags/il.png"
+    },
+    {
+      "id": "flag-im",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A self-governing island in the Irish Sea famous for a historic motorcycle road race.",
+      "answer": "Isle of Man",
+      "image": "country-flags/im.png"
+    },
+    {
+      "id": "flag-in",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Taj Mahal and the world's second-most populous nation.",
+      "answer": "India",
+      "image": "country-flags/in.png"
+    },
+    {
+      "id": "flag-io",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote atoll chain roughly halfway between Africa and Indonesia, whose largest atoll hosts a major military airbase.",
+      "answer": "British Indian Ocean Territory",
+      "image": "country-flags/io.png"
+    },
+    {
+      "id": "flag-iq",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation along the Tigris and Euphrates rivers, cradle of ancient Mesopotamian civilization.",
+      "answer": "Iraq",
+      "image": "country-flags/iq.png"
+    },
+    {
+      "id": "flag-ir",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation once the heart of the ancient Persian Empire.",
+      "answer": "Iran",
+      "image": "country-flags/ir.png"
+    },
+    {
+      "id": "flag-is",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A North Atlantic island nation with more active volcanoes than any other European country, and no native mosquitoes.",
+      "answer": "Iceland",
+      "image": "country-flags/is.png"
+    },
+    {
+      "id": "flag-it",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Colosseum, the Leaning Tower of Pisa, and the world's smallest country within its capital city.",
+      "answer": "Italy",
+      "image": "country-flags/it.png"
+    },
+    {
+      "id": "flag-je",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The largest of the Channel Islands, lying closer to France than to the mainland it's politically tied to.",
+      "answer": "Jersey",
+      "image": "country-flags/je.png"
+    },
+    {
+      "id": "flag-jm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean island nation and birthplace of reggae music and sprinter Usain Bolt.",
+      "answer": "Jamaica",
+      "image": "country-flags/jm.png"
+    },
+    {
+      "id": "flag-jo",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation home to the ancient rock-carved city of Petra.",
+      "answer": "Jordan",
+      "image": "country-flags/jo.png"
+    },
+    {
+      "id": "flag-jp",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East Asian archipelago nation known as the 'Land of the Rising Sun.'",
+      "answer": "Japan",
+      "image": "country-flags/jp.png"
+    },
+    {
+      "id": "flag-ke",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East African nation that hosts the annual Great Migration of wildebeest across the Mara River.",
+      "answer": "Kenya",
+      "image": "country-flags/ke.png"
+    },
+    {
+      "id": "flag-kg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous Central Asian nation where over 90% of the land sits above 1,500 meters elevation.",
+      "answer": "Kyrgyzstan",
+      "image": "country-flags/kg.png"
+    },
+    {
+      "id": "flag-kh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian nation home to Angkor Wat, the largest religious monument in the world.",
+      "answer": "Cambodia",
+      "image": "country-flags/kh.png"
+    },
+    {
+      "id": "flag-ki",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific nation spread across 33 atolls straddling both the equator and the International Date Line.",
+      "answer": "Kiribati",
+      "image": "country-flags/ki.png"
+    },
+    {
+      "id": "flag-km",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small volcanic archipelago nation in the Indian Ocean between Madagascar and the African mainland.",
+      "answer": "Comoros",
+      "image": "country-flags/km.png"
+    },
+    {
+      "id": "flag-kn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The smallest sovereign nation in the Americas, made up of two small Caribbean islands.",
+      "answer": "St. Kitts & Nevis",
+      "image": "country-flags/kn.png"
+    },
+    {
+      "id": "flag-kp",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East Asian nation separated from its southern neighbor by one of the most heavily fortified borders on Earth.",
+      "answer": "North Korea",
+      "image": "country-flags/kp.png"
+    },
+    {
+      "id": "flag-kr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East Asian nation home to the tech giant Samsung and a global wave of pop culture exports.",
+      "answer": "South Korea",
+      "image": "country-flags/kr.png"
+    },
+    {
+      "id": "flag-kw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small, oil-rich Persian Gulf nation that was occupied by a larger northern neighbor in 1990.",
+      "answer": "Kuwait",
+      "image": "country-flags/kw.png"
+    },
+    {
+      "id": "flag-ky",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean British territory widely known as an offshore banking and finance hub.",
+      "answer": "Cayman Islands",
+      "image": "country-flags/ky.png"
+    },
+    {
+      "id": "flag-kz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's largest landlocked country, spanning both Europe and Asia.",
+      "answer": "Kazakhstan",
+      "image": "country-flags/kz.png"
+    },
+    {
+      "id": "flag-la",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The only landlocked nation in Southeast Asia, crossed by the Mekong River.",
+      "answer": "Laos",
+      "image": "country-flags/la.png"
+    },
+    {
+      "id": "flag-lb",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Mediterranean nation whose cedar tree is depicted at the center of its flag.",
+      "answer": "Lebanon",
+      "image": "country-flags/lb.png"
+    },
+    {
+      "id": "flag-lc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A volcanic Caribbean island famous for its twin peaks rising directly from the sea.",
+      "answer": "St. Lucia",
+      "image": "country-flags/lc.png"
+    },
+    {
+      "id": "flag-li",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A tiny Alpine microstate between Switzerland and Austria, entirely landlocked and ruled by a prince.",
+      "answer": "Liechtenstein",
+      "image": "country-flags/li.png"
+    },
+    {
+      "id": "flag-lk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An island nation off India's southeastern coast, formerly known as Ceylon.",
+      "answer": "Sri Lanka",
+      "image": "country-flags/lk.png"
+    },
+    {
+      "id": "flag-lr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation founded in the 19th century by freed American slaves.",
+      "answer": "Liberia",
+      "image": "country-flags/lr.png"
+    },
+    {
+      "id": "flag-ls",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous kingdom entirely surrounded by South Africa, nicknamed the 'Kingdom in the Sky.'",
+      "answer": "Lesotho",
+      "image": "country-flags/ls.png"
+    },
+    {
+      "id": "flag-lt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Baltic nation that was the first Soviet republic to declare independence, in 1990.",
+      "answer": "Lithuania",
+      "image": "country-flags/lt.png"
+    },
+    {
+      "id": "flag-lu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "One of Europe's smallest nations, with one of the highest GDP per capita in the world.",
+      "answer": "Luxembourg",
+      "image": "country-flags/lu.png"
+    },
+    {
+      "id": "flag-lv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Baltic nation whose capital's old town is a UNESCO World Heritage Site known for Art Nouveau architecture.",
+      "answer": "Latvia",
+      "image": "country-flags/lv.png"
+    },
+    {
+      "id": "flag-ly",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A North African nation where more than 90% of the land is desert.",
+      "answer": "Libya",
+      "image": "country-flags/ly.png"
+    },
+    {
+      "id": "flag-ma",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A North African nation just 13 km from Europe across the Strait of Gibraltar.",
+      "answer": "Morocco",
+      "image": "country-flags/ma.png"
+    },
+    {
+      "id": "flag-mc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's second-smallest country, a glamorous Mediterranean city-state famous for its Grand Prix street race.",
+      "answer": "Monaco",
+      "image": "country-flags/mc.png"
+    },
+    {
+      "id": "flag-md",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Eastern European nation wedged between Romania and Ukraine, known for its vineyards.",
+      "answer": "Moldova",
+      "image": "country-flags/md.png"
+    },
+    {
+      "id": "flag-me",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Balkan nation on the Adriatic coast whose name translates to 'Black Mountain.'",
+      "answer": "Montenegro",
+      "image": "country-flags/me.png"
+    },
+    {
+      "id": "flag-mf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Caribbean island split between two different European administrations since 1648.",
+      "answer": "St. Martin",
+      "image": "country-flags/mf.png"
+    },
+    {
+      "id": "flag-mg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's fourth-largest island, home to lemurs found nowhere else on Earth.",
+      "answer": "Madagascar",
+      "image": "country-flags/mg.png"
+    },
+    {
+      "id": "flag-mh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific nation made up of coral atolls, including one once used for nuclear weapons testing.",
+      "answer": "Marshall Islands",
+      "image": "country-flags/mh.png"
+    },
+    {
+      "id": "flag-mk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked Balkan nation that changed its name in 2019 to resolve a long dispute with its southern neighbor.",
+      "answer": "North Macedonia",
+      "image": "country-flags/mk.png"
+    },
+    {
+      "id": "flag-ml",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked West African nation home to the ancient trading city of Timbuktu.",
+      "answer": "Mali",
+      "image": "country-flags/ml.png"
+    },
+    {
+      "id": "flag-mm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian nation formerly known by a different name, bordering both India and China.",
+      "answer": "Myanmar (Burma)",
+      "image": "country-flags/mm.png"
+    },
+    {
+      "id": "flag-mn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A vast, sparsely populated nation sandwiched between Russia and China, birthplace of Genghis Khan's empire.",
+      "answer": "Mongolia",
+      "image": "country-flags/mn.png"
+    },
+    {
+      "id": "flag-mo",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A former Portuguese colony on China's southern coast, now one of the world's largest gambling hubs.",
+      "answer": "Macao SAR China",
+      "image": "country-flags/mo.png"
+    },
+    {
+      "id": "flag-mp",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A chain of Pacific islands including Saipan, the site of major battles in World War II.",
+      "answer": "Northern Mariana Islands",
+      "image": "country-flags/mp.png"
+    },
+    {
+      "id": "flag-mq",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A volcanic Caribbean island and overseas region of a European nation, dominated by a famous peak.",
+      "answer": "Martinique",
+      "image": "country-flags/mq.png"
+    },
+    {
+      "id": "flag-mr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A largely desert West African nation where most of the population lives along the Atlantic coast.",
+      "answer": "Mauritania",
+      "image": "country-flags/mr.png"
+    },
+    {
+      "id": "flag-ms",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Caribbean island partly evacuated after a volcanic eruption buried its capital in the 1990s.",
+      "answer": "Montserrat",
+      "image": "country-flags/ms.png"
+    },
+    {
+      "id": "flag-mt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Mediterranean archipelago nation besieged during World War II and awarded the George Cross for bravery.",
+      "answer": "Malta",
+      "image": "country-flags/mt.png"
+    },
+    {
+      "id": "flag-mu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Indian Ocean island nation and the only known home of the now-extinct dodo bird.",
+      "answer": "Mauritius",
+      "image": "country-flags/mu.png"
+    },
+    {
+      "id": "flag-mv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The lowest-lying nation on Earth, made up of coral atolls in the Indian Ocean.",
+      "answer": "Maldives",
+      "image": "country-flags/mv.png"
+    },
+    {
+      "id": "flag-mw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A narrow East African nation dominated by a long freshwater lake, nicknamed the 'Warm Heart of Africa.'",
+      "answer": "Malawi",
+      "image": "country-flags/mw.png"
+    },
+    {
+      "id": "flag-mx",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to ancient Aztec and Maya ruins, in a region credited with first domesticating corn, chili peppers, and cacao.",
+      "answer": "Mexico",
+      "image": "country-flags/mx.png"
+    },
+    {
+      "id": "flag-my",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian nation split between a peninsula and part of the island of Borneo.",
+      "answer": "Malaysia",
+      "image": "country-flags/my.png"
+    },
+    {
+      "id": "flag-mz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A long, coastal East African nation facing Madagascar across a wide channel.",
+      "answer": "Mozambique",
+      "image": "country-flags/mz.png"
+    },
+    {
+      "id": "flag-na",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A southern African nation home to the towering red dunes of one of the world's oldest deserts.",
+      "answer": "Namibia",
+      "image": "country-flags/na.png"
+    },
+    {
+      "id": "flag-nc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Pacific territory with a lagoon forming one of the largest coral reef systems in the world.",
+      "answer": "New Caledonia",
+      "image": "country-flags/nc.png"
+    },
+    {
+      "id": "flag-ne",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked West African nation, most of which lies within the Sahara Desert.",
+      "answer": "Niger",
+      "image": "country-flags/ne.png"
+    },
+    {
+      "id": "flag-nf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Pacific territory settled in part by descendants of the Bounty mutineers.",
+      "answer": "Norfolk Island",
+      "image": "country-flags/nf.png"
+    },
+    {
+      "id": "flag-ng",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Africa's most populous nation, home to the sprawling megacity of Lagos.",
+      "answer": "Nigeria",
+      "image": "country-flags/ng.png"
+    },
+    {
+      "id": "flag-ni",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation home to the largest freshwater lake in the region.",
+      "answer": "Nicaragua",
+      "image": "country-flags/ni.png"
+    },
+    {
+      "id": "flag-nl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A low-lying European nation famous for windmills, tulip fields, and extensive sea defenses.",
+      "answer": "Netherlands",
+      "image": "country-flags/nl.png"
+    },
+    {
+      "id": "flag-no",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Scandinavian nation with a coastline carved by deep glacial fjords.",
+      "answer": "Norway",
+      "image": "country-flags/no.png"
+    },
+    {
+      "id": "flag-np",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to Mount Everest, the world's tallest mountain, and the only national flag that isn't a rectangle.",
+      "answer": "Nepal",
+      "image": "country-flags/np.png"
+    },
+    {
+      "id": "flag-nr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's smallest island nation, once made wealthy by phosphate mining.",
+      "answer": "Nauru",
+      "image": "country-flags/nr.png"
+    },
+    {
+      "id": "flag-nu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A tiny, raised coral atoll nation in the South Pacific in free association with New Zealand.",
+      "answer": "Niue",
+      "image": "country-flags/nu.png"
+    },
+    {
+      "id": "flag-nz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific island nation home to the Maori people and the filming location for 'The Lord of the Rings.'",
+      "answer": "New Zealand",
+      "image": "country-flags/nz.png"
+    },
+    {
+      "id": "flag-om",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation on the Arabian Peninsula famous for its frankincense trade.",
+      "answer": "Oman",
+      "image": "country-flags/om.png"
+    },
+    {
+      "id": "flag-pa",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central American nation home to a canal connecting the Atlantic and Pacific oceans.",
+      "answer": "Panama",
+      "image": "country-flags/pa.png"
+    },
+    {
+      "id": "flag-pe",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Inca citadel of Machu Picchu high in the Andes.",
+      "answer": "Peru",
+      "image": "country-flags/pe.png"
+    },
+    {
+      "id": "flag-pf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A group of South Pacific islands including Tahiti and Bora Bora, famous for overwater bungalows.",
+      "answer": "French Polynesia",
+      "image": "country-flags/pf.png"
+    },
+    {
+      "id": "flag-pg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A nation sharing an island with Indonesia, home to over 800 distinct languages.",
+      "answer": "Papua New Guinea",
+      "image": "country-flags/pg.png"
+    },
+    {
+      "id": "flag-ph",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian archipelago of over 7,000 islands, named after a 16th-century Spanish king.",
+      "answer": "Philippines",
+      "image": "country-flags/ph.png"
+    },
+    {
+      "id": "flag-pk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Asian nation home to K2, the world's second-highest mountain.",
+      "answer": "Pakistan",
+      "image": "country-flags/pk.png"
+    },
+    {
+      "id": "flag-pl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central European nation whose capital was almost entirely rebuilt after being destroyed in World War II.",
+      "answer": "Poland",
+      "image": "country-flags/pl.png"
+    },
+    {
+      "id": "flag-pm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small French archipelago off the coast of Canada, the last remnant of New France in North America.",
+      "answer": "St. Pierre & Miquelon",
+      "image": "country-flags/pm.png"
+    },
+    {
+      "id": "flag-pn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote South Pacific territory settled by mutineers from the ship Bounty in 1790.",
+      "answer": "Pitcairn Islands",
+      "image": "country-flags/pn.png"
+    },
+    {
+      "id": "flag-pr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean island territory whose capital is one of the oldest cities founded by Europeans in the Americas.",
+      "answer": "Puerto Rico",
+      "image": "country-flags/pr.png"
+    },
+    {
+      "id": "flag-ps",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern territory comprising the West Bank and the Gaza Strip.",
+      "answer": "Palestinian Territories",
+      "image": "country-flags/ps.png"
+    },
+    {
+      "id": "flag-pt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Iberian nation whose explorers launched the Age of Discovery in the 15th century.",
+      "answer": "Portugal",
+      "image": "country-flags/pt.png"
+    },
+    {
+      "id": "flag-pw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific island nation famous for a lake filled with millions of non-stinging jellyfish.",
+      "answer": "Palau",
+      "image": "country-flags/pw.png"
+    },
+    {
+      "id": "flag-py",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked South American nation where both Spanish and an Indigenous language are official.",
+      "answer": "Paraguay",
+      "image": "country-flags/py.png"
+    },
+    {
+      "id": "flag-qa",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small, wealthy Persian Gulf peninsula that hosted the FIFA World Cup in 2022.",
+      "answer": "Qatar",
+      "image": "country-flags/qa.png"
+    },
+    {
+      "id": "flag-re",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A volcanic island in the Indian Ocean near Mauritius, home to one of the world's most active volcanoes.",
+      "answer": "Réunion",
+      "image": "country-flags/re.png"
+    },
+    {
+      "id": "flag-ro",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Eastern European nation home to Transylvania, a region long associated with vampire legends.",
+      "answer": "Romania",
+      "image": "country-flags/ro.png"
+    },
+    {
+      "id": "flag-rs",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked Balkan nation whose capital sits where two major rivers meet.",
+      "answer": "Serbia",
+      "image": "country-flags/rs.png"
+    },
+    {
+      "id": "flag-ru",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's largest country by area, spanning eleven time zones across two continents.",
+      "answer": "Russia",
+      "image": "country-flags/ru.png"
+    },
+    {
+      "id": "flag-rw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A hilly East African nation nicknamed the 'Land of a Thousand Hills,' home to mountain gorillas.",
+      "answer": "Rwanda",
+      "image": "country-flags/rw.png"
+    },
+    {
+      "id": "flag-sa",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The birthplace of Islam, home to the holy cities of Mecca and Medina.",
+      "answer": "Saudi Arabia",
+      "image": "country-flags/sa.png"
+    },
+    {
+      "id": "flag-sb",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Pacific nation that was the site of major naval battles during World War II.",
+      "answer": "Solomon Islands",
+      "image": "country-flags/sb.png"
+    },
+    {
+      "id": "flag-sc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Indian Ocean archipelago nation known for giant tortoises and granite boulder beaches.",
+      "answer": "Seychelles",
+      "image": "country-flags/sc.png"
+    },
+    {
+      "id": "flag-sd",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A northeastern African nation through which the Blue and White Nile rivers merge.",
+      "answer": "Sudan",
+      "image": "country-flags/sd.png"
+    },
+    {
+      "id": "flag-se",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Scandinavian nation and home to the furniture retailer IKEA and most Nobel Prize ceremonies.",
+      "answer": "Sweden",
+      "image": "country-flags/se.png"
+    },
+    {
+      "id": "flag-sg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Southeast Asian city-state known for strict laws and a world-famous airport.",
+      "answer": "Singapore",
+      "image": "country-flags/sg.png"
+    },
+    {
+      "id": "flag-sh",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A remote South Atlantic island where a famous French emperor was exiled after his final defeat.",
+      "answer": "St. Helena",
+      "image": "country-flags/sh.png"
+    },
+    {
+      "id": "flag-si",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Alpine nation whose capital features a dragon on its coat of arms, tied to a local legend.",
+      "answer": "Slovenia",
+      "image": "country-flags/si.png"
+    },
+    {
+      "id": "flag-sj",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An Arctic territory, administered by a Nordic kingdom, home to a seed vault built to safeguard the world's crops.",
+      "answer": "Svalbard & Jan Mayen",
+      "image": "country-flags/sj.png"
+    },
+    {
+      "id": "flag-sk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central European nation said to have more castles per capita than almost anywhere else in the world.",
+      "answer": "Slovakia",
+      "image": "country-flags/sk.png"
+    },
+    {
+      "id": "flag-sl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation whose capital's name means 'Lion Mountains' in Portuguese.",
+      "answer": "Sierra Leone",
+      "image": "country-flags/sl.png"
+    },
+    {
+      "id": "flag-sm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "One of the world's oldest surviving republics, entirely surrounded by Italy.",
+      "answer": "San Marino",
+      "image": "country-flags/sm.png"
+    },
+    {
+      "id": "flag-sn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A West African nation whose capital is mainland Africa's westernmost point.",
+      "answer": "Senegal",
+      "image": "country-flags/sn.png"
+    },
+    {
+      "id": "flag-so",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Horn of Africa nation with the longest coastline on the African mainland.",
+      "answer": "Somalia",
+      "image": "country-flags/so.png"
+    },
+    {
+      "id": "flag-sr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small South American nation where Dutch is the official language, uniquely among its continent.",
+      "answer": "Suriname",
+      "image": "country-flags/sr.png"
+    },
+    {
+      "id": "flag-ss",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The world's newest widely recognized country, gaining independence in 2011.",
+      "answer": "South Sudan",
+      "image": "country-flags/ss.png"
+    },
+    {
+      "id": "flag-st",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small volcanic island nation in the Gulf of Guinea, Africa's second-smallest country.",
+      "answer": "São Tomé & Príncipe",
+      "image": "country-flags/st.png"
+    },
+    {
+      "id": "flag-sv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The smallest and most densely populated nation in Central America.",
+      "answer": "El Salvador",
+      "image": "country-flags/sv.png"
+    },
+    {
+      "id": "flag-sx",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The Dutch half of a small Caribbean island famous for planes landing just above a beach.",
+      "answer": "Sint Maarten",
+      "image": "country-flags/sx.png"
+    },
+    {
+      "id": "flag-sy",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Middle Eastern nation home to one of the oldest continuously inhabited cities in the world.",
+      "answer": "Syria",
+      "image": "country-flags/sy.png"
+    },
+    {
+      "id": "flag-sz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small landlocked southern African kingdom, formerly known by a different name until 2018.",
+      "answer": "Eswatini",
+      "image": "country-flags/sz.png"
+    },
+    {
+      "id": "flag-tc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean British territory known for a beach often ranked among the world's best.",
+      "answer": "Turks & Caicos Islands",
+      "image": "country-flags/tc.png"
+    },
+    {
+      "id": "flag-td",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked Central African nation named after one of Africa's largest lakes, which has shrunk dramatically.",
+      "answer": "Chad",
+      "image": "country-flags/td.png"
+    },
+    {
+      "id": "flag-tf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A collection of remote, uninhabited islands near Antarctica, administered as an overseas territory by a European nation.",
+      "answer": "French Southern Territories",
+      "image": "country-flags/tf.png"
+    },
+    {
+      "id": "flag-tg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A narrow West African nation stretching north from a short Atlantic coastline.",
+      "answer": "Togo",
+      "image": "country-flags/tg.png"
+    },
+    {
+      "id": "flag-th",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian nation known as the only one in the region never colonized by a European power.",
+      "answer": "Thailand",
+      "image": "country-flags/th.png"
+    },
+    {
+      "id": "flag-tj",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A mountainous Central Asian nation where over 90% of the land is covered by mountains, including the Pamirs.",
+      "answer": "Tajikistan",
+      "image": "country-flags/tj.png"
+    },
+    {
+      "id": "flag-tk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A tiny Pacific territory of three atolls, in free association with New Zealand, whose internet domain became famous for being given away free.",
+      "answer": "Tokelau",
+      "image": "country-flags/tk.png"
+    },
+    {
+      "id": "flag-tl",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Southeast Asian nation that gained full independence in 2002 after a long struggle.",
+      "answer": "Timor-Leste",
+      "image": "country-flags/tl.png"
+    },
+    {
+      "id": "flag-tm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central Asian nation dominated by a desert, home to a permanently burning gas crater nicknamed the 'Door to Hell.'",
+      "answer": "Turkmenistan",
+      "image": "country-flags/tm.png"
+    },
+    {
+      "id": "flag-tn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A North African nation where the Arab Spring protests first began in 2010.",
+      "answer": "Tunisia",
+      "image": "country-flags/tn.png"
+    },
+    {
+      "id": "flag-to",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific kingdom made up of over 170 islands, only about 36 of which are inhabited.",
+      "answer": "Tonga",
+      "image": "country-flags/to.png"
+    },
+    {
+      "id": "flag-tr",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A nation straddling two continents, split by the Bosphorus Strait.",
+      "answer": "Türkiye",
+      "image": "country-flags/tr.png"
+    },
+    {
+      "id": "flag-tt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A twin-island Caribbean nation and birthplace of steelpan music and limbo dancing.",
+      "answer": "Trinidad & Tobago",
+      "image": "country-flags/tt.png"
+    },
+    {
+      "id": "flag-tv",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "One of the world's smallest and lowest-lying nations, highly vulnerable to rising sea levels.",
+      "answer": "Tuvalu",
+      "image": "country-flags/tv.png"
+    },
+    {
+      "id": "flag-tw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East Asian island separated from the mainland by a strait just over 100 miles wide.",
+      "answer": "Taiwan",
+      "image": "country-flags/tw.png"
+    },
+    {
+      "id": "flag-tz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "An East African nation home to both Mount Kilimanjaro and the Serengeti plains.",
+      "answer": "Tanzania",
+      "image": "country-flags/tz.png"
+    },
+    {
+      "id": "flag-ua",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Europe's largest country by area entirely within the continent, and a major global wheat exporter.",
+      "answer": "Ukraine",
+      "image": "country-flags/ua.png"
+    },
+    {
+      "id": "flag-ug",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked East African nation that borders Africa's largest lake.",
+      "answer": "Uganda",
+      "image": "country-flags/ug.png"
+    },
+    {
+      "id": "flag-um",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A group of remote Pacific and Caribbean islands and atolls under United States jurisdiction, most uninhabited.",
+      "answer": "U.S. Outlying Islands",
+      "image": "country-flags/um.png"
+    },
+    {
+      "id": "flag-us",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "Home to the Grand Canyon and the Statue of Liberty.",
+      "answer": "United States",
+      "image": "country-flags/us.png"
+    },
+    {
+      "id": "flag-uy",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small South American nation between Argentina and Brazil, considered the birthplace of the FIFA World Cup in 1930.",
+      "answer": "Uruguay",
+      "image": "country-flags/uy.png"
+    },
+    {
+      "id": "flag-uz",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Central Asian nation home to the ancient Silk Road city of Samarkand.",
+      "answer": "Uzbekistan",
+      "image": "country-flags/uz.png"
+    },
+    {
+      "id": "flag-va",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "The smallest sovereign state in the world by both area and population, entirely enclosed within Rome.",
+      "answer": "Vatican City",
+      "image": "country-flags/va.png"
+    },
+    {
+      "id": "flag-vc",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A chain of Caribbean islands where several scenes of a famous pirate film franchise were filmed.",
+      "answer": "St. Vincent & Grenadines",
+      "image": "country-flags/vc.png"
+    },
+    {
+      "id": "flag-ve",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South American nation home to the world's tallest waterfall.",
+      "answer": "Venezuela",
+      "image": "country-flags/ve.png"
+    },
+    {
+      "id": "flag-vg",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean territory of around 60 islands, many uninhabited, popular for sailing.",
+      "answer": "British Virgin Islands",
+      "image": "country-flags/vg.png"
+    },
+    {
+      "id": "flag-vi",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Caribbean territory purchased from Denmark by the United States in 1917.",
+      "answer": "U.S. Virgin Islands",
+      "image": "country-flags/vi.png"
+    },
+    {
+      "id": "flag-vn",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Southeast Asian nation shaped like the letter S, stretching along the South China Sea.",
+      "answer": "Vietnam",
+      "image": "country-flags/vn.png"
+    },
+    {
+      "id": "flag-vu",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A South Pacific archipelago nation formed by roughly 80 islands, many of volcanic origin.",
+      "answer": "Vanuatu",
+      "image": "country-flags/vu.png"
+    },
+    {
+      "id": "flag-wf",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small French Pacific territory made up of two separate, distinct island groups.",
+      "answer": "Wallis & Futuna",
+      "image": "country-flags/wf.png"
+    },
+    {
+      "id": "flag-ws",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A Pacific island nation that shifted from one side of the International Date Line to the other in 2011.",
+      "answer": "Samoa",
+      "image": "country-flags/ws.png"
+    },
+    {
+      "id": "flag-xk",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A partially recognized Balkan territory that declared independence from Serbia in 2008.",
+      "answer": "Kosovo",
+      "image": "country-flags/xk.png"
+    },
+    {
+      "id": "flag-ye",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A nation at the southern tip of the Arabian Peninsula, home to an ancient walled capital city.",
+      "answer": "Yemen",
+      "image": "country-flags/ye.png"
+    },
+    {
+      "id": "flag-yt",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A small Indian Ocean island near Madagascar and the Comoros, administered as an overseas department of a European nation.",
+      "answer": "Mayotte",
+      "image": "country-flags/yt.png"
+    },
+    {
+      "id": "flag-za",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A nation with three capital cities and the island prison where Nelson Mandela was held for 18 years.",
+      "answer": "South Africa",
+      "image": "country-flags/za.png"
+    },
+    {
+      "id": "flag-zm",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked southern African nation home to a famous waterfall shared with its southern neighbor.",
+      "answer": "Zambia",
+      "image": "country-flags/zm.png"
+    },
+    {
+      "id": "flag-zw",
+      "category": "Country",
+      "question": "Which country does this flag belong to?",
+      "hint": "A landlocked southern African nation home to ancient stone ruins that gave the country its name.",
+      "answer": "Zimbabwe",
+      "image": "country-flags/zw.png"
+    }
+  ]
+}
