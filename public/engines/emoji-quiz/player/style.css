@@ -126,6 +126,17 @@ header h1 {
 
 .option-btn:not(:disabled) {
   cursor: pointer;
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--gold) 60%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--gold) 0%, transparent);
+  }
 }
 
 .option-btn:disabled {

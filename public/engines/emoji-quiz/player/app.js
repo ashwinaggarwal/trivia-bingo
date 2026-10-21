@@ -103,6 +103,53 @@ function escapeHtml(str) {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// Correct/wrong feedback plays the real sound assets, falling back to a
+// synthesized tone (Web Audio) if the file can't play for any reason. Each
+// tap is itself a user gesture, so the AudioContext is created/resumed
+// right at the top of handleOptionClick, synchronously, before the (async)
+// /answer call — otherwise some browsers' autoplay policy would block it.
+let audioCtx = null;
+const correctAudio = new Audio('/assets/sounds/success.m4a');
+const wrongAudio = new Audio('/assets/sounds/error.m4a');
+correctAudio.preload = 'auto';
+wrongAudio.preload = 'auto';
+
+function ensureAudioCtx() {
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return null;
+  if (!audioCtx) audioCtx = new Ctx();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  return audioCtx;
+}
+
+function playTone(freq, startOffset, duration, type) {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = type;
+  osc.frequency.value = freq;
+  const startTime = audioCtx.currentTime + startOffset;
+  gain.gain.setValueAtTime(0.2, startTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  osc.start(startTime);
+  osc.stop(startTime + duration);
+}
+
+function playCorrectSound() {
+  correctAudio.currentTime = 0;
+  correctAudio.play().catch(() => {
+    playTone(587.33, 0, 0.12, 'sine'); // D5
+    playTone(880, 0.1, 0.18, 'sine'); // A5, rising
+  });
+}
+
+function playWrongSound() {
+  wrongAudio.currentTime = 0;
+  wrongAudio.play().catch(() => playTone(180, 0, 0.25, 'square'));
+}
+
 // Own pick is colored as soon as the server responds (correct or wrong) —
 // the player immediately learns their own result, same as a real quiz
 // buzzer — while the correct option only lights up for everyone once
@@ -138,6 +185,7 @@ async function handleOptionClick(index) {
   if (answeredThisQuestion) return;
   answeredThisQuestion = true;
   myAnswerIndex = index;
+  ensureAudioCtx();
   renderOptions(); // lock all 4 immediately — one attempt only
 
   try {
@@ -149,6 +197,8 @@ async function handleOptionClick(index) {
     const data = await res.json();
     if (res.ok) {
       myAnswerCorrect = Boolean(data.correct);
+      if (myAnswerCorrect) playCorrectSound();
+      else playWrongSound();
       if (data.pointAwarded) {
         player.points += 1;
         renderScore();
