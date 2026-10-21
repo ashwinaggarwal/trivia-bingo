@@ -1,10 +1,9 @@
 const triviaBingo = require('./trivia-bingo');
-const thinkAlike = require('./think-alike');
 const emojiQuiz = require('./emoji-quiz');
 
 // Add a new engine here once it has an index.js exporting the shape below —
 // nothing else in src/ or server.js needs to change to pick it up.
-const ENGINES = [triviaBingo, thinkAlike, emojiQuiz];
+const ENGINES = [triviaBingo, emojiQuiz];
 
 const BY_SLUG = new Map(ENGINES.map((e) => [e.slug, e]));
 

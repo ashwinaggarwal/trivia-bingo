@@ -1,8 +1,8 @@
 # Trivia Bingo
 
-Local-network party game server — a shelf of games (Trivia Bingo, Think
-Alike), each with its own admin console, shared game screen, and per-player
-join view with QR codes.
+Local-network party game server — a shelf of games (Trivia Bingo, Emoji
+Movie Quiz), each with its own admin console, shared game screen, and
+per-player join view with QR codes.
 
 ## Running locally
 
