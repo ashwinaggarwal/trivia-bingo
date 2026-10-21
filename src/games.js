@@ -27,13 +27,23 @@ function gameExists(gameId) {
 // no `engine` is treated as that, with its old fields folded into `config`
 // (its legacy `gameType` becomes `config.pack`, trivia-bingo's current name
 // for the same concept — see src/engines/trivia-bingo/packs.js).
+//
+// A second, narrower case: trivia-bingo games created after the engine
+// registry existed but before the gameType->pack rename already have
+// `engine` and `config`, just with `config.gameType` instead of
+// `config.pack` — those need the same field renamed, nothing else.
 function withEngineShim(meta) {
-  if (meta.engine) return meta;
-  return {
-    ...meta,
-    engine: 'trivia-bingo',
-    config: { pack: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
-  };
+  if (!meta.engine) {
+    return {
+      ...meta,
+      engine: 'trivia-bingo',
+      config: { pack: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
+    };
+  }
+  if (meta.engine === 'trivia-bingo' && meta.config && meta.config.gameType && !meta.config.pack) {
+    return { ...meta, config: { ...meta.config, pack: meta.config.gameType } };
+  }
+  return meta;
 }
 
 function getGame(gameId) {
