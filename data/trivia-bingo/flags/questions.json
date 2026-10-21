@@ -1,5 +1,5 @@
 {
-  "gameType": "flags",
+  "pack": "flags",
   "name": "Guess the Flag",
   "description": "A trivia game where players identify countries (and a few territories) from their flags.",
   "questions": [

@@ -1,5 +1,5 @@
 {
-  "gameType": "bollywood",
+  "pack": "bollywood",
   "name": "Bollywood Bingo",
   "description": "A trivia game about Bollywood, including movies, actors, songs, and famous dialogues. Players answer questions to fill their bingo cards and win prizes.",
   "questions": [

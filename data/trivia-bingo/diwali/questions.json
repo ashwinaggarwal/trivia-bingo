@@ -1,5 +1,5 @@
 {
-  "gameType": "diwali",
+  "pack": "diwali",
   "name": "Diwali Bingo",
   "description": "A trivia game about the festival of Diwali, its legends, and rituals. Players answer questions to fill their bingo cards and win prizes.",
   "questions": [

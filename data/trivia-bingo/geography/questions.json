@@ -1,5 +1,5 @@
 {
-  "gameType": "geography",
+  "pack": "geography",
   "name": "Geography Bingo",
   "description": "A trivia game about geography, including countries, capitals, landmarks, and natural features. Players answer questions to fill their bingo cards and win prizes.",
   "questions": [
