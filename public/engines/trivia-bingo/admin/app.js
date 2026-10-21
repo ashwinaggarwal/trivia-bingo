@@ -24,7 +24,6 @@ const btnSaveQuestions = document.getElementById('btn-save-questions');
 const questionsError = document.getElementById('questions-error');
 
 let currentState = null;
-let gameMode = 'bingo';
 
 async function loadGameInfo() {
   const res = await fetch(`/api/games/${gameId}`);
@@ -33,18 +32,12 @@ async function loadGameInfo() {
     return;
   }
   const game = await res.json();
-  gameMode = game.config.mode || 'bingo';
   applyTheme(game.config.pack);
-  const modeLabel = gameMode === 'fastest-finger' ? '⚡ Fastest Finger' : '🎯 Bingo';
-  gameTitle.textContent = `${game.name} (${game.id}) · ${modeLabel}`;
+  gameTitle.textContent = `${game.name} (${game.id})`;
   joinQr.src = `/api/games/${gameId}/qr.png`;
   joinUrl.textContent = game.joinUrl;
   gameViewUrlEl.textContent = game.gameViewUrl;
   gameViewUrlEl.href = game.gameViewUrl;
-  // Fastest-finger has no hint stage, and no single mid-game "winner" to
-  // flash — the real winner is whoever leads the leaderboard at game end.
-  btnRevealHint.classList.toggle('hidden', gameMode === 'fastest-finger');
-  btnGameover.classList.toggle('hidden', gameMode === 'fastest-finger');
 }
 
 function applyState(state) {
@@ -56,14 +49,10 @@ function applyState(state) {
   }
   if (state.questionShownAt && (state.revealStage === 'question' || state.revealStage === 'hint')) {
     const elapsed = Date.now() - new Date(state.questionShownAt).getTime();
-    if (state.mode === 'fastest-finger') {
-      line += ` · answer in ${Math.max(0, Math.ceil((state.fastestAnswerWindowMs - elapsed) / 1000))}s`;
-    } else {
-      if (state.revealStage === 'question') {
-        line += ` · hint in ${Math.max(0, Math.ceil((state.hintDelayMs - elapsed) / 1000))}s`;
-      }
-      line += ` · answer in ${Math.max(0, Math.ceil((state.answerDelayMs - elapsed) / 1000))}s`;
+    if (state.revealStage === 'question') {
+      line += ` · hint in ${Math.max(0, Math.ceil((state.hintDelayMs - elapsed) / 1000))}s`;
     }
+    line += ` · answer in ${Math.max(0, Math.ceil((state.answerDelayMs - elapsed) / 1000))}s`;
   }
   statusLine.textContent = line;
 

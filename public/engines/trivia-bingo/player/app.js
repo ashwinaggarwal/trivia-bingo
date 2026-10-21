@@ -19,19 +19,14 @@ const answerText = document.getElementById('answer-text');
 const countdownText = document.getElementById('countdown-text');
 const statusBanner = document.getElementById('status-banner');
 const gridEl = document.getElementById('grid');
-const optionsEl = document.getElementById('options');
 const flagCredit = document.getElementById('flag-credit');
 const gameoverOverlay = document.getElementById('gameover-overlay');
 const gameoverWinner = document.getElementById('gameover-winner');
 
 let player = null; // { id, name, grid }
-let gameMode = 'bingo';
 let markedSet = new Set();
 let wrongSet = new Set(); // ephemeral: wrong guesses for the currently active question
-let lastQuestionId; // tracks question changes so wrongSet/fastest-finger answer state can be cleared
-let answeredThisQuestion = false; // fastest-finger: has this player already locked in a pick
-let myAnswerIndex = null;
-let myAnswerCorrect = null;
+let lastQuestionId; // tracks question changes so wrongSet can be cleared
 let currentState = null;
 let gameValid = true;
 
@@ -57,7 +52,6 @@ async function loadGameInfo() {
     return;
   }
   const game = await res.json();
-  gameMode = game.config.mode || 'bingo';
   flagCredit.classList.toggle('hidden', game.config.pack !== 'flags');
   applyTheme(game.config.pack);
   gameIdBanner.textContent = `Joining: ${game.name} (Game ID: ${game.id})`;
@@ -90,15 +84,7 @@ function showGame() {
   registerScreen.classList.add('hidden');
   gameScreen.classList.remove('hidden');
   playerNameBanner.textContent = `Playing as ${player.name}`;
-  if (gameMode === 'fastest-finger') {
-    gridEl.classList.add('hidden');
-    optionsEl.classList.remove('hidden');
-    renderOptions();
-  } else {
-    optionsEl.classList.add('hidden');
-    gridEl.classList.remove('hidden');
-    renderGrid();
-  }
+  renderGrid();
   identify();
 }
 
@@ -255,71 +241,6 @@ async function handleCellClick(index, isClickable) {
   renderGrid();
 }
 
-// Fastest-finger's 4-option equivalent of renderGrid/handleCellClick. A
-// player's own pick is colored as soon as the server responds (correct or
-// wrong) — they immediately get to know their own result, same as a real
-// quiz buzzer — while the correct option only lights up for everyone once
-// `revealStage` flips to 'answer' (either because someone won the point or
-// the countdown ran out).
-function renderOptions() {
-  optionsEl.innerHTML = '';
-  const state = currentState;
-  const q = state && state.currentQuestion;
-  if (!q || !q.options || !q.options.length) return;
-
-  const revealed = state.revealStage === 'answer';
-  const canAnswer = state.revealStage === 'question' && !answeredThisQuestion;
-
-  q.options.forEach((text, index) => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'option-btn';
-    btn.innerHTML = `<span class="option-letter">${'ABCD'[index]}</span><span class="option-text">${text}</span>`;
-
-    if (answeredThisQuestion && index === myAnswerIndex) {
-      btn.classList.add(myAnswerCorrect ? 'correct' : 'wrong');
-    } else if (revealed && index === q.correctIndex) {
-      btn.classList.add('correct');
-    }
-
-    btn.disabled = !canAnswer;
-    btn.addEventListener('click', () => handleOptionClick(index));
-    optionsEl.appendChild(btn);
-  });
-}
-
-async function handleOptionClick(index) {
-  if (answeredThisQuestion) return;
-  answeredThisQuestion = true;
-  myAnswerIndex = index;
-  ensureAudioCtx();
-  renderOptions(); // lock all 4 immediately — one attempt only
-
-  try {
-    const res = await fetch(api('/answer'), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ playerId: player.id, optionIndex: index }),
-    });
-    const data = await res.json();
-    if (res.ok) {
-      myAnswerCorrect = Boolean(data.correct);
-      if (myAnswerCorrect) playCorrectSound();
-      else playWrongSound();
-    } else {
-      // Rejected (window already closed, etc.) — don't claim a lock the
-      // server didn't record.
-      answeredThisQuestion = false;
-      myAnswerIndex = null;
-    }
-  } catch (err) {
-    answeredThisQuestion = false;
-    myAnswerIndex = null;
-  }
-
-  renderOptions();
-}
-
 function renderCountdown() {
   const state = currentState;
   if (
@@ -354,9 +275,6 @@ function applyState(state) {
   const newQuestionId = state.currentQuestion ? state.currentQuestion.id : null;
   if (newQuestionId !== lastQuestionId) {
     wrongSet.clear();
-    answeredThisQuestion = false;
-    myAnswerIndex = null;
-    myAnswerCorrect = null;
     lastQuestionId = newQuestionId;
   }
 
@@ -388,10 +306,7 @@ function applyState(state) {
       hintText.classList.add('hidden');
     }
     if (state.currentQuestion.answer) {
-      const winner = state.currentQuestion.winner;
-      answerText.textContent = winner
-        ? `Answer: ${state.currentQuestion.answer} — ${winner.playerName} got the point!`
-        : `Answer: ${state.currentQuestion.answer}`;
+      answerText.textContent = `Answer: ${state.currentQuestion.answer}`;
       answerText.classList.remove('hidden');
     } else {
       answerText.classList.add('hidden');
@@ -403,10 +318,7 @@ function applyState(state) {
     statusBanner.textContent = 'Get ready…';
   }
 
-  if (player) {
-    if (gameMode === 'fastest-finger') renderOptions();
-    else renderGrid();
-  }
+  if (player) renderGrid();
 }
 
 async function refreshState() {
@@ -462,9 +374,6 @@ socket.on('game-reset', async () => {
   if (!player) return;
   markedSet = new Set();
   wrongSet = new Set();
-  answeredThisQuestion = false;
-  myAnswerIndex = null;
-  myAnswerCorrect = null;
   saveLocalMarks(player.id);
   try {
     const res = await fetch(api(`/players/${player.id}`));
@@ -472,8 +381,7 @@ socket.on('game-reset', async () => {
   } catch (err) {
     // keep existing grid if refetch fails; next reload will resync
   }
-  if (gameMode === 'fastest-finger') renderOptions();
-  else renderGrid();
+  renderGrid();
 });
 
 socket.on('game-over', (winner) => {

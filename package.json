@@ -1,7 +1,7 @@
 {
   "name": "trivia-bingo",
   "version": "1.0.0",
-  "description": "Local-network party game shelf (Trivia Bingo, Emoji Movie Quiz — admin / player / game views)",
+  "description": "Local-network party game shelf (Trivia Bingo, Fastest Finger, Emoji Movie Quiz — admin / player / game views)",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {

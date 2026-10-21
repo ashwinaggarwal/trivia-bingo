@@ -130,46 +130,12 @@ function checkBingo(gameId, playerId) {
   return BINGO_LINES.some((line) => line.every((idx) => marked.has(idx)));
 }
 
-// Fastest-finger leaderboard: ranked by points (each question awards exactly
-// one point, to whichever response has `pointAwarded: true` — see the
-// /answer route), tie-broken by total correct answers. Includes every
-// registered player, even ones with zero points yet, so the arcade
-// leaderboard can show the full roster from question one.
-function computeFastestFingerLeaderboard(gameId, players) {
-  const byPlayer = {};
-  for (const r of getAllResponses(gameId)) {
-    if (!byPlayer[r.playerId])
-      byPlayer[r.playerId] = { points: 0, correctCount: 0, totalElapsedMs: 0 };
-    const agg = byPlayer[r.playerId];
-    if (r.correct) {
-      agg.correctCount += 1;
-      agg.totalElapsedMs += r.elapsedMs || 0;
-    }
-    if (r.pointAwarded) agg.points += 1;
-  }
-
-  const rows = Object.values(players).map((p) => {
-    const agg = byPlayer[p.id] || { points: 0, correctCount: 0, totalElapsedMs: 0 };
-    return {
-      playerId: p.id,
-      name: p.name,
-      points: agg.points,
-      correctCount: agg.correctCount,
-      avgElapsedMs: agg.correctCount ? agg.totalElapsedMs / agg.correctCount : null,
-    };
-  });
-
-  rows.sort((a, b) => b.points - a.points || b.correctCount - a.correctCount);
-  return rows;
-}
-
 module.exports = {
   writeResponse,
   getAllResponses,
   clearResponses,
   removeResponsesForPlayer,
   computeLeaderboard,
-  computeFastestFingerLeaderboard,
   checkBingo,
   playerStats,
 };

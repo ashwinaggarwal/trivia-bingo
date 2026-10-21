@@ -1,7 +1,6 @@
 const path = require('path');
 
 const packsModule = require('./packs');
-const modesModule = require('./modes');
 const engineRoutes = require('./routes');
 
 // Keep in sync with public/shared/theme.js's THEMES — this is just for the
@@ -21,35 +20,23 @@ function listCreateOptions() {
           label: `${PACK_EMOJI[p.pack] || '🎯'} ${p.name}`,
         })),
       },
-      {
-        key: 'mode',
-        label: 'Mode',
-        options: modesModule.MODES.map((m) => ({
-          value: m,
-          label: modesModule.MODE_LABELS[m] || m,
-        })),
-      },
     ],
   };
 }
 
 // Normalizes a create-game request body into this engine's `config` shape,
-// falling back to defaults for anything missing or invalid rather than
+// falling back to the default pack if missing or invalid rather than
 // rejecting the request outright.
 function createConfig(body) {
   const pack = (body.pack || '').trim();
-  const mode = (body.mode || '').trim();
-  return {
-    pack: packsModule.packExists(pack) ? pack : packsModule.DEFAULT_PACK,
-    mode: modesModule.modeExists(mode) ? mode : modesModule.DEFAULT_MODE,
-  };
+  return { pack: packsModule.packExists(pack) ? pack : packsModule.DEFAULT_PACK };
 }
 
 module.exports = {
   slug: 'trivia-bingo',
   title: 'Trivia Bingo',
   emoji: '🎲',
-  tagline: 'Answer trivia to fill your bingo card, or race for the fastest finger.',
+  tagline: 'Answer trivia to fill your bingo card.',
   listCreateOptions,
   createConfig,
   gameRouter: engineRoutes.gameRouter,

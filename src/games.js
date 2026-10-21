@@ -23,25 +23,35 @@ function gameExists(gameId) {
 
 // Games created before the engine registry existed have a flat
 // `gameType`/`mode` instead of `engine`/`config` — they were all trivia-bingo
-// instances (the only engine that existed at the time), so a meta file with
-// no `engine` is treated as that, with its old fields folded into `config`
-// (its legacy `gameType` becomes `config.pack`, trivia-bingo's current name
-// for the same concept — see src/engines/trivia-bingo/packs.js).
+// instances (the only engine that existed at the time, before bingo and
+// fastest-finger split into separate engines), so a meta file with no
+// `engine` is treated as one of those two, routed by its legacy `mode`
+// (its legacy `gameType` becomes `config.pack`, each engine's current name
+// for the same concept — see packs.js in each engine's folder). `mode`
+// itself is dropped: which engine a game belongs to is what used to carry
+// that distinction.
 //
-// A second, narrower case: trivia-bingo games created after the engine
-// registry existed but before the gameType->pack rename already have
+// A second, narrower case: trivia-bingo/fastest-finger games created after
+// the engine registry existed but before the gameType->pack rename (and,
+// for fastest-finger, before the bingo/fastest-finger split) already have
 // `engine` and `config`, just with `config.gameType` instead of
-// `config.pack` — those need the same field renamed, nothing else.
+// `config.pack`, and possibly a leftover `config.mode` — those need the
+// same two fixes, nothing else.
 function withEngineShim(meta) {
   if (!meta.engine) {
+    const engine = meta.mode === 'fastest-finger' ? 'fastest-finger' : 'trivia-bingo';
     return {
       ...meta,
-      engine: 'trivia-bingo',
-      config: { pack: meta.gameType || 'diwali', mode: meta.mode || 'bingo' },
+      engine,
+      config: { pack: meta.gameType || 'diwali' },
     };
   }
-  if (meta.engine === 'trivia-bingo' && meta.config && meta.config.gameType && !meta.config.pack) {
-    return { ...meta, config: { ...meta.config, pack: meta.config.gameType } };
+  if (meta.engine === 'trivia-bingo' && meta.config && meta.config.gameType) {
+    const pack = meta.config.pack || meta.config.gameType;
+    if (meta.config.mode === 'fastest-finger') {
+      return { ...meta, engine: 'fastest-finger', config: { pack } };
+    }
+    return { ...meta, config: { pack } };
   }
   return meta;
 }

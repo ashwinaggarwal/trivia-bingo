@@ -1,17 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const gamesModule = require('../../games');
-const { gameDir } = gamesModule;
+const { gameDir } = require('../../games');
 
 // Per-question auto-reveal timers, both measured from the moment the
 // question is shown (not chained off each other).
 const HINT_DELAY_MS = 15000;
 const ANSWER_DELAY_MS = 30000;
-
-// Fastest-finger has no hint stage — a single countdown window, after which
-// (or as soon as someone answers correctly) the answer reveals.
-const FASTEST_ANSWER_WINDOW_MS = 12000;
 
 function stateFile(gameId) {
   return path.join(gameDir(gameId), 'game-state.json');
@@ -29,8 +24,6 @@ function defaultState() {
     revealedHistory: [], // question ids whose answer has actually been shown, in reveal order
     winner: null, // { playerId, playerName, at }
     responses: [], // every mark attempt a player has made, kept in this same file instead of per-response files
-    options: {}, // fastest-finger only: questionId -> { options: [4 strings], correctIndex }, precomputed at startGame
-    currentQuestionWinner: null, // fastest-finger only: playerId of whoever answered the current question correctly first
   };
 }
 
@@ -61,11 +54,10 @@ function shuffle(array) {
   return copy;
 }
 
-function startGame(gameId, questionIds, optionsByQuestionId) {
+function startGame(gameId, questionIds) {
   const state = defaultState();
   state.status = 'running';
   state.questionOrder = shuffle(questionIds);
-  if (optionsByQuestionId) state.options = optionsByQuestionId;
   return save(gameId, state);
 }
 
@@ -82,7 +74,6 @@ function nextQuestion(gameId) {
   state.questionShownAt = new Date().toISOString();
   state.hintRevealedAt = null;
   state.revealedAt = null;
-  state.currentQuestionWinner = null;
   return save(gameId, state);
 }
 
@@ -120,32 +111,17 @@ function catchUp(gameId) {
   if (state.status !== 'running' || !state.questionShownAt || state.revealStage === 'answer')
     return null;
 
-  const game = gamesModule.getGame(gameId);
-  const mode = (game && game.config && game.config.mode) || 'bingo';
   const elapsed = Date.now() - new Date(state.questionShownAt).getTime();
   let changed = false;
 
-  if (mode === 'fastest-finger') {
-    // No hint stage — reveal as soon as the window elapses, or immediately
-    // once someone's already won the point, so the room doesn't sit waiting
-    // out a countdown nobody can still win.
-    if (
-      state.revealStage === 'question' &&
-      (elapsed >= FASTEST_ANSWER_WINDOW_MS || state.currentQuestionWinner)
-    ) {
-      applyAnswerReveal(state);
-      changed = true;
-    }
-  } else {
-    if (state.revealStage === 'question' && elapsed >= HINT_DELAY_MS) {
-      state.revealStage = 'hint';
-      state.hintRevealedAt = new Date().toISOString();
-      changed = true;
-    }
-    if (elapsed >= ANSWER_DELAY_MS && state.revealStage !== 'answer') {
-      applyAnswerReveal(state);
-      changed = true;
-    }
+  if (state.revealStage === 'question' && elapsed >= HINT_DELAY_MS) {
+    state.revealStage = 'hint';
+    state.hintRevealedAt = new Date().toISOString();
+    changed = true;
+  }
+  if (elapsed >= ANSWER_DELAY_MS && state.revealStage !== 'answer') {
+    applyAnswerReveal(state);
+    changed = true;
   }
 
   return changed ? save(gameId, state) : null;
@@ -176,5 +152,4 @@ module.exports = {
   setWinner,
   HINT_DELAY_MS,
   ANSWER_DELAY_MS,
-  FASTEST_ANSWER_WINDOW_MS,
 };

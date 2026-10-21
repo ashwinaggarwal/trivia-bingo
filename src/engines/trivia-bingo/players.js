@@ -75,11 +75,9 @@ function buildUniqueGrid(questions, existingPlayers) {
   }));
 }
 
-function registerPlayer(gameId, name, questions, mode) {
+function registerPlayer(gameId, name, questions) {
   const players = load(gameId);
-  // Fastest-finger players don't have a bingo card — they just answer
-  // whatever question is currently live, so there's nothing to pre-build.
-  const grid = mode === 'fastest-finger' ? null : buildUniqueGrid(questions, players);
+  const grid = buildUniqueGrid(questions, players);
   const player = {
     id: nanoid(10),
     name,
