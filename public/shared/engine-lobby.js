@@ -2,37 +2,84 @@ const slug = location.pathname.split('/').filter(Boolean).pop();
 
 const engineTitle = document.getElementById('engine-title');
 const engineTagline = document.getElementById('engine-tagline');
-const createForm = document.getElementById('create-form');
-const nameInput = document.getElementById('name-input');
-const dynamicFields = document.getElementById('dynamic-fields');
+const packsGrid = document.getElementById('packs-grid');
 const gamesList = document.getElementById('games-list');
 const emptyNote = document.getElementById('empty-note');
+
+// The first (and so far only) field an engine's createOptions describes —
+// see each engine's listCreateOptions(), e.g. src/engines/trivia-bingo/index.js.
+// No current engine needs a second configurable field, so this only drives
+// one level of cards; a future engine with two fields would need a follow-up
+// step this doesn't implement.
+let packField = null;
 
 function escapeHtml(str) {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// Renders one <select> per field the engine's createOptions describes — see
-// each engine's listCreateOptions() (e.g. src/engines/trivia-bingo/index.js).
-// An engine with no fields (nothing to configure before creating a game)
-// just renders nothing here.
-function renderFields(fields) {
-  dynamicFields.innerHTML = (fields || [])
-    .map(
-      (field) => `
-        <select name="${escapeHtml(field.key)}" aria-label="${escapeHtml(field.label)}">
-          ${field.options.map((o) => `<option value="${escapeHtml(o.value)}">${escapeHtml(o.label)}</option>`).join('')}
-        </select>
-      `
-    )
-    .join('');
+async function createGame(extra) {
+  const res = await fetch('/api/games', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ engine: slug, ...extra }),
+  });
+  const game = await res.json();
+  if (res.ok) {
+    window.location.href = `/play/${slug}/admin/${game.id}`;
+  } else {
+    alert(game.error || 'failed to create game');
+  }
+}
+
+// One card per option of the engine's pack field — click straight into a
+// fresh game, no name or form. An engine with nothing to configure (no
+// fields at all) gets a single "Start Game" card instead. Markup matches
+// the home shelf's cards (public/shelf/app.js) so both look identical.
+function renderPackCards(fields) {
+  packField = (fields && fields[0]) || null;
+  packsGrid.innerHTML = '';
+
+  if (!packField) {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'shelf-card';
+    card.innerHTML = `
+      <span class="shelf-card-emoji">▶️</span>
+      <span class="shelf-card-title h-display">Start Game</span>
+    `;
+    card.addEventListener('click', () => createGame({}));
+    packsGrid.appendChild(card);
+    return;
+  }
+
+  packField.options.forEach((opt) => {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'shelf-card';
+    card.innerHTML = `
+      <span class="shelf-card-emoji">${escapeHtml(opt.emoji || '🎯')}</span>
+      <span class="shelf-card-title h-display">${escapeHtml(opt.label)}</span>
+      <span class="shelf-card-tagline">${escapeHtml(opt.description || '')}</span>
+    `;
+    card.addEventListener('click', () => createGame({ [packField.key]: opt.value }));
+    packsGrid.appendChild(card);
+  });
+}
+
+// Existing instances show their pack's label (looked up from packField)
+// instead of a free-text name, since games are no longer named at creation.
+function labelFor(game) {
+  if (!packField) return game.name;
+  const value = game.config && game.config[packField.key];
+  const opt = packField.options.find((o) => o.value === value);
+  return opt ? opt.label : game.name;
 }
 
 function gameRow(game) {
   const li = document.createElement('li');
   li.innerHTML = `
     <a class="game-link" href="/play/${slug}/admin/${game.id}">
-      <span class="game-name">${escapeHtml(game.name)}</span>
+      <span class="game-name">${escapeHtml(labelFor(game))}</span>
       <span class="game-id pill">${game.id}</span>
     </a>
     <button class="btn-delete btn-danger" type="button" data-game-id="${game.id}" title="Delete game">Delete</button>
@@ -64,23 +111,14 @@ async function loadEngine() {
   const engine = await res.json();
   engineTitle.textContent = `${engine.emoji} ${engine.title}`;
   engineTagline.textContent = engine.tagline || '';
-  renderFields(engine.createOptions && engine.createOptions.fields);
+  renderPackCards(engine.createOptions && engine.createOptions.fields);
 }
 
-createForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const body = { name: nameInput.value.trim(), engine: slug };
-  new FormData(createForm).forEach((value, key) => {
-    body[key] = value;
-  });
-  const res = await fetch('/api/games', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const game = await res.json();
-  if (res.ok) window.location.href = `/play/${slug}/admin/${game.id}`;
-});
+async function init() {
+  // Sequenced, not parallel: loadGames() reads packField to label existing
+  // instances by pack, which loadEngine() is what sets.
+  await loadEngine();
+  await loadGames();
+}
 
-loadEngine();
-loadGames();
+init();

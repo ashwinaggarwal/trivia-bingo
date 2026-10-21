@@ -3,13 +3,22 @@ const path = require('path');
 const packsModule = require('./packs');
 const engineRoutes = require('./routes');
 
+const PACK_EMOJI = { hollywood: '🎬', bollywood: '🎭' };
+
+// Generic shape the shared lobby renderer (public/shared/engine-lobby.js)
+// turns into one pack card per option.
 function listCreateOptions() {
   return {
     fields: [
       {
         key: 'pack',
         label: 'Pack',
-        options: packsModule.listPacks().map((p) => ({ value: p.pack, label: p.name })),
+        options: packsModule.listPacks().map((p) => ({
+          value: p.pack,
+          label: p.name,
+          emoji: PACK_EMOJI[p.pack] || '🍿',
+          description: p.description,
+        })),
       },
     ],
   };

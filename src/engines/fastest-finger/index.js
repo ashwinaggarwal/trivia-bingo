@@ -8,7 +8,7 @@ const engineRoutes = require('./routes');
 const PACK_EMOJI = { diwali: '🪔', bollywood: '🎬', geography: '🌍', flags: '🎌' };
 
 // Generic shape the shared lobby renderer (public/shared/engine-lobby.js)
-// turns into a dropdown per field.
+// turns into one pack card per option.
 function listCreateOptions() {
   return {
     fields: [
@@ -17,7 +17,9 @@ function listCreateOptions() {
         label: 'Pack',
         options: packsModule.listPacks().map((p) => ({
           value: p.pack,
-          label: `${PACK_EMOJI[p.pack] || '🎯'} ${p.name}`,
+          label: p.name,
+          emoji: PACK_EMOJI[p.pack] || '🎯',
+          description: p.description,
         })),
       },
     ],

@@ -15,19 +15,17 @@
         <p id="engine-tagline" class="subtitle"></p>
       </header>
 
-      <section id="create-panel" class="card">
-        <h2 class="h-display">Start a game</h2>
-        <form id="create-form">
-          <input id="name-input" type="text" placeholder="Game name (optional)" maxlength="60" />
-          <div id="dynamic-fields"></div>
-          <button type="submit" class="btn-primary">Create Game</button>
-        </form>
+      <section id="packs-panel">
+        <div class="shelf-head">
+          <h2 class="h-display">Pick a game</h2>
+        </div>
+        <div id="packs-grid" class="shelf-grid"></div>
       </section>
 
       <section id="games-panel" class="card">
         <h2 class="h-display">Existing games</h2>
         <ul id="games-list"></ul>
-        <p id="empty-note" class="hidden">No games yet — create one above.</p>
+        <p id="empty-note" class="hidden">No games yet — pick one above to create one.</p>
       </section>
     </div>
 
