@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambola — Player</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <h1 class="h-display">🎟️ Tambola</h1>
+      </header>
+
+      <section id="register-screen">
+        <div id="game-id-banner"></div>
+        <p>Enter your name to get your ticket:</p>
+        <form id="register-form">
+          <input id="name-input" type="text" placeholder="Your name" maxlength="40" required />
+          <button type="submit" class="btn-primary">Join Game</button>
+        </form>
+        <p id="register-error" class="error"></p>
+      </section>
+
+      <section id="game-screen" class="hidden">
+        <div id="player-name-banner"></div>
+
+        <div id="draw-banner">
+          <div id="draw-status"></div>
+          <div id="current-draw"></div>
+        </div>
+
+        <div id="winners-banner" class="hidden"></div>
+
+        <div id="grids"></div>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

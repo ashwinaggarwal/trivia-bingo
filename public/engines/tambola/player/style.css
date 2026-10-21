@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 16px 0 4px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+}
+
+#register-screen {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#game-id-banner {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+#register-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+#register-form input {
+  flex: 1;
+  max-width: 220px;
+}
+
+.error {
+  color: var(--danger);
+  min-height: 1.2em;
+}
+
+#player-name-banner {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#draw-banner {
+  text-align: center;
+  background: var(--glass-strong);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+#draw-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+#current-draw {
+  margin-top: 6px;
+  font-family: var(--display);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--gold);
+  min-height: 1.2em;
+}
+
+#winners-banner {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.winner-line {
+  background: var(--glass-strong);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.winner-line.mine {
+  background: var(--success);
+  color: #06230f;
+  font-weight: 700;
+}
+
+#grids {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ticket {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.ticket:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  background: var(--glass-strong);
+  border: 2px solid var(--hairline);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cell-fire {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+.cell-number {
+  line-height: 1;
+}
+
+/* Clicked and claimed — permanent. */
+.cell.marked {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  animation: none;
+}
+
+/* Pops once right when a click lands, layered on top of .marked. */
+.cell.just-marked {
+  animation: claim-pop 0.5s ease-out;
+}
+
+@keyframes claim-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* The one number — already drawn, still unclicked — that would finish an
+   otherwise-complete line. Always implies .available (clickable). */
+.cell.blinking {
+  animation: blink 0.9s ease-in-out infinite;
+  border-color: var(--gold);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background: var(--glass-strong);
+    color: var(--text);
+  }
+  50% {
+    background: var(--gold);
+    color: var(--accent-ink);
+  }
+}
