@@ -20,22 +20,28 @@
         <div id="join-url"></div>
       </section>
 
-      <section id="roster-panel" class="card">
-        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
-        <ul id="roster-list"></ul>
-      </section>
+      <div id="main-row">
+        <div id="col-main">
+          <section id="question-panel" class="card">
+            <div id="question-status">Waiting to start…</div>
+            <div id="countdown-text" class="hidden"></div>
+            <div id="emoji-text"></div>
+            <div id="ff-options" class="hidden"></div>
+          </section>
+        </div>
 
-      <section id="question-panel" class="card">
-        <div id="question-status">Waiting to start…</div>
-        <div id="countdown-text" class="hidden"></div>
-        <div id="emoji-text"></div>
-        <div id="ff-options" class="hidden"></div>
-      </section>
+        <div id="col-side">
+          <section id="roster-panel" class="card">
+            <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+            <ul id="roster-list"></ul>
+          </section>
 
-      <section id="arcade-leaderboard" class="card">
-        <h2>🏆 Leaderboard</h2>
-        <ol id="arcade-rows"></ol>
-      </section>
+          <section id="arcade-leaderboard" class="card">
+            <h2>🏆 Leaderboard</h2>
+            <ol id="arcade-rows"></ol>
+          </section>
+        </div>
+      </div>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

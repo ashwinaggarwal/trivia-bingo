@@ -26,40 +26,46 @@
         <div id="join-url"></div>
       </section>
 
-      <section id="roster-panel">
-        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
-        <ul id="roster-list"></ul>
-      </section>
-
-      <section id="question-panel">
-        <div id="question-status">Waiting to start…</div>
-        <div id="digital-clock" class="hidden"></div>
-        <div id="question-text"></div>
-        <img id="hint-image" class="hidden" alt="" />
-        <div id="hint-text" class="hidden"></div>
-        <div id="answer-text" class="hidden"></div>
-        <div id="countdown-text" class="hidden"></div>
-      </section>
-
-      <section id="revealed-panel">
-        <h2>📜 Answers So Far</h2>
-        <div id="revealed-grid"></div>
-      </section>
-
-      <section id="leaderboards">
-        <div class="board">
-          <h2>🏆 Most Correct</h2>
-          <ol id="most-correct"></ol>
+      <div id="main-row">
+        <div id="col-board">
+          <section id="revealed-panel">
+            <h2>📜 Answers So Far</h2>
+            <div id="revealed-grid"></div>
+          </section>
         </div>
-        <div class="board">
-          <h2>⚡ Fastest Correct</h2>
-          <ol id="fastest"></ol>
+
+        <div id="col-status">
+          <section id="roster-panel">
+            <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+            <ul id="roster-list"></ul>
+          </section>
+
+          <section id="question-panel">
+            <div id="question-status">Waiting to start…</div>
+            <div id="digital-clock" class="hidden"></div>
+            <div id="question-text"></div>
+            <img id="hint-image" class="hidden" alt="" />
+            <div id="hint-text" class="hidden"></div>
+            <div id="answer-text" class="hidden"></div>
+            <div id="countdown-text" class="hidden"></div>
+          </section>
+
+          <section id="leaderboards">
+            <div class="board">
+              <h2>🏆 Most Correct</h2>
+              <ol id="most-correct"></ol>
+            </div>
+            <div class="board">
+              <h2>⚡ Fastest Correct</h2>
+              <ol id="fastest"></ol>
+            </div>
+            <div class="board">
+              <h2>❌ Most Incorrect (First Try)</h2>
+              <ol id="most-incorrect"></ol>
+            </div>
+          </section>
         </div>
-        <div class="board">
-          <h2>❌ Most Incorrect (First Try)</h2>
-          <ol id="most-incorrect"></ol>
-        </div>
-      </section>
+      </div>
 
       <footer id="flag-credit" class="hidden">
         Flag images courtesy of

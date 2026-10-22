@@ -32,6 +32,52 @@ body {
   padding: 24px;
 }
 
+#main-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#col-board,
+#col-status {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Mobile: show status info (roster, live question, leaderboards) before
+   the answers-so-far grid, since that's what's worth seeing first
+   without scrolling past the whole board. */
+#col-board {
+  order: 2;
+}
+
+#col-status {
+  order: 1;
+}
+
+@media (min-width: 761px) {
+  #main-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  #col-board,
+  #col-status {
+    flex: 1 1 50%;
+  }
+
+  /* Wide screens: answers-so-far grid on the left, status info on the
+     right. */
+  #col-board {
+    order: 1;
+  }
+
+  #col-status {
+    order: 2;
+  }
+}
+
 header {
   text-align: center;
 }
