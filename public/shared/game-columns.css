@@ -1,0 +1,62 @@
+/* Shared two-column layout for the TV ("game") view of every engine:
+   single column below 761px, two 50/50 columns above it. Spacing between
+   stacked cards comes entirely from `.col`'s own `gap` — never from a
+   card's own margin — so two columns built from differently-styled
+   panels still start flush with each other at the top, instead of each
+   engine having to hand-tune every panel's margin to match.
+
+   Markup:
+     <div class="col-row">
+       <div class="col">...cards...</div>
+       <div class="col">...cards...</div>
+     </div>
+
+   Add `swap-on-mobile` to `.col-row` when the second column holds the
+   more time-critical content (e.g. a live draw/question next to a mostly
+   static reference grid) — it shows first below 761px and second above
+   it, instead of following source order at every width. */
+
+.col-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.col-row > .col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.col-row > .col > * {
+  margin: 0;
+}
+
+.col-row.swap-on-mobile > .col:first-child {
+  order: 2;
+}
+
+.col-row.swap-on-mobile > .col:last-child {
+  order: 1;
+}
+
+@media (min-width: 761px) {
+  .col-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .col-row > .col {
+    flex: 1 1 50%;
+  }
+
+  .col-row.swap-on-mobile > .col:first-child {
+    order: 1;
+  }
+
+  .col-row.swap-on-mobile > .col:last-child {
+    order: 2;
+  }
+}

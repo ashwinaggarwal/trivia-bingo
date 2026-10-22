@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tambola — Game Screen</title>
     <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/game-columns.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,15 +26,15 @@
         <ul id="winners-list"></ul>
       </section>
 
-      <div id="main-row">
-        <div id="col-board">
+      <div class="col-row swap-on-mobile">
+        <div class="col">
           <section id="board-panel" class="card">
             <h2>Numbers 1–90</h2>
             <div id="board-grid"></div>
           </section>
         </div>
 
-        <div id="col-status">
+        <div class="col">
           <section id="draw-panel" class="card">
             <div id="draw-status">Waiting to start…</div>
             <div id="current-draw"></div>

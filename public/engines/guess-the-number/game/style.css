@@ -12,33 +12,6 @@ body {
   margin: 20px 0;
 }
 
-#main-row {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#col-main,
-#col-side {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  min-width: 0;
-}
-
-@media (min-width: 761px) {
-  #main-row {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  #col-main,
-  #col-side {
-    flex: 1 1 50%;
-  }
-}
-
 header {
   text-align: center;
 }

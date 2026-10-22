@@ -16,7 +16,6 @@ const hintText = document.getElementById('hint-text');
 const answerText = document.getElementById('answer-text');
 const countdownText = document.getElementById('countdown-text');
 const digitalClock = document.getElementById('digital-clock');
-const btnEnableSound = document.getElementById('btn-enable-sound');
 const revealedGrid = document.getElementById('revealed-grid');
 const mostCorrectList = document.getElementById('most-correct');
 const fastestList = document.getElementById('fastest');
@@ -58,21 +57,33 @@ async function refreshRoster() {
   renderRoster(await res.json());
 }
 
-// Synthesized ticking clock sound — no audio asset needed, and browsers
-// won't allow it to play until the host taps "Enable Tick Sound" at least
-// once (autoplay policy), so we lazily create the AudioContext on that click.
+// Synthesized ticking clock sound — no audio asset needed. Sound should
+// just play, not wait for a button to be found on a TV no one touches: try
+// to unlock it immediately on load (works if the browser already trusts
+// this origin), and fall back to unlocking silently on the very first
+// tap/click/key anywhere on the page if the browser blocks it.
 let audioCtx = null;
-let soundEnabled = false;
 let lastTickSecond = null;
 
-btnEnableSound.addEventListener('click', () => {
-  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  soundEnabled = true;
-  btnEnableSound.classList.add('hidden');
-});
+function ensureAudioCtx() {
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return null;
+  if (!audioCtx) audioCtx = new Ctx();
+  if (audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
+  return audioCtx;
+}
+
+ensureAudioCtx();
+function unlockAudioOnce() {
+  ensureAudioCtx();
+  document.removeEventListener('pointerdown', unlockAudioOnce);
+  document.removeEventListener('keydown', unlockAudioOnce);
+}
+document.addEventListener('pointerdown', unlockAudioOnce);
+document.addEventListener('keydown', unlockAudioOnce);
 
 function playTick() {
-  if (!soundEnabled || !audioCtx) return;
+  if (!audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   osc.type = 'square';

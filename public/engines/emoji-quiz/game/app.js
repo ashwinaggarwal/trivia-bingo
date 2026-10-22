@@ -67,16 +67,62 @@ function renderOptions(state) {
   ffOptions.classList.remove('hidden');
 }
 
+// Synthesized ticking clock sound, one tick per whole second of the
+// countdown — no audio asset needed. Sound should just play, not wait for
+// a button to be found on a TV no one touches: try to unlock it
+// immediately on load (works if the browser already trusts this origin),
+// and fall back to unlocking silently on the very first tap/click/key
+// anywhere on the page if the browser blocks it.
+let audioCtx = null;
+let lastTickSecond = null;
+
+function ensureAudioCtx() {
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return null;
+  if (!audioCtx) audioCtx = new Ctx();
+  if (audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
+  return audioCtx;
+}
+
+ensureAudioCtx();
+function unlockAudioOnce() {
+  ensureAudioCtx();
+  document.removeEventListener('pointerdown', unlockAudioOnce);
+  document.removeEventListener('keydown', unlockAudioOnce);
+}
+document.addEventListener('pointerdown', unlockAudioOnce);
+document.addEventListener('keydown', unlockAudioOnce);
+
+function playTick() {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'square';
+  osc.frequency.value = 1000;
+  gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  osc.start();
+  osc.stop(audioCtx.currentTime + 0.05);
+}
+
 function renderCountdown() {
   const state = currentState;
   if (!state || !state.questionShownAt || state.revealStage !== 'question') {
     countdownText.classList.add('hidden');
+    lastTickSecond = null;
     return;
   }
   const elapsed = Date.now() - new Date(state.questionShownAt).getTime();
   const remaining = Math.max(0, Math.ceil((state.answerWindowMs - elapsed) / 1000));
   countdownText.textContent = `${remaining}s`;
   countdownText.classList.remove('hidden');
+
+  if (remaining !== lastTickSecond) {
+    lastTickSecond = remaining;
+    if (remaining > 0) playTick();
+  }
 }
 
 setInterval(renderCountdown, 500);

@@ -32,52 +32,6 @@ body {
   padding: 24px;
 }
 
-#main-row {
-  display: flex;
-  flex-direction: column;
-}
-
-#col-board,
-#col-status {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-/* Mobile: show status info (roster, live question, leaderboards) before
-   the answers-so-far grid, since that's what's worth seeing first
-   without scrolling past the whole board. */
-#col-board {
-  order: 2;
-}
-
-#col-status {
-  order: 1;
-}
-
-@media (min-width: 761px) {
-  #main-row {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 32px;
-  }
-
-  #col-board,
-  #col-status {
-    flex: 1 1 50%;
-  }
-
-  /* Wide screens: answers-so-far grid on the left, status info on the
-     right. */
-  #col-board {
-    order: 1;
-  }
-
-  #col-status {
-    order: 2;
-  }
-}
-
 header {
   text-align: center;
 }
@@ -135,7 +89,6 @@ header h1 {
   background: var(--bg-light);
   border-radius: 16px;
   padding: 16px 20px;
-  margin: 24px 0;
 }
 
 #roster-panel h2 {
@@ -194,7 +147,6 @@ header h1 {
   border-radius: 20px;
   padding: 32px;
   text-align: center;
-  margin: 24px 0;
   min-height: 140px;
 }
 
@@ -248,7 +200,6 @@ header h1 {
   background: var(--bg-light);
   border-radius: 16px;
   padding: 20px;
-  margin: 24px 0;
 }
 
 #revealed-panel h2 {
@@ -277,8 +228,8 @@ header h1 {
 }
 
 #leaderboards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
