@@ -20,7 +20,7 @@
         <div id="join-hint"></div>
       </header>
 
-      <section id="join-panel">
+      <section id="join-panel" class="card">
         <h2>Scan to join</h2>
         <img id="join-qr" alt="Join QR code" />
         <div id="join-url"></div>
@@ -28,14 +28,14 @@
 
       <div class="col-row swap-on-mobile">
         <div class="col">
-          <section id="revealed-panel">
+          <section id="revealed-panel" class="card">
             <h2>📜 Answers So Far</h2>
             <div id="revealed-grid"></div>
           </section>
         </div>
 
         <div class="col">
-          <section id="leaderboards">
+          <section id="leaderboards" class="card">
             <div class="board">
               <h2>🏆 Most Correct</h2>
               <ol id="most-correct"></ol>
@@ -50,7 +50,7 @@
             </div>
           </section>
 
-          <section id="question-panel">
+          <section id="question-panel" class="card">
             <div id="question-status">Waiting to start…</div>
             <div id="digital-clock" class="hidden"></div>
             <div id="question-text"></div>
@@ -60,9 +60,9 @@
             <div id="countdown-text" class="hidden"></div>
           </section>
 
-          <section id="roster-panel">
+          <section id="roster-panel" class="card">
             <h2>Players Joined (<span id="roster-count">0</span>)</h2>
-            <ul id="roster-list"></ul>
+            <ul id="roster-list" class="row-list row-list-wrap"></ul>
           </section>
         </div>
       </div>

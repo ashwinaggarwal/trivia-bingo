@@ -14,7 +14,7 @@
         <div id="game-title"></div>
       </header>
 
-      <section id="join-panel">
+      <section id="join-panel" class="card">
         <h2>Players join this game</h2>
         <div id="join-body">
           <img id="join-qr" alt="Join QR code" />
@@ -26,26 +26,26 @@
         </div>
       </section>
 
-      <section id="status-panel">
+      <section id="status-panel" class="card">
         <div id="status-line">Loading…</div>
         <div id="winner-banner" class="hidden"></div>
       </section>
 
-      <section id="controls">
-        <button id="btn-start">Start Game</button>
+      <section id="controls" class="card btn-row">
+        <button id="btn-start" class="btn-primary">Start Game</button>
         <button id="btn-next">Next Question</button>
         <button id="btn-reveal-hint">Show Hint</button>
         <button id="btn-reveal">Reveal Answer</button>
-        <button id="btn-gameover" class="danger">Flash Game Over</button>
-        <button id="btn-reset" class="secondary">Reset Game</button>
+        <button id="btn-gameover" class="btn-danger">Flash Game Over</button>
+        <button id="btn-reset" class="btn-secondary">Reset Game</button>
       </section>
 
-      <section id="players-panel">
+      <section id="players-panel" class="card">
         <h2>Players (<span id="player-count">0</span>)</h2>
-        <ul id="players-list"></ul>
+        <ul id="players-list" class="row-list row-list-wrap"></ul>
       </section>
 
-      <section id="questions-panel">
+      <section id="questions-panel" class="card">
         <h2>Questions (<span id="question-count">0</span>)</h2>
         <p class="hint">Need at least 25 to start. Edit, add, or remove below, then Save.</p>
         <table id="questions-table">
@@ -60,8 +60,10 @@
           </thead>
           <tbody id="questions-body"></tbody>
         </table>
-        <button id="btn-add-question" class="secondary">+ Add Question</button>
-        <button id="btn-save-questions">Save Questions</button>
+        <div class="btn-row">
+          <button id="btn-add-question" class="btn-secondary">+ Add Question</button>
+          <button id="btn-save-questions">Save Questions</button>
+        </div>
         <p id="questions-error" class="error"></p>
       </section>
     </div>

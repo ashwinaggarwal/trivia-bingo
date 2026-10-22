@@ -1,28 +1,14 @@
 /* Trivia Bingo — shared game screen (the big display everyone watches).
-   Built on the shared design system (/shared/base.css): these are the
-   original local aliases, now pointing at the shared dark/glass tokens
-   instead of hardcoded hex, so the rest of this file didn't need a full
-   rewrite. --maroon stays its own dark literal (not derived) since it's a
-   large panel fill, not a button or flash — those use var(--danger)
-   directly. --chip (a fixed light QR/badge backdrop) comes straight from
-   base.css. */
+   Built on the shared design system (/shared/base.css): panel
+   backgrounds, card-header spacing, and the roster row/status-dot look
+   all come from .card/.row-list/.row/.status-dot there now — this file
+   only holds what's actually specific to Trivia Bingo. */
 :root {
-  --bg-light: var(--glass-strong);
   --gold: var(--accent);
-  --maroon: #2a0b10;
   --cream: var(--text);
-  --green: var(--success);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: var(--body);
-  background: radial-gradient(circle at top, var(--bg-light), var(--bg));
-  color: var(--cream);
   min-height: 100vh;
 }
 
@@ -30,6 +16,10 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
+}
+
+#app > section {
+  margin: 20px 0;
 }
 
 header {
@@ -49,19 +39,6 @@ header h1 {
   font-size: 1rem;
 }
 
-#join-panel {
-  background: var(--bg-light);
-  border-radius: 20px;
-  padding: 32px;
-  text-align: center;
-  margin: 24px 0;
-}
-
-#join-panel h2 {
-  margin-top: 0;
-  color: var(--gold);
-}
-
 #join-qr {
   width: 260px;
   height: 260px;
@@ -74,65 +51,6 @@ header h1 {
   font-size: 1.1rem;
 }
 
-#btn-enable-sound {
-  margin-top: 10px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid var(--gold);
-  background: var(--bg-light);
-  color: var(--cream);
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-#roster-panel {
-  background: var(--bg-light);
-  border-radius: 16px;
-  padding: 16px 20px;
-}
-
-#roster-panel h2 {
-  margin-top: 0;
-  color: var(--gold);
-  font-size: 1.1rem;
-}
-
-#roster-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#roster-list li {
-  background: var(--bg);
-  border-radius: 10px;
-  padding: 6px 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1rem;
-}
-
-.player-status {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: #666;
-}
-
-.player-status.online {
-  background: #3a9d5d;
-  box-shadow: 0 0 5px #3a9d5d;
-}
-
-.player-status.offline {
-  background: #666;
-}
-
 #digital-clock {
   margin-top: 8px;
   font-size: 3rem;
@@ -143,9 +61,6 @@ header h1 {
 }
 
 #question-panel {
-  background: var(--maroon);
-  border-radius: 20px;
-  padding: 32px;
   text-align: center;
   min-height: 140px;
 }
@@ -196,17 +111,6 @@ header h1 {
   opacity: 0.8;
 }
 
-#revealed-panel {
-  background: var(--bg-light);
-  border-radius: 16px;
-  padding: 20px;
-}
-
-#revealed-panel h2 {
-  margin-top: 0;
-  color: var(--gold);
-}
-
 #revealed-grid {
   display: flex;
   flex-wrap: wrap;
@@ -214,8 +118,9 @@ header h1 {
 }
 
 .revealed-cell {
-  background: var(--maroon);
-  border-radius: 10px;
+  background: var(--glass-strong);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
   padding: 8px 14px;
   font-size: 1rem;
   font-weight: 600;
@@ -230,18 +135,24 @@ header h1 {
 #leaderboards {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .board {
-  background: var(--bg-light);
-  border-radius: 16px;
-  padding: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.board:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .board h2 {
-  margin-top: 0;
-  color: var(--gold);
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 55%, transparent);
 }
 
 .board ol {
@@ -251,10 +162,6 @@ header h1 {
 
 .board li {
   margin-bottom: 6px;
-}
-
-.hidden {
-  display: none !important;
 }
 
 #gameover-overlay {

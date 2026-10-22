@@ -1,29 +1,9 @@
 /* Trivia Bingo — player view. Built on the shared design system
-   (/shared/base.css): these are the original local aliases, now pointing
-   at the shared dark/glass tokens instead of hardcoded hex, so the rest of
-   this file didn't need a full rewrite. --maroon stays its own dark
-   literal (not derived) since it's a large panel fill, not a button or
-   flash — those use var(--danger) directly. --chip (a fixed light badge
-   backdrop) comes straight from base.css. */
+   (/shared/base.css): body background, buttons, and inputs come from
+   there now — this file only holds what's actually specific to Trivia
+   Bingo (the bingo grid, question banner, game-over flash). */
 :root {
-  --bg-light: var(--glass-strong);
   --gold: var(--accent);
-  --maroon: #2a0b10;
-  --cream: var(--text);
-  --green: var(--success);
-  --red: var(--danger);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: var(--body);
-  background: radial-gradient(circle at top, var(--bg-light), var(--bg));
-  color: var(--cream);
-  min-height: 100vh;
 }
 
 header {
@@ -63,33 +43,13 @@ header h1 {
   margin-top: 16px;
 }
 
-input[type='text'] {
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid var(--hairline);
-  font-size: 1rem;
+#register-form input {
   flex: 1;
   max-width: 220px;
 }
 
-button {
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: none;
-  background: var(--gold);
-  color: var(--accent-ink);
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
 .error {
-  color: var(--red);
+  color: var(--danger);
   min-height: 1.2em;
 }
 
@@ -101,9 +61,10 @@ button:disabled {
 }
 
 #question-banner {
-  background: var(--maroon);
-  color: #fff;
-  border-radius: 12px;
+  background: var(--glass-strong);
+  border: 1px solid var(--hairline);
+  color: var(--text);
+  border-radius: var(--r);
   padding: 12px 16px;
   text-align: center;
   margin-bottom: 12px;
@@ -155,9 +116,9 @@ button:disabled {
 
 #status-banner {
   text-align: center;
-  background: var(--bg-light);
+  background: var(--glass-strong);
   border: 1px solid var(--hairline);
-  border-radius: 8px;
+  border-radius: var(--r-sm);
   padding: 8px;
   margin-bottom: 12px;
 }
@@ -177,8 +138,8 @@ button:disabled {
   text-align: center;
   font-size: 0.7rem;
   padding: 4px;
-  border-radius: 8px;
-  background: var(--bg-light);
+  border-radius: var(--r-sm);
+  background: var(--glass-strong);
   border: 2px solid var(--hairline);
   overflow: hidden;
   word-break: break-word;
@@ -204,15 +165,15 @@ button:disabled {
 }
 
 .cell.marked {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
+  background: var(--success);
+  border-color: var(--success);
+  color: var(--accent-ink);
 }
 
 .cell.wrong {
-  background: var(--red);
-  border-color: var(--red);
-  color: #fff;
+  background: var(--danger);
+  border-color: var(--danger);
+  color: var(--danger-ink);
   animation: none;
 }
 
@@ -224,10 +185,6 @@ button:disabled {
   50% {
     box-shadow: 0 0 0 6px color-mix(in srgb, var(--gold) 0%, transparent);
   }
-}
-
-.hidden {
-  display: none !important;
 }
 
 #gameover-overlay {
@@ -254,7 +211,7 @@ button:disabled {
   font-size: 1.3rem;
   margin-top: 12px;
   text-align: center;
-  color: #fff;
+  color: var(--text);
 }
 
 @keyframes flash {

@@ -11,13 +11,7 @@
   --green: var(--success);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  font-family: var(--body);
   background: var(--bg);
   color: var(--cream);
 }
@@ -41,10 +35,8 @@ header h1 {
   margin-top: 2px;
 }
 
-#join-panel h2 {
-  margin-top: 0;
-  font-size: 1rem;
-  color: var(--gold);
+#app > section {
+  margin-bottom: 20px;
 }
 
 #join-body {
@@ -77,15 +69,6 @@ header h1 {
   word-break: break-all;
 }
 
-section {
-  background: var(--bg-light);
-  border: 1px solid var(--hairline);
-  box-shadow: 0 8px 32px #00000073;
-  border-radius: var(--r);
-  padding: 16px 20px;
-  margin-bottom: 20px;
-}
-
 #status-line {
   font-size: 1.1rem;
 }
@@ -97,92 +80,6 @@ section {
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 600;
-}
-
-#controls {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-button {
-  padding: 10px 16px;
-  border-radius: var(--r-sm);
-  border: none;
-  background: var(--gold);
-  color: var(--accent-ink);
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-}
-
-button.secondary {
-  background: var(--bg);
-  color: var(--cream);
-  border: 1px solid var(--gold);
-}
-
-button.danger {
-  background: var(--danger);
-  color: var(--danger-ink);
-}
-
-button:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-#players-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  list-style: none;
-  padding: 0;
-}
-
-#players-list li {
-  background: var(--bg);
-  border: 1px solid var(--hairline);
-  border-radius: 10px;
-  padding: 6px 12px;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.player-status {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: #999;
-}
-
-.player-status.online {
-  background: var(--green);
-  box-shadow: 0 0 4px var(--green);
-}
-
-.player-status.offline {
-  background: #999;
-}
-
-.btn-kick {
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  background: var(--danger);
-  color: var(--danger-ink);
-}
-
-.player-name {
-  font-weight: 600;
-}
-
-.player-stats {
-  font-size: 0.75rem;
-  opacity: 0.75;
-  color: var(--gold);
 }
 
 table {
@@ -209,15 +106,6 @@ td input {
   font-size: 0.85rem;
 }
 
-.hint {
-  opacity: 0.7;
-  font-size: 0.85rem;
-}
-
 .error {
   color: var(--danger);
-}
-
-.hidden {
-  display: none !important;
 }

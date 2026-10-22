@@ -44,9 +44,9 @@ function renderRoster(players) {
   rosterCount.textContent = players.length;
   rosterList.innerHTML = players
     .map(
-      (p) => `<li>
-        <span class="player-status ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
-        <span class="player-name">${p.name}</span>
+      (p) => `<li class="row">
+        <span class="status-dot ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
+        <span class="row-name">${p.name}</span>
       </li>`
     )
     .join('');

@@ -1,9 +1,11 @@
 /* ============================================================
    SHARED DESIGN SYSTEM
    Loaded by every view (shelf, lobby, admin, game, player).
-   Modeled on doyouplay.games/chain-reaction.html: dark canvas, glass
-   panels, glowing accent colors. Tokens first — page-specific CSS should
-   build on these rather than hardcoding colors/fonts of its own.
+   Dark-mode neon/cyberpunk: charcoal-slate canvas, glowing geometric
+   cards, teal/cyan + coral accents. Tokens and atoms first — page-
+   specific CSS should build on these rather than hand-rolling its own
+   list rows, button rows, or card-header spacing (that drift is exactly
+   what made the same section look different from one view to the next).
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap');
@@ -11,21 +13,22 @@
 :root {
   color-scheme: dark;
 
-  --bg: #020308;
-  --glass: #ffffff0d;
-  --glass-strong: #ffffff14;
-  --hairline: #ffffff17;
-  --text: #f2f5fc;
-  --muted: #8a93ac;
+  --bg: #121212;
+  --bg2: #1a1a1a;
+  --glass: #ffffff0a;
+  --glass-strong: #ffffff16;
+  --hairline: #28e0c733;
+  --text: #eafcfa;
+  --muted: #80939e;
 
-  --accent: #ff8a2a;
-  --accent2: #ff4257;
-  --gold: #ffc24d;
-  --accent-ink: #170a04;
+  --accent: #00f5d4;
+  --accent2: #ff6b6b;
+  --gold: #ffd500;
+  --accent-ink: #042420;
 
-  --danger: #ff4257;
+  --danger: #ff3860;
   --danger-ink: #ffffff;
-  --success: #52ff7a;
+  --success: #00ff9d;
 
   /* A fixed light backdrop (QR codes, flash-card "correct" badges) that
      deliberately never goes dark, regardless of accent/theme. */
@@ -37,37 +40,40 @@
   --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 
-  --r-sm: 12px;
-  --r: 18px;
-  --r-lg: 24px;
+  /* Sharper, more geometric than a typical "glass" UI — small radii, not
+     pill-shaped bubbles. */
+  --r-sm: 6px;
+  --r: 10px;
+  --r-lg: 14px;
 }
 
 /* ---------- per-pack accents ----------
    Set via the `data-theme` attribute theme.js puts on <html>; layers on top
-   of everything above by overriding just the accent trio. */
+   of everything above by overriding just the accent trio, nudged to stay
+   neon-saturated rather than the softer tones each pack used before. */
 
 :root[data-theme='diwali'] {
-  --accent: #ffb23a;
-  --accent2: #ff6a3a;
-  --gold: #ffe29a;
+  --accent: #ffb000;
+  --accent2: #ff3d7a;
+  --gold: #ffe14d;
 }
 
 :root[data-theme='bollywood'] {
   --accent: #ff2e87;
-  --accent2: #a93dff;
+  --accent2: #b23dff;
   --gold: #ffd166;
 }
 
 :root[data-theme='geography'] {
-  --accent: #2ee6c0;
+  --accent: #00f5d4;
   --accent2: #2e8bff;
-  --gold: #9af77a;
+  --gold: #9aff5c;
 }
 
 :root[data-theme='flags'] {
   --accent: #4d7dff;
-  --accent2: #2ee6ff;
-  --gold: #a96bff;
+  --accent2: #00f5e0;
+  --gold: #c86bff;
 }
 
 * {
@@ -82,12 +88,12 @@ body {
   background-image:
     radial-gradient(
       900px 540px at 80% -8%,
-      color-mix(in srgb, var(--accent) 14%, transparent),
+      color-mix(in srgb, var(--accent) 16%, transparent),
       transparent 62%
     ),
     radial-gradient(
       760px 480px at 6% 108%,
-      color-mix(in srgb, var(--accent2) 14%, transparent),
+      color-mix(in srgb, var(--accent2) 16%, transparent),
       transparent 60%
     );
   background-attachment: fixed;
@@ -121,14 +127,33 @@ h3,
 
 .card {
   background:
-    linear-gradient(var(--glass), #ffffff05) padding-box,
-    linear-gradient(135deg, #ffffff29, #ffffff08 40%, #ffffff1a) border-box;
+    linear-gradient(180deg, #1c1c1ecc, #141416e6) padding-box,
+    linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--accent) 50%, transparent),
+        color-mix(in srgb, var(--accent2) 35%, transparent) 55%,
+        transparent 90%
+      )
+      border-box;
   border: 1px solid transparent;
   border-radius: var(--r-lg);
-  backdrop-filter: blur(18px) saturate(1.4);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
-  box-shadow: 0 8px 32px #00000073;
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow:
+    0 0 24px color-mix(in srgb, var(--accent) 10%, transparent),
+    0 8px 32px #00000080;
   padding: 20px 24px;
+}
+
+/* Every card's title-to-content gap is the same everywhere, instead of
+   each view hand-tuning its own h2 margin (that drift is the "padding
+   between section title and content is wrong and inconsistent" bug). */
+.card > h2,
+.card > h3 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 55%, transparent);
 }
 
 .pill {
@@ -145,10 +170,105 @@ h3,
   padding: 5px 12px;
 }
 
+/* Explanatory text under a section title, e.g. "Need at least 25 to
+   start" — one consistent size/margin everywhere instead of each view
+   redefining it with a slightly different margin (or none at all). */
+.hint {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  margin: 0 0 12px;
+}
+
+/* ---------- rows: players joined, roster, round history, etc. ----------
+   One shared row style instead of every view defining its own
+   #players-list/#roster-list li with a slightly different gap/padding —
+   that's the "padding between players in players joined is inconsistent"
+   bug. Markup:
+     <ul class="row-list">
+       <li class="row">
+         <span class="status-dot online"></span>
+         <span class="row-name">Name</span>
+         <span class="row-stat">42 pts</span>
+       </li>
+     </ul>
+   Add `row-list-wrap` to the list for a wrapping chip layout instead of
+   one-per-line (e.g. a game-view roster with many players). */
+
+.row-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row-list.row-list-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--glass);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  font-size: 0.92rem;
+}
+
+.row-name {
+  font-weight: 600;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-stat {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #5a5a5a;
+}
+
+.status-dot.online {
+  background: var(--success);
+  box-shadow: 0 0 6px var(--success);
+}
+
+/* The small "remove this player" action every admin roster has. */
+.btn-kick {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  background: var(--danger);
+  color: var(--danger-ink);
+}
+
+/* ---------- button rows ---------- */
+
+.btn-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 /* ---------- form controls ---------- */
 
 input[type='text'],
-select {
+input[type='number'] {
   font-family: var(--body);
   font-size: 1rem;
   padding: 10px 14px;
@@ -162,6 +282,26 @@ input[type='text']::placeholder {
   color: var(--muted);
 }
 
+/* Browsers draw their own dropdown arrow flush against the edge,
+   ignoring whatever padding the box itself has — appearance: none drops
+   that native arrow everywhere so this custom one (with real breathing
+   room around it) is what actually shows, consistently cross-browser. */
+select {
+  font-family: var(--body);
+  font-size: 1rem;
+  padding: 10px 36px 10px 14px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--hairline);
+  background: var(--glass)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a9aa5' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat right 14px center;
+  background-size: 11px 7px;
+  color: var(--text);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 /* ---------- buttons ---------- */
 
 button,
@@ -171,7 +311,7 @@ button,
   font-weight: 700;
   font-size: 0.95rem;
   border: none;
-  border-radius: 14px;
+  border-radius: var(--r-sm);
   padding: 10px 18px;
   cursor: pointer;
   background: var(--glass);
@@ -186,7 +326,7 @@ button,
 button:hover,
 .btn:hover {
   transform: translateY(-1px);
-  filter: brightness(1.08);
+  filter: brightness(1.1);
 }
 
 button:disabled {
@@ -197,18 +337,19 @@ button:disabled {
 }
 
 .btn-primary {
-  background: linear-gradient(115deg, var(--accent2) 0%, var(--accent) 55%, var(--gold) 120%);
+  background: linear-gradient(115deg, var(--accent) 0%, var(--accent2) 100%);
   color: var(--accent-ink);
   border-color: transparent;
   box-shadow:
-    0 6px 26px color-mix(in srgb, var(--accent) 35%, transparent),
-    inset 0 1px #ffffff59;
+    0 0 20px color-mix(in srgb, var(--accent) 45%, transparent),
+    inset 0 1px #ffffff40;
 }
 
 .btn-danger {
   background: var(--danger);
   color: var(--danger-ink);
   border-color: transparent;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--danger) 45%, transparent);
 }
 
 .btn-secondary {

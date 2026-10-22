@@ -105,10 +105,10 @@ async function refreshPlayers() {
       const detail = `${p.correctCount} correct${p.answeredCount ? ` / ${p.answeredCount} answered` : ''}${
         lastAnswered ? ` · last ${lastAnswered}` : ''
       }`;
-      return `<li>
-        <span class="player-status ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
-        <span class="player-name">${p.name}</span>
-        <span class="player-stats">${detail}</span>
+      return `<li class="row">
+        <span class="status-dot ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
+        <span class="row-name">${p.name}</span>
+        <span class="row-stat">${detail}</span>
         <button class="btn-kick" data-id="${p.id}" data-name="${escapeAttr(p.name)}">Kick</button>
       </li>`;
     })
@@ -133,7 +133,7 @@ function questionRow(q) {
     <td><input class="f-question" value="${escapeAttr(q.question || '')}" /></td>
     <td><input class="f-hint" value="${escapeAttr(q.hint || '')}" /></td>
     <td><input class="f-answer" value="${escapeAttr(q.answer || '')}" /></td>
-    <td><button class="secondary btn-delete">✕</button></td>
+    <td><button class="btn-secondary btn-delete">✕</button></td>
   `;
   tr.querySelector('.btn-delete').addEventListener('click', () => {
     tr.remove();
