@@ -13,6 +13,7 @@ const winnersPanel = document.getElementById('winners-panel');
 const winnersList = document.getElementById('winners-list');
 const btnStart = document.getElementById('btn-start');
 const btnDraw = document.getElementById('btn-draw');
+const btnRedraw = document.getElementById('btn-redraw');
 const btnReset = document.getElementById('btn-reset');
 const playerCount = document.getElementById('player-count');
 const playersList = document.getElementById('players-list');
@@ -62,6 +63,7 @@ function applyState(state) {
   renderWinners(state.winners);
   btnStart.disabled = state.status === 'running';
   btnDraw.disabled = state.status !== 'running' || drawInFlight;
+  btnRedraw.disabled = state.status !== 'running' || state.totalDrawn === 0 || drawInFlight;
 }
 
 async function postAction(path) {
@@ -76,6 +78,22 @@ btnDraw.addEventListener('click', () => {
   drawInFlight = true;
   if (currentState) applyState(currentState);
   postAction('/game/draw');
+  setTimeout(() => {
+    drawInFlight = false;
+    if (currentState) applyState(currentState);
+  }, SCROLL_DURATION_MS);
+});
+btnRedraw.addEventListener('click', () => {
+  if (!currentState || !currentState.lastNumber) return;
+  if (
+    !confirm(
+      `Redraw ${currentState.lastNumber}? It goes back in the pool and a new number is drawn in its place.`
+    )
+  )
+    return;
+  drawInFlight = true;
+  applyState(currentState);
+  postAction('/game/redraw');
   setTimeout(() => {
     drawInFlight = false;
     if (currentState) applyState(currentState);

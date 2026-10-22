@@ -245,6 +245,24 @@ function gameRouter(io) {
     res.json(publicState(gameId));
   });
 
+  game.post('/game/redraw', (req, res) => {
+    const { gameId } = req.params;
+    let redrawResult;
+    try {
+      redrawResult = stateModule.redrawLastNumber(gameId);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+    const { state, number, previousNumber } = redrawResult;
+
+    playersModule.unmarkNumber(gameId, previousNumber);
+
+    io.to(`game:${gameId}`).emit('number-drawn', { number, totalDrawn: state.currentIndex + 1 });
+    broadcastState(gameId);
+    broadcastPlayers(gameId);
+    res.json({ ...publicState(gameId), previousNumber });
+  });
+
   game.post('/game/reset', (req, res) => {
     const { gameId } = req.params;
     stateModule.resetGame(gameId);

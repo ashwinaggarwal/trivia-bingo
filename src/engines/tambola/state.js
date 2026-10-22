@@ -79,8 +79,49 @@ function resetGame(gameId) {
   return save(gameId, defaultState());
 }
 
+// Swaps out the most recently drawn number for a different one — for
+// correcting a mistaken draw (e.g. it didn't match a physical ball pulled
+// alongside it). The round count doesn't change: this replaces the number
+// at the current position rather than drawing a new one on top of it, and
+// the discarded number goes back into the pool so it can still come up
+// later.
+function redrawLastNumber(gameId) {
+  const state = load(gameId);
+  if (state.status !== 'running') throw new Error('game is not running');
+  if (state.currentIndex < 0) throw new Error('no number has been drawn yet');
+  if (state.lastDrawAt && Date.now() - new Date(state.lastDrawAt).getTime() < DRAW_COOLDOWN_MS) {
+    throw new Error('wait for the current draw to finish');
+  }
+
+  const previousNumber = state.numberOrder[state.currentIndex];
+  const remaining = state.numberOrder.slice(state.currentIndex + 1);
+  if (!remaining.length) throw new Error('no other numbers left to redraw');
+
+  const pickIndex = Math.floor(Math.random() * remaining.length);
+  const [newNumber] = remaining.splice(pickIndex, 1);
+  remaining.push(previousNumber);
+
+  state.numberOrder = [
+    ...state.numberOrder.slice(0, state.currentIndex),
+    newNumber,
+    ...shuffle(remaining),
+  ];
+  state.lastDrawAt = new Date().toISOString();
+  save(gameId, state);
+  return { state, number: newNumber, previousNumber };
+}
+
 function drawnNumbersOf(state) {
   return state.numberOrder.slice(0, state.currentIndex + 1);
 }
 
-module.exports = { load, save, startGame, drawNumber, resetGame, drawnNumbersOf, MAX_NUMBER };
+module.exports = {
+  load,
+  save,
+  startGame,
+  drawNumber,
+  redrawLastNumber,
+  resetGame,
+  drawnNumbersOf,
+  MAX_NUMBER,
+};

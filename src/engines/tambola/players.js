@@ -88,6 +88,18 @@ function markNumber(gameId, playerId, number) {
   return player;
 }
 
+// Retracts a mark from every player who had claimed it — used when a draw
+// is undone (see state.js's redrawLastNumber), since that number is no
+// longer officially drawn and shouldn't keep counting toward anyone's line.
+function unmarkNumber(gameId, number) {
+  const players = load(gameId);
+  for (const player of Object.values(players)) {
+    player.marked = player.marked.filter((n) => n !== number);
+  }
+  save(gameId, players);
+  return players;
+}
+
 function getPlayer(gameId, id) {
   const players = load(gameId);
   return players[id] || null;
@@ -109,6 +121,7 @@ module.exports = {
   registerPlayer,
   regenerateGrids,
   markNumber,
+  unmarkNumber,
   isOnTicket,
   getPlayer,
   getAllPlayers,
