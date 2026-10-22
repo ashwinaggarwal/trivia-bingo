@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 16px 0 4px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+}
+
+#register-screen {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#game-id-banner {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+#register-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+#register-form input {
+  flex: 1;
+  max-width: 220px;
+}
+
+.error {
+  color: var(--danger);
+  min-height: 1.2em;
+}
+
+#player-name-banner {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#score-banner {
+  text-align: center;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+#round-banner {
+  text-align: center;
+  background: var(--glass-strong);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+#round-status {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+#round-engine-name {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 6px 0 14px;
+}
+
+#round-join-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#no-round-banner {
+  text-align: center;
+  opacity: 0.7;
+  padding: 16px;
+}
+
+.history-row {
+  background: var(--glass-strong);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#celebration-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: radial-gradient(circle at top, var(--glass-strong), var(--bg));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+#celebration-title {
+  font-family: var(--display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+#celebration-winner {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 20px;
+  color: var(--accent);
+}
+
+#celebration-runnersup {
+  font-size: 1.1rem;
+  margin-top: 14px;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none !important;
+}

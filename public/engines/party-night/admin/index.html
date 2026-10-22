@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Night — Admin</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/game-columns.css" />
+    <link rel="stylesheet" href="/shared/leaderboard.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🎉 Party Night — Admin</h1>
+        <div id="game-title"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Players join the night</h2>
+        <div id="join-body">
+          <img id="join-qr" alt="Join QR code" />
+          <div id="join-url"></div>
+        </div>
+        <div id="game-view-link">
+          Game view (put this on the TV):
+          <a id="game-view-url" href="#" target="_blank" rel="noopener"></a>
+        </div>
+      </section>
+
+      <section id="controls" class="card">
+        <div id="status-line">Loading…</div>
+        <button id="btn-start" class="btn-primary">Start Party Night</button>
+        <button id="btn-end" class="btn-secondary">🏁 End Party Night</button>
+        <button id="btn-reset" class="btn-secondary">Reset Night</button>
+      </section>
+
+      <div class="col-row">
+        <div class="col">
+          <section id="start-round-panel" class="card">
+            <h2>Build the Stack</h2>
+            <p class="hint">
+              Queue up as many rounds as you like ahead of time, in any order — then start them one
+              at a time when you're ready.
+            </p>
+            <div class="stack-form">
+              <label for="engine-select">Game</label>
+              <select id="engine-select"></select>
+              <div id="round-options" class="hidden"></div>
+              <div class="btn-row">
+                <button id="btn-queue-round" class="btn-secondary">➕ Add to Stack</button>
+                <button id="btn-start-next" class="btn-primary">▶ Start Next In Stack</button>
+              </div>
+              <p id="round-error" class="error"></p>
+            </div>
+          </section>
+
+          <section id="rounds-panel" class="card">
+            <h2>Rounds (<span id="round-count">0</span>)</h2>
+            <ol id="rounds-list"></ol>
+          </section>
+        </div>
+
+        <div class="col">
+          <section id="leaderboard-panel" class="card">
+            <h2>🏆 Leaderboard</h2>
+            <ol id="leaderboard-rows" class="f1-board"></ol>
+          </section>
+
+          <section id="final-standings-panel" class="card hidden">
+            <h2>🎊 Final Standings</h2>
+            <div id="final-standings-text"></div>
+          </section>
+
+          <section id="players-panel" class="card">
+            <h2>Players (<span id="player-count">0</span>)</h2>
+            <ul id="players-list"></ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

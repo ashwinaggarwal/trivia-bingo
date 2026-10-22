@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Night — Game Screen</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/game-columns.css" />
+    <link rel="stylesheet" href="/shared/leaderboard.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="h-display">🎉 Party Night</h1>
+        <div id="join-hint"></div>
+      </header>
+
+      <section id="join-panel" class="card">
+        <h2>Scan to join</h2>
+        <img id="join-qr" alt="Join QR code" />
+        <div id="join-url"></div>
+      </section>
+
+      <section id="now-playing-panel" class="card hidden">
+        <div id="now-playing-status">Now Playing</div>
+        <div id="now-playing-engine"></div>
+      </section>
+
+      <div class="col-row">
+        <div class="col">
+          <section id="leaderboard-panel" class="card">
+            <h2>🏆 Leaderboard</h2>
+            <ol id="leaderboard-rows" class="f1-board"></ol>
+          </section>
+        </div>
+
+        <div class="col">
+          <section id="roster-panel" class="card">
+            <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+            <ul id="roster-list"></ul>
+          </section>
+
+          <section id="up-next-panel" class="card hidden">
+            <h2>⏭️ Up Next</h2>
+            <ul id="up-next-list"></ul>
+          </section>
+
+          <section id="rounds-panel" class="card">
+            <h2>Rounds So Far (<span id="round-count">0</span>)</h2>
+            <ul id="rounds-list"></ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="celebration-overlay" class="hidden">
+      <div id="celebration-title">🎊 Party Night is Over! 🎊</div>
+      <div id="celebration-winner"></div>
+      <div id="celebration-runnersup"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/confetti.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

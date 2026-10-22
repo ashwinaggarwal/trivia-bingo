@@ -1,0 +1,134 @@
+/* F1-podium-style leaderboard, shared across any view that wants a
+   fancier ranked list than a plain <ul> — gold/silver/bronze accents and
+   bigger type for the top three, everyone else a plain row below.
+
+   Markup:
+     <ol class="f1-board">
+       <li class="f1-row place-1">
+         <span class="f1-pos">1</span>
+         <span class="f1-name"><span class="status-dot online"></span>Name</span>
+         <span class="f1-points">42 pts</span>
+       </li>
+       ...
+     </ol>
+   Add `place-1` / `place-2` / `place-3` for medal styling; everything
+   past 3rd just gets the plain row. */
+
+.f1-board {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.f1-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--glass-strong);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 10px 16px 10px 20px;
+  overflow: hidden;
+}
+
+.f1-row::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: var(--hairline);
+}
+
+.f1-row.place-1::before {
+  background: linear-gradient(180deg, #ffe066, #c99a1e);
+}
+
+.f1-row.place-2::before {
+  background: linear-gradient(180deg, #e8e8e8, #a3a3a3);
+}
+
+.f1-row.place-3::before {
+  background: linear-gradient(180deg, #e3a569, #9c6633);
+}
+
+.f1-row.place-1 {
+  background: linear-gradient(90deg, #4a3a0040, var(--glass-strong));
+  border-color: #c99a1e80;
+}
+
+.f1-pos {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 1.8em;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.f1-row.place-1 .f1-pos {
+  font-size: 1.5rem;
+  color: #ffd700;
+  opacity: 1;
+}
+
+.f1-row.place-2 .f1-pos {
+  font-size: 1.25rem;
+  color: #d7d7d7;
+  opacity: 1;
+}
+
+.f1-row.place-3 .f1-pos {
+  font-size: 1.15rem;
+  color: #e3a569;
+  opacity: 1;
+}
+
+.f1-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.f1-row.place-1 .f1-name {
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.f1-row.place-2 .f1-name {
+  font-size: 1.1rem;
+}
+
+.f1-points {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.f1-row.place-1 .f1-points {
+  font-size: 1.45rem;
+  color: #ffd700;
+}
+
+.f1-row.place-2 .f1-points {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.f1-row.place-3 .f1-points {
+  font-size: 1.15rem;
+  color: #e3a569;
+}
