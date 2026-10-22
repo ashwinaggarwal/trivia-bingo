@@ -230,12 +230,12 @@ function ensureAudioCtx() {
   return audioCtx;
 }
 
-function playTick() {
+function playTick(frequency = 900) {
   if (!audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   osc.type = 'square';
-  osc.frequency.value = 900;
+  osc.frequency.value = frequency;
   gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
   gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
   osc.connect(gain);
@@ -278,23 +278,47 @@ function playClaimSound() {
   osc.stop(audioCtx.currentTime + 0.15);
 }
 
-const SCROLL_DURATION_MS = 1600;
-const SCROLL_TICK_MS = 70;
+// Numbers spin like a speedometer needle: quick, blurred ticks at the start
+// that gradually slow down (eased deceleration) until they screech to a
+// stop on the drawn number.
+const SCROLL_DURATION_MS = 1800;
+const MIN_TICK_MS = 25;
+const MAX_TICK_MS = 220;
+
+function easeOutCubic(t) {
+  return 1 - Math.pow(1 - t, 3);
+}
 
 function runDrawAnimation(finalNumber) {
   currentDraw.dataset.animating = 'true';
+  currentDraw.classList.add('rolling');
   const startedAt = Date.now();
-  const interval = setInterval(() => {
-    currentDraw.textContent = 1 + Math.floor(Math.random() * 90);
-    playTick();
-    if (Date.now() - startedAt >= SCROLL_DURATION_MS) {
-      clearInterval(interval);
+
+  function tick() {
+    const progress = Math.min((Date.now() - startedAt) / SCROLL_DURATION_MS, 1);
+    const eased = easeOutCubic(progress);
+
+    if (progress >= 1) {
+      currentDraw.style.filter = '';
       currentDraw.textContent = finalNumber;
+      currentDraw.classList.remove('rolling');
       delete currentDraw.dataset.animating;
       playDing();
       refreshPlayer();
+      currentDraw.classList.add('settle');
+      setTimeout(() => currentDraw.classList.remove('settle'), 320);
+      return;
     }
-  }, SCROLL_TICK_MS);
+
+    currentDraw.textContent = 1 + Math.floor(Math.random() * 90);
+    currentDraw.style.filter = `blur(${(1 - eased) * 3}px)`;
+    playTick(900 - eased * 400);
+
+    const delay = MIN_TICK_MS + (MAX_TICK_MS - MIN_TICK_MS) * eased;
+    setTimeout(tick, delay);
+  }
+
+  tick();
 }
 
 async function refreshState() {

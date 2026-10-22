@@ -76,6 +76,38 @@ header h1 {
   font-weight: 800;
   color: var(--gold);
   min-height: 1.2em;
+  transition: filter 0.05s linear;
+}
+
+#current-draw.rolling {
+  animation: tambola-spin 0.16s linear infinite;
+}
+
+@keyframes tambola-spin {
+  0% {
+    transform: scale(1) skewX(0deg);
+  }
+  50% {
+    transform: scale(1.04) skewX(-3deg);
+  }
+  100% {
+    transform: scale(1) skewX(0deg);
+  }
+}
+
+#current-draw.settle {
+  animation: tambola-settle 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes tambola-settle {
+  0% {
+    transform: scale(1.3);
+    color: var(--accent);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--gold);
+  }
 }
 
 #winners-banner {
