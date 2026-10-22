@@ -16,7 +16,6 @@ const winnersList = document.getElementById('winners-list');
 const closingInPanel = document.getElementById('closing-in-panel');
 const closingInList = document.getElementById('closing-in-list');
 const boardGrid = document.getElementById('board-grid');
-const btnEnableSound = document.getElementById('btn-enable-sound');
 
 const CATEGORY_LABELS = {
   top: 'Top Line',
@@ -86,17 +85,15 @@ function renderWinners(winners) {
 }
 
 // Names how-many-away, never the number itself — see
-// src/engines/tambola/routes.js's closenessFor.
+// src/engines/tambola/routes.js's closenessFor. Shows every player who
+// qualifies, not just the closest one.
 function renderClosingIn(players) {
-  const close = players
-    .filter((p) => p.close)
-    .sort((a, b) => a.distance - b.distance)
-    .slice(0, 8);
+  const close = players.filter((p) => p.close).sort((a, b) => a.distance - b.distance);
   closingInPanel.classList.toggle('hidden', close.length === 0);
   closingInList.innerHTML = close
     .map(
       (p) =>
-        `<li>${p.distance === 1 ? '🔥 ' : ''}${escapeHtml(p.name)} — ${p.distance} away (${CATEGORY_LABELS[p.category]})</li>`
+        `<li class="${p.distance === 1 ? 'blinking-name' : ''}">${p.distance === 1 ? '🔥 ' : ''}${escapeHtml(p.name)} — ${p.distance} away (${CATEGORY_LABELS[p.category]})</li>`
     )
     .join('');
 }
@@ -109,6 +106,7 @@ async function refreshPlayers() {
 }
 
 function applyState(state) {
+  serverMuted = Boolean(state.soundMuted);
   joinPanel.classList.toggle('hidden', state.status !== 'setup');
   renderWinners(state.winners);
 
@@ -134,17 +132,32 @@ function applyState(state) {
 
 // --- draw animation + sound ---
 let audioCtx = null;
-let soundEnabled = false;
+let serverMuted = false; // admin's "mute sound for everyone" toggle — see applyState
 
-btnEnableSound.addEventListener('click', () => {
+function ensureAudioCtx() {
   const Ctx = window.AudioContext || window.webkitAudioContext;
-  if (Ctx && !audioCtx) audioCtx = new Ctx();
-  soundEnabled = true;
-  btnEnableSound.classList.add('hidden');
-});
+  if (!Ctx) return null;
+  if (!audioCtx) audioCtx = new Ctx();
+  if (audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
+  return audioCtx;
+}
+
+// Sound should just play — no "Enable Sound" button to find on a TV no one
+// touches. Browsers still require a real gesture on this exact page before
+// audio is allowed, so this tries right away (works if the browser already
+// trusts this origin), and falls back to unlocking silently on the very
+// first tap/click/key anywhere on the page.
+ensureAudioCtx();
+function unlockAudioOnce() {
+  ensureAudioCtx();
+  document.removeEventListener('pointerdown', unlockAudioOnce);
+  document.removeEventListener('keydown', unlockAudioOnce);
+}
+document.addEventListener('pointerdown', unlockAudioOnce);
+document.addEventListener('keydown', unlockAudioOnce);
 
 function playTick(frequency = 900) {
-  if (!soundEnabled || !audioCtx) return;
+  if (serverMuted || !audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   osc.type = 'square';
@@ -158,7 +171,7 @@ function playTick(frequency = 900) {
 }
 
 function playDing() {
-  if (!soundEnabled || !audioCtx) return;
+  if (serverMuted || !audioCtx) return;
   [660, 990].forEach((freq, i) => {
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -177,7 +190,7 @@ function playDing() {
 // A short rising arpeggio for a line win — distinct from the draw tick/ding
 // so it reads as its own "someone just won" moment.
 function playWinChime() {
-  if (!soundEnabled || !audioCtx) return;
+  if (serverMuted || !audioCtx) return;
   [523, 659, 784].forEach((freq, i) => {
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -218,7 +231,7 @@ function fadeOutCheer() {
 }
 
 function playCheer() {
-  if (!soundEnabled) return;
+  if (serverMuted) return;
   cheerAudio.currentTime = 0;
   cheerAudio.volume = 1;
   cheerAudio

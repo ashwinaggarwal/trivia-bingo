@@ -22,6 +22,7 @@ function defaultState() {
     currentIndex: -1,
     lastDrawAt: null,
     winners: Object.fromEntries(CATEGORIES.map((c) => [c, null])), // null | [{playerId, playerName, gridIndex}]
+    soundMuted: false, // admin-wide "mute sound for everyone" toggle — see setSoundMuted
   };
 }
 
@@ -51,9 +52,11 @@ function shuffle(array) {
 }
 
 function startGame(gameId) {
+  const soundMuted = load(gameId).soundMuted;
   const state = defaultState();
   state.status = 'running';
   state.numberOrder = shuffle(Array.from({ length: MAX_NUMBER }, (_, i) => i + 1));
+  state.soundMuted = soundMuted;
   return save(gameId, state);
 }
 
@@ -76,7 +79,19 @@ function drawNumber(gameId) {
 }
 
 function resetGame(gameId) {
-  return save(gameId, defaultState());
+  const soundMuted = load(gameId).soundMuted;
+  const state = defaultState();
+  state.soundMuted = soundMuted;
+  return save(gameId, state);
+}
+
+// Admin-wide toggle, applied to every connected TV/player view — not a
+// per-device setting, since a muted room should stay muted for everyone
+// until an admin turns it back on.
+function setSoundMuted(gameId, muted) {
+  const state = load(gameId);
+  state.soundMuted = Boolean(muted);
+  return save(gameId, state);
 }
 
 // Swaps out the most recently drawn number for a different one — for
@@ -122,6 +137,7 @@ module.exports = {
   drawNumber,
   redrawLastNumber,
   resetGame,
+  setSoundMuted,
   drawnNumbersOf,
   MAX_NUMBER,
 };

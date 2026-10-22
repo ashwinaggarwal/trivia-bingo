@@ -12,7 +12,6 @@
       <header>
         <h1 class="h-display">🎟️ Tambola</h1>
         <div id="join-hint"></div>
-        <button id="btn-enable-sound">🔊 Enable Sound</button>
       </header>
 
       <section id="join-panel" class="card">
@@ -21,30 +20,36 @@
         <div id="join-url"></div>
       </section>
 
-      <section id="roster-panel" class="card">
-        <h2>Players Joined (<span id="roster-count">0</span>)</h2>
-        <ul id="roster-list"></ul>
-      </section>
-
-      <section id="draw-panel" class="card">
-        <div id="draw-status">Waiting to start…</div>
-        <div id="current-draw"></div>
-      </section>
-
       <section id="winners-panel" class="card hidden">
         <h2>🏆 Winners</h2>
         <ul id="winners-list"></ul>
       </section>
 
-      <section id="closing-in-panel" class="card hidden">
-        <h2>🔥 Closing In</h2>
-        <ul id="closing-in-list"></ul>
-      </section>
+      <div id="main-row">
+        <div id="col-board">
+          <section id="board-panel" class="card">
+            <h2>Numbers 1–90</h2>
+            <div id="board-grid"></div>
+          </section>
+        </div>
 
-      <section id="board-panel" class="card">
-        <h2>Numbers 1–90</h2>
-        <div id="board-grid"></div>
-      </section>
+        <div id="col-status">
+          <section id="draw-panel" class="card">
+            <div id="draw-status">Waiting to start…</div>
+            <div id="current-draw"></div>
+          </section>
+
+          <section id="closing-in-panel" class="card hidden">
+            <h2>🔥 Closing In</h2>
+            <ul id="closing-in-list"></ul>
+          </section>
+
+          <section id="roster-panel" class="card">
+            <h2>Players Joined (<span id="roster-count">0</span>)</h2>
+            <ul id="roster-list"></ul>
+          </section>
+        </div>
+      </div>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

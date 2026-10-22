@@ -14,6 +14,7 @@ const winnersList = document.getElementById('winners-list');
 const btnStart = document.getElementById('btn-start');
 const btnDraw = document.getElementById('btn-draw');
 const btnRedraw = document.getElementById('btn-redraw');
+const btnMute = document.getElementById('btn-mute');
 const btnReset = document.getElementById('btn-reset');
 const playerCount = document.getElementById('player-count');
 const playersList = document.getElementById('players-list');
@@ -64,6 +65,9 @@ function applyState(state) {
   btnStart.disabled = state.status === 'running';
   btnDraw.disabled = state.status !== 'running' || drawInFlight;
   btnRedraw.disabled = state.status !== 'running' || state.totalDrawn === 0 || drawInFlight;
+  btnMute.textContent = state.soundMuted
+    ? '🔊 Unmute Sound For Everyone'
+    : '🔇 Mute Sound For Everyone';
 }
 
 async function postAction(path) {
@@ -98,6 +102,16 @@ btnRedraw.addEventListener('click', () => {
     drawInFlight = false;
     if (currentState) applyState(currentState);
   }, SCROLL_DURATION_MS);
+});
+btnMute.addEventListener('click', async () => {
+  const muted = !(currentState && currentState.soundMuted);
+  const res = await fetch(api('/game/sound'), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ muted }),
+  });
+  const data = await res.json();
+  if (res.ok) applyState(data);
 });
 btnReset.addEventListener('click', () => {
   if (confirm('Reset the game? This clears the draw and deals new tickets.'))
@@ -169,62 +183,20 @@ async function refreshTickets() {
     .join('');
 }
 
-// --- draw animation + sound, same pattern as the game/player views ---
-let audioCtx = null;
-function ensureAudioCtx() {
-  const Ctx = window.AudioContext || window.webkitAudioContext;
-  if (!Ctx) return null;
-  if (!audioCtx) audioCtx = new Ctx();
-  if (audioCtx.state === 'suspended') audioCtx.resume();
-  return audioCtx;
-}
-
-function playTick() {
-  if (!audioCtx) return;
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.type = 'square';
-  osc.frequency.value = 900;
-  gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-  osc.start();
-  osc.stop(audioCtx.currentTime + 0.04);
-}
-
-function playDing() {
-  if (!audioCtx) return;
-  [660, 990].forEach((freq, i) => {
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = 'sine';
-    osc.frequency.value = freq;
-    const start = audioCtx.currentTime + i * 0.08;
-    gain.gain.setValueAtTime(0.16, start);
-    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.2);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start(start);
-    osc.stop(start + 0.2);
-  });
-}
-
+// --- draw animation, visual only — admin never plays draw/win sound, only
+// the TV view does (see public/engines/tambola/game/app.js) ---
 const SCROLL_DURATION_MS = 1600;
 const SCROLL_TICK_MS = 70;
 
 function runDrawAnimation(finalNumber) {
   currentDraw.dataset.animating = 'true';
-  ensureAudioCtx();
   const startedAt = Date.now();
   const interval = setInterval(() => {
     currentDraw.textContent = 1 + Math.floor(Math.random() * 90);
-    playTick();
     if (Date.now() - startedAt >= SCROLL_DURATION_MS) {
       clearInterval(interval);
       currentDraw.textContent = finalNumber;
       delete currentDraw.dataset.animating;
-      playDing();
     }
   }, SCROLL_TICK_MS);
 }

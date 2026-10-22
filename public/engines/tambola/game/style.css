@@ -12,6 +12,53 @@ body {
   margin: 20px 0;
 }
 
+#main-row {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#col-board,
+#col-status {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+/* Mobile: show the status info (current draw, closing in, players) before
+   the full 90-number board, since that's what's worth seeing first
+   without scrolling past the whole board. */
+#col-board {
+  order: 2;
+}
+
+#col-status {
+  order: 1;
+}
+
+@media (min-width: 761px) {
+  #main-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #col-board,
+  #col-status {
+    flex: 1 1 50%;
+  }
+
+  /* Wide screens: numbers grid on the left, status info on the right. */
+  #col-board {
+    order: 1;
+  }
+
+  #col-status {
+    order: 2;
+  }
+}
+
 header {
   text-align: center;
 }
@@ -137,10 +184,27 @@ header h1 {
   font-size: 1.1rem;
 }
 
+#closing-in-list .blinking-name {
+  animation: blink-name 0.9s ease-in-out infinite;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+@keyframes blink-name {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
 #board-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(10, minmax(0, 46px));
+  justify-content: center;
+  gap: 4px;
   margin-top: 12px;
 }
 
@@ -153,7 +217,7 @@ header h1 {
   border: 1px solid var(--hairline);
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 

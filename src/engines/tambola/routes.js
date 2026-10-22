@@ -20,14 +20,12 @@ function drawnSetOf(state) {
 // For one player: how many numbers they still need to mark to complete the
 // nearest still-open line on *any one* of their three tickets (their
 // overall "closeness"), which category that line belongs to, and — only
-// when that distance is exactly 1 — which already-drawn, not-yet-marked
-// number of theirs would finish it, so the player's own view can blink it
-// (nothing to blink if that last number hasn't been drawn yet; there's
-// nothing to click). A category that already has a winner is skipped
-// entirely: nothing left to win there.
+// when that distance is exactly 1 — which number of theirs would finish it,
+// so the player's own view can blink it as a "watch for this one" hint,
+// whether or not it's been drawn yet. A category that already has a winner
+// is skipped entirely: nothing left to win there.
 function closenessFor(player, state) {
   const markedSet = new Set(player.marked || []);
-  const drawnSet = drawnSetOf(state);
   let distance = Infinity;
   let category = null;
   const blinkCells = new Set();
@@ -41,7 +39,7 @@ function closenessFor(player, state) {
         distance = missing.length;
         category = cat;
       }
-      if (missing.length === 1 && drawnSet.has(missing[0])) blinkCells.add(missing[0]);
+      if (missing.length === 1) blinkCells.add(missing[0]);
     }
   }
 
@@ -61,6 +59,7 @@ function publicState(gameId) {
     drawnNumbers,
     lastNumber: drawnNumbers.length ? drawnNumbers[drawnNumbers.length - 1] : null,
     winners: state.winners,
+    soundMuted: state.soundMuted,
   };
 }
 
@@ -271,6 +270,17 @@ function gameRouter(io) {
     broadcastState(gameId);
     broadcastPlayers(gameId);
     broadcastTicketsDealt(gameId);
+    res.json(publicState(gameId));
+  });
+
+  // Admin-wide mute — every connected TV/player view stops making sound
+  // until this is turned back on (see src/engines/tambola/state.js's
+  // setSoundMuted and each view's app.js, which checks state.soundMuted
+  // before playing anything).
+  game.post('/game/sound', (req, res) => {
+    const { gameId } = req.params;
+    stateModule.setSoundMuted(gameId, Boolean(req.body.muted));
+    broadcastState(gameId);
     res.json(publicState(gameId));
   });
 

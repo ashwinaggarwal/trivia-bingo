@@ -204,6 +204,7 @@ function escapeHtml(str) {
 }
 
 function applyState(state) {
+  serverMuted = Boolean(state.soundMuted);
   renderWinners(state.winners);
 
   if (state.status === 'setup') {
@@ -222,6 +223,7 @@ function applyState(state) {
 
 // --- draw animation + sound ---
 let audioCtx = null;
+let serverMuted = false; // admin's "mute sound for everyone" toggle — see applyState
 function ensureAudioCtx() {
   const Ctx = window.AudioContext || window.webkitAudioContext;
   if (!Ctx) return null;
@@ -230,41 +232,10 @@ function ensureAudioCtx() {
   return audioCtx;
 }
 
-function playTick(frequency = 900) {
-  if (!audioCtx) return;
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.type = 'square';
-  osc.frequency.value = frequency;
-  gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-  osc.start();
-  osc.stop(audioCtx.currentTime + 0.04);
-}
-
-function playDing() {
-  if (!audioCtx) return;
-  [660, 990].forEach((freq, i) => {
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = 'sine';
-    osc.frequency.value = freq;
-    const start = audioCtx.currentTime + i * 0.08;
-    gain.gain.setValueAtTime(0.18, start);
-    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.2);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start(start);
-    osc.stop(start + 0.2);
-  });
-}
-
 // A short, punchy "claimed it" pop — distinct from the draw tick/ding, so
 // tapping a number feels like its own satisfying action.
 function playClaimSound() {
-  if (!audioCtx) return;
+  if (serverMuted || !audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   osc.type = 'triangle';
@@ -281,7 +252,7 @@ function playClaimSound() {
 // A short rising arpeggio for a line win — distinct from the draw tick/ding
 // so it reads as its own "someone just won" moment.
 function playWinChime() {
-  if (!audioCtx) return;
+  if (serverMuted || !audioCtx) return;
   [523, 659, 784].forEach((freq, i) => {
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -322,6 +293,7 @@ function fadeOutCheer() {
 }
 
 function playCheer() {
+  if (serverMuted) return;
   cheerAudio.currentTime = 0;
   cheerAudio.volume = 1;
   cheerAudio
@@ -367,7 +339,6 @@ function runDrawAnimation(finalNumber) {
       currentDraw.textContent = finalNumber;
       currentDraw.classList.remove('rolling');
       delete currentDraw.dataset.animating;
-      playDing();
       refreshPlayer();
       currentDraw.classList.add('settle');
       setTimeout(() => currentDraw.classList.remove('settle'), 320);
@@ -376,7 +347,6 @@ function runDrawAnimation(finalNumber) {
 
     currentDraw.textContent = 1 + Math.floor(Math.random() * 90);
     currentDraw.style.filter = `blur(${(1 - eased) * 3}px)`;
-    playTick(900 - eased * 400);
 
     const delay = MIN_TICK_MS + (MAX_TICK_MS - MIN_TICK_MS) * eased;
     setTimeout(tick, delay);
