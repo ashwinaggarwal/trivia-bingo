@@ -278,6 +278,70 @@ function playClaimSound() {
   osc.stop(audioCtx.currentTime + 0.15);
 }
 
+// A short rising arpeggio for a line win — distinct from the draw tick/ding
+// so it reads as its own "someone just won" moment.
+function playWinChime() {
+  if (!audioCtx) return;
+  [523, 659, 784].forEach((freq, i) => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.value = freq;
+    const start = audioCtx.currentTime + i * 0.09;
+    gain.gain.setValueAtTime(0.22, start);
+    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.3);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(start);
+    osc.stop(start + 0.3);
+  });
+}
+
+const cheerAudio = new Audio('/assets/sounds/cheering.mp3');
+cheerAudio.preload = 'auto';
+
+const CHEER_FADE_MS = 2000;
+
+// Fades the cheer's volume to 0 over its last CHEER_FADE_MS instead of
+// letting it cut off abruptly at the end of the clip.
+function fadeOutCheer() {
+  const duration = cheerAudio.duration;
+  if (!Number.isFinite(duration) || duration <= 0) return;
+  const fadeStart = Math.max(0, duration - CHEER_FADE_MS / 1000);
+
+  const interval = setInterval(() => {
+    if (cheerAudio.paused || cheerAudio.ended) {
+      clearInterval(interval);
+      return;
+    }
+    if (cheerAudio.currentTime >= fadeStart) {
+      const remaining = duration - cheerAudio.currentTime;
+      cheerAudio.volume = Math.max(0, Math.min(1, remaining / (CHEER_FADE_MS / 1000)));
+    }
+  }, 50);
+}
+
+function playCheer() {
+  cheerAudio.currentTime = 0;
+  cheerAudio.volume = 1;
+  cheerAudio
+    .play()
+    .then(fadeOutCheer)
+    .catch(() => playWinChime());
+}
+
+// Confetti + sound when a category closes. Full House gets the big
+// treatment — a real crowd cheer plus a bigger confetti burst.
+function celebrateWin(category) {
+  if (category === 'fullhouse') {
+    playCheer();
+    window.launchConfetti({ particleCount: 320, duration: 4000 });
+  } else {
+    playWinChime();
+    window.launchConfetti({ particleCount: 140, duration: 2400 });
+  }
+}
+
 // Numbers spin like a speedometer needle: quick, blurred ticks at the start
 // that gradually slow down (eased deceleration) until they screech to a
 // stop on the drawn number.
@@ -334,6 +398,7 @@ socket.on('connect', () => {
 });
 socket.on('state-update', applyState);
 socket.on('number-drawn', (payload) => runDrawAnimation(payload.number));
+socket.on('category-won', (payload) => celebrateWin(payload.category));
 
 socket.on('player-kicked', ({ playerId } = {}) => {
   if (!player || playerId !== player.id) return;
