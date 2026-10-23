@@ -1,8 +1,22 @@
 # Trivia Bingo
 
-Local-network party game server — a shelf of games (Trivia Bingo, Fastest
-Finger, Emoji Movie Quiz), each with its own admin console, shared game
-screen, and per-player join view with QR codes.
+Local-network party game server — a shelf of games, each with its own admin
+console, shared game screen (for a TV), and per-player join view with QR
+codes:
+
+- **Trivia Bingo** — answer trivia to fill a 5×5 bingo card.
+- **Fastest Finger** — race to answer multiple-choice questions first.
+- **Emoji Movie Quiz** — guess the movie from the emojis, fastest answer wins.
+- **Tambola** — 90-number bingo with three ways to win a line, plus Full House.
+- **Guess the Number** — closest guess to the real number scores a point.
+- **Party Night** — a meta-game that runs a whole night of the other five:
+  admin builds a stack of rounds ahead of time and starts them one at a
+  time, every player is auto-enrolled into whichever round is live (no
+  re-joining per game), and one cumulative scoreboard crowns the night's
+  winner.
+
+See `AGENTS.md` for the architecture (the engine plug-in system, the shared
+design system) and the conventions to follow when adding a new game.
 
 ## Running locally
 
