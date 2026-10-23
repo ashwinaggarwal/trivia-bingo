@@ -66,19 +66,44 @@ function renderRoster(players) {
   rosterList.innerHTML = players
     .map(
       (p) =>
-        `<li><span class="player-status ${p.online ? 'online' : 'offline'}"></span>${escapeHtml(p.name)}</li>`
+        `<li class="row"><span class="status-dot ${p.online ? 'online' : 'offline'}"></span><span class="row-name">${escapeHtml(p.name)}</span></li>`
     )
     .join('');
 }
 
+// Tie-aware places (two players tied for 1st both show "1st" — the next
+// distinct score is 3rd, not 2nd) for the F1-podium-style board.
+function placesFor(sortedDesc) {
+  const places = [];
+  let place = 0;
+  let seen = 0;
+  let last = null;
+  for (const row of sortedDesc) {
+    seen += 1;
+    if (last === null || row.points !== last) {
+      place = seen;
+      last = row.points;
+    }
+    places.push(place);
+  }
+  return places;
+}
+
+function f1Row(place, name, points, online) {
+  const medal = { 1: '🥇', 2: '🥈', 3: '🥉' }[place];
+  const placeClass = place <= 3 ? `place-${place}` : '';
+  return `<li class="f1-row ${placeClass}">
+    <span class="f1-pos">${medal || place}</span>
+    <span class="f1-name"><span class="status-dot ${online ? 'online' : 'offline'}"></span>${escapeHtml(name)}</span>
+    <span class="f1-points">${points} pt${points === 1 ? '' : 's'}</span>
+  </li>`;
+}
+
 function renderLeaderboard(players) {
   const ranked = players.slice().sort((a, b) => b.points - a.points);
+  const places = placesFor(ranked);
   leaderboardRows.innerHTML = ranked
-    .map((p, index) => {
-      const rank = index + 1;
-      const medal = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank;
-      return `<li>${medal} ${escapeHtml(p.name)} — ${p.points} pt${p.points === 1 ? '' : 's'}</li>`;
-    })
+    .map((p, i) => f1Row(places[i], p.name, p.points, p.online))
     .join('');
 }
 

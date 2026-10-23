@@ -12,12 +12,6 @@ body {
   margin-bottom: 20px;
 }
 
-#game-title {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 4px;
-}
-
 #join-body {
   display: flex;
   align-items: center;
@@ -62,61 +56,6 @@ body {
   margin-top: 4px;
   color: var(--gold);
   font-weight: 600;
-}
-
-#controls {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-#players-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  list-style: none;
-  padding: 0;
-}
-
-#players-list li {
-  background: var(--glass-strong);
-  border: 1px solid var(--hairline);
-  border-radius: 10px;
-  padding: 6px 12px;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.player-status {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: #999;
-}
-
-.player-status.online {
-  background: var(--success);
-  box-shadow: 0 0 4px var(--success);
-}
-
-.player-name {
-  font-weight: 600;
-}
-
-.player-stats {
-  font-size: 0.75rem;
-  opacity: 0.8;
-  color: var(--accent);
-}
-
-.btn-kick {
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  background: var(--danger);
-  color: var(--danger-ink);
 }
 
 table {

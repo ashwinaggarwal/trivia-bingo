@@ -22,19 +22,6 @@ body {
   padding: 24px;
 }
 
-header h1 {
-  font-family: var(--display);
-  color: var(--gold);
-  font-size: 1.6rem;
-}
-
-#game-title {
-  color: var(--cream);
-  opacity: 0.75;
-  font-size: 0.9rem;
-  margin-top: 2px;
-}
-
 #app > section {
   margin-bottom: 20px;
 }

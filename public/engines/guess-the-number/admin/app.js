@@ -111,10 +111,10 @@ async function refreshPlayers() {
   playerCount.textContent = players.length;
   playersList.innerHTML = players
     .map(
-      (p) => `<li>
-        <span class="player-status ${p.online ? 'online' : 'offline'}"></span>
-        <span class="player-name">${escapeHtml(p.name)}</span>
-        <span class="player-stats">${p.points} pt${p.points === 1 ? '' : 's'}</span>
+      (p) => `<li class="row">
+        <span class="status-dot ${p.online ? 'online' : 'offline'}"></span>
+        <span class="row-name">${escapeHtml(p.name)}</span>
+        <span class="row-stat">${p.points} pt${p.points === 1 ? '' : 's'}</span>
         <button class="btn-kick" data-id="${p.id}" data-name="${escapeAttr(p.name)}">Kick</button>
       </li>`
     )

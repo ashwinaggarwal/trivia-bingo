@@ -86,7 +86,7 @@ function renderRoster(leaderboard) {
   rosterList.innerHTML = (leaderboard || [])
     .map(
       (p) =>
-        `<li><span class="player-status ${p.online ? 'online' : 'offline'}"></span>${escapeHtml(p.name)}</li>`
+        `<li class="row"><span class="status-dot ${p.online ? 'online' : 'offline'}"></span><span class="row-name">${escapeHtml(p.name)}</span></li>`
     )
     .join('');
 }

@@ -89,10 +89,10 @@ async function refreshPlayers() {
   playersList.innerHTML = players
     .map((p) => {
       const avg = p.avgElapsedMs ? `${(p.avgElapsedMs / 1000).toFixed(1)}s avg` : '';
-      return `<li>
-        <span class="player-status ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
-        <span class="player-name">${p.name}</span>
-        <span class="player-stats">${p.points} pt${p.points === 1 ? '' : 's'} · ${p.correctCount} correct${avg ? ` · ${avg}` : ''}</span>
+      return `<li class="row">
+        <span class="status-dot ${p.online ? 'online' : 'offline'}" title="${p.online ? 'online' : 'offline'}"></span>
+        <span class="row-name">${p.name}</span>
+        <span class="row-stat">${p.points} pt${p.points === 1 ? '' : 's'} · ${p.correctCount} correct${avg ? ` · ${avg}` : ''}</span>
         <button class="btn-kick" data-id="${p.id}" data-name="${escapeAttr(p.name)}">Kick</button>
       </li>`;
     })

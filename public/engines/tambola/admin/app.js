@@ -131,10 +131,10 @@ async function refreshPlayers() {
       let note = '';
       if (p.distance === 1) note = ' · 🔥 1 away!';
       else if (p.close) note = ` · ${p.distance} away`;
-      return `<li>
-        <span class="player-status ${p.online ? 'online' : 'offline'}"></span>
-        <span class="player-name">${p.name}</span>
-        <span class="player-stats">${note}</span>
+      return `<li class="row">
+        <span class="status-dot ${p.online ? 'online' : 'offline'}"></span>
+        <span class="row-name">${p.name}</span>
+        <span class="row-stat">${note}</span>
         <button class="btn-kick" data-id="${p.id}" data-name="${escapeAttr(p.name)}">Kick</button>
       </li>`;
     })
@@ -174,7 +174,7 @@ async function refreshTickets() {
         .join('');
       return `<div class="ticket-row">
         <div class="ticket-row-name">
-          <span class="player-status ${p.online ? 'online' : 'offline'}"></span>
+          <span class="status-dot ${p.online ? 'online' : 'offline'}"></span>
           ${escapeHtml(p.name)}
         </div>
         <div class="mini-tickets">${tickets}</div>

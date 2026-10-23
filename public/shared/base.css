@@ -2,10 +2,12 @@
    SHARED DESIGN SYSTEM
    Loaded by every view (shelf, lobby, admin, game, player).
    Dark-mode neon/cyberpunk: charcoal-slate canvas, glowing geometric
-   cards, teal/cyan + coral accents. Tokens and atoms first — page-
-   specific CSS should build on these rather than hand-rolling its own
-   list rows, button rows, or card-header spacing (that drift is exactly
-   what made the same section look different from one view to the next).
+   cards, a bright maroon/yellow/orange/blue/pink accent family (no
+   green — it clashed with the red/maroon danger color). Tokens and
+   atoms first — page-specific CSS should build on these rather than
+   hand-rolling its own list rows, button rows, or card-header spacing
+   (that drift is exactly what made the same section look different
+   from one view to the next).
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap');
@@ -17,18 +19,18 @@
   --bg2: #1a1a1a;
   --glass: #ffffff0a;
   --glass-strong: #ffffff16;
-  --hairline: #28e0c733;
-  --text: #eafcfa;
-  --muted: #80939e;
+  --hairline: #ff8a1f33;
+  --text: #fff6ea;
+  --muted: #9a8d80;
 
-  --accent: #00f5d4;
-  --accent2: #ff6b6b;
+  --accent: #ff7a00;
+  --accent2: #ff2e87;
   --gold: #ffd500;
-  --accent-ink: #042420;
+  --accent-ink: #1f0e00;
 
-  --danger: #ff3860;
+  --danger: #b3123f;
   --danger-ink: #ffffff;
-  --success: #00ff9d;
+  --success: #2979ff;
 
   /* A fixed light backdrop (QR codes, flash-card "correct" badges) that
      deliberately never goes dark, regardless of accent/theme. */
@@ -49,31 +51,31 @@
 
 /* ---------- per-pack accents ----------
    Set via the `data-theme` attribute theme.js puts on <html>; layers on top
-   of everything above by overriding just the accent trio, nudged to stay
-   neon-saturated rather than the softer tones each pack used before. */
+   of everything above by overriding just the accent trio — kept within
+   the same maroon/yellow/orange/blue/pink family, no green. */
 
 :root[data-theme='diwali'] {
-  --accent: #ffb000;
-  --accent2: #ff3d7a;
+  --accent: #ff9100;
+  --accent2: #ffd500;
   --gold: #ffe14d;
 }
 
 :root[data-theme='bollywood'] {
   --accent: #ff2e87;
-  --accent2: #b23dff;
+  --accent2: #b3123f;
   --gold: #ffd166;
 }
 
 :root[data-theme='geography'] {
-  --accent: #00f5d4;
-  --accent2: #2e8bff;
-  --gold: #9aff5c;
+  --accent: #2979ff;
+  --accent2: #ff7a00;
+  --gold: #ffd500;
 }
 
 :root[data-theme='flags'] {
-  --accent: #4d7dff;
-  --accent2: #00f5e0;
-  --gold: #c86bff;
+  --accent: #2979ff;
+  --accent2: #ff2e87;
+  --gold: #ffd500;
 }
 
 * {
@@ -123,19 +125,36 @@ h3,
   color: var(--muted);
 }
 
+/* ---------- page header ----------
+   Every admin/game/player view opens with the same shape: an emoji title,
+   then a muted one-line subtitle under it (#game-title in admin views,
+   #join-hint in game views). One shared treatment instead of each view
+   redefining header/header h1 with its own slightly different margin —
+   a page only needs to override header h1's font-size for its own
+   context (the TV view's title is much bigger than the admin's). */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.7rem;
+  color: var(--accent);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+#game-title,
+#join-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
 /* ---------- surfaces ---------- */
 
 .card {
-  background:
-    linear-gradient(180deg, #1c1c1ecc, #141416e6) padding-box,
-    linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--accent) 50%, transparent),
-        color-mix(in srgb, var(--accent2) 35%, transparent) 55%,
-        transparent 90%
-      )
-      border-box;
-  border: 1px solid transparent;
+  background: linear-gradient(180deg, #1c1c1ecc, #141416e6);
+  border: 1px solid var(--hairline);
   border-radius: var(--r-lg);
   backdrop-filter: blur(14px) saturate(1.3);
   -webkit-backdrop-filter: blur(14px) saturate(1.3);

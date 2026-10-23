@@ -8,12 +8,16 @@ header {
   margin-bottom: 24px;
 }
 
+/* The back-link reads better left-aligned, unlike the centered title
+   below it — block (not inline-block) so centering the header's text
+   doesn't also center this away from the edge. */
 .back-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 12px;
   font-size: 0.85rem;
   color: var(--muted);
   text-decoration: none;
+  text-align: left;
 }
 
 .subtitle {
@@ -54,10 +58,8 @@ section h2 {
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  background:
-    linear-gradient(var(--glass), #ffffff05) padding-box,
-    linear-gradient(135deg, #ffffff29, #ffffff08 40%, #ffffff1a) border-box;
-  border: 1px solid transparent;
+  background: linear-gradient(180deg, #1c1c1ecc, #141416e6);
+  border: 1px solid var(--hairline);
   border-radius: var(--r-lg);
   backdrop-filter: blur(18px) saturate(1.4);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
