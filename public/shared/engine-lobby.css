@@ -8,18 +8,6 @@ header {
   margin-bottom: 24px;
 }
 
-/* The back-link reads better left-aligned, unlike the centered title
-   below it — block (not inline-block) so centering the header's text
-   doesn't also center this away from the edge. */
-.back-link {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 0.85rem;
-  color: var(--muted);
-  text-decoration: none;
-  text-align: left;
-}
-
 .subtitle {
   color: var(--muted);
   margin-top: 6px;

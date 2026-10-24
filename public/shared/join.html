@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join a Game</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/join.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <a class="back-link" href="/">← Game Shelf</a>
+        <h1 class="h-display">🙋 Join a Game</h1>
+        <p id="join-hint">Enter your name and the game code shown on the TV</p>
+      </header>
+
+      <section class="card">
+        <form id="join-form">
+          <label for="name-input">Your name</label>
+          <input id="name-input" type="text" placeholder="Your name" maxlength="40" required />
+
+          <label for="code-input">Game code</label>
+          <input
+            id="code-input"
+            type="text"
+            placeholder="e.g. 7K3PQR"
+            maxlength="6"
+            autocapitalize="characters"
+            required
+          />
+
+          <button type="submit" class="btn-primary" id="join-submit">Join Game</button>
+        </form>
+        <p id="join-error" class="error"></p>
+      </section>
+    </main>
+
+    <script src="/shared/join.js"></script>
+  </body>
+</html>

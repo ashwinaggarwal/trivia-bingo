@@ -22,6 +22,14 @@
   line-height: 1.6;
 }
 
+.join-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .shelf-head {
   border-bottom: 1px solid var(--hairline);
   padding-bottom: 12px;

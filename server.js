@@ -41,6 +41,13 @@ app.use('/shared', express.static(path.join(__dirname, 'public', 'shared')));
 app.use('/', express.static(path.join(__dirname, 'public', 'shelf')));
 app.get('/admin', (req, res) => res.redirect('/')); // old lobby URL
 
+// A single join page for every digital engine: name + game code in, land
+// straight in that game's player view, already registered — no QR scan
+// needed. See public/shared/join.js for the actual join flow.
+app.get('/user/join', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'shared', 'join.html'));
+});
+
 // One generic per-engine lobby page (create an instance, list/delete
 // existing ones) shared by every engine — see public/shared/engine-lobby.js,
 // which renders its create-form from GET /api/engines/:slug's `createOptions`.

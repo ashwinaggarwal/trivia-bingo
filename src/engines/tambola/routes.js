@@ -158,9 +158,22 @@ function gameRouter(io) {
     const name = (req.body.name || '').trim();
     if (!name) return res.status(400).json({ error: 'name is required' });
     const player = playersModule.registerPlayer(gameId, name);
+
+    // Catch a late joiner up: pre-mark any of their ticket numbers already
+    // drawn before they registered. Anything drawn from here on still needs
+    // its own deliberate tap, same as everyone else — see markNumbers.
+    const state = stateModule.load(gameId);
+    const alreadyDrawn = drawnSetOf(state);
+    const catchUpNumbers = player.grids.flat().filter((number) => alreadyDrawn.has(number));
+    let updated = player;
+    if (catchUpNumbers.length) {
+      updated = playersModule.markNumbers(gameId, player.id, catchUpNumbers);
+      checkWinsFor(io, gameId, updated);
+    }
+
     io.to(`game:${gameId}`).emit('player-registered', { id: player.id, name: player.name });
     broadcastPlayers(gameId);
-    res.json(player);
+    res.json(updated);
   });
 
   // Includes blinkCells, unlike playerSummaries — safe here because this

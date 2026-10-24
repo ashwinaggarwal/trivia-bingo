@@ -88,6 +88,22 @@ function markNumber(gameId, playerId, number) {
   return player;
 }
 
+// Bulk version of markNumber — one load/save round-trip instead of one per
+// number. Used only to catch a late joiner up on numbers already drawn
+// before they registered; every number drawn *after* they join still needs
+// its own deliberate tap through markNumber, same as everyone else.
+function markNumbers(gameId, playerId, numbers) {
+  if (!numbers.length) return getPlayer(gameId, playerId);
+  const players = load(gameId);
+  const player = players[playerId];
+  if (!player) return null;
+  for (const number of numbers) {
+    if (!player.marked.includes(number)) player.marked.push(number);
+  }
+  save(gameId, players);
+  return player;
+}
+
 // Retracts a mark from every player who had claimed it — used when a draw
 // is undone (see state.js's redrawLastNumber), since that number is no
 // longer officially drawn and shouldn't keep counting toward anyone's line.
@@ -121,6 +137,7 @@ module.exports = {
   registerPlayer,
   regenerateGrids,
   markNumber,
+  markNumbers,
   unmarkNumber,
   isOnTicket,
   getPlayer,
