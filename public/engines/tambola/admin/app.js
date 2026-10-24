@@ -4,6 +4,7 @@ const api = (path) => `/api/games/${gameId}${path}`;
 const socket = io();
 
 const gameTitle = document.getElementById('game-title');
+const joinPanel = document.getElementById('join-panel');
 const joinQr = document.getElementById('join-qr');
 const joinUrl = document.getElementById('join-url');
 const gameViewUrlEl = document.getElementById('game-view-url');
@@ -16,8 +17,10 @@ const btnDraw = document.getElementById('btn-draw');
 const btnRedraw = document.getElementById('btn-redraw');
 const btnMute = document.getElementById('btn-mute');
 const btnReset = document.getElementById('btn-reset');
+const playersPanel = document.getElementById('players-panel');
 const playerCount = document.getElementById('player-count');
 const playersList = document.getElementById('players-list');
+const ticketsPanel = document.getElementById('tickets-panel');
 const ticketsList = document.getElementById('tickets-list');
 
 const CATEGORY_LABELS = {
@@ -26,6 +29,13 @@ const CATEGORY_LABELS = {
   bottom: 'Bottom Line',
   fullhouse: 'Full House',
 };
+
+// Physical Tickets mode: no one joins digitally, so there's nothing to
+// show a QR code for and nothing to verify — the admin just calls
+// numbers while everyone plays their own paper ticket. Set once by
+// loadGameInfo from this game's own config (fixed at creation, see
+// src/engines/tambola/index.js's createConfig).
+let isPhysicalMode = false;
 
 let currentState = null;
 let drawInFlight = false; // client-side throttle, mirrors the server's own cooldown
@@ -38,10 +48,17 @@ async function loadGameInfo() {
   }
   const game = await res.json();
   gameTitle.textContent = `${game.name} (${game.id})`;
-  joinQr.src = `/api/games/${gameId}/qr.png`;
-  joinUrl.textContent = game.joinUrl;
   gameViewUrlEl.textContent = game.gameViewUrl;
   gameViewUrlEl.href = game.gameViewUrl;
+
+  isPhysicalMode = game.config && game.config.mode === 'physical';
+  joinPanel.classList.toggle('hidden', isPhysicalMode);
+  playersPanel.classList.toggle('hidden', isPhysicalMode);
+  ticketsPanel.classList.toggle('hidden', isPhysicalMode);
+  if (isPhysicalMode) return;
+
+  joinQr.src = `/api/games/${gameId}/qr.png`;
+  joinUrl.textContent = game.joinUrl;
 }
 
 function renderWinners(winners) {
@@ -123,6 +140,7 @@ function escapeAttr(str) {
 }
 
 async function refreshPlayers() {
+  if (isPhysicalMode) return;
   const res = await fetch(api('/players'));
   const players = await res.json();
   playerCount.textContent = players.length;
@@ -159,6 +177,7 @@ function escapeHtml(str) {
 // win against what they've actually clicked — a player can lie about
 // having won; this can't.
 async function refreshTickets() {
+  if (isPhysicalMode) return;
   const res = await fetch(api('/admin/players'));
   const players = await res.json();
   ticketsList.innerHTML = players

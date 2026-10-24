@@ -7,6 +7,7 @@ const joinHint = document.getElementById('join-hint');
 const joinPanel = document.getElementById('join-panel');
 const joinQr = document.getElementById('join-qr');
 const joinUrl = document.getElementById('join-url');
+const rosterPanel = document.getElementById('roster-panel');
 const rosterCount = document.getElementById('roster-count');
 const rosterList = document.getElementById('roster-list');
 const drawStatus = document.getElementById('draw-status');
@@ -24,6 +25,11 @@ const CATEGORY_LABELS = {
   fullhouse: 'Full House',
 };
 
+// Physical Tickets mode: no one joins digitally, so the join QR and the
+// roster never make sense here — the TV is just the number grid and the
+// current draw. Set once from this game's own config (fixed at creation).
+let isPhysicalMode = false;
+
 function escapeHtml(str) {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -36,6 +42,11 @@ async function loadGameInfo() {
   }
   const game = await res.json();
   joinHint.textContent = game.name;
+
+  isPhysicalMode = game.config && game.config.mode === 'physical';
+  rosterPanel.classList.toggle('hidden', isPhysicalMode);
+  if (isPhysicalMode) return;
+
   joinQr.src = `/api/games/${gameId}/qr.png`;
   joinUrl.textContent = `Join at ${game.joinUrl}`;
 }
@@ -99,6 +110,7 @@ function renderClosingIn(players) {
 }
 
 async function refreshPlayers() {
+  if (isPhysicalMode) return;
   const res = await fetch(api('/players'));
   const players = await res.json();
   renderRoster(players);
@@ -107,7 +119,7 @@ async function refreshPlayers() {
 
 function applyState(state) {
   serverMuted = Boolean(state.soundMuted);
-  joinPanel.classList.toggle('hidden', state.status !== 'setup');
+  joinPanel.classList.toggle('hidden', isPhysicalMode || state.status !== 'setup');
   renderWinners(state.winners);
 
   // While the scroll animation is still running, don't let the board or big
@@ -155,20 +167,6 @@ function unlockAudioOnce() {
 }
 document.addEventListener('pointerdown', unlockAudioOnce);
 document.addEventListener('keydown', unlockAudioOnce);
-
-function playTick(frequency = 900) {
-  if (serverMuted || !audioCtx) return;
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.type = 'square';
-  osc.frequency.value = frequency;
-  gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-  osc.start();
-  osc.stop(audioCtx.currentTime + 0.04);
-}
 
 function playDing() {
   if (serverMuted || !audioCtx) return;
@@ -251,10 +249,43 @@ function easeOutCubic(t) {
   return 1 - Math.pow(1 - t, 3);
 }
 
+const drawSoundAudio = new Audio('/assets/sounds/draw-number.mp3');
+drawSoundAudio.preload = 'auto';
+
+// Fades out over the last DRAW_SOUND_FADE_MS of the *roll animation*
+// itself, not necessarily the whole clip — the roll always lasts exactly
+// SCROLL_DURATION_MS regardless of how long the audio file is, so this
+// ties the fade to the number settling rather than to wherever the clip
+// happens to end.
+const DRAW_SOUND_FADE_MS = 300;
+
+function playDrawSound() {
+  if (serverMuted) return;
+  drawSoundAudio.currentTime = 0;
+  drawSoundAudio.volume = 1;
+  drawSoundAudio.play().catch(() => {});
+
+  const fadeStart = Math.max(0, SCROLL_DURATION_MS - DRAW_SOUND_FADE_MS);
+  const startedAt = Date.now();
+  const interval = setInterval(() => {
+    const elapsed = Date.now() - startedAt;
+    if (drawSoundAudio.paused || drawSoundAudio.ended || elapsed >= SCROLL_DURATION_MS) {
+      clearInterval(interval);
+      drawSoundAudio.pause();
+      return;
+    }
+    if (elapsed >= fadeStart) {
+      const remaining = SCROLL_DURATION_MS - elapsed;
+      drawSoundAudio.volume = Math.max(0, Math.min(1, remaining / DRAW_SOUND_FADE_MS));
+    }
+  }, 40);
+}
+
 function runDrawAnimation(finalNumber) {
   currentDraw.dataset.animating = 'true';
   currentDraw.classList.add('rolling');
   const startedAt = Date.now();
+  playDrawSound();
 
   function tick() {
     const progress = Math.min((Date.now() - startedAt) / SCROLL_DURATION_MS, 1);
@@ -274,7 +305,6 @@ function runDrawAnimation(finalNumber) {
 
     currentDraw.textContent = 1 + Math.floor(Math.random() * 90);
     currentDraw.style.filter = `blur(${(1 - eased) * 3}px)`;
-    playTick(900 - eased * 400);
 
     const delay = MIN_TICK_MS + (MAX_TICK_MS - MIN_TICK_MS) * eased;
     setTimeout(tick, delay);

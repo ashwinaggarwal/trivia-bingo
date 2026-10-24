@@ -124,6 +124,11 @@ async function refreshPlayer() {
 // that's too early. An already-marked cell just does nothing.
 async function handleCellClick(number, alreadyMarked) {
   if (alreadyMarked || !player) return;
+  // Plays the instant they tap one of their own numbers, whether or not
+  // the server actually accepts the mark — it's just "I heard your tap",
+  // not "you got it", so it doesn't give away whether a number's been
+  // drawn yet (the fire-flash below still only fires on a real success).
+  playClaimSound();
   try {
     const res = await fetch(api(`/players/${player.id}/mark`), {
       method: 'POST',
@@ -131,11 +136,10 @@ async function handleCellClick(number, alreadyMarked) {
       body: JSON.stringify({ number }),
     });
     const data = await res.json();
-    if (!res.ok) return; // too early (not drawn yet) — no feedback, nothing to see
+    if (!res.ok) return; // too early (not drawn yet) — no further feedback
     player.marked = data.marked;
     if (!data.alreadyMarked) {
       flashFire(number);
-      playClaimSound();
     }
     renderGrids();
   } catch (err) {
